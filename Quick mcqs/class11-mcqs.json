@@ -1,0 +1,1907 @@
+{
+  "physics": {
+    "measurements": [
+      {
+        "question": "What is the SI unit of length?",
+        "options": ["Meter", "Kilogram", "Second", "Ampere"],
+        "answer": "Meter"
+      },
+      {
+        "question": "Which instrument is used to measure length accurately?",
+        "options": ["Vernier Caliper", "Thermometer", "Barometer", "Ammeter"],
+        "answer": "Vernier Caliper"
+      },
+      {
+        "question": "What is the least count of a meter scale?",
+        "options": ["0.1 mm", "1 mm", "0.01 mm", "10 mm"],
+        "answer": "1 mm"
+      },
+      {
+        "question": "Which of the following is a derived unit?",
+        "options": ["Meter", "Kilogram", "Newton", "Second"],
+        "answer": "Newton"
+      }
+    ],
+    "vectors-and-equilibrium": [
+      {
+        "question": "What is a vector quantity?",
+        "options": ["Has magnitude only", "Has direction only", "Has both magnitude and direction", "None"],
+        "answer": "Has both magnitude and direction"
+      },
+      {
+        "question": "The resultant of two vectors is maximum when they are:",
+        "options": ["Perpendicular", "Parallel in same direction", "Parallel in opposite direction", "At 45 degrees"],
+        "answer": "Parallel in same direction"
+      },
+      {
+        "question": "What is equilibrium?",
+        "options": ["Net force zero", "Net torque zero", "Both", "None"],
+        "answer": "Both"
+      },
+      {
+        "question": "Which law is related to equilibrium?",
+        "options": ["Newton's first law", "Newton's second law", "Newton's third law", "All"],
+        "answer": "Newton's first law"
+      }
+    ],
+    "motion-and-force": [
+      {
+        "question": "What is velocity?",
+        "options": ["Displacement per unit time", "Distance per unit time", "Speed with direction", "All"],
+        "answer": "All"
+      },
+      {
+        "question": "According to Newton's second law, F = ?",
+        "options": ["ma", "mv", "m/v", "v/a"],
+        "answer": "ma"
+      },
+      {
+        "question": "What is inertia?",
+        "options": ["Tendency to change state", "Mass", "Force", "Acceleration"],
+        "answer": "Tendency to change state"
+      },
+      {
+        "question": "Which force opposes motion?",
+        "options": ["Gravitational", "Frictional", "Magnetic", "Electric"],
+        "answer": "Frictional"
+      }
+    ],
+    "work-and-energy": [
+      {
+        "question": "What is work?",
+        "options": ["Force times distance", "Force times time", "Mass times acceleration", "Energy per unit time"],
+        "answer": "Force times distance"
+      },
+      {
+        "question": "Unit of energy is:",
+        "options": ["Joule", "Newton", "Watt", "Pascal"],
+        "answer": "Joule"
+      },
+      {
+        "question": "What is kinetic energy?",
+        "options": ["Energy of motion", "Energy of position", "Energy of rest", "None"],
+        "answer": "Energy of motion"
+      },
+      {
+        "question": "Law of conservation of energy states:",
+        "options": ["Energy can be created", "Energy can be destroyed", "Energy is conserved", "None"],
+        "answer": "Energy is conserved"
+      }
+    ],
+    "circular-motion": [
+      {
+        "question": "What provides centripetal force?",
+        "options": ["Gravity", "Tension", "Friction", "All"],
+        "answer": "All"
+      },
+      {
+        "question": "Angular velocity is:",
+        "options": ["Distance per time", "Angle per time", "Speed per time", "None"],
+        "answer": "Angle per time"
+      },
+      {
+        "question": "In circular motion, acceleration is:",
+        "options": ["Zero", "Constant", "Towards center", "Away from center"],
+        "answer": "Towards center"
+      },
+      {
+        "question": "What is centrifugal force?",
+        "options": ["Real force", "Pseudo force", "Both", "None"],
+        "answer": "Pseudo force"
+      }
+    ],
+    "fluid-dynamics": [
+      {
+        "question": "What is pressure?",
+        "options": ["Force per area", "Area per force", "Mass per volume", "Volume per mass"],
+        "answer": "Force per area"
+      },
+      {
+        "question": "Bernoulli's principle states:",
+        "options": ["Pressure increases with speed", "Pressure decreases with speed", "Pressure constant", "None"],
+        "answer": "Pressure decreases with speed"
+      },
+      {
+        "question": "What is viscosity?",
+        "options": ["Resistance to flow", "Density", "Pressure", "Temperature"],
+        "answer": "Resistance to flow"
+      },
+      {
+        "question": "Archimedes' principle is about:",
+        "options": ["Buoyancy", "Pressure", "Viscosity", "Surface tension"],
+        "answer": "Buoyancy"
+      }
+    ],
+    "oscillations": [
+      {
+        "question": "What is SHM?",
+        "options": ["Simple Harmonic Motion", "Simple Horizontal Motion", "Slow Harmonic Motion", "None"],
+        "answer": "Simple Harmonic Motion"
+      },
+      {
+        "question": "Time period of pendulum depends on:",
+        "options": ["Length", "Mass", "Amplitude", "Length and g"],
+        "answer": "Length and g"
+      },
+      {
+        "question": "What is frequency?",
+        "options": ["Cycles per second", "Time per cycle", "Distance per cycle", "None"],
+        "answer": "Cycles per second"
+      },
+      {
+        "question": "In SHM, acceleration is:",
+        "options": ["Constant", "Proportional to displacement", "Zero", "None"],
+        "answer": "Proportional to displacement"
+      }
+    ],
+    "waves": [
+      {
+        "question": "What is a wave?",
+        "options": ["Disturbance", "Particle", "Energy", "All"],
+        "answer": "Disturbance"
+      },
+      {
+        "question": "Speed of sound in air is:",
+        "options": ["330 m/s", "300 m/s", "340 m/s", "350 m/s"],
+        "answer": "340 m/s"
+      },
+      {
+        "question": "What is wavelength?",
+        "options": ["Distance between crests", "Time period", "Frequency", "Amplitude"],
+        "answer": "Distance between crests"
+      },
+      {
+        "question": "Doppler effect is about:",
+        "options": ["Change in frequency", "Change in wavelength", "Change in speed", "None"],
+        "answer": "Change in frequency"
+      }
+    ],
+    "physical-optics": [
+      {
+        "question": "What is diffraction?",
+        "options": ["Bending of light", "Reflection", "Refraction", "Absorption"],
+        "answer": "Bending of light"
+      },
+      {
+        "question": "Interference occurs due to:",
+        "options": ["Superposition", "Reflection", "Refraction", "Diffraction"],
+        "answer": "Superposition"
+      },
+      {
+        "question": "What is polarization?",
+        "options": ["Orientation of waves", "Speed of light", "Color", "None"],
+        "answer": "Orientation of waves"
+      },
+      {
+        "question": "Young's double slit experiment shows:",
+        "options": ["Interference", "Diffraction", "Polarization", "Dispersion"],
+        "answer": "Interference"
+      }
+    ],
+    "optical-instruments": [
+      {
+        "question": "What is the power of lens?",
+        "options": ["1/f", "f", "1/d", "d"],
+        "answer": "1/f"
+      },
+      {
+        "question": "Microscope uses:",
+        "options": ["Convex lens", "Concave lens", "Prism", "Mirror"],
+        "answer": "Convex lens"
+      },
+      {
+        "question": "Telescope uses:",
+        "options": ["Two lenses", "One lens", "Mirror", "Prism"],
+        "answer": "Two lenses"
+      },
+      {
+        "question": "What is magnification?",
+        "options": ["Image size / object size", "Object size / image size", "focal length", "None"],
+        "answer": "Image size / object size"
+      }
+    ],
+    "heat-and-thermodynamics": [
+      {
+        "question": "What is heat?",
+        "options": ["Energy transfer", "Temperature", "Mass", "Volume"],
+        "answer": "Energy transfer"
+      },
+      {
+        "question": "First law of thermodynamics:",
+        "options": ["Energy conserved", "Entropy increases", "Heat to work", "None"],
+        "answer": "Energy conserved"
+      },
+      {
+        "question": "What is entropy?",
+        "options": ["Disorder", "Order", "Energy", "Temperature"],
+        "answer": "Disorder"
+      },
+      {
+        "question": "Specific heat capacity is:",
+        "options": ["Heat per kg per K", "Heat per K", "Mass per heat", "None"],
+        "answer": "Heat per kg per K"
+      }
+    ]
+  },
+  "biology": {
+    "introduction-to-biology": [
+      {
+        "question": "What is the study of life called?",
+        "options": ["Physics", "Chemistry", "Biology", "Mathematics"],
+        "answer": "Biology"
+      },
+      {
+        "question": "Which level of organization is the highest?",
+        "options": ["Cell", "Tissue", "Organ", "Biosphere"],
+        "answer": "Biosphere"
+      },
+      {
+        "question": "What is homeostasis?",
+        "options": ["Energy production", "Maintaining internal balance", "Cell division", "Reproduction"],
+        "answer": "Maintaining internal balance"
+      },
+      {
+        "question": "Which branch of biology studies fossils?",
+        "options": ["Ecology", "Paleontology", "Genetics", "Microbiology"],
+        "answer": "Paleontology"
+      },
+      {
+        "question": "What is the scientific method?",
+        "options": ["Observation, hypothesis, experiment, conclusion", "Guessing", "Only observation", "None"],
+        "answer": "Observation, hypothesis, experiment, conclusion"
+      },
+      {
+        "question": "Biology studies living organisms and their:",
+        "options": ["Interactions with environment", "Only structure", "Only function", "None"],
+        "answer": "Interactions with environment"
+      },
+      {
+        "question": "Which level includes atoms and molecules?",
+        "options": ["Molecular", "Cellular", "Organismal", "Population"],
+        "answer": "Molecular"
+      },
+      {
+        "question": "Ecosystem is a:",
+        "options": ["Community plus environment", "Only organisms", "Only environment", "None"],
+        "answer": "Community plus environment"
+      }
+    ],
+    "cells": [
+      {
+        "question": "What is the basic unit of life?",
+        "options": ["Atom", "Molecule", "Cell", "Tissue"],
+        "answer": "Cell"
+      },
+      {
+        "question": "Which organelle is the control center?",
+        "options": ["Mitochondria", "Nucleus", "Ribosome", "Golgi"],
+        "answer": "Nucleus"
+      },
+      {
+        "question": "What is the function of mitochondria?",
+        "options": ["Protein synthesis", "Energy production", "Storage", "Transport"],
+        "answer": "Energy production"
+      },
+      {
+        "question": "Cell membrane is:",
+        "options": ["Rigid", "Semi-permeable", "Impermeable", "None"],
+        "answer": "Semi-permeable"
+      },
+      {
+        "question": "What is the cell theory?",
+        "options": ["All living things are made of cells", "Cells come from pre-existing cells", "Both", "None"],
+        "answer": "Both"
+      },
+      {
+        "question": "Prokaryotic cells lack:",
+        "options": ["Nucleus", "Cell membrane", "Cytoplasm", "Ribosomes"],
+        "answer": "Nucleus"
+      },
+      {
+        "question": "Ribosomes are responsible for:",
+        "options": ["Protein synthesis", "Energy production", "Storage", "Transport"],
+        "answer": "Protein synthesis"
+      },
+      {
+        "question": "Endoplasmic reticulum is involved in:",
+        "options": ["Protein synthesis", "Lipid synthesis", "Transport", "All"],
+        "answer": "All"
+      }
+    ],
+    "biological-molecules": [
+      {
+        "question": "What is the monomer of protein?",
+        "options": ["Amino acid", "Glucose", "Fatty acid", "Nucleotide"],
+        "answer": "Amino acid"
+      },
+      {
+        "question": "Carbohydrates provide:",
+        "options": ["Energy", "Structure", "Enzymes", "Hormones"],
+        "answer": "Energy"
+      },
+      {
+        "question": "DNA is:",
+        "options": ["Double helix", "Single strand", "RNA", "Protein"],
+        "answer": "Double helix"
+      },
+      {
+        "question": "Lipids are:",
+        "options": ["Hydrophilic", "Hydrophobic", "Polar", "Ionic"],
+        "answer": "Hydrophobic"
+      }
+    ],
+    "enzymes": [
+      {
+        "question": "Enzymes are:",
+        "options": ["Proteins", "Carbs", "Lipids", "Nucleic acids"],
+        "answer": "Proteins"
+      },
+      {
+        "question": "What affects enzyme activity?",
+        "options": ["Temperature", "pH", "Concentration", "All"],
+        "answer": "All"
+      },
+      {
+        "question": "Lock and key model is for:",
+        "options": ["Enzyme action", "Cell division", "Photosynthesis", "Respiration"],
+        "answer": "Enzyme action"
+      },
+      {
+        "question": "Coenzymes are:",
+        "options": ["Organic", "Inorganic", "Both", "None"],
+        "answer": "Organic"
+      }
+    ],
+    "bioenergetics": [
+      {
+        "question": "Photosynthesis occurs in:",
+        "options": ["Chloroplast", "Mitochondria", "Nucleus", "Ribosome"],
+        "answer": "Chloroplast"
+      },
+      {
+        "question": "Light reaction produces:",
+        "options": ["ATP", "NADPH", "O2", "All"],
+        "answer": "All"
+      },
+      {
+        "question": "Calvin cycle is:",
+        "options": ["Light dependent", "Light independent", "Respiration", "None"],
+        "answer": "Light independent"
+      },
+      {
+        "question": "Respiration is:",
+        "options": ["Catabolic", "Anabolic", "Both", "None"],
+        "answer": "Catabolic"
+      }
+    ],
+    "acquisition-and-utilization-of-nutrients": [
+      {
+        "question": "Digestion starts in:",
+        "options": ["Mouth", "Stomach", "Intestine", "Liver"],
+        "answer": "Mouth"
+      },
+      {
+        "question": "Absorption occurs in:",
+        "options": ["Stomach", "Small intestine", "Large intestine", "Mouth"],
+        "answer": "Small intestine"
+      },
+      {
+        "question": "Villi increase:",
+        "options": ["Surface area", "Length", "Width", "Volume"],
+        "answer": "Surface area"
+      },
+      {
+        "question": "Egestion is:",
+        "options": ["Ingestion", "Digestion", "Absorption", "Removal of waste"],
+        "answer": "Removal of waste"
+      }
+    ],
+    "transport": [
+      {
+        "question": "Blood is:",
+        "options": ["Connective tissue", "Epithelial", "Muscle", "Nervous"],
+        "answer": "Connective tissue"
+      },
+      {
+        "question": "Heart has:",
+        "options": ["2 chambers", "3 chambers", "4 chambers", "1 chamber"],
+        "answer": "4 chambers"
+      },
+      {
+        "question": "Arteries carry:",
+        "options": ["Oxygenated blood", "Deoxygenated blood", "Both", "None"],
+        "answer": "Oxygenated blood"
+      },
+      {
+        "question": "Lymph nodes filter:",
+        "options": ["Blood", "Lymph", "Air", "Water"],
+        "answer": "Lymph"
+      }
+    ],
+    "homeostasis": [
+      {
+        "question": "Homeostasis maintains:",
+        "options": ["Internal environment", "External environment", "Temperature", "All"],
+        "answer": "Internal environment"
+      },
+      {
+        "question": "Kidneys regulate:",
+        "options": ["Water", "Salt", "Waste", "All"],
+        "answer": "All"
+      },
+      {
+        "question": "ADH controls:",
+        "options": ["Water reabsorption", "Glucose", "Salt", "Protein"],
+        "answer": "Water reabsorption"
+      },
+      {
+        "question": "Osmoregulation is:",
+        "options": ["Water balance", "Energy balance", "Nutrient balance", "None"],
+        "answer": "Water balance"
+      }
+    ],
+    "support-and-movement": [
+      {
+        "question": "Skeleton provides:",
+        "options": ["Support", "Movement", "Protection", "All"],
+        "answer": "All"
+      },
+      {
+        "question": "Joints allow:",
+        "options": ["Movement", "Fixation", "Both", "None"],
+        "answer": "Movement"
+      },
+      {
+        "question": "Muscles contract due to:",
+        "options": ["ATP", "ADP", "Glucose", "Oxygen"],
+        "answer": "ATP"
+      },
+      {
+        "question": "Tendons connect:",
+        "options": ["Bone to bone", "Muscle to bone", "Muscle to muscle", "None"],
+        "answer": "Muscle to bone"
+      }
+    ],
+    "coordination-and-control": [
+      {
+        "question": "Nervous system has:",
+        "options": ["CNS and PNS", "Only CNS", "Only PNS", "None"],
+        "answer": "CNS and PNS"
+      },
+      {
+        "question": "Neuron has:",
+        "options": ["Dendrites", "Axon", "Cell body", "All"],
+        "answer": "All"
+      },
+      {
+        "question": "Synapse is:",
+        "options": ["Junction", "Cell", "Organ", "Tissue"],
+        "answer": "Junction"
+      },
+      {
+        "question": "Reflex arc involves:",
+        "options": ["Receptor", "Effector", "Both", "None"],
+        "answer": "Both"
+      }
+    ],
+    "reproduction": [
+      {
+        "question": "Meiosis produces:",
+        "options": ["2 cells", "4 cells", "8 cells", "16 cells"],
+        "answer": "4 cells"
+      },
+      {
+        "question": "Spermatogenesis occurs in:",
+        "options": ["Testes", "Ovaries", "Uterus", "Fallopian tube"],
+        "answer": "Testes"
+      },
+      {
+        "question": "Oogenesis produces:",
+        "options": ["Sperm", "Egg", "Both", "None"],
+        "answer": "Egg"
+      },
+      {
+        "question": "Fertilization is:",
+        "options": ["Fusion of gametes", "Cell division", "Growth", "None"],
+        "answer": "Fusion of gametes"
+      }
+    ],
+    "variety-of-life": [
+      {
+        "question": "What is biodiversity?",
+        "options": ["Variety of life", "Number of species", "Genetic variation", "All"],
+        "answer": "All"
+      },
+      {
+        "question": "Taxonomy is the study of:",
+        "options": ["Classification", "Evolution", "Ecology", "Physiology"],
+        "answer": "Classification"
+      },
+      {
+        "question": "Binomial nomenclature was given by:",
+        "options": ["Linnaeus", "Darwin", "Mendel", "Pasteur"],
+        "answer": "Linnaeus"
+      },
+      {
+        "question": "Kingdom Animalia includes:",
+        "options": ["Plants", "Animals", "Fungi", "Bacteria"],
+        "answer": "Animals"
+      }
+    ],
+    "kingdom-prokaryotae": [
+      {
+        "question": "Prokaryotes lack:",
+        "options": ["Cell wall", "Nucleus", "Ribosomes", "Cytoplasm"],
+        "answer": "Nucleus"
+      },
+      {
+        "question": "Bacteria are:",
+        "options": ["Prokaryotic", "Eukaryotic", "Both", "None"],
+        "answer": "Prokaryotic"
+      },
+      {
+        "question": "Cyanobacteria are:",
+        "options": ["Photosynthetic bacteria", "Pathogenic", "Archaea", "None"],
+        "answer": "Photosynthetic bacteria"
+      },
+      {
+        "question": "Binary fission is:",
+        "options": ["Sexual reproduction", "Asexual reproduction", "Budding", "Spore formation"],
+        "answer": "Asexual reproduction"
+      }
+    ],
+    "kingdom-protista": [
+      {
+        "question": "Protists are:",
+        "options": ["Unicellular eukaryotes", "Multicellular", "Prokaryotes", "Plants"],
+        "answer": "Unicellular eukaryotes"
+      },
+      {
+        "question": "Amoeba moves by:",
+        "options": ["Pseudopodia", "Cilia", "Flagella", "None"],
+        "answer": "Pseudopodia"
+      },
+      {
+        "question": "Euglena has:",
+        "options": ["Chloroplast", "No chloroplast", "Both", "None"],
+        "answer": "Chloroplast"
+      },
+      {
+        "question": "Paramecium has:",
+        "options": ["Cilia", "Flagella", "Pseudopodia", "None"],
+        "answer": "Cilia"
+      }
+    ],
+    "fungi": [
+      {
+        "question": "Fungi are:",
+        "options": ["Saprophytes", "Parasites", "Both", "None"],
+        "answer": "Both"
+      },
+      {
+        "question": "Mycelium is:",
+        "options": ["Network of hyphae", "Fruiting body", "Spore", "None"],
+        "answer": "Network of hyphae"
+      },
+      {
+        "question": "Yeast is:",
+        "options": ["Unicellular fungus", "Multicellular", "Bacteria", "Plant"],
+        "answer": "Unicellular fungus"
+      },
+      {
+        "question": "Mushrooms are:",
+        "options": ["Fruiting bodies", "Hyphae", "Spores", "None"],
+        "answer": "Fruiting bodies"
+      }
+    ],
+    "kingdom-plantae": [
+      {
+        "question": "Plants are:",
+        "options": ["Autotrophs", "Heterotrophs", "Both", "None"],
+        "answer": "Autotrophs"
+      },
+      {
+        "question": "Chlorophyll is found in:",
+        "options": ["Chloroplast", "Mitochondria", "Nucleus", "Ribosome"],
+        "answer": "Chloroplast"
+      },
+      {
+        "question": "Vascular plants have:",
+        "options": ["Xylem and phloem", "Only xylem", "Only phloem", "None"],
+        "answer": "Xylem and phloem"
+      },
+      {
+        "question": "Angiosperms produce:",
+        "options": ["Seeds", "Spores", "Both", "None"],
+        "answer": "Seeds"
+      }
+    ],
+    "kingdom-animalia": [
+      {
+        "question": "Animals are:",
+        "options": ["Heterotrophs", "Autotrophs", "Both", "None"],
+        "answer": "Heterotrophs"
+      },
+      {
+        "question": "Sponges belong to:",
+        "options": ["Porifera", "Cnidaria", "Platyhelminthes", "Nematoda"],
+        "answer": "Porifera"
+      },
+      {
+        "question": "Mammals are:",
+        "options": ["Warm-blooded", "Cold-blooded", "Both", "None"],
+        "answer": "Warm-blooded"
+      },
+      {
+        "question": "Vertebrates have:",
+        "options": ["Backbone", "No backbone", "Exoskeleton", "None"],
+        "answer": "Backbone"
+      }
+    ],
+    "gaseous-exchange": [
+      {
+        "question": "Gaseous exchange occurs in:",
+        "options": ["Lungs", "Skin", "Gills", "All"],
+        "answer": "All"
+      },
+      {
+        "question": "In humans, oxygen is transported by:",
+        "options": ["Hemoglobin", "Plasma", "Platelets", "None"],
+        "answer": "Hemoglobin"
+      },
+      {
+        "question": "Carbon dioxide is carried as:",
+        "options": ["Bicarbonate", "Carbaminohemoglobin", "Both", "None"],
+        "answer": "Both"
+      },
+      {
+        "question": "Respiratory surface must be:",
+        "options": ["Moist", "Dry", "Thick", "None"],
+        "answer": "Moist"
+      }
+    ],
+    "inheritance": [
+      {
+        "question": "Mendel's law of segregation states:",
+        "options": ["Alleles separate", "Genes link", "Dominance", "None"],
+        "answer": "Alleles separate"
+      },
+      {
+        "question": "Genotype is:",
+        "options": ["Physical appearance", "Genetic makeup", "Both", "None"],
+        "answer": "Genetic makeup"
+      },
+      {
+        "question": "Punnett square shows:",
+        "options": ["Probability", "Inheritance", "Both", "None"],
+        "answer": "Both"
+      },
+      {
+        "question": "Sex-linked traits are on:",
+        "options": ["Autosomes", "X chromosome", "Y chromosome", "Both X and Y"],
+        "answer": "X chromosome"
+      }
+    ],
+    "evolution": [
+      {
+        "question": "What is evolution?",
+        "options": ["Change over time", "Creation", "Static", "None"],
+        "answer": "Change over time"
+      },
+      {
+        "question": "Who proposed natural selection?",
+        "options": ["Darwin", "Lamarck", "Mendel", "Wallace"],
+        "answer": "Darwin"
+      },
+      {
+        "question": "Evidence for evolution includes:",
+        "options": ["Fossils", "Comparative anatomy", "Embryology", "All"],
+        "answer": "All"
+      },
+      {
+        "question": "Speciation occurs due to:",
+        "options": ["Geographic isolation", "Reproductive isolation", "Both", "None"],
+        "answer": "Both"
+      }
+    ],
+    "ecology": [
+      {
+        "question": "What is ecology?",
+        "options": ["Study of organisms and environment", "Study of cells", "Study of genes", "Study of rocks"],
+        "answer": "Study of organisms and environment"
+      },
+      {
+        "question": "Ecosystem includes:",
+        "options": ["Biotic and abiotic factors", "Only biotic", "Only abiotic", "None"],
+        "answer": "Biotic and abiotic factors"
+      },
+      {
+        "question": "Food chain starts with:",
+        "options": ["Producer", "Consumer", "Decomposer", "Parasite"],
+        "answer": "Producer"
+      },
+      {
+        "question": "Biodiversity refers to:",
+        "options": ["Variety of life", "Number of species", "Genetic variation", "All"],
+        "answer": "All"
+      }
+    ]
+  },
+  "chemistry": {
+    "basic-concepts": [
+      {
+        "question": "What is matter?",
+        "options": ["Anything with mass and volume", "Energy", "Light", "Sound"],
+        "answer": "Anything with mass and volume"
+      },
+      {
+        "question": "Atomic mass unit is:",
+        "options": ["1/12 of C-12", "Mass of proton", "Mass of electron", "Mass of neutron"],
+        "answer": "1/12 of C-12"
+      },
+      {
+        "question": "Empirical formula shows:",
+        "options": ["Simplest ratio", "Molecular formula", "Structural", "None"],
+        "answer": "Simplest ratio"
+      },
+      {
+        "question": "Mole is:",
+        "options": ["6.022 x 10^23", "Mass", "Volume", "Concentration"],
+        "answer": "6.022 x 10^23"
+      }
+    ],
+    "experimental-techniques-in-chemistry": [
+      {
+        "question": "Filtration separates:",
+        "options": ["Solids from liquids", "Liquids from liquids", "Gases", "None"],
+        "answer": "Solids from liquids"
+      },
+      {
+        "question": "Distillation is used for:",
+        "options": ["Purification", "Mixing", "Heating", "Cooling"],
+        "answer": "Purification"
+      },
+      {
+        "question": "Chromatography separates:",
+        "options": ["Mixtures", "Compounds", "Elements", "None"],
+        "answer": "Mixtures"
+      },
+      {
+        "question": "Titration determines:",
+        "options": ["Concentration", "Mass", "Volume", "Density"],
+        "answer": "Concentration"
+      }
+    ],
+    "gases": [
+      {
+        "question": "Boyle's law states:",
+        "options": ["P1V1 = P2V2", "V1/T1 = V2/T2", "P1/T1 = P2/T2", "PV = nRT"],
+        "answer": "P1V1 = P2V2"
+      },
+      {
+        "question": "Charles' law is:",
+        "options": ["Pressure constant", "Volume constant", "Temperature constant", "Amount constant"],
+        "answer": "Pressure constant"
+      },
+      {
+        "question": "Ideal gas equation is:",
+        "options": ["PV = nRT", "P1V1 = P2V2", "V1/T1 = V2/T2", "P1/T1 = P2/T2"],
+        "answer": "PV = nRT"
+      },
+      {
+        "question": "Dalton's law is about:",
+        "options": ["Partial pressures", "Total pressure", "Both", "None"],
+        "answer": "Partial pressures"
+      }
+    ],
+    "liquids-and-solids": [
+      {
+        "question": "Intermolecular forces in solids are:",
+        "options": ["Weak", "Strong", "None", "Variable"],
+        "answer": "Strong"
+      },
+      {
+        "question": "Vapor pressure depends on:",
+        "options": ["Temperature", "Surface area", "Volume", "All"],
+        "answer": "Temperature"
+      },
+      {
+        "question": "Crystalline solids have:",
+        "options": ["Orderly arrangement", "Disorderly", "No arrangement", "None"],
+        "answer": "Orderly arrangement"
+      },
+      {
+        "question": "Amorphous solids:",
+        "options": ["Have melting point", "No melting point", "Both", "None"],
+        "answer": "No melting point"
+      }
+    ],
+    "atomic-structure": [
+      {
+        "question": "Atom has:",
+        "options": ["Protons, neutrons, electrons", "Only protons", "Only electrons", "None"],
+        "answer": "Protons, neutrons, electrons"
+      },
+      {
+        "question": "Atomic number is:",
+        "options": ["Number of protons", "Neutrons", "Electrons", "Mass"],
+        "answer": "Number of protons"
+      },
+      {
+        "question": "Isotopes have:",
+        "options": ["Same protons, different neutrons", "Different protons", "Same electrons", "None"],
+        "answer": "Same protons, different neutrons"
+      },
+      {
+        "question": "Quantum numbers describe:",
+        "options": ["Electron position", "Atomic mass", "Valency", "None"],
+        "answer": "Electron position"
+      }
+    ],
+    "chemical-bonding": [
+      {
+        "question": "Ionic bond forms between:",
+        "options": ["Metals and non-metals", "Non-metals", "Metals", "None"],
+        "answer": "Metals and non-metals"
+      },
+      {
+        "question": "Covalent bond is:",
+        "options": ["Sharing electrons", "Transfer electrons", "Both", "None"],
+        "answer": "Sharing electrons"
+      },
+      {
+        "question": "VSEPR theory predicts:",
+        "options": ["Shape", "Bond length", "Bond angle", "All"],
+        "answer": "Shape"
+      },
+      {
+        "question": "Hydrogen bond is:",
+        "options": ["Weak", "Strong", "Ionic", "Covalent"],
+        "answer": "Weak"
+      }
+    ],
+    "thermochemistry": [
+      {
+        "question": "Enthalpy change is:",
+        "options": ["Heat at constant pressure", "Heat at constant volume", "Work", "Energy"],
+        "answer": "Heat at constant pressure"
+      },
+      {
+        "question": "Exothermic reaction:",
+        "options": ["Releases heat", "Absorbs heat", "No heat change", "None"],
+        "answer": "Releases heat"
+      },
+      {
+        "question": "Hess's law states:",
+        "options": ["Enthalpy is additive", "Energy conserved", "Both", "None"],
+        "answer": "Enthalpy is additive"
+      },
+      {
+        "question": "Calorimeter measures:",
+        "options": ["Heat", "Temperature", "Pressure", "Volume"],
+        "answer": "Heat"
+      }
+    ],
+    "chemical-equilibrium": [
+      {
+        "question": "Equilibrium constant Kc is:",
+        "options": ["[Products]/[Reactants]", "Rate forward/rate reverse", "Both", "None"],
+        "answer": "[Products]/[Reactants]"
+      },
+      {
+        "question": "Le Chatelier's principle:",
+        "options": ["System opposes change", "System favors change", "No change", "None"],
+        "answer": "System opposes change"
+      },
+      {
+        "question": "Increasing temperature shifts:",
+        "options": ["Endothermic direction", "Exothermic direction", "No shift", "None"],
+        "answer": "Endothermic direction"
+      },
+      {
+        "question": "Catalyst affects:",
+        "options": ["Equilibrium position", "Rate", "Both", "None"],
+        "answer": "Rate"
+      }
+    ],
+    "solutions": [
+      {
+        "question": "Solubility is:",
+        "options": ["Amount dissolved", "Concentration", "Both", "None"],
+        "answer": "Amount dissolved"
+      },
+      {
+        "question": "Molarity is:",
+        "options": ["Moles per liter", "Mass per liter", "Volume per mole", "None"],
+        "answer": "Moles per liter"
+      },
+      {
+        "question": "Raoult's law is for:",
+        "options": ["Ideal solutions", "Non-ideal", "Solids", "Gases"],
+        "answer": "Ideal solutions"
+      },
+      {
+        "question": "Colligative properties depend on:",
+        "options": ["Number of particles", "Type of particles", "Size", "None"],
+        "answer": "Number of particles"
+      }
+    ],
+    "electrochemistry": [
+      {
+        "question": "Electrolysis requires:",
+        "options": ["Electric current", "Heat", "Pressure", "Light"],
+        "answer": "Electric current"
+      },
+      {
+        "question": "Anode is:",
+        "options": ["Positive electrode", "Negative electrode", "Neutral", "None"],
+        "answer": "Positive electrode"
+      },
+      {
+        "question": "Faraday's law relates:",
+        "options": ["Charge and mass", "Voltage and current", "Resistance", "None"],
+        "answer": "Charge and mass"
+      },
+      {
+        "question": "Galvanic cell produces:",
+        "options": ["Electricity", "Heat", "Light", "Sound"],
+        "answer": "Electricity"
+      }
+    ],
+    "reaction-kinetics": [
+      {
+        "question": "Rate of reaction is:",
+        "options": ["Change in concentration/time", "Concentration/time", "Time/concentration", "None"],
+        "answer": "Change in concentration/time"
+      },
+      {
+        "question": "Order of reaction is:",
+        "options": ["Sum of exponents", "Product of exponents", "Difference", "None"],
+        "answer": "Sum of exponents"
+      },
+      {
+        "question": "Activation energy is:",
+        "options": ["Minimum energy", "Average energy", "Maximum energy", "None"],
+        "answer": "Minimum energy"
+      },
+      {
+        "question": "Catalyst lowers:",
+        "options": ["Activation energy", "Reaction rate", "Both", "None"],
+        "answer": "Activation energy"
+      }
+    ]
+  },
+  "english": {
+    "literary-criticism": [
+      {
+        "question": "Literary criticism analyzes:",
+        "options": ["Literature", "Grammar", "Vocabulary", "Pronunciation"],
+        "answer": "Literature"
+      },
+      {
+        "question": "Formalism focuses on:",
+        "options": ["Text itself", "Author's life", "Historical context", "Reader's response"],
+        "answer": "Text itself"
+      },
+      {
+        "question": "Structuralism studies:",
+        "options": ["Structures", "Themes", "Characters", "Plots"],
+        "answer": "Structures"
+      },
+      {
+        "question": "Reader-response theory emphasizes:",
+        "options": ["Reader's role", "Author's intent", "Text's meaning", "None"],
+        "answer": "Reader's role"
+      }
+    ],
+    "poetry-analysis": [
+      {
+        "question": "Sonnet has:",
+        "options": ["14 lines", "16 lines", "12 lines", "18 lines"],
+        "answer": "14 lines"
+      },
+      {
+        "question": "Metaphor is:",
+        "options": ["Direct comparison", "Implied comparison", "Exaggeration", "Repetition"],
+        "answer": "Implied comparison"
+      },
+      {
+        "question": "Rhyme scheme is:",
+        "options": ["Pattern of rhymes", "Number of lines", "Length of poem", "None"],
+        "answer": "Pattern of rhymes"
+      },
+      {
+        "question": "Imagery appeals to:",
+        "options": ["Senses", "Logic", "Emotion", "All"],
+        "answer": "Senses"
+      }
+    ],
+    "prose-fiction": [
+      {
+        "question": "Novel is:",
+        "options": ["Long fiction", "Short fiction", "Poetry", "Drama"],
+        "answer": "Long fiction"
+      },
+      {
+        "question": "Protagonist is:",
+        "options": ["Main character", "Antagonist", "Supporting", "Minor"],
+        "answer": "Main character"
+      },
+      {
+        "question": "Plot includes:",
+        "options": ["Exposition, rising action, climax, falling action, resolution", "Only climax", "Only resolution", "None"],
+        "answer": "Exposition, rising action, climax, falling action, resolution"
+      },
+      {
+        "question": "Theme is:",
+        "options": ["Central idea", "Setting", "Characters", "Plot"],
+        "answer": "Central idea"
+      }
+    ]
+  },
+  "math": {
+    "complex-numbers": [
+      {
+        "question": "Complex number is:",
+        "options": ["a + bi", "a - bi", "a * bi", "a / bi"],
+        "answer": "a + bi"
+      },
+      {
+        "question": "i^2 =",
+        "options": ["1", "-1", "0", "i"],
+        "answer": "-1"
+      },
+      {
+        "question": "Modulus of z = a + bi is:",
+        "options": ["sqrt(a^2 + b^2)", "a + b", "a - b", "a * b"],
+        "answer": "sqrt(a^2 + b^2)"
+      },
+      {
+        "question": "Conjugate of a + bi is:",
+        "options": ["a - bi", "a + bi", "-a + bi", "-a - bi"],
+        "answer": "a - bi"
+      }
+    ],
+    "coordinate-geometry": [
+      {
+        "question": "Distance between (x1,y1) and (x2,y2) is:",
+        "options": ["sqrt((x2-x1)^2 + (y2-y1)^2)", "(x2-x1) + (y2-y1)", "(x2-x1) * (y2-y1)", "None"],
+        "answer": "sqrt((x2-x1)^2 + (y2-y1)^2)"
+      },
+      {
+        "question": "Slope of line is:",
+        "options": ["Rise over run", "Run over rise", "Rise * run", "None"],
+        "answer": "Rise over run"
+      },
+      {
+        "question": "Equation of circle is:",
+        "options": ["(x-h)^2 + (y-k)^2 = r^2", "x^2 + y^2 = r^2", "(x-h) + (y-k) = r", "None"],
+        "answer": "(x-h)^2 + (y-k)^2 = r^2"
+      },
+      {
+        "question": "Parabola equation is:",
+        "options": ["y = ax^2 + bx + c", "y = mx + c", "x^2 + y^2 = r^2", "None"],
+        "answer": "y = ax^2 + bx + c"
+      }
+    ],
+    "limits-and-derivatives": [
+      {
+        "question": "Limit of f(x) as x->a is:",
+        "options": ["Value approached", "Value at a", "Derivative", "Integral"],
+        "answer": "Value approached"
+      },
+      {
+        "question": "Derivative of x^n is:",
+        "options": ["n x^{n-1}", "x^n / n", "n x^n", "None"],
+        "answer": "n x^{n-1}"
+      },
+      {
+        "question": "d/dx (sin x) =",
+        "options": ["cos x", "-sin x", "tan x", "sec x"],
+        "answer": "cos x"
+      },
+      {
+        "question": "d/dx (e^x) =",
+        "options": ["e^x", "ln x", "1/x", "x"],
+        "answer": "e^x"
+      }
+    ],
+    "integrals": [
+      {
+        "question": "Integral of 1/x is:",
+        "options": ["ln |x|", "x^2", "e^x", "sin x"],
+        "answer": "ln |x|"
+      },
+      {
+        "question": "Definite integral from a to b is:",
+        "options": ["F(b) - F(a)", "F(a) - F(b)", "F(b) + F(a)", "None"],
+        "answer": "F(b) - F(a)"
+      },
+      {
+        "question": "Area under curve is:",
+        "options": ["Definite integral", "Indefinite integral", "Derivative", "Limit"],
+        "answer": "Definite integral"
+      },
+      {
+        "question": "Fundamental theorem relates:",
+        "options": ["Derivative and integral", "Limit and derivative", "Integral and limit", "None"],
+        "answer": "Derivative and integral"
+      }
+    ],
+    "differential-equations": [
+      {
+        "question": "Differential equation has:",
+        "options": ["Derivatives", "Integrals", "Limits", "None"],
+        "answer": "Derivatives"
+      },
+      {
+        "question": "Order of DE is:",
+        "options": ["Highest derivative", "Number of variables", "Number of constants", "None"],
+        "answer": "Highest derivative"
+      },
+      {
+        "question": "Solution of DE is:",
+        "options": ["Function satisfying DE", "Derivative", "Integral", "None"],
+        "answer": "Function satisfying DE"
+      },
+      {
+        "question": "Homogeneous DE has:",
+        "options": ["Same degree", "Different degree", "No degree", "None"],
+        "answer": "Same degree"
+      }
+    ],
+    "vectors-and-three-dimensional-geometry": [
+      {
+        "question": "Vector has:",
+        "options": ["Magnitude and direction", "Magnitude only", "Direction only", "None"],
+        "answer": "Magnitude and direction"
+      },
+      {
+        "question": "Dot product is:",
+        "options": ["Scalar", "Vector", "Matrix", "None"],
+        "answer": "Scalar"
+      },
+      {
+        "question": "Cross product is:",
+        "options": ["Vector", "Scalar", "Matrix", "None"],
+        "answer": "Vector"
+      },
+      {
+        "question": "Equation of plane is:",
+        "options": ["ax + by + cz = d", "ax + by = c", "x^2 + y^2 = r^2", "None"],
+        "answer": "ax + by + cz = d"
+      }
+    ],
+    "statistics": [
+      {
+        "question": "Mean is:",
+        "options": ["Average", "Middle value", "Most frequent", "Range"],
+        "answer": "Average"
+      },
+      {
+        "question": "Median is:",
+        "options": ["Middle value", "Average", "Most frequent", "Range"],
+        "answer": "Middle value"
+      },
+      {
+        "question": "Mode is:",
+        "options": ["Most frequent", "Average", "Middle value", "Range"],
+        "answer": "Most frequent"
+      },
+      {
+        "question": "Variance measures:",
+        "options": ["Spread", "Center", "Frequency", "Range"],
+        "answer": "Spread"
+      }
+    ],
+    "probability": [
+      {
+        "question": "Probability is:",
+        "options": ["Favorable outcomes / total outcomes", "Total / favorable", "Outcomes * total", "None"],
+        "answer": "Favorable outcomes / total outcomes"
+      },
+      {
+        "question": "P(A or B) =",
+        "options": ["P(A) + P(B) - P(A and B)", "P(A) + P(B)", "P(A) * P(B)", "None"],
+        "answer": "P(A) + P(B) - P(A and B)"
+      },
+      {
+        "question": "Independent events:",
+        "options": ["P(A and B) = P(A)P(B)", "P(A) = P(B)", "P(A) + P(B) = 1", "None"],
+        "answer": "P(A and B) = P(A)P(B)"
+      }
+    ]
+  },
+  "history": {
+    "ancient-history": [
+      {
+        "question": "Indus Valley Civilization was discovered in:",
+        "options": ["1920s", "1850s", "1900s", "1950s"],
+        "answer": "1920s"
+      },
+      {
+        "question": "Mohenjo-Daro was located in:",
+        "options": ["Sindh", "Punjab", "Balochistan", "KPK"],
+        "answer": "Sindh"
+      },
+      {
+        "question": "Harappan civilization had:",
+        "options": ["Town planning", "No cities", "Only villages", "None"],
+        "answer": "Town planning"
+      },
+      {
+        "question": "Indus script is:",
+        "options": ["Undeciphered", "Deciphered", "Lost", "None"],
+        "answer": "Undeciphered"
+      }
+    ],
+    "medieval-history": [
+      {
+        "question": "Delhi Sultanate started with:",
+        "options": ["Qutubuddin Aibak", "Muhammad Ghori", "Alauddin Khilji", "Akbar"],
+        "answer": "Qutubuddin Aibak"
+      },
+      {
+        "question": "Mughal Empire was founded by:",
+        "options": ["Babur", "Humayun", "Akbar", "Jahangir"],
+        "answer": "Babur"
+      },
+      {
+        "question": "Akbar's policy of religious tolerance was:",
+        "options": ["Din-i-Ilahi", "Sulh-i-Kul", "Zabt", "Mansabdari"],
+        "answer": "Sulh-i-Kul"
+      },
+      {
+        "question": "Sikhism was founded by:",
+        "options": ["Guru Nanak", "Guru Gobind Singh", "Maharaja Ranjit Singh", "None"],
+        "answer": "Guru Nanak"
+      }
+    ],
+    "modern-history": [
+      {
+        "question": "War of Independence was in:",
+        "options": ["1857", "1858", "1856", "1859"],
+        "answer": "1857"
+      },
+      {
+        "question": "All India Muslim League was founded in:",
+        "options": ["1906", "1907", "1905", "1908"],
+        "answer": "1906"
+      },
+      {
+        "question": "Pakistan Resolution was passed in:",
+        "options": ["1940", "1941", "1939", "1942"],
+        "answer": "1940"
+      },
+      {
+        "question": "Pakistan came into being on:",
+        "options": ["14 August 1947", "15 August 1947", "16 August 1947", "17 August 1947"],
+        "answer": "14 August 1947"
+      }
+    ]
+  },
+  "geography": {
+    "physical-geography": [
+      {
+        "question": "Earth's core is made of:",
+        "options": ["Iron and nickel", "Silicon", "Oxygen", "Carbon"],
+        "answer": "Iron and nickel"
+      },
+      {
+        "question": "Continental drift theory was proposed by:",
+        "options": ["Wegener", "Darwin", "Newton", "Einstein"],
+        "answer": "Wegener"
+      },
+      {
+        "question": "Plate tectonics explains:",
+        "options": ["Earthquakes", "Volcanoes", "Mountain building", "All"],
+        "answer": "All"
+      },
+      {
+        "question": "Weathering is:",
+        "options": ["Breaking of rocks", "Formation of rocks", "Movement of rocks", "None"],
+        "answer": "Breaking of rocks"
+      }
+    ],
+    "human-geography": [
+      {
+        "question": "Demography studies:",
+        "options": ["Population", "Climate", "Soils", "Vegetation"],
+        "answer": "Population"
+      },
+      {
+        "question": "Urbanization is:",
+        "options": ["Growth of cities", "Rural development", "Industrial growth", "None"],
+        "answer": "Growth of cities"
+      },
+      {
+        "question": "Migration can be:",
+        "options": ["Internal", "International", "Both", "None"],
+        "answer": "Both"
+      },
+      {
+        "question": "Human development index measures:",
+        "options": ["Life expectancy, education, income", "Only income", "Only education", "None"],
+        "answer": "Life expectancy, education, income"
+      }
+    ],
+    "world-geography": [
+      {
+        "question": "Largest continent is:",
+        "options": ["Asia", "Africa", "Europe", "North America"],
+        "answer": "Asia"
+      },
+      {
+        "question": "Equator passes through:",
+        "options": ["Africa, Asia, South America", "Europe, Asia, Africa", "North America, Europe, Asia", "None"],
+        "answer": "Africa, Asia, South America"
+      },
+      {
+        "question": "Greenwich is the:",
+        "options": ["Prime meridian", "Equator", "Tropic of Cancer", "Tropic of Capricorn"],
+        "answer": "Prime meridian"
+      },
+      {
+        "question": "Time zones are based on:",
+        "options": ["Longitude", "Latitude", "Altitude", "None"],
+        "answer": "Longitude"
+      }
+    ]
+  },
+  "politicalscience": {
+    "political-theory": [
+      {
+        "question": "Sovereignty means:",
+        "options": ["Supreme power", "Limited power", "Shared power", "None"],
+        "answer": "Supreme power"
+      },
+      {
+        "question": "Democracy is:",
+        "options": ["Government by people", "Government by one", "Government by few", "None"],
+        "answer": "Government by people"
+      },
+      {
+        "question": "Constitution is:",
+        "options": ["Supreme law", "Ordinary law", "Both", "None"],
+        "answer": "Supreme law"
+      },
+      {
+        "question": "Rule of law means:",
+        "options": ["Government above law", "No one above law", "Law above government", "None"],
+        "answer": "No one above law"
+      }
+    ],
+    "government": [
+      {
+        "question": "Parliamentary system has:",
+        "options": ["Prime minister as head", "President as head", "Both", "None"],
+        "answer": "Prime minister as head"
+      },
+      {
+        "question": "Federal system has:",
+        "options": ["Division of powers", "Centralized power", "Both", "None"],
+        "answer": "Division of powers"
+      },
+      {
+        "question": "Local government is:",
+        "options": ["Grassroots level", "Central level", "Provincial level", "None"],
+        "answer": "Grassroots level"
+      },
+      {
+        "question": "Bureaucracy is:",
+        "options": ["Civil service", "Military", "Police", "None"],
+        "answer": "Civil service"
+      }
+    ],
+    "international-relations": [
+      {
+        "question": "United Nations was formed in:",
+        "options": ["1945", "1946", "1944", "1947"],
+        "answer": "1945"
+      },
+      {
+        "question": "Cold War was between:",
+        "options": ["USA and USSR", "USA and China", "USSR and China", "None"],
+        "answer": "USA and USSR"
+      },
+      {
+        "question": "Non-alignment means:",
+        "options": ["Not joining military blocs", "Joining all blocs", "Joining one bloc", "None"],
+        "answer": "Not joining military blocs"
+      },
+      {
+        "question": "Globalization is:",
+        "options": ["World becoming interconnected", "Countries becoming isolated", "Both", "None"],
+        "answer": "World becoming interconnected"
+      }
+    ]
+  },
+  "accountancy": {
+    "financial-accounting": [
+      {
+        "question": "Accounting equation is:",
+        "options": ["Assets = Liabilities + Capital", "Assets = Liabilities - Capital", "Assets + Liabilities = Capital", "None"],
+        "answer": "Assets = Liabilities + Capital"
+      },
+      {
+        "question": "Debit means:",
+        "options": ["Left side", "Right side", "Both", "None"],
+        "answer": "Left side"
+      },
+      {
+        "question": "Journal is:",
+        "options": ["Book of original entry", "Book of final entry", "Both", "None"],
+        "answer": "Book of original entry"
+      },
+      {
+        "question": "Ledger is:",
+        "options": ["Book of final entry", "Book of original entry", "Both", "None"],
+        "answer": "Book of final entry"
+      }
+    ],
+    "cost-accounting": [
+      {
+        "question": "Cost accounting helps in:",
+        "options": ["Cost control", "Profit maximization", "Both", "None"],
+        "answer": "Both"
+      },
+      {
+        "question": "Fixed cost:",
+        "options": ["Does not change with output", "Changes with output", "Both", "None"],
+        "answer": "Does not change with output"
+      },
+      {
+        "question": "Variable cost:",
+        "options": ["Changes with output", "Does not change with output", "Both", "None"],
+        "answer": "Changes with output"
+      },
+      {
+        "question": "Break-even point is where:",
+        "options": ["Total cost = Total revenue", "Total cost > Total revenue", "Total cost < Total revenue", "None"],
+        "answer": "Total cost = Total revenue"
+      }
+    ],
+    "management-accounting": [
+      {
+        "question": "Management accounting is for:",
+        "options": ["Internal use", "External use", "Both", "None"],
+        "answer": "Internal use"
+      },
+      {
+        "question": "Budget is:",
+        "options": ["Plan in monetary terms", "Actual performance", "Both", "None"],
+        "answer": "Plan in monetary terms"
+      },
+      {
+        "question": "Variance is:",
+        "options": ["Difference between actual and budgeted", "Actual performance", "Budgeted performance", "None"],
+        "answer": "Difference between actual and budgeted"
+      },
+      {
+        "question": "Ratio analysis helps in:",
+        "options": ["Financial analysis", "Cost control", "Both", "None"],
+        "answer": "Financial analysis"
+      }
+    ]
+  },
+  "urdu": {
+    "grammar": [
+      {
+        "question": "Urdu script is:",
+        "options": ["Nastaliq", "Devanagari", "Gurmukhi", "None"],
+        "answer": "Nastaliq"
+      },
+      {
+        "question": "Ism is:",
+        "options": ["Noun", "Verb", "Adjective", "Adverb"],
+        "answer": "Noun"
+      },
+      {
+        "question": "Fail is:",
+        "options": ["Verb", "Noun", "Adjective", "Adverb"],
+        "answer": "Verb"
+      },
+      {
+        "question": "Sift is:",
+        "options": ["Adjective", "Noun", "Verb", "Adverb"],
+        "answer": "Adjective"
+      }
+    ],
+    "literature": [
+      {
+        "question": "Mir Taqi Mir was:",
+        "options": ["Poet", "Prose writer", "Dramatist", "None"],
+        "answer": "Poet"
+      },
+      {
+        "question": "Ghalib's real name was:",
+        "options": ["Mirza Asadullah Khan", "Mir Taqi Mir", "Allama Iqbal", "None"],
+        "answer": "Mirza Asadullah Khan"
+      },
+      {
+        "question": "Allama Iqbal was born in:",
+        "options": ["Sialkot", "Lahore", "Karachi", "Peshawar"],
+        "answer": "Sialkot"
+      },
+      {
+        "question": "Saare Jahan Se Accha is:",
+        "options": ["National song", "Poem", "Both", "None"],
+        "answer": "National song"
+      }
+    ],
+    "prose": [
+      {
+        "question": "Patras Bokhari was:",
+        "options": ["Humorist", "Poet", "Dramatist", "None"],
+        "answer": "Humorist"
+      },
+      {
+        "question": "Deputy Nazir Ahmed wrote:",
+        "options": ["Novels", "Poems", "Plays", "None"],
+        "answer": "Novels"
+      },
+      {
+        "question": "Mirza Hadi Ruswa wrote:",
+        "options": ["Umrao Jaan Ada", "Bano", "Both", "None"],
+        "answer": "Umrao Jaan Ada"
+      },
+      {
+        "question": "Prem Chand wrote in:",
+        "options": ["Urdu and Hindi", "Only Urdu", "Only Hindi", "None"],
+        "answer": "Urdu and Hindi"
+      }
+    ]
+  },
+  "computerscience": {
+    "programming-fundamentals": [
+      {
+        "question": "Algorithm is:",
+        "options": ["Step-by-step procedure", "Programming language", "Computer", "None"],
+        "answer": "Step-by-step procedure"
+      },
+      {
+        "question": "Flowchart uses:",
+        "options": ["Symbols", "Words", "Numbers", "None"],
+        "answer": "Symbols"
+      },
+      {
+        "question": "Variable is:",
+        "options": ["Memory location", "Constant value", "Both", "None"],
+        "answer": "Memory location"
+      },
+      {
+        "question": "Loop is used for:",
+        "options": ["Repetition", "Selection", "Sequence", "None"],
+        "answer": "Repetition"
+      }
+    ],
+    "data-structures": [
+      {
+        "question": "Array is:",
+        "options": ["Collection of similar elements", "Collection of different elements", "Single element", "None"],
+        "answer": "Collection of similar elements"
+      },
+      {
+        "question": "Stack follows:",
+        "options": ["LIFO", "FIFO", "Both", "None"],
+        "answer": "LIFO"
+      },
+      {
+        "question": "Queue follows:",
+        "options": ["FIFO", "LIFO", "Both", "None"],
+        "answer": "FIFO"
+      },
+      {
+        "question": "Linked list has:",
+        "options": ["Nodes with links", "Fixed size", "Both", "None"],
+        "answer": "Nodes with links"
+      }
+    ],
+    "algorithms": [
+      {
+        "question": "Binary search works on:",
+        "options": ["Sorted array", "Unsorted array", "Both", "None"],
+        "answer": "Sorted array"
+      },
+      {
+        "question": "Bubble sort is:",
+        "options": ["Comparison sort", "Non-comparison sort", "Both", "None"],
+        "answer": "Comparison sort"
+      },
+      {
+        "question": "Time complexity of quicksort is:",
+        "options": ["O(n log n)", "O(n^2)", "O(n)", "O(log n)"],
+        "answer": "O(n log n)"
+      },
+      {
+        "question": "Greedy algorithm:",
+        "options": ["Makes optimal choice at each step", "Looks ahead", "Both", "None"],
+        "answer": "Makes optimal choice at each step"
+      }
+    ],
+    "problem-solving": [
+      {
+        "question": "Problem decomposition means:",
+        "options": ["Breaking problem into smaller parts", "Solving whole problem", "Ignoring parts", "None"],
+        "answer": "Breaking problem into smaller parts"
+      },
+      {
+        "question": "Debugging is:",
+        "options": ["Finding and fixing errors", "Writing code", "Testing code", "None"],
+        "answer": "Finding and fixing errors"
+      },
+      {
+        "question": "Algorithm design involves:",
+        "options": ["Step-by-step solution", "Random approach", "Guessing", "None"],
+        "answer": "Step-by-step solution"
+      },
+      {
+        "question": "Pseudocode is:",
+        "options": ["Informal code description", "Formal programming", "Machine code", "None"],
+        "answer": "Informal code description"
+      }
+    ],
+    "overview-of-computer-system": [
+      {
+        "question": "A computer system consists of:",
+        "options": ["Hardware and software", "Only hardware", "Only software", "None"],
+        "answer": "Hardware and software"
+      },
+      {
+        "question": "Input devices include:",
+        "options": ["Keyboard, mouse", "Monitor, printer", "CPU, RAM", "None"],
+        "answer": "Keyboard, mouse"
+      },
+      {
+        "question": "Output devices include:",
+        "options": ["Monitor, printer", "Keyboard, mouse", "CPU, RAM", "None"],
+        "answer": "Monitor, printer"
+      },
+      {
+        "question": "The main components of a computer are:",
+        "options": ["Input, process, output, storage", "Only input and output", "Only process", "None"],
+        "answer": "Input, process, output, storage"
+      }
+    ],
+    "computer-memory": [
+      {
+        "question": "RAM stands for:",
+        "options": ["Random Access Memory", "Read Access Memory", "Random Allocation Memory", "None"],
+        "answer": "Random Access Memory"
+      },
+      {
+        "question": "ROM is:",
+        "options": ["Read-only memory", "Random-only memory", "Read-write memory", "None"],
+        "answer": "Read-only memory"
+      },
+      {
+        "question": "Cache memory is:",
+        "options": ["Faster than RAM", "Slower than RAM", "Same as RAM", "None"],
+        "answer": "Faster than RAM"
+      },
+      {
+        "question": "Secondary memory includes:",
+        "options": ["Hard disk, CD", "RAM, ROM", "Cache", "None"],
+        "answer": "Hard disk, CD"
+      }
+    ],
+    "central-processing-unit-cpu": [
+      {
+        "question": "CPU consists of:",
+        "options": ["ALU, CU, registers", "RAM, ROM", "Hard disk", "None"],
+        "answer": "ALU, CU, registers"
+      },
+      {
+        "question": "ALU performs:",
+        "options": ["Arithmetic and logic operations", "Input operations", "Output operations", "None"],
+        "answer": "Arithmetic and logic operations"
+      },
+      {
+        "question": "Control Unit:",
+        "options": ["Controls data flow", "Performs calculations", "Stores data", "None"],
+        "answer": "Controls data flow"
+      },
+      {
+        "question": "Registers are:",
+        "options": ["High-speed storage", "Slow storage", "External storage", "None"],
+        "answer": "High-speed storage"
+      }
+    ],
+    "basic-logic-gates": [
+      {
+        "question": "AND gate output is 1 when:",
+        "options": ["Both inputs 1", "One input 1", "Both inputs 0", "None"],
+        "answer": "Both inputs 1"
+      },
+      {
+        "question": "OR gate output is 1 when:",
+        "options": ["At least one input 1", "Both inputs 1", "Both inputs 0", "None"],
+        "answer": "At least one input 1"
+      },
+      {
+        "question": "NOT gate:",
+        "options": ["Inverts input", "Adds inputs", "Multiplies inputs", "None"],
+        "answer": "Inverts input"
+      },
+      {
+        "question": "NAND gate is:",
+        "options": ["NOT of AND", "NOT of OR", "AND of NOT", "None"],
+        "answer": "NOT of AND"
+      }
+    ],
+    "computer-software": [
+      {
+        "question": "System software includes:",
+        "options": ["Operating system", "Word processor", "Games", "None"],
+        "answer": "Operating system"
+      },
+      {
+        "question": "Application software is:",
+        "options": ["For specific tasks", "For general tasks", "For hardware", "None"],
+        "answer": "For specific tasks"
+      },
+      {
+        "question": "Compiler translates:",
+        "options": ["High-level to machine language", "Machine to high-level", "Assembly to machine", "None"],
+        "answer": "High-level to machine language"
+      },
+      {
+        "question": "Interpreter:",
+        "options": ["Translates line by line", "Translates all at once", "Assembles code", "None"],
+        "answer": "Translates line by line"
+      }
+    ],
+    "data-communications": [
+      {
+        "question": "Data communication involves:",
+        "options": ["Transmission of data", "Storage of data", "Processing of data", "None"],
+        "answer": "Transmission of data"
+      },
+      {
+        "question": "Modem converts:",
+        "options": ["Digital to analog", "Analog to digital", "Both", "None"],
+        "answer": "Both"
+      },
+      {
+        "question": "Bandwidth is:",
+        "options": ["Data transfer rate", "Storage capacity", "Processing speed", "None"],
+        "answer": "Data transfer rate"
+      },
+      {
+        "question": "Protocol is:",
+        "options": ["Set of rules for communication", "Hardware device", "Software program", "None"],
+        "answer": "Set of rules for communication"
+      }
+    ],
+    "computer-networks": [
+      {
+        "question": "LAN stands for:",
+        "options": ["Local Area Network", "Large Area Network", "Long Area Network", "None"],
+        "answer": "Local Area Network"
+      },
+      {
+        "question": "WAN covers:",
+        "options": ["Large geographical area", "Small area", "Single building", "None"],
+        "answer": "Large geographical area"
+      },
+      {
+        "question": "Topology types include:",
+        "options": ["Star, bus, ring", "Only star", "Only bus", "None"],
+        "answer": "Star, bus, ring"
+      },
+      {
+        "question": "Internet is a:",
+        "options": ["Network of networks", "Single network", "Local network", "None"],
+        "answer": "Network of networks"
+      }
+    ],
+    "introduction-to-windows": [
+      {
+        "question": "Windows is:",
+        "options": ["Operating system", "Application software", "Hardware", "None"],
+        "answer": "Operating system"
+      },
+      {
+        "question": "Desktop contains:",
+        "options": ["Icons, taskbar", "Files only", "Programs only", "None"],
+        "answer": "Icons, taskbar"
+      },
+      {
+        "question": "File Explorer is for:",
+        "options": ["Managing files", "Browsing internet", "Writing documents", "None"],
+        "answer": "Managing files"
+      },
+      {
+        "question": "Control Panel is used for:",
+        "options": ["System settings", "Creating documents", "Playing games", "None"],
+        "answer": "System settings"
+      }
+    ],
+    "word-processing": [
+      {
+        "question": "Word processor is:",
+        "options": ["For creating documents", "For spreadsheets", "For presentations", "None"],
+        "answer": "For creating documents"
+      },
+      {
+        "question": "Formatting includes:",
+        "options": ["Font, size, color", "Only font", "Only size", "None"],
+        "answer": "Font, size, color"
+      },
+      {
+        "question": "Spell check:",
+        "options": ["Checks spelling errors", "Checks grammar", "Both", "None"],
+        "answer": "Checks spelling errors"
+      },
+      {
+        "question": "Mail merge is for:",
+        "options": ["Merging data into documents", "Sending emails", "Creating tables", "None"],
+        "answer": "Merging data into documents"
+      }
+    ],
+    "spreadsheets": [
+      {
+        "question": "Spreadsheet is used for:",
+        "options": ["Calculations and data analysis", "Writing text", "Creating slides", "None"],
+        "answer": "Calculations and data analysis"
+      },
+      {
+        "question": "Cell address is:",
+        "options": ["Column letter and row number", "Only column", "Only row", "None"],
+        "answer": "Column letter and row number"
+      },
+      {
+        "question": "Formula starts with:",
+        "options": ["=", "+", "-", "None"],
+        "answer": "="
+      },
+      {
+        "question": "Chart is:",
+        "options": ["Graphical representation", "Text data", "Numerical data", "None"],
+        "answer": "Graphical representation"
+      }
+    ],
+    "introduction-to-programming": [
+      {
+        "question": "Programming language is:",
+        "options": ["Set of instructions", "Hardware", "Operating system", "None"],
+        "answer": "Set of instructions"
+      },
+      {
+        "question": "High-level language is:",
+        "options": ["Easy to understand", "Machine code", "Assembly", "None"],
+        "answer": "Easy to understand"
+      },
+      {
+        "question": "Syntax is:",
+        "options": ["Rules of language", "Meaning of program", "Execution", "None"],
+        "answer": "Rules of language"
+      },
+      {
+        "question": "Program execution:",
+        "options": ["Running the code", "Writing code", "Debugging", "None"],
+        "answer": "Running the code"
+      }
+    ]
+  }
+}

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="png" href="/images/logo6.png">
+    <title>ZOO Education | Admissions</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            font-family: "Fredoka", sans-serif;
+        }
+        .nav-tabs .nav-link {
+            color: #6c757d;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .nav-tabs .nav-link:hover {
+            background-color: #e9ecef;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: #dc3545;
+            color: white;
+        }
+        .university-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+            position: relative;
+        }
+        .new-sticker {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #28a745;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .university-type {
+            position: absolute;
+            top: 40px;
+            right: 10px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .govt {
+            background-color: #007bff;
+            color: white;
+        }
+        .private {
+            background-color: #6c757d;
+            color: white;
+        }
+        .program-badge {
+            background-color: #f8f9fa;
+            color: #6c757d;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            display: inline-block;
+            font-size: 12px;
+        }
+        .apply-btn {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .apply-btn:hover {
+            background-color: #218838;
+            color: white;
+        }
+        .criteria-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .criteria-list li {
+            margin-bottom: 5px;
+            padding-left: 25px;
+            position: relative;
+        }
+        .criteria-list li:before {
+            content: "✓";
+            color: #28a745;
+            position: absolute;
+            left: 0;
+        }
+        .search-section {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        .filter-btn {
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        .filter-btn.active {
+            background-color: #dc3545;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/images/logo6.png" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/report.html">Report Issues</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">University Admissions</h1>
+        
+        <!-- Search and Filter Section -->
+        <div class="search-section">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <input type="text" class="form-control" id="searchInput" placeholder="Search universities...">
+                </div>
+                <div class="col-md-6">
+                    <select class="form-select" id="programFilter">
+                        <option value="">All Programs</option>
+                        <option value="bsc">BSC</option>
+                        <option value="ba">BA</option>
+                        <option value="mphil">MPhil</option>
+                        <option value="phd">PhD</option>
+                        <option value="medical">Medical</option>
+                        <option value="diploma">Diplomas</option>
+                    </select>
+                </div>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="new">New Admissions</button>
+                <button class="filter-btn" data-filter="govt">Government</button>
+                <button class="filter-btn" data-filter="private">Private</button>
+                <button class="filter-btn" data-filter="foreign">Foreign Universities</button>
+            </div>
+        </div>
+
+        <!-- University Cards -->
+        <div class="row">
+            <!-- University of Punjab -->
+            <div class="col-md-6">
+                <div class="university-card" data-type="govt" data-programs="bsc,ba,mphil,phd,diploma">
+                    <span class="new-sticker">New</span>
+                    <span class="university-type govt">Government</span>
+                    <h3>University of Punjab</h3>
+                    <p class="text-muted">Lahore, Pakistan</p>
+                    
+                    <h5>Eligibility Criteria:</h5>
+                    <ul class="criteria-list">
+                        <li>Minimum 60% marks in previous degree</li>
+                        <li>Valid NTS/GAT score for MPhil/PhD</li>
+                        <li>No age limit for most programs</li>
+                    </ul>
+
+                    <h5>Offered Programs:</h5>
+                    <div class="mb-3">
+                        <span class="program-badge">BSC</span>
+                        <span class="program-badge">BA</span>
+                        <span class="program-badge">MPhil</span>
+                        <span class="program-badge">PhD</span>
+                        <span class="program-badge">Diplomas</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Application Deadline:</strong> March 31, 2024</p>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <a href="https://www.pu.edu.pk" target="_blank" class="apply-btn">
+                                <i class="fas fa-external-link-alt"></i> Apply Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Aga Khan University -->
+            <div class="col-md-6">
+                <div class="university-card" data-type="private" data-programs="medical,phd">
+                    <span class="new-sticker">New</span>
+                    <span class="university-type private">Private</span>
+                    <h3>Aga Khan University</h3>
+                    <p class="text-muted">Karachi, Pakistan</p>
+                    
+                    <h5>Eligibility Criteria:</h5>
+                    <ul class="criteria-list">
+                        <li>Minimum 70% marks in FSc/HSSC</li>
+                        <li>AKU-MCAT test required</li>
+                        <li>Interview process</li>
+                    </ul>
+
+                    <h5>Offered Programs:</h5>
+                    <div class="mb-3">
+                        <span class="program-badge">Medical</span>
+                        <span class="program-badge">PhD</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Application Deadline:</strong> April 15, 2024</p>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <a href="https://www.aku.edu" target="_blank" class="apply-btn">
+                                <i class="fas fa-external-link-alt"></i> Apply Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LUMS -->
+            <div class="col-md-6">
+                <div class="university-card" data-type="private" data-programs="bsc,ba,mphil,phd">
+                    <span class="university-type private">Private</span>
+                    <h3>Lahore University of Management Sciences</h3>
+                    <p class="text-muted">Lahore, Pakistan</p>
+                    
+                    <h5>Eligibility Criteria:</h5>
+                    <ul class="criteria-list">
+                        <li>Minimum 80% marks in previous degree</li>
+                        <li>SAT/ACT scores required</li>
+                        <li>English proficiency test</li>
+                    </ul>
+
+                    <h5>Offered Programs:</h5>
+                    <div class="mb-3">
+                        <span class="program-badge">BSC</span>
+                        <span class="program-badge">BA</span>
+                        <span class="program-badge">MPhil</span>
+                        <span class="program-badge">PhD</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Application Deadline:</strong> March 25, 2024</p>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <a href="https://www.lums.edu.pk" target="_blank" class="apply-btn">
+                                <i class="fas fa-external-link-alt"></i> Apply Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- University of Karachi -->
+            <div class="col-md-6">
+                <div class="university-card" data-type="govt" data-programs="bsc,ba,mphil,phd,diploma">
+                    <span class="university-type govt">Government</span>
+                    <h3>University of Karachi</h3>
+                    <p class="text-muted">Karachi, Pakistan</p>
+                    
+                    <h5>Eligibility Criteria:</h5>
+                    <ul class="criteria-list">
+                        <li>Minimum 50% marks in previous degree</li>
+                        <li>Departmental test for some programs</li>
+                        <li>Interview for research programs</li>
+                    </ul>
+
+                    <h5>Offered Programs:</h5>
+                    <div class="mb-3">
+                        <span class="program-badge">BSC</span>
+                        <span class="program-badge">BA</span>
+                        <span class="program-badge">MPhil</span>
+                        <span class="program-badge">PhD</span>
+                        <span class="program-badge">Diplomas</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Application Deadline:</strong> April 5, 2024</p>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <a href="https://www.uok.edu.pk" target="_blank" class="apply-btn">
+                                <i class="fas fa-external-link-alt"></i> Apply Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Foreign Universities Section -->
+            <div class="col-12 mb-4">
+                <h2 class="text-center mb-4"><i class="fas fa-globe-americas"></i> Foreign University Admissions</h2>
+            </div>
+
+            <!-- University of Toronto -->
+            <div class="col-md-6">
+                <div class="university-card" data-type="foreign" data-programs="bsc,ba,mphil,phd,medical">
+                    <span class="new-sticker">New</span>
+                    <span class="university-type" style="background-color: #ffc107; color: black;">Foreign</span>
+                    <h3>University of Toronto</h3>
+                    <p class="text-muted">Toronto, Canada</p>
+                    
+                    <h5>Eligibility Criteria:</h5>
+                    <ul class="criteria-list">
+                        <li>Minimum 80% marks in previous degree</li>
+                        <li>IELTS 6.5 or TOEFL 100 required</li>
+                        <li>Statement of Purpose</li>
+                        <li>Letters of Recommendation</li>
+                    </ul>
+
+                    <h5>Offered Programs:</h5>
+                    <div class="mb-3">
+                        <span class="program-badge">BSC</span>
+                        <span class="program-badge">BA</span>
+                        <span class="program-badge">MPhil</span>
+                        <span class="program-badge">PhD</span>
+                        <span class="program-badge">Medical</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Application Deadline:</strong> April 30, 2024</p>
+                            <p><strong>Scholarships Available:</strong> Yes</p>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <a href="https://www.utoronto.ca" target="_blank" class="apply-btn">
+                                <i class="fas fa-external-link-alt"></i> Apply Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- University of Melbourne -->
+            <div class="col-md-6">
+                <div class="university-card" data-type="foreign" data-programs="bsc,ba,mphil,phd,medical">
+                    <span class="new-sticker">New</span>
+                    <span class="university-type" style="background-color: #ffc107; color: black;">Foreign</span>
+                    <h3>University of Melbourne</h3>
+                    <p class="text-muted">Melbourne, Australia</p>
+                    
+                    <h5>Eligibility Criteria:</h5>
+                    <ul class="criteria-list">
+                        <li>Minimum 75% marks in previous degree</li>
+                        <li>IELTS 6.5 or TOEFL 79 required</li>
+                        <li>Personal Statement</li>
+                        <li>Academic References</li>
+                    </ul>
+
+                    <h5>Offered Programs:</h5>
+                    <div class="mb-3">
+                        <span class="program-badge">BSC</span>
+                        <span class="program-badge">BA</span>
+                        <span class="program-badge">MPhil</span>
+                        <span class="program-badge">PhD</span>
+                        <span class="program-badge">Medical</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Application Deadline:</strong> May 15, 2024</p>
+                            <p><strong>Scholarships Available:</strong> Yes</p>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <a href="https://www.unimelb.edu.au" target="_blank" class="apply-btn">
+                                <i class="fas fa-external-link-alt"></i> Apply Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- University of Manchester -->
+            <div class="col-md-6">
+                <div class="university-card" data-type="foreign" data-programs="bsc,ba,mphil,phd,medical">
+                    <span class="university-type" style="background-color: #ffc107; color: black;">Foreign</span>
+                    <h3>University of Manchester</h3>
+                    <p class="text-muted">Manchester, UK</p>
+                    
+                    <h5>Eligibility Criteria:</h5>
+                    <ul class="criteria-list">
+                        <li>Minimum 70% marks in previous degree</li>
+                        <li>IELTS 6.5 or TOEFL 90 required</li>
+                        <li>Research Proposal (for research programs)</li>
+                        <li>Academic Transcripts</li>
+                    </ul>
+
+                    <h5>Offered Programs:</h5>
+                    <div class="mb-3">
+                        <span class="program-badge">BSC</span>
+                        <span class="program-badge">BA</span>
+                        <span class="program-badge">MPhil</span>
+                        <span class="program-badge">PhD</span>
+                        <span class="program-badge">Medical</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p><strong>Application Deadline:</strong> June 1, 2024</p>
+                            <p><strong>Scholarships Available:</strong> Yes</p>
+                        </div>
+                        <div class="col-md-6 text-end">
+                            <a href="https://www.manchester.ac.uk" target="_blank" class="apply-btn">
+                                <i class="fas fa-external-link-alt"></i> Apply Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Information</h5>
+                    <p><i class="fas fa-envelope"></i> info@zooeducation.com</p>
+                    <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 ZOO Education. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filter = this.dataset.filter;
+                const cards = document.querySelectorAll('.university-card');
+                
+                cards.forEach(card => {
+                    if (filter === 'all') {
+                        card.style.display = 'block';
+                    } else if (filter === 'new') {
+                        card.style.display = card.querySelector('.new-sticker') ? 'block' : 'none';
+                    } else {
+                        card.style.display = card.dataset.type === filter ? 'block' : 'none';
+                    }
+                });
+            });
+        });
+
+        // Program filter
+        document.getElementById('programFilter').addEventListener('change', function() {
+            const program = this.value;
+            const cards = document.querySelectorAll('.university-card');
+            
+            cards.forEach(card => {
+                if (!program || card.dataset.programs.includes(program)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase();
+            const cards = document.querySelectorAll('.university-card');
+            
+            cards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const location = card.querySelector('p').textContent.toLowerCase();
+                
+                if (title.includes(searchTerm) || location.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html> 

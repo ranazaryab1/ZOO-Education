@@ -1,0 +1,4438 @@
+
+{ 
+  
+  "physics": {
+    "physical_quantities_and_measurement": [
+      {
+        "question": "What is the formula for density?",
+        "options": ["Mass/Volume", "Volume/Mass", "Mass*Volume", "Volume-Mass"],
+        "answer": "Mass/Volume",
+        "correctExplanation": "Density is mass divided by volume.",
+        "wrongExplanation": "The others are incorrect formulas.",
+        "difficulty": "easy"
+      },
+       {
+    "question": "What is the SI unit of mass?",
+    "options": ["Gram", "Kilogram", "Pound", "Ton"],
+    "answer": "Kilogram",
+    "correctExplanation": "Kilogram is the SI unit of mass.",
+    "wrongExplanation": "Gram, pound, and ton are non-SI units of mass.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a derived quantity?",
+    "options": ["Length", "Mass", "Time", "Speed"],
+    "answer": "Speed",
+    "correctExplanation": "Speed is derived from length and time.",
+    "wrongExplanation": "Length, mass, and time are base quantities.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the SI unit of electric current?",
+    "options": ["Volt", "Coulomb", "Ampere", "Ohm"],
+    "answer": "Ampere",
+    "correctExplanation": "Ampere is the SI unit of electric current.",
+    "wrongExplanation": "Volt is for potential difference, Coulomb for charge, and Ohm for resistance.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which instrument is used to measure mass?",
+    "options": ["Stopwatch", "Balance", "Thermometer", "Voltmeter"],
+    "answer": "Balance",
+    "correctExplanation": "A balance is used to measure mass.",
+    "wrongExplanation": "Stopwatch measures time, thermometer measures temperature, voltmeter measures potential difference.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the SI unit of temperature?",
+    "options": ["Celsius", "Fahrenheit", "Kelvin", "Rankine"],
+    "answer": "Kelvin",
+    "correctExplanation": "Kelvin is the SI unit of temperature.",
+    "wrongExplanation": "Celsius and Fahrenheit are common scales, Rankine is not SI.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a base quantity?",
+    "options": ["Force", "Power", "Length", "Work"],
+    "answer": "Length",
+    "correctExplanation": "Length is a base quantity in SI system.",
+    "wrongExplanation": "Force, power, and work are derived quantities.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which instrument is used to measure time accurately?",
+    "options": ["Thermometer", "Stopwatch", "Barometer", "Micrometer screw gauge"],
+    "answer": "Stopwatch",
+    "correctExplanation": "Stopwatch is used to measure time.",
+    "wrongExplanation": "Thermometer measures temperature, barometer measures pressure, micrometer measures small lengths.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the SI unit of luminous intensity?",
+    "options": ["Candela", "Lux", "Lumen", "Joule"],
+    "answer": "Candela",
+    "correctExplanation": "Candela is the SI unit of luminous intensity.",
+    "wrongExplanation": "Lux and lumen are derived units related to light, joule is energy.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following is not a physical quantity?",
+    "options": ["Velocity", "Happiness", "Mass", "Force"],
+    "answer": "Happiness",
+    "correctExplanation": "Happiness is not measurable, so it is not a physical quantity.",
+    "wrongExplanation": "Velocity, mass, and force are measurable physical quantities.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which device is used to measure very small lengths with high accuracy?",
+    "options": ["Ruler", "Vernier Caliper", "Micrometer Screw Gauge", "Meter Rod"],
+    "answer": "Micrometer Screw Gauge",
+    "correctExplanation": "Micrometer screw gauge measures very small lengths accurately.",
+    "wrongExplanation": "Ruler and meter rod have less accuracy, vernier caliper is less precise than micrometer.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the SI unit of time?",
+    "options": ["Minute", "Hour", "Second", "Day"],
+    "answer": "Second",
+    "correctExplanation": "Second is the SI unit of time.",
+    "wrongExplanation": "Minute, hour, and day are non-SI units.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which instrument is used to measure temperature?",
+    "options": ["Thermometer", "Barometer", "Voltmeter", "Ammeter"],
+    "answer": "Thermometer",
+    "correctExplanation": "Thermometer is used to measure temperature.",
+    "wrongExplanation": "Barometer measures pressure, voltmeter measures potential difference, ammeter measures current.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the SI unit of amount of substance?",
+    "options": ["Mole", "Gram", "Kilogram", "Atom"],
+    "answer": "Mole",
+    "correctExplanation": "Mole is the SI unit of amount of substance.",
+    "wrongExplanation": "Gram and kilogram are for mass, atom is not a unit.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which quantity is measured in Newton?",
+    "options": ["Force", "Energy", "Work", "Power"],
+    "answer": "Force",
+    "correctExplanation": "Newton is the SI unit of force.",
+    "wrongExplanation": "Energy and work are measured in joules, power in watt.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which instrument is used to measure atmospheric pressure?",
+    "options": ["Thermometer", "Barometer", "Manometer", "Hygrometer"],
+    "answer": "Barometer",
+    "correctExplanation": "Barometer is used to measure atmospheric pressure.",
+    "wrongExplanation": "Thermometer measures temperature, manometer measures gas pressure, hygrometer measures humidity.",
+    "difficulty": "medium"
+  }
+    ],
+    "kinematics": [
+      {
+        "question": "What is the speed of light?",
+        "options": ["3 x 10^8 m/s", "3 x 10^6 m/s", "3 x 10^10 m/s", "3 x 10^4 m/s"],
+        "answer": "3 x 10^8 m/s",
+        "correctExplanation": "The speed of light in vacuum is approximately 3 x 10^8 meters per second.",
+        "wrongExplanation": "The other values are incorrect.",
+        "difficulty": "hard"
+      },
+      {
+        "question": "What is the formula for velocity?",
+        "options": ["Displacement/Time", "Distance/Time", "Time/Distance", "Displacement*Time"],
+        "answer": "Displacement/Time",
+        "correctExplanation": "Velocity is displacement divided by time.",
+        "wrongExplanation": "Distance/Time is speed, not velocity.",
+        "difficulty": "medium"
+      },
+      {
+    "question": "Which of the following is a vector quantity?",
+    "options": ["Speed", "Distance", "Velocity", "Time"],
+    "answer": "Velocity",
+    "correctExplanation": "Velocity has both magnitude and direction, so it is a vector.",
+    "wrongExplanation": "Speed, distance, and time are scalar quantities.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What does the slope of a displacement-time graph represent?",
+    "options": ["Displacement", "Velocity", "Acceleration", "Force"],
+    "answer": "Velocity",
+    "correctExplanation": "The slope of a displacement-time graph gives velocity.",
+    "wrongExplanation": "Acceleration comes from velocity-time graph, not displacement-time graph.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the SI unit of acceleration?",
+    "options": ["m/s", "m/s²", "m", "m²/s"],
+    "answer": "m/s²",
+    "correctExplanation": "Acceleration is the rate of change of velocity, measured in m/s².",
+    "wrongExplanation": "m/s is velocity, m is distance, m²/s is not correct.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "What is the area under a velocity-time graph?",
+    "options": ["Speed", "Distance", "Displacement", "Acceleration"],
+    "answer": "Displacement",
+    "correctExplanation": "The area under a velocity-time graph represents displacement.",
+    "wrongExplanation": "Acceleration is slope, not area. Distance only applies if velocity is always positive.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If a body has uniform velocity, its acceleration is:",
+    "options": ["Positive", "Negative", "Zero", "Variable"],
+    "answer": "Zero",
+    "correctExplanation": "Uniform velocity means no change in velocity, so acceleration is zero.",
+    "wrongExplanation": "Positive or negative acceleration means velocity is changing.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is NOT a kinematic quantity?",
+    "options": ["Displacement", "Velocity", "Acceleration", "Force"],
+    "answer": "Force",
+    "correctExplanation": "Force belongs to dynamics, not kinematics.",
+    "wrongExplanation": "Displacement, velocity, and acceleration are all kinematic quantities.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which equation of motion relates displacement, initial velocity, time, and acceleration?",
+    "options": [
+      "v = u + at",
+      "s = ut + 1/2 at²",
+      "v² = u² + 2as",
+      "F = ma"
+    ],
+    "answer": "s = ut + 1/2 at²",
+    "correctExplanation": "This kinematic equation includes displacement, initial velocity, time, and acceleration.",
+    "wrongExplanation": "Other equations do not include displacement and time together.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What does negative acceleration indicate?",
+    "options": ["Speeding up", "Slowing down", "Uniform motion", "Zero velocity"],
+    "answer": "Slowing down",
+    "correctExplanation": "Negative acceleration (deceleration) means the object is slowing down.",
+    "wrongExplanation": "Speeding up requires positive acceleration, uniform motion means zero acceleration.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The slope of a velocity-time graph gives:",
+    "options": ["Displacement", "Acceleration", "Velocity", "Speed"],
+    "answer": "Acceleration",
+    "correctExplanation": "The slope of a velocity-time graph gives acceleration.",
+    "wrongExplanation": "Displacement is given by area under the graph, not slope.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "If an object starts from rest, what is its initial velocity (u)?",
+    "options": ["Zero", "Infinity", "One", "Depends on acceleration"],
+    "answer": "Zero",
+    "correctExplanation": "Starting from rest means initial velocity u = 0.",
+    "wrongExplanation": "Infinity or one are not valid in this context.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which equation of motion relates velocity, displacement, and acceleration without time?",
+    "options": [
+      "v² = u² + 2as",
+      "v = u + at",
+      "s = ut + 1/2 at²",
+      "F = ma"
+    ],
+    "answer": "v² = u² + 2as",
+    "correctExplanation": "This equation links velocity, displacement, and acceleration, without time.",
+    "wrongExplanation": "Other equations involve time explicitly.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Displacement is always:",
+    "options": ["Positive", "Negative", "Zero or non-zero", "Greater than distance"],
+    "answer": "Zero or non-zero",
+    "correctExplanation": "Displacement can be zero, positive, or negative depending on direction.",
+    "wrongExplanation": "Distance is always positive but displacement can be negative.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following has the same direction as acceleration?",
+    "options": ["Velocity", "Displacement", "Change in velocity", "Force"],
+    "answer": "Change in velocity",
+    "correctExplanation": "Acceleration is defined as rate of change of velocity.",
+    "wrongExplanation": "Velocity and displacement may not have the same direction as acceleration.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "In uniform circular motion, speed is constant but:",
+    "options": ["Velocity is constant", "Acceleration is zero", "Velocity changes direction", "Displacement is zero"],
+    "answer": "Velocity changes direction",
+    "correctExplanation": "In circular motion, velocity changes direction continuously even if speed is constant.",
+    "wrongExplanation": "Acceleration is not zero, and velocity is not constant.",
+    "difficulty": "hard"
+  }
+    ],
+    "dynamics": [
+      {
+        "question": "What is the formula for force?",
+        "options": ["F = ma", "E = mc²", "PV = nRT", "F = kq1q2/r²"],
+        "answer": "F = ma",
+        "correctExplanation": "F = ma is Newton's second law of motion.",
+        "wrongExplanation": "The others are formulas for different physical quantities.",
+        "difficulty": "hard"
+      },
+      {
+        "question": "What is the unit of force?",
+        "options": ["Newton", "Joule", "Watt", "Pascal"],
+        "answer": "Newton",
+        "correctExplanation": "Newton is the SI unit of force.",
+        "wrongExplanation": "Joule is energy, Watt is power, Pascal is pressure.",
+        "difficulty": "easy"
+      },
+      {
+    "question": "Which of the following is a vector quantity?",
+    "options": ["Mass", "Force", "Work", "Energy"],
+    "answer": "Force",
+    "correctExplanation": "Force has both magnitude and direction, so it is a vector.",
+    "wrongExplanation": "Mass, work, and energy are scalar quantities.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Newton's First Law of Motion is also called:",
+    "options": ["Law of Acceleration", "Law of Inertia", "Law of Action-Reaction", "Law of Gravity"],
+    "answer": "Law of Inertia",
+    "correctExplanation": "Newton’s First Law is called the Law of Inertia.",
+    "wrongExplanation": "The other names correspond to different laws.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following quantities does not affect inertia?",
+    "options": ["Mass", "Weight", "Volume", "Density"],
+    "answer": "Volume",
+    "correctExplanation": "Inertia depends only on mass, not volume.",
+    "wrongExplanation": "Weight and density are related to mass, volume alone does not determine inertia.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "What is the SI unit of force?",
+    "options": ["Dyne", "Newton", "Joule", "Watt"],
+    "answer": "Newton",
+    "correctExplanation": "Force is measured in Newtons (N).",
+    "wrongExplanation": "Dyne is a CGS unit, Joule is for energy, Watt is for power.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Force equals mass times acceleration is:",
+    "options": ["Newton's First Law", "Newton's Second Law", "Newton's Third Law", "Law of Gravitation"],
+    "answer": "Newton's Second Law",
+    "correctExplanation": "Newton’s Second Law states F = ma.",
+    "wrongExplanation": "The other options describe different laws.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Action and reaction forces are:",
+    "options": ["Equal in magnitude and same in direction", "Equal in magnitude and opposite in direction", "Unequal in magnitude", "Independent of each other"],
+    "answer": "Equal in magnitude and opposite in direction",
+    "correctExplanation": "Newton’s Third Law states action and reaction are equal and opposite.",
+    "wrongExplanation": "They are never in the same direction or unequal in magnitude.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The force of friction always acts:",
+    "options": ["In the direction of motion", "Opposite to the direction of motion", "At right angles to motion", "Along the center of gravity"],
+    "answer": "Opposite to the direction of motion",
+    "correctExplanation": "Friction resists relative motion, so it acts opposite to motion.",
+    "wrongExplanation": "It never acts in the same direction or perpendicular to motion.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which type of friction is always maximum?",
+    "options": ["Static friction", "Kinetic friction", "Rolling friction", "Fluid friction"],
+    "answer": "Static friction",
+    "correctExplanation": "Static friction is maximum because it resists the start of motion.",
+    "wrongExplanation": "Kinetic, rolling, and fluid frictions are smaller than static friction.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The unit of coefficient of friction is:",
+    "options": ["Newton", "Joule", "No unit", "kg·m/s²"],
+    "answer": "No unit",
+    "correctExplanation": "Coefficient of friction is a ratio, so it has no unit.",
+    "wrongExplanation": "It is dimensionless, unlike Newton, Joule, or kg·m/s².",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The force of 1 Newton is equal to:",
+    "options": ["1 kg·m/s", "1 kg·m/s²", "10 g·cm/s²", "1 kg·cm/s²"],
+    "answer": "1 kg·m/s²",
+    "correctExplanation": "By definition, 1 N = 1 kg × 1 m/s².",
+    "wrongExplanation": "Other options are incorrect unit combinations.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The weight of a body is equal to:",
+    "options": ["Mass × velocity", "Mass × acceleration due to gravity", "Mass × displacement", "Mass × time"],
+    "answer": "Mass × acceleration due to gravity",
+    "correctExplanation": "Weight is the force due to gravity, W = mg.",
+    "wrongExplanation": "Weight is not related to velocity, displacement, or time directly.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "When a body is in equilibrium, the net force acting on it is:",
+    "options": ["Positive", "Negative", "Zero", "Maximum"],
+    "answer": "Zero",
+    "correctExplanation": "Equilibrium means all forces cancel out, so net force is zero.",
+    "wrongExplanation": "If net force is not zero, the body accelerates.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The tendency of a body to resist a change in its state of motion is called:",
+    "options": ["Force", "Inertia", "Momentum", "Friction"],
+    "answer": "Inertia",
+    "correctExplanation": "Inertia is resistance to change in motion or rest.",
+    "wrongExplanation": "Force and friction cause changes, momentum is mass × velocity.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of Newton’s laws explains why passengers move forward when a car suddenly stops?",
+    "options": ["First Law", "Second Law", "Third Law", "Law of Gravitation"],
+    "answer": "First Law",
+    "correctExplanation": "By the Law of Inertia (First Law), bodies tend to continue in motion unless acted on by a force.",
+    "wrongExplanation": "Other laws do not directly explain this phenomenon.",
+    "difficulty": "medium"
+  }
+    ],
+    "turning_effect_of_forces": [
+      {
+        "question": "What is torque?",
+        "options": ["Force times distance", "Force divided by distance", "Mass times acceleration", "Energy times time"],
+        "answer": "Force times distance",
+        "correctExplanation": "Torque is force multiplied by perpendicular distance.",
+        "wrongExplanation": "The others are different quantities.",
+        "difficulty": "medium"
+      },
+      {
+        "question": "What is the principle of moments?",
+        "options": ["Clockwise moments equal anticlockwise moments", "Forces are equal", "Masses are equal", "Distances are equal"],
+        "answer": "Clockwise moments equal anticlockwise moments",
+        "correctExplanation": "For equilibrium, the sum of clockwise moments equals sum of anticlockwise moments.",
+        "wrongExplanation": "The others are not the principle.",
+        "difficulty": "medium"
+      },
+      {
+    "question": "The turning effect of a force is called:",
+    "options": ["Torque", "Inertia", "Momentum", "Pressure"],
+    "answer": "Torque",
+    "correctExplanation": "The turning effect of a force is known as torque or moment of force.",
+    "wrongExplanation": "Inertia, momentum, and pressure are different physical concepts.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The SI unit of torque is:",
+    "options": ["Newton", "Newton meter", "Joule", "Pascal"],
+    "answer": "Newton meter",
+    "correctExplanation": "Torque = Force × perpendicular distance, measured in N·m.",
+    "wrongExplanation": "Newton is force, Joule is energy, Pascal is pressure.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Torque depends on:",
+    "options": ["Force only", "Distance only", "Force and perpendicular distance", "Mass and velocity"],
+    "answer": "Force and perpendicular distance",
+    "correctExplanation": "Torque = Force × perpendicular distance from pivot.",
+    "wrongExplanation": "Mass and velocity are not related to torque.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The point about which a body rotates is called:",
+    "options": ["Axis", "Center of gravity", "Pivot", "Fulcrum"],
+    "answer": "Pivot",
+    "correctExplanation": "The pivot (or fulcrum) is the point of rotation.",
+    "wrongExplanation": "Axis and center of gravity are different concepts.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Condition for equilibrium of a body is:",
+    "options": ["Net force = 0", "Net torque = 0", "Both net force and net torque = 0", "Acceleration = 0"],
+    "answer": "Both net force and net torque = 0",
+    "correctExplanation": "For equilibrium, both linear and rotational equilibrium must exist.",
+    "wrongExplanation": "Net force = 0 alone is not sufficient for rotational equilibrium.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "When clockwise torque equals anticlockwise torque, the body is in:",
+    "options": ["Motion", "Equilibrium", "Rest", "Oscillation"],
+    "answer": "Equilibrium",
+    "correctExplanation": "Balance of torques means rotational equilibrium.",
+    "wrongExplanation": "Motion or oscillation occurs if torques are unbalanced.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "In a lever, the perpendicular distance between the pivot and the force is called:",
+    "options": ["Effort arm", "Load arm", "Moment arm", "Torque"],
+    "answer": "Moment arm",
+    "correctExplanation": "The moment arm is the perpendicular distance from the line of action of force to the pivot.",
+    "wrongExplanation": "Torque is the turning effect itself, not the distance.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which type of lever has the fulcrum between load and effort?",
+    "options": ["First class lever", "Second class lever", "Third class lever", "Compound lever"],
+    "answer": "First class lever",
+    "correctExplanation": "In first class levers, fulcrum is in between load and effort (e.g., scissors).",
+    "wrongExplanation": "Second and third class levers have different arrangements.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "A wheelbarrow is an example of:",
+    "options": ["First class lever", "Second class lever", "Third class lever", "Pulley"],
+    "answer": "Second class lever",
+    "correctExplanation": "In a wheelbarrow, load is between fulcrum (wheel) and effort.",
+    "wrongExplanation": "It is not a first or third class lever.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "A pair of tongs is an example of:",
+    "options": ["First class lever", "Second class lever", "Third class lever", "Inclined plane"],
+    "answer": "Third class lever",
+    "correctExplanation": "In tongs, effort is applied between load and fulcrum.",
+    "wrongExplanation": "First and second class levers have different setups.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If force is doubled and distance is halved, torque becomes:",
+    "options": ["Halved", "Doubled", "Same", "Zero"],
+    "answer": "Same",
+    "correctExplanation": "Torque = Force × Distance. Doubling force and halving distance keeps product same.",
+    "wrongExplanation": "It does not increase or decrease overall torque.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "The line of action of force passes through the pivot. Torque will be:",
+    "options": ["Maximum", "Minimum", "Zero", "Constant"],
+    "answer": "Zero",
+    "correctExplanation": "If the line of action passes through pivot, perpendicular distance = 0, so torque = 0.",
+    "wrongExplanation": "No turning effect occurs in this case.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which of the following affects stability of a body?",
+    "options": ["Center of gravity only", "Base area only", "Both center of gravity and base area", "Torque only"],
+    "answer": "Both center of gravity and base area",
+    "correctExplanation": "Lower center of gravity and larger base area make a body more stable.",
+    "wrongExplanation": "Only one factor alone does not decide stability.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which condition makes a body topple easily?",
+    "options": ["Low center of gravity", "Large base area", "High center of gravity and small base area", "Balanced torques"],
+    "answer": "High center of gravity and small base area",
+    "correctExplanation": "A high center of gravity and small base area reduce stability, making toppling easy.",
+    "wrongExplanation": "Low center of gravity and large base area increase stability.",
+    "difficulty": "medium"
+  }
+    ],
+    "gravitation": [
+      {
+        "question": "What is the largest planet in our solar system?",
+        "options": ["Jupiter", "Saturn", "Neptune", "Earth"],
+        "answer": "Jupiter",
+        "correctExplanation": "Jupiter is the largest planet by mass and volume.",
+        "wrongExplanation": "The others are smaller.",
+        "difficulty": "hard"
+      },
+      {
+        "question": "What is Newton's law of gravitation?",
+        "options": ["F = Gm1m2/r²", "F = ma", "E = mc²", "PV = nRT"],
+        "answer": "F = Gm1m2/r²",
+        "correctExplanation": "This is the formula for gravitational force.",
+        "wrongExplanation": "The others are different laws.",
+        "difficulty": "hard"
+      },
+      {
+    "question": "Who gave the law of universal gravitation?",
+    "options": ["Einstein", "Newton", "Galileo", "Kepler"],
+    "answer": "Newton",
+    "correctExplanation": "Sir Isaac Newton gave the law of universal gravitation in 1687.",
+    "wrongExplanation": "Einstein proposed relativity, Galileo studied falling bodies, Kepler gave laws of planetary motion.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The force of gravitation between two bodies depends on:",
+    "options": ["Their masses only", "Their distance only", "Both masses and distance", "Their velocities"],
+    "answer": "Both masses and distance",
+    "correctExplanation": "Gravitational force is directly proportional to product of masses and inversely to square of distance.",
+    "wrongExplanation": "Velocity does not affect gravitational force.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The SI unit of gravitational constant (G) is:",
+    "options": ["N/kg", "N·m²/kg²", "m/s²", "kg·m/s²"],
+    "answer": "N·m²/kg²",
+    "correctExplanation": "The unit of G is Newton meter² per kilogram².",
+    "wrongExplanation": "N/kg is for g, m/s² is acceleration, kg·m/s² is force.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The value of G is:",
+    "options": ["6.67 × 10⁻¹¹ N·m²/kg²", "9.8 m/s²", "3 × 10⁸ m/s", "1.6 × 10⁻¹⁹ C"],
+    "answer": "6.67 × 10⁻¹¹ N·m²/kg²",
+    "correctExplanation": "Gravitational constant G = 6.67 × 10⁻¹¹ N·m²/kg².",
+    "wrongExplanation": "9.8 m/s² is g, 3 × 10⁸ m/s is speed of light, 1.6 × 10⁻¹⁹ C is charge of electron.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Acceleration due to gravity (g) on Earth is approximately:",
+    "options": ["8.9 m/s²", "9.8 m/s²", "10.8 m/s²", "1 m/s²"],
+    "answer": "9.8 m/s²",
+    "correctExplanation": "Average value of g on Earth is about 9.8 m/s².",
+    "wrongExplanation": "Other values are incorrect approximations.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The value of g is maximum at:",
+    "options": ["Equator", "Poles", "Mountains", "Sea level"],
+    "answer": "Poles",
+    "correctExplanation": "Due to Earth’s shape, g is maximum at the poles.",
+    "wrongExplanation": "It is minimum at equator, not maximum.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The value of g decreases with:",
+    "options": ["Height and depth", "Mass of Earth", "Time", "Rotation of Earth"],
+    "answer": "Height and depth",
+    "correctExplanation": "As height increases or depth increases, value of g decreases.",
+    "wrongExplanation": "Mass of Earth is constant, time does not affect g directly.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The weight of a body on the Moon is:",
+    "options": ["Equal to Earth", "1/6 of Earth", "Twice Earth", "Zero"],
+    "answer": "1/6 of Earth",
+    "correctExplanation": "Gravity on the Moon is 1/6 of Earth, so weight reduces accordingly.",
+    "wrongExplanation": "Weight is never zero unless far from gravity.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which of the following is a unit of weight?",
+    "options": ["Kilogram", "Newton", "Gram", "Mole"],
+    "answer": "Newton",
+    "correctExplanation": "Weight is a force, so it is measured in Newtons.",
+    "wrongExplanation": "Kilogram and gram are units of mass, mole is amount of substance.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Gravitational force is always:",
+    "options": ["Attractive", "Repulsive", "Zero", "Both attractive and repulsive"],
+    "answer": "Attractive",
+    "correctExplanation": "Gravitational force is always attractive between two masses.",
+    "wrongExplanation": "It is never repulsive or zero unless masses are absent.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The path of planets around the Sun is:",
+    "options": ["Circular", "Elliptical", "Parabolic", "Straight line"],
+    "answer": "Elliptical",
+    "correctExplanation": "According to Kepler’s first law, planets move in elliptical orbits.",
+    "wrongExplanation": "They are not perfectly circular or straight.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Which scientist discovered acceleration due to gravity by dropping objects from the Leaning Tower of Pisa?",
+    "options": ["Newton", "Galileo", "Einstein", "Kepler"],
+    "answer": "Galileo",
+    "correctExplanation": "Galileo studied free fall by experiments at Pisa.",
+    "wrongExplanation": "Newton later gave law of gravitation.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If mass of Earth becomes double, weight of a body will become:",
+    "options": ["Same", "Half", "Double", "Four times"],
+    "answer": "Double",
+    "correctExplanation": "Weight is proportional to Earth’s mass, so it will double.",
+    "wrongExplanation": "It cannot remain same or reduce when Earth’s mass doubles.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "The force that keeps planets in their orbit around the Sun is:",
+    "options": ["Magnetic force", "Nuclear force", "Gravitational force", "Frictional force"],
+    "answer": "Gravitational force",
+    "correctExplanation": "The Sun’s gravitational force keeps planets in orbit.",
+    "wrongExplanation": "Magnetic, nuclear, or frictional forces do not act on planets.",
+    "difficulty": "easy"
+  }
+    ],
+    "work_and_energy": [
+      {
+        "question": "What is work done?",
+        "options": ["Force times distance", "Force divided by distance", "Mass times velocity", "Energy times time"],
+        "answer": "Force times distance",
+        "correctExplanation": "Work is force multiplied by displacement in the direction of force.",
+        "wrongExplanation": "The others are different.",
+        "difficulty": "medium"
+      },
+      {
+        "question": "What is kinetic energy?",
+        "options": ["1/2 mv²", "mgh", "1/2 kx²", "mc²"],
+        "answer": "1/2 mv²",
+        "correctExplanation": "Kinetic energy is half mass times velocity squared.",
+        "wrongExplanation": "The others are potential energy or rest energy.",
+        "difficulty": "medium"
+      },
+      {
+    "question": "Work is said to be done when:",
+    "options": ["Force is applied but no displacement", "Force is applied and displacement occurs", "No force is applied", "Time passes"],
+    "answer": "Force is applied and displacement occurs",
+    "correctExplanation": "Work is done only when a force produces displacement in the direction of force.",
+    "wrongExplanation": "Force without displacement does not constitute work.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The SI unit of work is:",
+    "options": ["Newton", "Joule", "Watt", "Pascal"],
+    "answer": "Joule",
+    "correctExplanation": "Work is measured in joules (N·m).",
+    "wrongExplanation": "Newton is force, Watt is power, Pascal is pressure.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Which one is NOT a form of energy?",
+    "options": ["Kinetic energy", "Potential energy", "Gravitational energy", "Frictional energy"],
+    "answer": "Frictional energy",
+    "correctExplanation": "Friction produces heat, but frictional energy is not considered a fundamental form of energy.",
+    "wrongExplanation": "Kinetic, potential, and gravitational energy are valid forms.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The SI unit of power is:",
+    "options": ["Joule", "Watt", "Newton", "Ampere"],
+    "answer": "Watt",
+    "correctExplanation": "Power is the rate of doing work, measured in watts.",
+    "wrongExplanation": "Joule is for work, Newton is force, Ampere is electric current.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Work done is maximum when the angle between force and displacement is:",
+    "options": ["0°", "90°", "180°", "45°"],
+    "answer": "0°",
+    "correctExplanation": "Work is maximum when force is applied in the same direction as displacement.",
+    "wrongExplanation": "At 90° work is zero, at 180° work is negative.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Work done is zero when the angle between force and displacement is:",
+    "options": ["0°", "45°", "90°", "180°"],
+    "answer": "90°",
+    "correctExplanation": "When force is perpendicular to displacement, no work is done.",
+    "wrongExplanation": "At 0° work is maximum, at 180° work is negative.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Kinetic energy depends on:",
+    "options": ["Mass only", "Velocity only", "Both mass and velocity", "Height only"],
+    "answer": "Both mass and velocity",
+    "correctExplanation": "KE = ½mv², so it depends on both mass and square of velocity.",
+    "wrongExplanation": "Height affects potential energy, not kinetic.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "Potential energy of a body at height h is given by:",
+    "options": ["mgh", "½mv²", "F × d", "P × t"],
+    "answer": "mgh",
+    "correctExplanation": "Potential energy = mass × gravity × height.",
+    "wrongExplanation": "½mv² is kinetic energy, F × d is work, P × t is energy by power.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The commercial unit of energy is:",
+    "options": ["Watt", "Kilowatt-hour", "Joule", "Ampere-hour"],
+    "answer": "Kilowatt-hour",
+    "correctExplanation": "Energy consumption in homes is measured in kWh.",
+    "wrongExplanation": "Joule is SI unit but not commercial unit.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "If work is done against friction, energy is transformed into:",
+    "options": ["Light", "Heat", "Sound", "Electricity"],
+    "answer": "Heat",
+    "correctExplanation": "Friction converts mechanical work into heat energy.",
+    "wrongExplanation": "Light, sound, and electricity are not produced directly.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "The rate of doing work is called:",
+    "options": ["Energy", "Force", "Power", "Momentum"],
+    "answer": "Power",
+    "correctExplanation": "Power = Work / Time, i.e., the rate of doing work.",
+    "wrongExplanation": "Energy is ability to do work, force causes work, momentum is different quantity.",
+    "difficulty": "easy"
+  },
+  {
+    "question": "Mechanical energy of a body is:",
+    "options": ["Kinetic energy only", "Potential energy only", "Kinetic + Potential energy", "Heat + Sound energy"],
+    "answer": "Kinetic + Potential energy",
+    "correctExplanation": "Mechanical energy is the sum of kinetic and potential energy.",
+    "wrongExplanation": "It is not just kinetic or potential alone.",
+    "difficulty": "medium"
+  },
+  {
+    "question": "The work-energy principle states:",
+    "options": ["Work is equal to time", "Work done equals change in energy", "Energy creates work", "Power equals force"],
+    "answer": "Work done equals change in energy",
+    "correctExplanation": "According to the principle, work done on a body is equal to the change in its kinetic energy.",
+    "wrongExplanation": "Time, force, or power are not equal to work.",
+    "difficulty": "hard"
+  },
+  {
+    "question": "Which one is a renewable source of energy?",
+    "options": ["Coal", "Petroleum", "Solar energy", "Natural gas"],
+    "answer": "Solar energy",
+    "correctExplanation": "Solar energy is renewable and sustainable.",
+    "wrongExplanation": "Coal, petroleum, and natural gas are non-renewable fossil fuels.",
+    "difficulty": "medium"
+  }
+    ],
+    "properties_of_matter": [
+      {
+        "question": "What is pressure?",
+        "options": ["Force per unit area", "Area per unit force", "Force times area", "Area divided by force"],
+        "answer": "Force per unit area"
+      },
+      {
+        "question": "What is Hooke's law?",
+        "options": ["F = kx", "F = ma", "PV = nRT", "E = mc²"],
+        "answer": "F = kx"
+      },
+      {
+    "question": "What is pressure?",
+    "options": ["Force per unit area", "Area per unit force", "Force times area", "Area divided by force"],
+    "answer": "Force per unit area"
+  },
+  {
+    "question": "The SI unit of pressure is:",
+    "options": ["Newton", "Pascal", "Joule", "Watt"],
+    "answer": "Pascal"
+  },
+  {
+    "question": "Density is defined as:",
+    "options": ["Mass per unit length", "Mass per unit volume", "Weight per unit area", "Volume per unit mass"],
+    "answer": "Mass per unit volume"
+  },
+  {
+    "question": "Which property of matter is measured in kg/m³?",
+    "options": ["Pressure", "Density", "Volume", "Force"],
+    "answer": "Density"
+  },
+  {
+    "question": "Relative density is the ratio of:",
+    "options": ["Density of a substance to density of air", "Density of a substance to density of water", "Mass to volume", "Weight to mass"],
+    "answer": "Density of a substance to density of water"
+  },
+  {
+    "question": "Which principle explains why objects float in water?",
+    "options": ["Archimedes’ Principle", "Pascal’s Law", "Boyle’s Law", "Newton’s Law"],
+    "answer": "Archimedes’ Principle"
+  },
+  {
+    "question": "The upward force acting on a body immersed in fluid is called:",
+    "options": ["Gravity", "Pressure", "Buoyant force", "Surface tension"],
+    "answer": "Buoyant force"
+  },
+  {
+    "question": "Which law states that pressure applied to a liquid is transmitted equally in all directions?",
+    "options": ["Archimedes’ Principle", "Boyle’s Law", "Pascal’s Law", "Newton’s Third Law"],
+    "answer": "Pascal’s Law"
+  },
+  {
+    "question": "Which device works on Pascal’s law?",
+    "options": ["Hydraulic press", "Thermometer", "Barometer", "Spring balance"],
+    "answer": "Hydraulic press"
+  },
+  {
+    "question": "Which instrument is used to measure atmospheric pressure?",
+    "options": ["Thermometer", "Barometer", "Hygrometer", "Manometer"],
+    "answer": "Barometer"
+  },
+  {
+    "question": "Surface tension is due to:",
+    "options": ["Adhesion", "Cohesion", "Buoyancy", "Density"],
+    "answer": "Cohesion"
+  },
+  {
+    "question": "Capillary action occurs due to:",
+    "options": ["Density and mass", "Cohesion and adhesion", "Gravity only", "Inertia only"],
+    "answer": "Cohesion and adhesion"
+  },
+  {
+    "question": "Boyle’s law relates:",
+    "options": ["Pressure and temperature", "Volume and temperature", "Pressure and volume", "Mass and volume"],
+    "answer": "Pressure and volume"
+  },
+  {
+    "question": "The SI unit of surface tension is:",
+    "options": ["N/m", "Pa", "J", "N"],
+    "answer": "N/m"
+  }
+    ],
+    "thermal_properties_of_matter": [
+      {
+        "question": "What is specific heat capacity?",
+        "options": ["Heat required to raise temperature by 1°C", "Heat per unit mass", "Heat per unit temperature", "Heat per unit volume"],
+        "answer": "Heat required to raise temperature by 1°C"
+      },
+      {
+        "question": "What is the boiling point of water?",
+        "options": ["100°C", "0°C", "50°C", "200°C"],
+        "answer": "100°C"
+      },
+      {
+    "question": "Which of the following is NOT a method of heat transfer?",
+    "options": ["Conduction", "Convection", "Radiation", "Refraction"],
+    "answer": "Refraction"
+  },
+  {
+    "question": "Which material is the best conductor of heat?",
+    "options": ["Copper", "Wood", "Glass", "Plastic"],
+    "answer": "Copper"
+  },
+  {
+    "question": "Liquids generally expand when:",
+    "options": ["Cooled", "Heated", "Frozen", "Compressed"],
+    "answer": "Heated"
+  },
+  {
+    "question": "Which metal is commonly used in thermometers?",
+    "options": ["Mercury", "Aluminum", "Iron", "Copper"],
+    "answer": "Mercury"
+  },
+  {
+    "question": "The SI unit of heat is:",
+    "options": ["Watt", "Joule", "Calorie", "Kelvin"],
+    "answer": "Joule"
+  },
+  {
+    "question": "Specific heat capacity is defined as:",
+    "options": ["Heat required to raise 1 kg of a substance by 1°C", "Heat required to melt 1 kg of a substance", "Heat required to boil 1 kg of liquid", "Heat required to cool a gas"],
+    "answer": "Heat required to raise 1 kg of a substance by 1°C"
+  },
+  {
+    "question": "The SI unit of specific heat capacity is:",
+    "options": ["J/kg·K", "J/kg", "J/K", "Cal/g·K"],
+    "answer": "J/kg·K"
+  },
+  {
+    "question": "Which process does NOT require a medium?",
+    "options": ["Conduction", "Convection", "Radiation", "Evaporation"],
+    "answer": "Radiation"
+  },
+  {
+    "question": "When a liquid changes into vapor without boiling, the process is called:",
+    "options": ["Condensation", "Sublimation", "Evaporation", "Fusion"],
+    "answer": "Evaporation"
+  },
+  {
+    "question": "Latent heat of fusion refers to:",
+    "options": ["Heat required to vaporize liquid", "Heat required to melt solid", "Heat required to condense gas", "Heat required to cool solid"],
+    "answer": "Heat required to melt solid"
+  },
+  {
+    "question": "Which has the highest specific heat capacity?",
+    "options": ["Iron", "Copper", "Water", "Lead"],
+    "answer": "Water"
+  },
+  {
+    "question": "In which unit is heat energy often measured in food?",
+    "options": ["Joule", "Calorie", "Watt", "Pascal"],
+    "answer": "Calorie"
+  },
+  {
+    "question": "The process by which heat is transferred in fluids due to bulk motion is:",
+    "options": ["Conduction", "Convection", "Radiation", "Insulation"],
+    "answer": "Convection"
+  },
+  {
+    "question": "Expansion of solids on heating is due to:",
+    "options": ["Decrease in kinetic energy", "Increase in kinetic energy of particles", "Chemical reaction", "Loss of mass"],
+    "answer": "Increase in kinetic energy of particles"
+  }
+    ],
+    "transfer_of_heat": [
+      {
+        "question": "What is conduction?",
+        "options": ["Transfer of heat through solids", "Transfer through liquids", "Transfer through gases", "Transfer through vacuum"],
+        "answer": "Transfer of heat through solids"
+      },
+      {
+        "question": "What is radiation?",
+        "options": ["Transfer of heat through electromagnetic waves", "Transfer through direct contact", "Transfer through currents", "Transfer through expansion"],
+        "answer": "Transfer of heat through electromagnetic waves"
+      },
+      {
+    "question": "Which of the following is NOT a mode of heat transfer?",
+    "options": ["Conduction", "Convection", "Radiation", "Reflection"],
+    "answer": "Reflection"
+  },
+  {
+    "question": "Conduction of heat mainly occurs in:",
+    "options": ["Solids", "Liquids", "Gases", "Vacuum"],
+    "answer": "Solids"
+  },
+  {
+    "question": "Convection of heat mainly occurs in:",
+    "options": ["Solids", "Liquids and gases", "Vacuum", "Metals"],
+    "answer": "Liquids and gases"
+  },
+  {
+    "question": "Radiation can take place:",
+    "options": ["Only in solids", "Only in liquids", "Only in gases", "Without any medium"],
+    "answer": "Without any medium"
+  },
+  {
+    "question": "The best conductor of heat among the following is:",
+    "options": ["Copper", "Wood", "Glass", "Plastic"],
+    "answer": "Copper"
+  },
+  {
+    "question": "The poor conductor of heat is called:",
+    "options": ["Conductor", "Insulator", "Radiator", "Moderator"],
+    "answer": "Insulator"
+  },
+  {
+    "question": "The process responsible for sea and land breezes is:",
+    "options": ["Conduction", "Convection", "Radiation", "Reflection"],
+    "answer": "Convection"
+  },
+  {
+    "question": "Which surface is the best absorber of radiant heat?",
+    "options": ["Polished silver", "White surface", "Black surface", "Transparent glass"],
+    "answer": "Black surface"
+  },
+  {
+    "question": "Which surface is the best reflector of radiant heat?",
+    "options": ["Black surface", "White surface", "Polished silver surface", "Red surface"],
+    "answer": "Polished silver surface"
+  },
+  {
+    "question": "Which type of heat transfer is used in a vacuum flask to reduce heat loss?",
+    "options": ["Conduction", "Convection", "Radiation", "All of these"],
+    "answer": "All of these"
+  },
+  {
+    "question": "The SI unit of thermal conductivity is:",
+    "options": ["J/kg·K", "W/m·K", "W/kg", "J/s"],
+    "answer": "W/m·K"
+  },
+  {
+    "question": "Why are cooking utensils often made with copper bottoms?",
+    "options": ["Copper is a good conductor of heat", "Copper is cheap", "Copper is soft", "Copper is light"],
+    "answer": "Copper is a good conductor of heat"
+  },
+  {
+    "question": "Which mode of heat transfer is responsible for warming Earth from the Sun?",
+    "options": ["Conduction", "Convection", "Radiation", "Evaporation"],
+    "answer": "Radiation"
+  },
+  {
+    "question": "Woolen clothes keep us warm in winter because:",
+    "options": ["They generate heat", "They are good conductors", "They trap air which is a poor conductor", "They absorb sunlight"],
+    "answer": "They trap air which is a poor conductor"
+  }
+    ]
+  },
+  "biology": {
+    "introduction_to_biology": [
+      {
+        "question": "Who discovered penicillin?",
+        "options": ["Alexander Fleming", "Louis Pasteur", "Robert Koch", "Edward Jenner"],
+        "answer": "Alexander Fleming"
+      },
+      {
+        "question": "What is biology?",
+        "options": ["Study of life", "Study of rocks", "Study of stars", "Study of chemicals"],
+        "answer": "Study of life"
+      },
+      {
+    "question": "Biology is the study of:",
+    "options": ["Matter", "Living organisms", "Energy", "Space"],
+    "answer": "Living organisms"
+  },
+  {
+    "question": "Who is known as the father of biology?",
+    "options": ["Darwin", "Aristotle", "Pasteur", "Linnaeus"],
+    "answer": "Aristotle"
+  },
+  {
+    "question": "The branch of biology that deals with the study of animals is called:",
+    "options": ["Botany", "Zoology", "Microbiology", "Anatomy"],
+    "answer": "Zoology"
+  },
+  {
+    "question": "The branch of biology that deals with the study of plants is called:",
+    "options": ["Botany", "Zoology", "Physiology", "Genetics"],
+    "answer": "Botany"
+  },
+  {
+    "question": "Which branch of biology deals with the study of microorganisms?",
+    "options": ["Ecology", "Microbiology", "Anatomy", "Embryology"],
+    "answer": "Microbiology"
+  },
+  {
+    "question": "The study of heredity and variation is called:",
+    "options": ["Genetics", "Anatomy", "Taxonomy", "Physiology"],
+    "answer": "Genetics"
+  },
+  {
+    "question": "Which branch of biology deals with classification of organisms?",
+    "options": ["Physiology", "Taxonomy", "Morphology", "Histology"],
+    "answer": "Taxonomy"
+  },
+  {
+    "question": "The study of internal structure of organisms is called:",
+    "options": ["Morphology", "Anatomy", "Physiology", "Ecology"],
+    "answer": "Anatomy"
+  },
+  {
+    "question": "The study of tissues is called:",
+    "options": ["Histology", "Cytology", "Anatomy", "Embryology"],
+    "answer": "Histology"
+  },
+  {
+    "question": "The study of cells is called:",
+    "options": ["Cytology", "Ecology", "Histology", "Taxonomy"],
+    "answer": "Cytology"
+  },
+  {
+    "question": "The study of interactions of organisms with their environment is called:",
+    "options": ["Ecology", "Taxonomy", "Physiology", "Morphology"],
+    "answer": "Ecology"
+  },
+  {
+    "question": "Which scientist proposed the theory of evolution by natural selection?",
+    "options": ["Linnaeus", "Darwin", "Pasteur", "Aristotle"],
+    "answer": "Darwin"
+  },
+  {
+    "question": "The scientific study of fossils is called:",
+    "options": ["Genetics", "Paleontology", "Embryology", "Ecology"],
+    "answer": "Paleontology"
+  },
+  {
+    "question": "Which branch of biology deals with the study of functions of body parts?",
+    "options": ["Morphology", "Physiology", "Histology", "Taxonomy"],
+    "answer": "Physiology"
+  }
+    ],
+    "solving_a_biological_problem": [
+      {
+        "question": "What is the scientific method?",
+        "options": ["Observation, hypothesis, experiment, conclusion", "Guess, test, fail, succeed", "Read, write, speak, listen", "Eat, sleep, work, play"],
+        "answer": "Observation, hypothesis, experiment, conclusion"
+      },
+      {
+        "question": "What is a hypothesis?",
+        "options": ["A testable prediction", "A final answer", "A question", "A conclusion"],
+        "answer": "A testable prediction"
+      },
+      {
+    "question": "What is the first step in solving a biological problem?",
+    "options": ["Hypothesis", "Observation", "Experimentation", "Conclusion"],
+    "answer": "Observation"
+  },
+  {
+    "question": "A tentative explanation for an observation is called:",
+    "options": ["Law", "Theory", "Hypothesis", "Result"],
+    "answer": "Hypothesis"
+  },
+  {
+    "question": "Which step comes after hypothesis in scientific method?",
+    "options": ["Conclusion", "Experimentation", "Observation", "Theory"],
+    "answer": "Experimentation"
+  },
+  {
+    "question": "The variable that is changed in an experiment is called:",
+    "options": ["Dependent variable", "Independent variable", "Controlled variable", "Fixed variable"],
+    "answer": "Independent variable"
+  },
+  {
+    "question": "The variable that is measured in an experiment is called:",
+    "options": ["Dependent variable", "Independent variable", "Constant", "Fixed variable"],
+    "answer": "Dependent variable"
+  },
+  {
+    "question": "Which of the following is a famous biological problem solved using the scientific method?",
+    "options": ["Pasteur’s experiment on spontaneous generation", "Newton’s law of gravitation", "Darwin’s natural selection", "Einstein’s relativity"],
+    "answer": "Pasteur’s experiment on spontaneous generation"
+  },
+  {
+    "question": "In Pasteur’s experiment, which material was used to sterilize the broth?",
+    "options": ["Sunlight", "Heat", "Chemicals", "Radiation"],
+    "answer": "Heat"
+  },
+  {
+    "question": "Which part of Pasteur’s flask allowed air to enter but prevented microorganisms?",
+    "options": ["Straight neck", "Cotton plug", "Swan neck", "Filter paper"],
+    "answer": "Swan neck"
+  },
+  {
+    "question": "A scientific hypothesis should be:",
+    "options": ["Un-testable", "Testable", "A law", "Proven fact"],
+    "answer": "Testable"
+  },
+  {
+    "question": "The final step of the scientific method is:",
+    "options": ["Observation", "Experimentation", "Conclusion", "Hypothesis"],
+    "answer": "Conclusion"
+  },
+  {
+    "question": "Which of the following represents a theory?",
+    "options": ["Cell Theory", "Pasteur’s flask", "Mendel’s pea experiment", "Hypothesis"],
+    "answer": "Cell Theory"
+  },
+  {
+    "question": "Which one is NOT part of the scientific method?",
+    "options": ["Observation", "Experimentation", "Astrology", "Hypothesis"],
+    "answer": "Astrology"
+  },
+  {
+    "question": "Why are control experiments important?",
+    "options": ["They make research easier", "They provide a comparison standard", "They prove hypothesis directly", "They remove all variables"],
+    "answer": "They provide a comparison standard"
+  },
+  {
+    "question": "Which scientist disproved the idea of spontaneous generation?",
+    "options": ["Darwin", "Aristotle", "Pasteur", "Linnaeus"],
+    "answer": "Pasteur"
+  }
+    ],
+    "biodiversity": [
+      {
+        "question": "What is biodiversity?",
+        "options": ["Variety of life", "Number of species", "Size of organisms", "Color of animals"],
+        "answer": "Variety of life"
+      },
+      {
+        "question": "What is an ecosystem?",
+        "options": ["Community of organisms and environment", "Group of animals", "Type of plant", "Weather condition"],
+        "answer": "Community of organisms and environment"
+      },
+      {
+    "question": "Biodiversity refers to:",
+    "options": ["Variety of ecosystems only", "Variety of species only", "Variety of genes, species, and ecosystems", "Number of plants only"],
+    "answer": "Variety of genes, species, and ecosystems"
+  },
+  {
+    "question": "The branch of biology that deals with classification of organisms is:",
+    "options": ["Genetics", "Taxonomy", "Anatomy", "Ecology"],
+    "answer": "Taxonomy"
+  },
+  {
+    "question": "Who is called the father of taxonomy?",
+    "options": ["Darwin", "Aristotle", "Linnaeus", "Pasteur"],
+    "answer": "Linnaeus"
+  },
+  {
+    "question": "How many kingdoms are recognized in the five-kingdom classification system?",
+    "options": ["Three", "Four", "Five", "Six"],
+    "answer": "Five"
+  },
+  {
+    "question": "Which kingdom includes multicellular, eukaryotic, autotrophic organisms?",
+    "options": ["Plantae", "Animalia", "Fungi", "Protista"],
+    "answer": "Plantae"
+  },
+  {
+    "question": "Which kingdom includes prokaryotic organisms?",
+    "options": ["Protista", "Plantae", "Monera", "Fungi"],
+    "answer": "Monera"
+  },
+  {
+    "question": "Which kingdom includes mushrooms?",
+    "options": ["Fungi", "Plantae", "Protista", "Animalia"],
+    "answer": "Fungi"
+  },
+  {
+    "question": "Which of the following is a unicellular eukaryote?",
+    "options": ["Bacterium", "Amoeba", "Mushroom", "Algae"],
+    "answer": "Amoeba"
+  },
+  {
+    "question": "Which kingdom includes organisms that can be both autotrophic and heterotrophic?",
+    "options": ["Protista", "Fungi", "Animalia", "Plantae"],
+    "answer": "Protista"
+  },
+  {
+    "question": "Viruses are not placed in any kingdom because they:",
+    "options": ["Have no DNA", "Are cellular", "Show characteristics of both living and non-living things", "Are autotrophic"],
+    "answer": "Show characteristics of both living and non-living things"
+  },
+  {
+    "question": "Which level of classification comes immediately after kingdom?",
+    "options": ["Class", "Phylum", "Family", "Genus"],
+    "answer": "Phylum"
+  },
+  {
+    "question": "The binomial nomenclature system was introduced by:",
+    "options": ["Aristotle", "Darwin", "Linnaeus", "Wallace"],
+    "answer": "Linnaeus"
+  },
+  {
+    "question": "In binomial nomenclature, the first part of the name represents:",
+    "options": ["Genus", "Species", "Family", "Order"],
+    "answer": "Genus"
+  },
+  {
+    "question": "The second part of the scientific name represents:",
+    "options": ["Species", "Genus", "Family", "Order"],
+    "answer": "Species"
+  }
+    ],
+    "cells_and_tissues": [
+      {
+        "question": "What is the basic unit of life?",
+        "options": ["Cell", "Atom", "Molecule", "Tissue"],
+        "answer": "Cell"
+      },
+      {
+        "question": "What is the powerhouse of the cell?",
+        "options": ["Mitochondria", "Nucleus", "Ribosome", "Golgi Apparatus"],
+        "answer": "Mitochondria"
+      },
+      {
+        "question": "What is the powerhouse of the cell?",
+        "options": ["Mitochondria", "Nucleus", "Ribosome", "Golgi Apparatus"],
+        "answer": "Mitochondria"
+      },
+      {
+    "question": "The basic structural and functional unit of life is:",
+    "options": ["Tissue", "Cell", "Organ", "Organism"],
+    "answer": "Cell"
+  },
+  {
+    "question": "Cell theory was proposed by:",
+    "options": ["Darwin and Wallace", "Schleiden and Schwann", "Hooke and Leeuwenhoek", "Watson and Crick"],
+    "answer": "Schleiden and Schwann"
+  },
+  {
+    "question": "Which organelle is known as the powerhouse of the cell?",
+    "options": ["Chloroplast", "Nucleus", "Mitochondria", "Golgi body"],
+    "answer": "Mitochondria"
+  },
+  {
+    "question": "Which cell organelle contains the genetic material?",
+    "options": ["Cytoplasm", "Nucleus", "Cell wall", "Mitochondria"],
+    "answer": "Nucleus"
+  },
+  {
+    "question": "Which of the following is present only in plant cells?",
+    "options": ["Nucleus", "Ribosome", "Cell wall", "Mitochondria"],
+    "answer": "Cell wall"
+  },
+  {
+    "question": "The green pigment chlorophyll is found in:",
+    "options": ["Mitochondria", "Chloroplast", "Golgi apparatus", "Endoplasmic reticulum"],
+    "answer": "Chloroplast"
+  },
+  {
+    "question": "Which organelle is responsible for protein synthesis?",
+    "options": ["Ribosomes", "Mitochondria", "Nucleus", "Golgi apparatus"],
+    "answer": "Ribosomes"
+  },
+  {
+    "question": "Tissues are formed by:",
+    "options": ["Similar cells working together", "Different organs working together", "Different systems working together", "Different species living together"],
+    "answer": "Similar cells working together"
+  },
+  {
+    "question": "Which type of tissue covers the surface of the body and organs?",
+    "options": ["Epithelial tissue", "Connective tissue", "Muscular tissue", "Nervous tissue"],
+    "answer": "Epithelial tissue"
+  },
+  {
+    "question": "Which tissue connects and supports body parts?",
+    "options": ["Epithelial tissue", "Connective tissue", "Nervous tissue", "Muscular tissue"],
+    "answer": "Connective tissue"
+  },
+  {
+    "question": "Which tissue is responsible for movement in animals?",
+    "options": ["Epithelial tissue", "Nervous tissue", "Muscular tissue", "Connective tissue"],
+    "answer": "Muscular tissue"
+  },
+  {
+    "question": "Which tissue transmits messages in the form of impulses?",
+    "options": ["Epithelial tissue", "Connective tissue", "Muscular tissue", "Nervous tissue"],
+    "answer": "Nervous tissue"
+  },
+  {
+    "question": "Xylem and phloem are examples of:",
+    "options": ["Animal tissues", "Plant tissues", "Prokaryotic tissues", "Connective tissues"],
+    "answer": "Plant tissues"
+  }
+    ],
+    "cell_cycle": [
+      {
+        "question": "What are the phases of cell cycle?",
+        "options": ["Interphase, Mitosis, Cytokinesis", "Growth, Division, Death", "Birth, Life, Death", "Start, Middle, End"],
+        "answer": "Interphase, Mitosis, Cytokinesis"
+      },
+      {
+        "question": "What is mitosis?",
+        "options": ["Cell division producing identical cells", "Cell division producing gametes", "Cell growth", "Cell death"],
+        "answer": "Cell division producing identical cells"
+      },
+      {
+    "question": "The cell cycle consists of:",
+    "options": ["Mitosis only", "Interphase and M phase", "Cytokinesis only", "Replication only"],
+    "answer": "Interphase and M phase"
+  },
+  {
+    "question": "Which phase of the cell cycle is the longest?",
+    "options": ["M phase", "Interphase", "Cytokinesis", "Anaphase"],
+    "answer": "Interphase"
+  },
+  {
+    "question": "During which phase does DNA replication occur?",
+    "options": ["G1 phase", "S phase", "G2 phase", "M phase"],
+    "answer": "S phase"
+  },
+  {
+    "question": "G1, S, and G2 phases together are called:",
+    "options": ["M phase", "Cytokinesis", "Interphase", "Prophase"],
+    "answer": "Interphase"
+  },
+  {
+    "question": "Which phase follows G2 in the cell cycle?",
+    "options": ["S phase", "M phase", "G1 phase", "Telophase"],
+    "answer": "M phase"
+  },
+  {
+    "question": "Mitosis consists of how many stages?",
+    "options": ["Two", "Three", "Four", "Five"],
+    "answer": "Four"
+  },
+  {
+    "question": "During which stage of mitosis do chromosomes line up at the equator?",
+    "options": ["Prophase", "Metaphase", "Anaphase", "Telophase"],
+    "answer": "Metaphase"
+  },
+  {
+    "question": "During which stage of mitosis do sister chromatids separate?",
+    "options": ["Prophase", "Metaphase", "Anaphase", "Telophase"],
+    "answer": "Anaphase"
+  },
+  {
+    "question": "Cytokinesis is the division of:",
+    "options": ["Chromosomes", "Nucleus", "Cytoplasm", "DNA"],
+    "answer": "Cytoplasm"
+  },
+  {
+    "question": "Which phase of the cell cycle involves cell growth and preparation for DNA replication?",
+    "options": ["G1 phase", "S phase", "G2 phase", "M phase"],
+    "answer": "G1 phase"
+  },
+  {
+    "question": "Which checkpoint ensures DNA is completely replicated before mitosis?",
+    "options": ["G1 checkpoint", "G2 checkpoint", "M checkpoint", "S checkpoint"],
+    "answer": "G2 checkpoint"
+  },
+  {
+    "question": "Which structure helps in the separation of chromosomes during mitosis?",
+    "options": ["Cell wall", "Spindle fibers", "Centrioles", "Nucleolus"],
+    "answer": "Spindle fibers"
+  },
+  {
+    "question": "At the end of mitosis, how many daughter cells are produced?",
+    "options": ["One", "Two", "Three", "Four"],
+    "answer": "Two"
+  },
+  {
+    "question": "Which type of cell division produces gametes?",
+    "options": ["Mitosis", "Meiosis", "Binary fission", "Cytokinesis"],
+    "answer": "Meiosis"
+  }
+    ],
+    "enzymes": [
+      {
+        "question": "What are enzymes?",
+        "options": ["Biological catalysts", "Energy sources", "Building blocks", "Waste products"],
+        "answer": "Biological catalysts"
+      },
+      {
+        "question": "What is the lock and key model?",
+        "options": ["Enzyme-substrate specificity", "Enzyme inhibition", "Enzyme activation", "Enzyme denaturation"],
+        "answer": "Enzyme-substrate specificity"
+      },
+      {
+    "question": "Enzymes are biologically:",
+    "options": ["Lipids", "Proteins", "Carbohydrates", "Nucleic acids"],
+    "answer": "Proteins"
+  },
+  {
+    "question": "The substance on which an enzyme acts is called:",
+    "options": ["Product", "Substrate", "Cofactor", "Catalyst"],
+    "answer": "Substrate"
+  },
+  {
+    "question": "The region of enzyme where substrate binds is:",
+    "options": ["Active site", "Binding pocket", "Cofactor site", "Product site"],
+    "answer": "Active site"
+  },
+  {
+    "question": "Which factor does NOT affect enzyme activity?",
+    "options": ["Temperature", "pH", "Substrate concentration", "Color of enzyme"],
+    "answer": "Color of enzyme"
+  },
+  {
+    "question": "Enzymes increase the rate of reaction by lowering:",
+    "options": ["pH", "Temperature", "Activation energy", "Substrate concentration"],
+    "answer": "Activation energy"
+  },
+  {
+    "question": "Which model explains enzyme-substrate interaction?",
+    "options": ["Lock and Key model", "Fluid mosaic model", "Central dogma model", "Replication fork model"],
+    "answer": "Lock and Key model"
+  },
+  {
+    "question": "The optimal temperature for most human enzymes is:",
+    "options": ["0°C", "25°C", "37°C", "100°C"],
+    "answer": "37°C"
+  },
+  {
+    "question": "Pepsin works best in:",
+    "options": ["Neutral pH", "Acidic pH", "Basic pH", "Variable pH"],
+    "answer": "Acidic pH"
+  },
+  {
+    "question": "Amylase enzyme breaks down:",
+    "options": ["Proteins", "Lipids", "Starch", "DNA"],
+    "answer": "Starch"
+  },
+  {
+    "question": "Lipase enzyme digests:",
+    "options": ["Carbohydrates", "Lipids", "Proteins", "Nucleic acids"],
+    "answer": "Lipids"
+  },
+  {
+    "question": "Which part of the enzyme may require a non-protein helper?",
+    "options": ["Active site", "Cofactor", "Product", "Catalyst"],
+    "answer": "Cofactor"
+  },
+  {
+    "question": "Enzymes that work outside the cell are called:",
+    "options": ["Endoenzymes", "Exoenzymes", "Coenzymes", "Catalysts"],
+    "answer": "Exoenzymes"
+  },
+  {
+    "question": "Enzyme activity stops at very high temperatures because enzymes:",
+    "options": ["Become inactive", "Denature", "Multiply", "Dissolve"],
+    "answer": "Denature"
+  },
+  {
+    "question": "Which of the following is NOT an enzyme?",
+    "options": ["Pepsin", "Lipase", "Amylase", "Insulin"],
+    "answer": "Insulin"
+  }
+    ],
+    "bioenergetics": [
+      {
+        "question": "What is photosynthesis?",
+        "options": ["Process by which plants make food", "Respiration", "Transpiration", "Pollination"],
+        "answer": "Process by which plants make food"
+      },
+      {
+        "question": "What is the equation for photosynthesis?",
+        "options": ["6CO2 + 6H2O → C6H12O6 + 6O2", "C6H12O6 + 6O2 → 6CO2 + 6H2O", "2H2 + O2 → 2H2O", "H2O → H2 + O2"],
+        "answer": "6CO2 + 6H2O → C6H12O6 + 6O2"
+      },
+       {
+    "question": "Bioenergetics is the study of:",
+    "options": ["Energy flow in living organisms", "Structure of DNA", "Types of cells", "Genetic inheritance"],
+    "answer": "Energy flow in living organisms"
+  },
+  {
+    "question": "The primary source of energy for life on Earth is:",
+    "options": ["Water", "Sunlight", "Oxygen", "Glucose"],
+    "answer": "Sunlight"
+  },
+  {
+    "question": "The process by which green plants make their own food is:",
+    "options": ["Respiration", "Fermentation", "Photosynthesis", "Glycolysis"],
+    "answer": "Photosynthesis"
+  },
+  {
+    "question": "The organelle where photosynthesis takes place is:",
+    "options": ["Mitochondria", "Nucleus", "Chloroplast", "Golgi body"],
+    "answer": "Chloroplast"
+  },
+  {
+    "question": "The green pigment that captures light energy in plants is:",
+    "options": ["Hemoglobin", "Chlorophyll", "Carotene", "Melanin"],
+    "answer": "Chlorophyll"
+  },
+  {
+    "question": "The light reactions of photosynthesis occur in the:",
+    "options": ["Stroma", "Thylakoid membranes", "Cytoplasm", "Mitochondria"],
+    "answer": "Thylakoid membranes"
+  },
+  {
+    "question": "The dark reactions (Calvin cycle) occur in the:",
+    "options": ["Stroma", "Thylakoid", "Cytoplasm", "Nucleus"],
+    "answer": "Stroma"
+  },
+  {
+    "question": "The process of breaking down glucose to release energy is:",
+    "options": ["Photosynthesis", "Respiration", "Transpiration", "Fermentation"],
+    "answer": "Respiration"
+  },
+  {
+    "question": "Which molecule is the universal energy currency of the cell?",
+    "options": ["DNA", "ATP", "NADH", "RNA"],
+    "answer": "ATP"
+  },
+  {
+    "question": "Aerobic respiration requires:",
+    "options": ["Oxygen", "Carbon dioxide", "Light", "Nitrogen"],
+    "answer": "Oxygen"
+  },
+  {
+    "question": "Anaerobic respiration occurs in the absence of:",
+    "options": ["Glucose", "Oxygen", "Carbon dioxide", "Water"],
+    "answer": "Oxygen"
+  },
+  {
+    "question": "The first stage of cellular respiration is:",
+    "options": ["Krebs cycle", "Electron transport chain", "Glycolysis", "Fermentation"],
+    "answer": "Glycolysis"
+  },
+  {
+    "question": "The Krebs cycle takes place in the:",
+    "options": ["Cytoplasm", "Nucleus", "Mitochondrial matrix", "Ribosome"],
+    "answer": "Mitochondrial matrix"
+  },
+  {
+    "question": "Which process produces the most ATP?",
+    "options": ["Glycolysis", "Krebs cycle", "Electron transport chain", "Fermentation"],
+    "answer": "Electron transport chain"
+  }
+    ],
+    "nutrition": [
+      {
+        "question": "What are nutrients?",
+        "options": ["Substances needed for growth", "Waste products", "Energy sources only", "Water only"],
+        "answer": "Substances needed for growth",
+        "correctExplanation": "Nutrients provide energy and materials for body functions.",
+        "wrongExplanation": "The others are incomplete.",
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is digestion?",
+        "options": ["Breakdown of food", "Absorption of food", "Excretion of food", "Storage of food"],
+        "answer": "Breakdown of food",
+        "correctExplanation": "Digestion breaks down complex food into simple substances.",
+        "wrongExplanation": "The others are subsequent processes.",
+        "difficulty": "easy"
+      },
+      {
+    "question": "Nutrition is the process by which organisms:",
+    "options": ["Respire", "Obtain and utilize food", "Excrete wastes", "Reproduce"],
+    "answer": "Obtain and utilize food"
+  },
+  {
+    "question": "Organisms that make their own food are called:",
+    "options": ["Heterotrophs", "Autotrophs", "Carnivores", "Decomposers"],
+    "answer": "Autotrophs"
+  },
+  {
+    "question": "Green plants prepare their food by:",
+    "options": ["Respiration", "Fermentation", "Photosynthesis", "Digestion"],
+    "answer": "Photosynthesis"
+  },
+  {
+    "question": "Animals obtain food from plants and other animals, so they are:",
+    "options": ["Autotrophs", "Heterotrophs", "Saprophytes", "Producers"],
+    "answer": "Heterotrophs"
+  },
+  {
+    "question": "Proteins are mainly used in the body for:",
+    "options": ["Energy only", "Growth and repair", "Insulation", "Storage of energy"],
+    "answer": "Growth and repair"
+  },
+  {
+    "question": "The main source of energy for the body is:",
+    "options": ["Proteins", "Carbohydrates", "Fats", "Vitamins"],
+    "answer": "Carbohydrates"
+  },
+  {
+    "question": "Which nutrient provides twice as much energy as carbohydrates?",
+    "options": ["Proteins", "Fats", "Minerals", "Vitamins"],
+    "answer": "Fats"
+  },
+  {
+    "question": "Which vitamin is produced in the skin by sunlight?",
+    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+    "answer": "Vitamin D"
+  },
+  {
+    "question": "Which mineral is required for strong bones and teeth?",
+    "options": ["Iron", "Calcium", "Sodium", "Potassium"],
+    "answer": "Calcium"
+  },
+  {
+    "question": "Deficiency of iron causes:",
+    "options": ["Rickets", "Scurvy", "Anemia", "Goiter"],
+    "answer": "Anemia"
+  },
+  {
+    "question": "Deficiency of iodine causes:",
+    "options": ["Diabetes", "Rickets", "Goiter", "Night blindness"],
+    "answer": "Goiter"
+  },
+  {
+    "question": "Vitamin C deficiency leads to:",
+    "options": ["Rickets", "Scurvy", "Beri-beri", "Anemia"],
+    "answer": "Scurvy"
+  },
+  {
+    "question": "Which vitamin is essential for normal vision?",
+    "options": ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+    "answer": "Vitamin A"
+  },
+  {
+    "question": "Which nutrient helps in regulating body processes and prevents diseases?",
+    "options": ["Carbohydrates", "Proteins", "Vitamins and minerals", "Fats"],
+    "answer": "Vitamins and minerals"
+  }
+    ],
+    "transport": [
+      {
+        "question": "What is the circulatory system?",
+        "options": ["System that transports blood", "System that transports air", "System that transports food", "System that transports waste"],
+        "answer": "System that transports blood"
+      },
+      {
+        "question": "What is the function of red blood cells?",
+        "options": ["Carry oxygen", "Fight infection", "Clot blood", "Transport nutrients"],
+        "answer": "Carry oxygen"
+      },
+      {
+    "question": "Transport in biology refers to:",
+    "options": ["Movement of cells", "Movement of substances within organisms", "Movement of muscles", "Movement of bones"],
+    "answer": "Movement of substances within organisms"
+  },
+  {
+    "question": "In plants, water is mainly transported through:",
+    "options": ["Phloem", "Xylem", "Stomata", "Cuticle"],
+    "answer": "Xylem"
+  },
+  {
+    "question": "Food in plants is transported through:",
+    "options": ["Xylem", "Phloem", "Stomata", "Chloroplast"],
+    "answer": "Phloem"
+  },
+  {
+    "question": "Transpiration is the loss of water in the form of:",
+    "options": ["Liquid water", "Water vapor", "Osmosis", "Sap"],
+    "answer": "Water vapor"
+  },
+  {
+    "question": "Which part of the plant mainly controls transpiration?",
+    "options": ["Cuticle", "Root hairs", "Stomata", "Stem"],
+    "answer": "Stomata"
+  },
+  {
+    "question": "In humans, the transport system is the:",
+    "options": ["Digestive system", "Respiratory system", "Circulatory system", "Excretory system"],
+    "answer": "Circulatory system"
+  },
+  {
+    "question": "Which organ pumps blood throughout the human body?",
+    "options": ["Lungs", "Heart", "Kidney", "Liver"],
+    "answer": "Heart"
+  },
+  {
+    "question": "Which cells in blood transport oxygen?",
+    "options": ["White blood cells", "Red blood cells", "Platelets", "Plasma"],
+    "answer": "Red blood cells"
+  },
+  {
+    "question": "Hemoglobin is a pigment present in:",
+    "options": ["White blood cells", "Red blood cells", "Platelets", "Plasma"],
+    "answer": "Red blood cells"
+  },
+  {
+    "question": "Which blood cells are responsible for defense against diseases?",
+    "options": ["Red blood cells", "White blood cells", "Platelets", "Plasma"],
+    "answer": "White blood cells"
+  },
+  {
+    "question": "Which blood component helps in clotting?",
+    "options": ["RBCs", "WBCs", "Plasma", "Platelets"],
+    "answer": "Platelets"
+  },
+  {
+    "question": "The largest blood vessels that carry blood away from the heart are:",
+    "options": ["Arteries", "Veins", "Capillaries", "Venules"],
+    "answer": "Arteries"
+  },
+  {
+    "question": "Which blood vessels allow exchange of substances between blood and tissues?",
+    "options": ["Arteries", "Veins", "Capillaries", "Aorta"],
+    "answer": "Capillaries"
+  },
+  {
+    "question": "Which vein carries oxygenated blood in humans?",
+    "options": ["Pulmonary vein", "Pulmonary artery", "Vena cava", "Hepatic vein"],
+    "answer": "Pulmonary vein"
+  }
+    ]
+  },
+  "chemistry": {
+    "fundamentals_of_chemistry": [
+      {
+        "question": "What is the chemical symbol for water?",
+        "options": ["H2O", "CO2", "O2", "NaCl"],
+        "answer": "H2O"
+      },
+      {
+        "question": "What is the main gas in Earth's atmosphere?",
+        "options": ["Nitrogen", "Oxygen", "Carbon Dioxide", "Argon"],
+        "answer": "Nitrogen"
+      },
+      {
+    "question": "Chemistry is the branch of science that deals with:",
+    "options": ["Living organisms", "Matter and its changes", "Earth and rocks", "Stars and space"],
+    "answer": "Matter and its changes"
+  },
+  {
+    "question": "Matter is anything that has:",
+    "options": ["Energy and force", "Mass and volume", "Color and shape", "Motion and speed"],
+    "answer": "Mass and volume"
+  },
+  {
+    "question": "Which of the following is NOT a state of matter?",
+    "options": ["Solid", "Liquid", "Gas", "Energy"],
+    "answer": "Energy"
+  },
+  {
+    "question": "Which of the following is a physical change?",
+    "options": ["Burning of wood", "Melting of ice", "Rusting of iron", "Cooking of food"],
+    "answer": "Melting of ice"
+  },
+  {
+    "question": "Which of the following is a chemical change?",
+    "options": ["Boiling of water", "Dissolving sugar", "Rusting of iron", "Melting wax"],
+    "answer": "Rusting of iron"
+  },
+  {
+    "question": "The smallest particle of an element that retains its properties is:",
+    "options": ["Atom", "Molecule", "Compound", "Mixture"],
+    "answer": "Atom"
+  },
+  {
+    "question": "A substance made up of two or more elements chemically combined is called:",
+    "options": ["Element", "Compound", "Mixture", "Solution"],
+    "answer": "Compound"
+  },
+  {
+    "question": "Which of the following is a mixture?",
+    "options": ["Water", "Carbon dioxide", "Air", "Salt"],
+    "answer": "Air"
+  },
+  {
+    "question": "The simplest form of matter that cannot be broken down by chemical means is:",
+    "options": ["Mixture", "Compound", "Element", "Solution"],
+    "answer": "Element"
+  },
+  {
+    "question": "Which of the following is an element?",
+    "options": ["Salt", "Iron", "Water", "Sugar"],
+    "answer": "Iron"
+  },
+  {
+    "question": "Which instrument is used to measure mass?",
+    "options": ["Thermometer", "Balance", "Voltmeter", "Barometer"],
+    "answer": "Balance"
+  },
+  {
+    "question": "Which instrument is used to measure temperature?",
+    "options": ["Barometer", "Voltmeter", "Thermometer", "Manometer"],
+    "answer": "Thermometer"
+  },
+  {
+    "question": "Which subatomic particle carries a positive charge?",
+    "options": ["Electron", "Proton", "Neutron", "Photon"],
+    "answer": "Proton"
+  },
+  {
+    "question": "Electrons are found in:",
+    "options": ["Nucleus", "Orbits around nucleus", "Inside protons", "Inside neutrons"],
+    "answer": "Orbits around nucleus"
+  }
+    ],
+    "structure_of_atoms": [
+      {
+        "question": "What is the center of an atom?",
+        "options": ["Nucleus", "Electron cloud", "Proton", "Neutron"],
+        "answer": "Nucleus"
+      },
+      {
+        "question": "What is the atomic number?",
+        "options": ["Number of protons", "Number of neutrons", "Number of electrons", "Mass number"],
+        "answer": "Number of protons"
+      },
+      {
+    "question": "Who is known as the father of atomic theory?",
+    "options": ["J.J. Thomson", "John Dalton", "Ernest Rutherford", "Niels Bohr"],
+    "answer": "John Dalton"
+  },
+  {
+    "question": "The subatomic particle with a negative charge is:",
+    "options": ["Proton", "Neutron", "Electron", "Photon"],
+    "answer": "Electron"
+  },
+  {
+    "question": "Protons are located in the:",
+    "options": ["Electron cloud", "Nucleus", "Orbitals", "Outer shell"],
+    "answer": "Nucleus"
+  },
+  {
+    "question": "The mass of an electron is approximately:",
+    "options": ["1 amu", "0 amu", "0.00055 amu", "2 amu"],
+    "answer": "0.00055 amu"
+  },
+  {
+    "question": "Which scientist discovered the electron?",
+    "options": ["Rutherford", "Bohr", "J.J. Thomson", "Dalton"],
+    "answer": "J.J. Thomson"
+  },
+  {
+    "question": "The gold foil experiment was performed by:",
+    "options": ["Dalton", "Bohr", "Rutherford", "Thomson"],
+    "answer": "Rutherford"
+  },
+  {
+    "question": "Rutherford’s experiment proved that:",
+    "options": ["Atoms are indivisible", "Electrons have a negative charge", "Atoms have a dense nucleus", "Protons revolve around electrons"],
+    "answer": "Atoms have a dense nucleus"
+  },
+  {
+    "question": "Which scientist proposed the planetary model of the atom?",
+    "options": ["Dalton", "Bohr", "Rutherford", "Thomson"],
+    "answer": "Bohr"
+  },
+  {
+    "question": "Neutrons were discovered by:",
+    "options": ["J.J. Thomson", "Rutherford", "Chadwick", "Bohr"],
+    "answer": "Chadwick"
+  },
+  {
+    "question": "The number of protons in an atom is called:",
+    "options": ["Mass number", "Atomic number", "Valency", "Neutron number"],
+    "answer": "Atomic number"
+  },
+  {
+    "question": "The total number of protons and neutrons in an atom is called:",
+    "options": ["Atomic number", "Mass number", "Valency", "Charge number"],
+    "answer": "Mass number"
+  },
+  {
+    "question": "Electrons revolve around the nucleus in fixed paths called:",
+    "options": ["Orbits or shells", "Neutrons", "Protons", "Mass numbers"],
+    "answer": "Orbits or shells"
+  },
+  {
+    "question": "Which subatomic particle has no charge?",
+    "options": ["Proton", "Neutron", "Electron", "Photon"],
+    "answer": "Neutron"
+  },
+  {
+    "question": "Isotopes are atoms of the same element with:",
+    "options": ["Same mass number but different atomic number", "Same number of neutrons but different protons", "Same atomic number but different mass number", "Different number of electrons and protons"],
+    "answer": "Same atomic number but different mass number"
+  }
+    ],
+    "periodic_table_and_periodicity": [
+      {
+        "question": "Who created the periodic table?",
+        "options": ["Dmitri Mendeleev", "Albert Einstein", "Isaac Newton", "Marie Curie"],
+        "answer": "Dmitri Mendeleev"
+      },
+      {
+        "question": "What is the atomic number of carbon?",
+        "options": ["6", "12", "14", "16"],
+        "answer": "6"
+      },
+      {
+    "question": "Who is credited with creating the modern periodic table?",
+    "options": ["John Dalton", "Dmitri Mendeleev", "Henry Moseley", "J.J. Thomson"],
+    "answer": "Dmitri Mendeleev"
+  },
+  {
+    "question": "Henry Moseley arranged the periodic table on the basis of:",
+    "options": ["Atomic mass", "Atomic number", "Mass number", "Valency"],
+    "answer": "Atomic number"
+  },
+  {
+    "question": "Which law states that the properties of elements are periodic functions of their atomic numbers?",
+    "options": ["Mendeleev’s Law", "Periodic Law", "Avogadro’s Law", "Boyle’s Law"],
+    "answer": "Periodic Law"
+  },
+  {
+    "question": "Elements in the same group of the periodic table have:",
+    "options": ["Same number of protons", "Same number of neutrons", "Same number of valence electrons", "Same mass number"],
+    "answer": "Same number of valence electrons"
+  },
+  {
+    "question": "The horizontal rows in the periodic table are called:",
+    "options": ["Groups", "Periods", "Series", "Families"],
+    "answer": "Periods"
+  },
+  {
+    "question": "The vertical columns in the periodic table are called:",
+    "options": ["Periods", "Blocks", "Groups", "Rows"],
+    "answer": "Groups"
+  },
+  {
+    "question": "Which block of the periodic table contains the transition metals?",
+    "options": ["s-block", "p-block", "d-block", "f-block"],
+    "answer": "d-block"
+  },
+  {
+    "question": "Which group is known as noble gases?",
+    "options": ["Group 1", "Group 7", "Group 17", "Group 18"],
+    "answer": "Group 18"
+  },
+  {
+    "question": "Alkali metals belong to:",
+    "options": ["Group 1", "Group 2", "Group 17", "Group 18"],
+    "answer": "Group 1"
+  },
+  {
+    "question": "Atomic size in a period:",
+    "options": ["Increases from left to right", "Decreases from left to right", "Remains constant", "First increases then decreases"],
+    "answer": "Decreases from left to right"
+  },
+  {
+    "question": "Ionization energy across a period generally:",
+    "options": ["Increases", "Decreases", "Remains constant", "Becomes zero"],
+    "answer": "Increases"
+  },
+  {
+    "question": "Electronegativity down a group generally:",
+    "options": ["Increases", "Decreases", "Remains the same", "Becomes zero"],
+    "answer": "Decreases"
+  },
+  {
+    "question": "Halogens are found in which group?",
+    "options": ["Group 1", "Group 2", "Group 17", "Group 18"],
+    "answer": "Group 17"
+  },
+  {
+    "question": "Lanthanides and actinides belong to which block?",
+    "options": ["s-block", "p-block", "d-block", "f-block"],
+    "answer": "f-block"
+  }
+    ],
+    "structure_of_molecules": [
+      {
+        "question": "What is a molecule?",
+        "options": ["Group of atoms bonded together", "Single atom", "Electron", "Proton"],
+        "answer": "Group of atoms bonded together"
+      },
+      {
+        "question": "What is the formula for methane?",
+        "options": ["CH4", "CO2", "H2O", "NH3"],
+        "answer": "CH4"
+      },
+      {
+    "question": "What is a molecule?",
+    "options": ["A single atom", "A group of atoms bonded together", "A charged particle", "A mixture of elements"],
+    "answer": "A group of atoms bonded together"
+  },
+  {
+    "question": "Which type of bond holds atoms together in a molecule?",
+    "options": ["Ionic bond", "Covalent bond", "Metallic bond", "Hydrogen bond"],
+    "answer": "Covalent bond"
+  },
+  {
+    "question": "The molecular formula of water is:",
+    "options": ["H2", "O2", "H2O", "HO2"],
+    "answer": "H2O"
+  },
+  {
+    "question": "Which of the following is a diatomic molecule?",
+    "options": ["CO2", "O2", "H2O", "CH4"],
+    "answer": "O2"
+  },
+  {
+    "question": "The three-dimensional arrangement of atoms in a molecule is called:",
+    "options": ["Electron affinity", "Molecular geometry", "Ionization energy", "Electronegativity"],
+    "answer": "Molecular geometry"
+  },
+  {
+    "question": "Which theory is used to predict the shape of molecules?",
+    "options": ["VSEPR theory", "Kinetic theory", "Periodic law", "Dalton’s theory"],
+    "answer": "VSEPR theory"
+  },
+  {
+    "question": "The bond angle in a methane (CH4) molecule is approximately:",
+    "options": ["90°", "109.5°", "120°", "180°"],
+    "answer": "109.5°"
+  },
+  {
+    "question": "Which type of bond is present in an oxygen (O2) molecule?",
+    "options": ["Single covalent bond", "Double covalent bond", "Triple covalent bond", "Ionic bond"],
+    "answer": "Double covalent bond"
+  },
+  {
+    "question": "Ammonia (NH3) has which molecular shape?",
+    "options": ["Linear", "Trigonal planar", "Trigonal pyramidal", "Tetrahedral"],
+    "answer": "Trigonal pyramidal"
+  },
+  {
+    "question": "Carbon dioxide (CO2) has which molecular shape?",
+    "options": ["Linear", "Trigonal planar", "Bent", "Tetrahedral"],
+    "answer": "Linear"
+  },
+  {
+    "question": "The shared pair of electrons in a covalent bond is called:",
+    "options": ["Lone pair", "Bond pair", "Ion pair", "Free electrons"],
+    "answer": "Bond pair"
+  },
+  {
+    "question": "The unequal sharing of electrons in a covalent bond forms a:",
+    "options": ["Polar bond", "Nonpolar bond", "Ionic bond", "Metallic bond"],
+    "answer": "Polar bond"
+  },
+  {
+    "question": "Which molecule is nonpolar?",
+    "options": ["H2O", "CO2", "NH3", "HF"],
+    "answer": "CO2"
+  },
+  {
+    "question": "Hydrogen bonding occurs in molecules containing:",
+    "options": ["Hydrogen and any element", "Hydrogen bonded to O, N, or F", "Hydrogen bonded to metals", "Hydrogen bonded to noble gases"],
+    "answer": "Hydrogen bonded to O, N, or F"
+  }
+    ],
+    "physical_states_of_matter": [
+      {
+        "question": "What is the boiling point of water?",
+        "options": ["100°C", "0°C", "50°C", "200°C"],
+        "answer": "100°C"
+      },
+      {
+        "question": "What state of matter has definite shape and volume?",
+        "options": ["Solid", "Liquid", "Gas", "Plasma"],
+        "answer": "Solid"
+      },
+      {
+    "question": "How many physical states of matter are commonly recognized?",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3"
+  },
+  {
+    "question": "Which of the following is NOT a physical state of matter?",
+    "options": ["Solid", "Liquid", "Gas", "Energy"],
+    "answer": "Energy"
+  },
+  {
+    "question": "Which state of matter has a definite shape and volume?",
+    "options": ["Solid", "Liquid", "Gas", "Plasma"],
+    "answer": "Solid"
+  },
+  {
+    "question": "Which state of matter has a definite volume but no definite shape?",
+    "options": ["Solid", "Liquid", "Gas", "Plasma"],
+    "answer": "Liquid"
+  },
+  {
+    "question": "Which state of matter has neither definite shape nor definite volume?",
+    "options": ["Solid", "Liquid", "Gas", "Plasma"],
+    "answer": "Gas"
+  },
+  {
+    "question": "The particles in solids are:",
+    "options": ["Free to move randomly", "Closely packed and vibrate in place", "Far apart and move fast", "Charged and free to move"],
+    "answer": "Closely packed and vibrate in place"
+  },
+  {
+    "question": "The particles in gases are:",
+    "options": ["Closely packed", "Rigid and fixed", "Far apart and move freely", "Arranged in layers"],
+    "answer": "Far apart and move freely"
+  },
+  {
+    "question": "The conversion of solid directly into gas is called:",
+    "options": ["Melting", "Condensation", "Sublimation", "Evaporation"],
+    "answer": "Sublimation"
+  },
+  {
+    "question": "The process of gas changing into liquid is called:",
+    "options": ["Melting", "Freezing", "Condensation", "Evaporation"],
+    "answer": "Condensation"
+  },
+  {
+    "question": "The process of liquid changing into solid is called:",
+    "options": ["Melting", "Freezing", "Evaporation", "Boiling"],
+    "answer": "Freezing"
+  },
+  {
+    "question": "Which state of matter is often called the fourth state?",
+    "options": ["Solid", "Liquid", "Gas", "Plasma"],
+    "answer": "Plasma"
+  },
+  {
+    "question": "Which property of liquids allows them to take the shape of their container?",
+    "options": ["High compressibility", "Fluidity", "Rigidity", "Fixed volume"],
+    "answer": "Fluidity"
+  },
+  {
+    "question": "The temperature at which a liquid changes into gas is called:",
+    "options": ["Freezing point", "Melting point", "Boiling point", "Condensation point"],
+    "answer": "Boiling point"
+  },
+  {
+    "question": "Dry ice is an example of:",
+    "options": ["Solid carbon dioxide", "Liquid carbon dioxide", "Frozen oxygen", "Solid nitrogen"],
+    "answer": "Solid carbon dioxide"
+  }
+    ],
+    "solutions": [
+      {
+        "question": "What is a solution?",
+        "options": ["Homogeneous mixture", "Heterogeneous mixture", "Pure substance", "Compound"],
+        "answer": "Homogeneous mixture"
+      },
+      {
+        "question": "What is the solvent in saltwater?",
+        "options": ["Water", "Salt", "Air", "Sand"],
+        "answer": "Water"
+      },
+       {
+    "question": "What is a solution?",
+    "options": ["A pure element", "A homogeneous mixture of two or more substances", "A heterogeneous mixture", "A compound"],
+    "answer": "A homogeneous mixture of two or more substances"
+  },
+  {
+    "question": "In a solution, the substance present in larger amount is called:",
+    "options": ["Solute", "Solvent", "Mixture", "Compound"],
+    "answer": "Solvent"
+  },
+  {
+    "question": "In a solution, the substance that dissolves is called:",
+    "options": ["Solute", "Solvent", "Mixture", "Colloid"],
+    "answer": "Solute"
+  },
+  {
+    "question": "Salt dissolved in water is an example of:",
+    "options": ["Solid in liquid solution", "Liquid in liquid solution", "Gas in liquid solution", "Gas in gas solution"],
+    "answer": "Solid in liquid solution"
+  },
+  {
+    "question": "Air is an example of:",
+    "options": ["Solid solution", "Liquid solution", "Gas solution", "Heterogeneous mixture"],
+    "answer": "Gas solution"
+  },
+  {
+    "question": "Which type of solution is soda water?",
+    "options": ["Gas in liquid", "Solid in liquid", "Liquid in liquid", "Gas in gas"],
+    "answer": "Gas in liquid"
+  },
+  {
+    "question": "A solution that cannot dissolve more solute at a given temperature is called:",
+    "options": ["Unsaturated", "Saturated", "Dilute", "Concentrated"],
+    "answer": "Saturated"
+  },
+  {
+    "question": "A solution that contains less solute than it can dissolve is called:",
+    "options": ["Saturated", "Unsaturated", "Concentrated", "Dilute"],
+    "answer": "Unsaturated"
+  },
+  {
+    "question": "The concentration of a solution is expressed in:",
+    "options": ["Grams only", "Liters only", "Percentage, molarity, or molality", "Density"],
+    "answer": "Percentage, molarity, or molality"
+  },
+  {
+    "question": "Which factor increases the solubility of solids in liquids?",
+    "options": ["Decreasing temperature", "Increasing temperature", "Increasing pressure", "Decreasing volume"],
+    "answer": "Increasing temperature"
+  },
+  {
+    "question": "Which factor increases the solubility of gases in liquids?",
+    "options": ["Increasing temperature", "Decreasing pressure", "Increasing pressure", "Stirring more"],
+    "answer": "Increasing pressure"
+  },
+  {
+    "question": "Sugar dissolved in water forms:",
+    "options": ["Heterogeneous mixture", "Suspension", "True solution", "Colloid"],
+    "answer": "True solution"
+  },
+  {
+    "question": "Which one is NOT a characteristic of a true solution?",
+    "options": ["Homogeneous", "Transparent", "Particles are visible", "Stable mixture"],
+    "answer": "Particles are visible"
+  },
+  {
+    "question": "Which solution conducts electricity?",
+    "options": ["Sugar solution", "Alcohol solution", "Salt solution", "Distilled water"],
+    "answer": "Salt solution"
+  }
+    ],
+    "electrochemistry": [
+      {
+        "question": "What is electrolysis?",
+        "options": ["Chemical change by electricity", "Electricity from chemicals", "Heat from electricity", "Light from electricity"],
+        "answer": "Chemical change by electricity"
+      },
+      {
+        "question": "What is an electrolyte?",
+        "options": ["Conducts electricity in solution", "Insulates electricity", "Freezes at low temperature", "Boils at high temperature"],
+        "answer": "Conducts electricity in solution"
+      },
+      {
+    "question": "What is electrochemistry?",
+    "options": ["Study of heat in reactions", "Study of chemical reactions involving electricity", "Study of light and matter", "Study of acids and bases"],
+    "answer": "Study of chemical reactions involving electricity"
+  },
+  {
+    "question": "Which device converts chemical energy into electrical energy?",
+    "options": ["Electrolytic cell", "Voltaic cell", "Battery", "Both Voltaic cell and Battery"],
+    "answer": "Both Voltaic cell and Battery"
+  },
+  {
+    "question": "Electrolysis is the process of:",
+    "options": ["Converting heat into electricity", "Using electricity to cause a chemical change", "Separating gases from air", "Producing light energy"],
+    "answer": "Using electricity to cause a chemical change"
+  },
+  {
+    "question": "Which electrode is positively charged in an electrolytic cell?",
+    "options": ["Cathode", "Anode", "Both electrodes", "None"],
+    "answer": "Anode"
+  },
+  {
+    "question": "Which electrode is positively charged in a voltaic cell?",
+    "options": ["Anode", "Cathode", "Both", "None"],
+    "answer": "Cathode"
+  },
+  {
+    "question": "The process of coating a metal with another metal using electricity is called:",
+    "options": ["Electrorefining", "Electroplating", "Electrolysis", "Corrosion"],
+    "answer": "Electroplating"
+  },
+  {
+    "question": "The unit of electric current is:",
+    "options": ["Volt", "Ampere", "Coulomb", "Ohm"],
+    "answer": "Ampere"
+  },
+  {
+    "question": "The substance that conducts electricity when molten or dissolved in water is called:",
+    "options": ["Non-electrolyte", "Electrolyte", "Insulator", "Conductor"],
+    "answer": "Electrolyte"
+  },
+  {
+    "question": "In electrolysis of water, hydrogen is released at:",
+    "options": ["Anode", "Cathode", "Both electrodes", "None"],
+    "answer": "Cathode"
+  },
+  {
+    "question": "In electrolysis of water, oxygen is released at:",
+    "options": ["Cathode", "Anode", "Both electrodes", "None"],
+    "answer": "Anode"
+  },
+  {
+    "question": "What is the SI unit of electric charge?",
+    "options": ["Ampere", "Coulomb", "Volt", "Ohm"],
+    "answer": "Coulomb"
+  },
+  {
+    "question": "Faraday’s First Law of Electrolysis states that:",
+    "options": ["The amount of substance deposited is proportional to the current", "Electrodes do not change", "Electrolyte remains constant", "Electrons flow without resistance"],
+    "answer": "The amount of substance deposited is proportional to the current"
+  },
+  {
+    "question": "Electrorefining is used for:",
+    "options": ["Purification of metals", "Rusting of iron", "Making alloys", "Separating gases"],
+    "answer": "Purification of metals"
+  },
+  {
+    "question": "Which of the following is a good example of a voltaic cell?",
+    "options": ["Daniell cell", "Electrolytic cell", "Electroplating cell", "Refining cell"],
+    "answer": "Daniell cell"
+  }
+    ],
+    "chemical_reactivity": [
+      {
+        "question": "What is a chemical reaction?",
+        "options": ["Change in substances", "Change in state", "Change in temperature", "Change in color"],
+        "answer": "Change in substances"
+      },
+      {
+        "question": "What is the law of conservation of mass?",
+        "options": ["Mass is conserved in reactions", "Mass increases", "Mass decreases", "Mass changes"],
+        "answer": "Mass is conserved in reactions"
+      },
+        {
+    "question": "Chemical reactivity of an element depends mainly on:",
+    "options": ["Number of neutrons", "Number of valence electrons", "Mass number", "Nuclear charge"],
+    "answer": "Number of valence electrons"
+  },
+  {
+    "question": "Which elements are the most reactive metals?",
+    "options": ["Alkaline earth metals", "Transition metals", "Alkali metals", "Noble gases"],
+    "answer": "Alkali metals"
+  },
+  {
+    "question": "Which elements are the most reactive non-metals?",
+    "options": ["Halogens", "Noble gases", "Transition elements", "Lanthanides"],
+    "answer": "Halogens"
+  },
+  {
+    "question": "The least reactive elements in the periodic table are:",
+    "options": ["Halogens", "Alkali metals", "Noble gases", "Transition metals"],
+    "answer": "Noble gases"
+  },
+  {
+    "question": "Reactivity of alkali metals ______ down the group.",
+    "options": ["Increases", "Decreases", "Remains constant", "First increases then decreases"],
+    "answer": "Increases"
+  },
+  {
+    "question": "Reactivity of halogens ______ down the group.",
+    "options": ["Increases", "Decreases", "Remains constant", "Becomes unpredictable"],
+    "answer": "Decreases"
+  },
+  {
+    "question": "Which alkali metal is the most reactive?",
+    "options": ["Lithium", "Sodium", "Potassium", "Cesium"],
+    "answer": "Cesium"
+  },
+  {
+    "question": "Which halogen is the most reactive?",
+    "options": ["Chlorine", "Fluorine", "Bromine", "Iodine"],
+    "answer": "Fluorine"
+  },
+  {
+    "question": "Which factor makes noble gases unreactive?",
+    "options": ["Low atomic size", "High electronegativity", "Complete outer shell", "Large nucleus"],
+    "answer": "Complete outer shell"
+  },
+  {
+    "question": "Transition metals are generally:",
+    "options": ["Highly reactive like alkali metals", "Inert like noble gases", "Moderately reactive", "Non-reactive"],
+    "answer": "Moderately reactive"
+  },
+  {
+    "question": "Which metal reacts vigorously with cold water?",
+    "options": ["Magnesium", "Sodium", "Iron", "Copper"],
+    "answer": "Sodium"
+  },
+  {
+    "question": "Non-metals generally react by:",
+    "options": ["Losing electrons", "Gaining or sharing electrons", "Donating protons", "Changing neutrons"],
+    "answer": "Gaining or sharing electrons"
+  },
+  {
+    "question": "Metals generally react by:",
+    "options": ["Gaining electrons", "Sharing electrons", "Losing electrons", "No reaction"],
+    "answer": "Losing electrons"
+  },
+  {
+    "question": "Which group of elements shows variable reactivity due to different oxidation states?",
+    "options": ["Alkali metals", "Transition metals", "Halogens", "Noble gases"],
+    "answer": "Transition metals"
+  }
+
+    ]
+  },
+  "english": {
+    "ChapterMCQS": [
+       {
+    "question": "What is the main message of the lesson 'The Saviour of Mankind'?",
+    "options": ["Importance of kindness", "Writing books", "Keeping pets", "Public speaking"],
+    "answer": "Importance of kindness",
+        "correctExplanation": "Children is the irregular plural of child.",
+        "wrongExplanation": "The others are incorrect forms.",
+        "difficulty": "easy"
+  },
+  {
+    "question": "What does 'Patriotism' mean?",
+    "options": ["Love for one’s country", "Shopping in town", "Moving abroad", "Ignoring national holidays"],
+    "answer": "Love for one’s country"
+  },
+  {
+    "question": "According to 'Media and Its Impact', when can media be harmful?",
+    "options": ["When it misleads people", "When it educates", "When it shows culture", "When it entertains"],
+    "answer": "When it misleads people"
+  },
+  {
+    "question": "Hazrat Asma (R.A) is remembered for her:",
+    "options": ["Bravery", "Artistic skills", "Writing poems", "Inventions"],
+    "answer": "Bravery"
+  },
+  {
+    "question": "What is the central idea of the poem 'Daffodils'?",
+    "options": ["Joy of nature", "Sadness", "Fear", "Darkness"],
+    "answer": "Joy of nature"
+  },
+  {
+    "question": "The Quaid’s Vision emphasizes:",
+    "options": ["Unity and progress", "Foreign travel", "Leisure", "Artistic expression"],
+    "answer": "Unity and progress"
+  },
+  {
+    "question": "The 'Sultan Ahmad Mosque' is famous for:",
+    "options": ["Architecture", "Markets", "Schools", "Libraries"],
+    "answer": "Architecture"
+  },
+  {
+    "question": "In 'Stopping by Woods on a Snowy Evening', the poet stops to watch:",
+    "options": ["Woods filling with snow", "Rain falling", "Storms", "Sunrise"],
+    "answer": "Woods filling with snow"
+  },
+  {
+    "question": "The lesson 'All is Not Lost' teaches us:",
+    "options": ["Never lose hope", "Give up easily", "Nothing matters", "Everything is perfect"],
+    "answer": "Never lose hope"
+  },
+  {
+    "question": "One major effect of 'Drug Addiction' is:",
+    "options": ["Financial problems", "Improved health", "New friendships", "Intelligence"],
+    "answer": "Financial problems"
+  },
+  {
+    "question": "Noise pollution mostly affects:",
+    "options": ["Human health", "Only plants", "Only animals", "Skyline"],
+    "answer": "Human health"
+  },
+  {
+    "question": "In 'Three Days to See', the author would first:",
+    "options": ["Observe nature and people", "Sleep", "Watch TV", "Play games"],
+    "answer": "Observe nature and people"
+  },
+  {
+    "question": "Quality education helps people to:",
+    "options": ["Become capable in life", "Waste time", "Avoid meeting others", "Get rich only"],
+    "answer": "Become capable in life"
+  },
+  {
+    "question": "Women empowerment through entrepreneurship gives women:",
+    "options": ["Opportunities and independence", "Limitations", "Dependence", "Only manual work"],
+    "answer": "Opportunities and independence"
+  },
+  {
+    "question": "The Value of Time teaches:",
+    "options": ["Time wasted cannot be regained", "Time is unimportant", "Keep time secret", "Only elders value time"],
+    "answer": "Time wasted cannot be regained"
+  },
+  {
+    "question": "In the poem 'If', the poet teaches qualities of:",
+    "options": ["Patience and courage", "Cooking", "Speaking loudly", "Building houses"],
+    "answer": "Patience and courage"
+  },
+  {
+    "question": "One negative effect of globalization is:",
+    "options": ["Cultural homogenization", "Better technology", "Cheaper communication", "Opportunities"],
+    "answer": "Cultural homogenization"
+  },
+  {
+    "question": "The chapter 'Wildlife Vignettes' is about:",
+    "options": ["Wild animals in nature", "Urban life", "Cooking recipes", "Transport"],
+    "answer": "Wild animals in nature"
+  },
+  {
+    "question": "In the play 'The Dear Departed', the conflict arises due to:",
+    "options": ["Misunderstanding about death", "Village dispute", "Siblings cooking", "A teacher’s anger"],
+    "answer": "Misunderstanding about death"
+  },
+  {
+    "question": "Which of the following is in passive voice?",
+    "options": ["The meal was cooked by the chef.", "The chef cooked the meal.", "The chef cooking the meal.", "The chef will cook by the meal."],
+    "answer": "The meal was cooked by the chef."
+  }
+    ],
+    "grammar": [
+      {
+        "question": "What is the past tense of 'go'?",
+        "options": ["Went", "Gone", "Going", "Goes"],
+        "answer": "Went",
+        "correctExplanation": "Went is the simple past tense of go.",
+        "wrongExplanation": "Gone is past participle, going is present continuous.",
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is the plural of 'child'?",
+        "options": ["Children", "Childs", "Childes", "Childrens"],
+        "answer": "Children",
+        "correctExplanation": "Children is the irregular plural of child.",
+        "wrongExplanation": "The others are incorrect forms.",
+        "difficulty": "easy"
+      },
+      {
+    "question": "What is the past participle of 'write'?",
+    "options": ["Writed", "Wrote", "Written", "Writes"],
+    "answer": "Written"
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "options": ["He go to school daily.", "He goes to school daily.", "He going to school daily.", "He gone to school daily."],
+    "answer": "He goes to school daily."
+  },
+  {
+    "question": "Which of the following is a preposition?",
+    "options": ["Quickly", "Under", "Beautiful", "Run"],
+    "answer": "Under"
+  },
+  {
+    "question": "Which sentence is in passive voice?",
+    "options": ["She is cooking food.", "She has cooked food.", "Food is being cooked by her.", "She cooks food."],
+    "answer": "Food is being cooked by her."
+  },
+  {
+    "question": "Fill in the blank: He has been ill ___ Monday.",
+    "options": ["since", "for", "in", "on"],
+    "answer": "since"
+  },
+  {
+    "question": "Choose the correct indirect speech: He said, 'I am happy.'",
+    "options": ["He said that he is happy.", "He said that he was happy.", "He said that I am happy.", "He said that I was happy."],
+    "answer": "He said that he was happy."
+  },
+  {
+    "question": "What is the comparative degree of 'far'?",
+    "options": ["Farthest", "Farther", "Most far", "More far"],
+    "answer": "Farther"
+  },
+  {
+    "question": "Choose the correct article: He is ___ honest man.",
+    "options": ["a", "an", "the", "no article"],
+    "answer": "an"
+  },
+  {
+    "question": "Identify the adverb: She sings sweetly.",
+    "options": ["She", "Sings", "Sweetly", "None"],
+    "answer": "Sweetly"
+  },
+  {
+    "question": "Fill in the blank: The train ___ before we reached the station.",
+    "options": ["left", "has left", "had left", "leaves"],
+    "answer": "had left"
+  },
+  {
+    "question": "Choose the correct sentence.",
+    "options": ["She do not like apples.", "She does not likes apples.", "She does not like apples.", "She did not likes apples."],
+    "answer": "She does not like apples."
+  },
+  {
+    "question": "Which is the correct tag question? He is a teacher, ___?",
+    "options": ["is he", "isn't he", "wasn't he", "doesn't he"],
+    "answer": "isn't he"
+  },
+  {
+    "question": "Choose the correct verb: Neither Ali nor his friends ___ present.",
+    "options": ["was", "is", "are", "has"],
+    "answer": "are"
+  },
+  {
+    "question": "What is the superlative form of 'bad'?",
+    "options": ["Worse", "Worst", "Most bad", "Baddest"],
+    "answer": "Worst"
+  }
+    ],
+    "vocabulary": [
+      {
+        "question": "What is the antonym of 'brave'?",
+        "options": ["Cowardly", "Bold", "Fearless", "Valiant"],
+        "answer": "Cowardly",
+        "correctExplanation": "Cowardly means lacking courage.",
+        "wrongExplanation": "The others are synonyms.",
+        "difficulty": "very hard"
+      },
+      {
+        "question": "What is the meaning of 'altruistic'?",
+        "options": ["Selfless concern for others", "Self-centered", "Angry", "Happy"],
+        "answer": "Selfless concern for others",
+        "correctExplanation": "Altruistic means showing concern for others.",
+        "wrongExplanation": "The others are different meanings.",
+        "difficulty": "hard"
+      },
+     {
+    "question": "Choose the synonym of 'Brave'.",
+    "options": ["Coward", "Courageous", "Weak", "Fearful"],
+    "answer": "Courageous"
+  },
+  {
+    "question": "Choose the antonym of 'Honest'.",
+    "options": ["Truthful", "Kind", "Dishonest", "Polite"],
+    "answer": "Dishonest"
+  },
+  {
+    "question": "What is the meaning of 'Patriotism'?",
+    "options": ["Love for money", "Love for one’s country", "Love for family", "Love for friends"],
+    "answer": "Love for one’s country"
+  },
+  {
+    "question": "Choose the synonym of 'Rapid'.",
+    "options": ["Slow", "Quick", "Lazy", "Calm"],
+    "answer": "Quick"
+  },
+  {
+    "question": "Choose the antonym of 'Strong'.",
+    "options": ["Powerful", "Weak", "Energetic", "Healthy"],
+    "answer": "Weak"
+  },
+  {
+    "question": "What is the synonym of 'Huge'?",
+    "options": ["Tiny", "Enormous", "Small", "Little"],
+    "answer": "Enormous"
+  },
+  {
+    "question": "Choose the antonym of 'Victory'.",
+    "options": ["Win", "Success", "Failure", "Prize"],
+    "answer": "Failure"
+  },
+  {
+    "question": "What does 'Generous' mean?",
+    "options": ["Selfish", "Kind and giving", "Angry", "Cruel"],
+    "answer": "Kind and giving"
+  },
+  {
+    "question": "Choose the synonym of 'Beautiful'.",
+    "options": ["Ugly", "Pretty", "Dirty", "Bad"],
+    "answer": "Pretty"
+  },
+  {
+    "question": "Choose the antonym of 'Knowledge'.",
+    "options": ["Wisdom", "Ignorance", "Information", "Education"],
+    "answer": "Ignorance"
+  },
+  {
+    "question": "What is the synonym of 'Silent'?",
+    "options": ["Quiet", "Loud", "Noisy", "Talkative"],
+    "answer": "Quiet"
+  },
+  {
+    "question": "Choose the antonym of 'Success'.",
+    "options": ["Achievement", "Failure", "Victory", "Progress"],
+    "answer": "Failure"
+  },
+  {
+    "question": "Choose the synonym of 'Begin'.",
+    "options": ["End", "Start", "Finish", "Close"],
+    "answer": "Start"
+  },
+  {
+    "question": "Choose the antonym of 'Friend'.",
+    "options": ["Companion", "Partner", "Enemy", "Colleague"],
+    "answer": "Enemy"
+  }
+    ],
+    "comprehension": [
+      {
+        "question": "Who wrote 'The Great Gatsby'?",
+        "options": ["F. Scott Fitzgerald", "Ernest Hemingway", "John Steinbeck", "William Faulkner"],
+        "answer": "F. Scott Fitzgerald",
+        "correctExplanation": "The Great Gatsby is by F. Scott Fitzgerald.",
+        "wrongExplanation": "The others are different authors.",
+        "difficulty": "very hard"
+      },
+      {
+        "question": "Who was the first President of the United States?",
+        "options": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "John Adams"],
+        "answer": "George Washington",
+        "correctExplanation": "George Washington was the first President.",
+        "wrongExplanation": "The others served later.",
+        "difficulty": "very hard"
+      },
+       {
+    "question": "What is considered the best policy?",
+    "options": ["Kindness", "Honesty", "Wealth", "Hard work"],
+    "answer": "Honesty"
+  },
+  {
+    "question": "What does an honest person win?",
+    "options": ["Money", "Respect and trust", "Friends only", "Awards"],
+    "answer": "Respect and trust"
+  },
+  {
+    "question": "According to the passage, what does honesty give?",
+    "options": ["Peace of mind", "Wealth", "Power", "Luxury"],
+    "answer": "Peace of mind"
+  },
+  {
+    "question": "What may a dishonest person gain?",
+    "options": ["Temporary benefits", "Long-term success", "Peace", "Respect"],
+    "answer": "Temporary benefits"
+  },
+  {
+    "question": "In the long run, what happens to a dishonest person?",
+    "options": ["Becomes rich", "Loses respect", "Wins awards", "Finds peace"],
+    "answer": "Loses respect"
+  },
+  {
+    "question": "Which word in the passage is the opposite of 'honest'?",
+    "options": ["Truthful", "Dishonest", "Faithful", "Respectful"],
+    "answer": "Dishonest"
+  },
+  {
+    "question": "Which is more important according to the passage?",
+    "options": ["Wealth", "Peace of mind", "Temporary gain", "Luxury"],
+    "answer": "Peace of mind"
+  },
+  {
+    "question": "What do dishonest people finally face?",
+    "options": ["Happiness", "Shame", "Success", "Glory"],
+    "answer": "Shame"
+  },
+  {
+    "question": "Which of the following is a moral value highlighted in the passage?",
+    "options": ["Courage", "Honesty", "Hard work", "Kindness"],
+    "answer": "Honesty"
+  },
+  {
+    "question": "What is the central idea of the passage?",
+    "options": ["Wealth is more important than honesty", "Honesty always brings respect and peace", "Dishonesty ensures long-term success", "Luxury is the key to happiness"],
+    "answer": "Honesty always brings respect and peace"
+  }
+    ]
+  },
+  "math": {
+    "algebra": [
+      {
+        "question": "Solve: 2x + 5 = 15",
+        "options": ["5", "10", "7.5", "20"],
+        "answer": "5",
+        "correctExplanation": "2x = 10, x = 5.",
+        "wrongExplanation": "The others are incorrect solutions.",
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is the value of π (pi) to two decimal places?",
+        "options": ["3.14", "3.15", "3.16", "3.13"],
+        "answer": "3.14",
+        "correctExplanation": "π is approximately 3.14159.",
+        "wrongExplanation": "The others are not accurate.",
+        "difficulty": "medium"
+      },
+      {
+    "question": "What is the solution of the equation 2x + 5 = 15?",
+    "options": ["x = 5", "x = 10", "x = 15", "x = 20"],
+    "answer": "x = 5"
+  },
+  {
+    "question": "Simplify: (x + 3)(x + 2).",
+    "options": ["x^2 + 5x + 6", "x^2 + 6x + 5", "x^2 + 3x + 2", "x^2 + 2x + 3"],
+    "answer": "x^2 + 5x + 6"
+  },
+  {
+    "question": "If x = 3, what is the value of 2x^2?",
+    "options": ["6", "9", "12", "18"],
+    "answer": "18"
+  },
+  {
+    "question": "Factorize: x^2 – 9.",
+    "options": ["(x – 9)(x – 1)", "(x – 3)(x + 3)", "(x – 9)(x + 1)", "(x – 1)(x + 9)"],
+    "answer": "(x – 3)(x + 3)"
+  },
+  {
+    "question": "Solve for x: 5x – 7 = 18.",
+    "options": ["x = 2", "x = 3", "x = 4", "x = 5"],
+    "answer": "x = 5"
+  },
+  {
+    "question": "Expand: (x – 4)^2.",
+    "options": ["x^2 – 4", "x^2 – 8x + 16", "x^2 – 16", "x^2 – 4x + 16"],
+    "answer": "x^2 – 8x + 16"
+  },
+  {
+    "question": "If 3x = 12, what is x?",
+    "options": ["2", "3", "4", "6"],
+    "answer": "4"
+  },
+  {
+    "question": "Simplify: (2x)(3x).",
+    "options": ["5x", "6x", "5x^2", "6x^2"],
+    "answer": "6x^2"
+  },
+  {
+    "question": "What is the value of x in x/5 = 4?",
+    "options": ["x = 9", "x = 15", "x = 20", "x = 25"],
+    "answer": "x = 20"
+  },
+  {
+    "question": "Which of the following is a quadratic expression?",
+    "options": ["x + 5", "3x – 7", "x^2 + 3x + 2", "2x + 4"],
+    "answer": "x^2 + 3x + 2"
+  },
+  {
+    "question": "Simplify: (x + 1)(x – 1).",
+    "options": ["x^2 – 1", "x^2 + 1", "x^2 – x", "x^2 + x"],
+    "answer": "x^2 – 1"
+  },
+  {
+    "question": "If x = –2, what is the value of x^2 – 4?",
+    "options": ["0", "2", "4", "8"],
+    "answer": "0"
+  },
+  {
+    "question": "Factorize: x^2 + 7x + 12.",
+    "options": ["(x + 3)(x + 4)", "(x + 2)(x + 6)", "(x + 1)(x + 12)", "(x + 5)(x + 2)"],
+    "answer": "(x + 3)(x + 4)"
+  },
+  {
+    "question": "Solve for x: 2x – 3 = 11.",
+    "options": ["x = 5", "x = 6", "x = 7", "x = 8"],
+    "answer": "x = 7"
+  },
+   {
+    "question": "Simplify: (x + 2)^2 – (x – 2)^2.",
+    "options": ["4x", "2x", "8", "x^2"],
+    "answer": "8x"
+  },
+  {
+    "question": "If 2x + 3 = 11, then x = ?",
+    "options": ["3", "4", "5", "6"],
+    "answer": "4"
+  },
+  {
+    "question": "The roots of x^2 – 16 = 0 are:",
+    "options": ["±4", "±8", "±16", "±2"],
+    "answer": "±4"
+  },
+  {
+    "question": "Expand: (x + 5)(x – 5).",
+    "options": ["x^2 – 25", "x^2 + 25", "x^2 + 10x + 25", "x^2 – 10x + 25"],
+    "answer": "x^2 – 25"
+  },
+  {
+    "question": "If x = 2, what is the value of 3x^2 + 4x?",
+    "options": ["16", "20", "24", "28"],
+    "answer": "20"
+  },
+  {
+    "question": "Factorize: x^2 + 10x + 25.",
+    "options": ["(x + 5)(x + 5)", "(x + 25)(x + 1)", "(x + 2)(x + 12)", "(x + 10)(x + 1)"],
+    "answer": "(x + 5)(x + 5)"
+  },
+  {
+    "question": "Solve for x: 7x – 9 = 5.",
+    "options": ["x = 1", "x = 2", "x = 3", "x = 4"],
+    "answer": "x = 2"
+  },
+  {
+    "question": "Simplify: (3x)(2x^2).",
+    "options": ["6x^2", "5x^2", "6x^3", "3x^3"],
+    "answer": "6x^3"
+  }
+    ],
+    "geometry": [
+      {
+        "question": "What is the area of a square with side 4 cm?",
+        "options": ["16 cm²", "8 cm²", "12 cm²", "20 cm²"],
+        "answer": "16 cm²",
+        "correctExplanation": "Area = side² = 4² = 16.",
+        "wrongExplanation": "The others are incorrect.",
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is the sum of angles in a triangle?",
+        "options": ["180°", "360°", "90°", "270°"],
+        "answer": "180°",
+        "correctExplanation": "Sum of interior angles is 180°.",
+        "wrongExplanation": "The others are for other shapes.",
+        "difficulty": "medium"
+      },
+       {
+    "question": "What is the sum of the angles in a triangle?",
+    "options": ["90°", "180°", "270°", "360°"],
+    "answer": "180°"
+  },
+  {
+    "question": "A polygon with 5 sides is called:",
+    "options": ["Pentagon", "Hexagon", "Quadrilateral", "Heptagon"],
+    "answer": "Pentagon"
+  },
+  {
+    "question": "The distance around a circle is called:",
+    "options": ["Area", "Radius", "Diameter", "Circumference"],
+    "answer": "Circumference"
+  },
+  {
+    "question": "If one angle of a right triangle is 30°, the other acute angle is:",
+    "options": ["45°", "60°", "90°", "120°"],
+    "answer": "60°"
+  },
+  {
+    "question": "How many degrees are there in a straight angle?",
+    "options": ["90°", "120°", "180°", "360°"],
+    "answer": "180°"
+  },
+  {
+    "question": "A line segment that joins the center of a circle to a point on the circle is:",
+    "options": ["Chord", "Radius", "Diameter", "Tangent"],
+    "answer": "Radius"
+  },
+  {
+    "question": "The largest chord of a circle is:",
+    "options": ["Tangent", "Secant", "Radius", "Diameter"],
+    "answer": "Diameter"
+  },
+  {
+    "question": "A polygon with all sides and all angles equal is called:",
+    "options": ["Scalene", "Regular polygon", "Irregular polygon", "Concave polygon"],
+    "answer": "Regular polygon"
+  },
+  {
+    "question": "The sum of interior angles of a quadrilateral is:",
+    "options": ["90°", "180°", "270°", "360°"],
+    "answer": "360°"
+  },
+  {
+    "question": "In a right triangle, the side opposite the right angle is called:",
+    "options": ["Base", "Altitude", "Hypotenuse", "Median"],
+    "answer": "Hypotenuse"
+  },
+  {
+    "question": "How many diagonals does a hexagon have?",
+    "options": ["6", "9", "12", "15"],
+    "answer": "9"
+  },
+  {
+    "question": "The perpendicular drawn from the center of a circle to a chord bisects the:",
+    "options": ["Circle", "Arc", "Chord", "Diameter"],
+    "answer": "Chord"
+  },
+  {
+    "question": "The sum of exterior angles of any polygon is:",
+    "options": ["90°", "180°", "270°", "360°"],
+    "answer": "360°"
+  },
+  {
+    "question": "Two angles that add up to 90° are called:",
+    "options": ["Supplementary", "Complementary", "Adjacent", "Vertical"],
+    "answer": "Complementary"
+  },
+  {
+    "question": "The point where the three medians of a triangle meet is called:",
+    "options": ["Centroid", "Circumcenter", "Incenter", "Orthocenter"],
+    "answer": "Centroid"
+  },
+  {
+    "question": "The diagonals of a rectangle are:",
+    "options": ["Equal", "Unequal", "Perpendicular", "Parallel"],
+    "answer": "Equal"
+  },
+  {
+    "question": "A quadrilateral with only one pair of parallel sides is called:",
+    "options": ["Parallelogram", "Trapezium", "Rectangle", "Rhombus"],
+    "answer": "Trapezium"
+  },
+  {
+    "question": "The number of sides of a polygon with 140° each interior angle is:",
+    "options": ["7", "8", "9", "10"],
+    "answer": "9"
+  },
+  {
+    "question": "Which triangle has all three sides different?",
+    "options": ["Equilateral", "Isosceles", "Scalene", "Right"],
+    "answer": "Scalene"
+  },
+  {
+    "question": "If two lines intersect, the vertically opposite angles are:",
+    "options": ["Equal", "Unequal", "Supplementary", "Complementary"],
+    "answer": "Equal"
+  },
+  {
+    "question": "The radius of a circle is 7 cm. Its diameter is:",
+    "options": ["7 cm", "14 cm", "21 cm", "28 cm"],
+    "answer": "14 cm"
+  },
+  {
+    "question": "The area of a rectangle is length × ______.",
+    "options": ["Breadth", "Height", "Perimeter", "Radius"],
+    "answer": "Breadth"
+  }
+    ],
+    "statistics": [
+      {
+        "question": "What is the mean of 2, 4, 6?",
+        "options": ["4", "3", "5", "6"],
+        "answer": "4",
+        "correctExplanation": "Mean = (2+4+6)/3 = 12/3 = 4.",
+        "wrongExplanation": "The others are not the mean.",
+        "difficulty": "easy"
+      },
+      {
+        "question": "What is a prime number?",
+        "options": ["Divisible by 1 and itself only", "Even number", "Odd number", "Square number"],
+        "answer": "Divisible by 1 and itself only",
+        "correctExplanation": "Prime numbers have no positive divisors other than 1 and themselves.",
+        "wrongExplanation": "The others are different properties.",
+        "difficulty": "medium"
+      },
+      {
+    "question": "What is the collection of numerical facts called?",
+    "options": ["Probability", "Data", "Mean", "Mode"],
+    "answer": "Data"
+  },
+  {
+    "question": "The average of a set of observations is called:",
+    "options": ["Median", "Mode", "Mean", "Range"],
+    "answer": "Mean"
+  },
+  {
+    "question": "Which average is the middle value of an ordered data set?",
+    "options": ["Mean", "Median", "Mode", "Range"],
+    "answer": "Median"
+  },
+  {
+    "question": "The most frequent value in a data set is called:",
+    "options": ["Mean", "Median", "Mode", "Range"],
+    "answer": "Mode"
+  },
+  {
+    "question": "The difference between the largest and smallest observation is called:",
+    "options": ["Mean", "Median", "Mode", "Range"],
+    "answer": "Range"
+  },
+  {
+    "question": "If the data set is 2, 4, 6, 8, 10, what is the mean?",
+    "options": ["5", "6", "7", "8"],
+    "answer": "6"
+  },
+  {
+    "question": "If the data set is 5, 7, 9, 11, 13, what is the median?",
+    "options": ["7", "9", "11", "13"],
+    "answer": "9"
+  },
+  {
+    "question": "If the data set is 3, 5, 5, 7, 9, 11, then the mode is:",
+    "options": ["3", "5", "7", "9"],
+    "answer": "5"
+  },
+  {
+    "question": "For the data 4, 8, 12, 16, the range is:",
+    "options": ["8", "10", "12", "16"],
+    "answer": "12"
+  },
+  {
+    "question": "In statistics, data arranged in ascending or descending order is called:",
+    "options": ["Raw data", "Array", "Group", "Table"],
+    "answer": "Array"
+  },
+  {
+    "question": "The value that divides data into two equal halves is:",
+    "options": ["Mean", "Median", "Mode", "Range"],
+    "answer": "Median"
+  },
+  {
+    "question": "If the mean of 5, 10, and x is 15, then x = ?",
+    "options": ["20", "25", "30", "35"],
+    "answer": "30"
+  },
+  {
+    "question": "The sum of deviations of values from mean is always:",
+    "options": ["Positive", "Negative", "Zero", "Equal to mean"],
+    "answer": "Zero"
+  },
+  {
+    "question": "Which of the following is NOT a measure of central tendency?",
+    "options": ["Mean", "Median", "Mode", "Range"],
+    "answer": "Range"
+  },
+  {
+    "question": "A graph representing data using rectangles is called:",
+    "options": ["Pie chart", "Histogram", "Line graph", "Polygon"],
+    "answer": "Histogram"
+  },
+  {
+    "question": "A circle graph is also called:",
+    "options": ["Bar chart", "Pie chart", "Histogram", "Polygon"],
+    "answer": "Pie chart"
+  },
+  {
+    "question": "The x-axis in a histogram represents:",
+    "options": ["Frequency", "Class intervals", "Range", "Mean"],
+    "answer": "Class intervals"
+  },
+  {
+    "question": "The y-axis in a histogram represents:",
+    "options": ["Frequency", "Class intervals", "Range", "Median"],
+    "answer": "Frequency"
+  },
+  {
+    "question": "If the data is 10, 15, 20, 25, 30, the range is:",
+    "options": ["15", "20", "25", "30"],
+    "answer": "20"
+  },
+  {
+    "question": "In a frequency distribution, the sum of frequencies is equal to:",
+    "options": ["Range", "Total number of observations", "Mean", "Mode"],
+    "answer": "Total number of observations"
+  },
+  {
+    "question": "The measure that best represents qualitative data is:",
+    "options": ["Mean", "Median", "Mode", "Range"],
+    "answer": "Mode"
+  },
+  {
+    "question": "In statistics, the term 'class interval' refers to:",
+    "options": ["Middle value","Difference between upper and lower class limits", "Frequency", "Mean value"],
+    "answer": "Difference between upper and lower class limits"
+  }
+    ]
+  },
+  "urdu": {
+    "grammar": [
+      {
+        "question": "What is the Urdu word for 'book'?",
+        "options": ["کتاب", "قلم", "میز", "کرسی"],
+        "answer": "کتاب",
+        "correctExplanation": "کتاب means book in Urdu.",
+        "wrongExplanation": "The others are pen, table, chair.",
+        "difficulty": "easy"
+      },
+      {
+    "question": "اسم کس کو کہتے ہیں؟",
+    "options": ["کام کو", "چیز یا شخص کے نام کو", "حالت کو", "فعل کو"],
+    "answer": "چیز یا شخص کے نام کو"
+  },
+  {
+    "question": "فعل کس کو کہتے ہیں؟",
+    "options": ["کسی کام یا حالت کو ظاہر کرنے والے لفظ کو", "چیز کے نام کو", "صفت کو", "محاورے کو"],
+    "answer": "کسی کام یا حالت کو ظاہر کرنے والے لفظ کو"
+  },
+  {
+    "question": "صفت کس کو کہتے ہیں؟",
+    "options": ["اسم کی خوبی یا خامی ظاہر کرنے والے لفظ کو", "کام کرنے والے کو", "محاورے کو", "جملے کو"],
+    "answer": "اسم کی خوبی یا خامی ظاہر کرنے والے لفظ کو"
+  },
+  {
+    "question": "محاورہ کس کو کہتے ہیں؟",
+    "options": ["جملے کو", "وہ فقرہ جس کا مطلب لفظی نہ ہو", "اسم کو", "فعل کو"],
+    "answer": "وہ فقرہ جس کا مطلب لفظی نہ ہو"
+  },
+  {
+    "question": "فقرہ کس کو کہتے ہیں؟",
+    "options": ["ایک مکمل خیال کو", "اسم کو", "صفت کو", "محاورے کو"],
+    "answer": "ایک مکمل خیال کو"
+  },
+  {
+    "question": "ضمیر کس کو کہتے ہیں؟",
+    "options": ["اسم کی جگہ استعمال ہونے والے لفظ کو", "محاورہ کو", "جملے کو", "فعل کو"],
+    "answer": "اسم کی جگہ استعمال ہونے والے لفظ کو"
+  },
+  {
+    "question": "جملہ کس کو کہتے ہیں؟",
+    "options": ["محاورہ کو", "الفاظ کا مجموعہ جو مکمل خیال ظاہر کرے", "اسم کو", "صفت کو"],
+    "answer": "الفاظ کا مجموعہ جو مکمل خیال ظاہر کرے"
+  },
+  {
+    "question": "اسم معرفہ کس کو کہتے ہیں؟",
+    "options": ["عام چیز کو ظاہر کرے", "خاص چیز یا شخص کا نام ہو", "محاورہ کو", "جملے کو"],
+    "answer": "خاص چیز یا شخص کا نام ہو"
+  },
+  {
+    "question": "اسم نکرہ کس کو کہتے ہیں؟",
+    "options": ["عام چیز کو ظاہر کرے", "خاص چیز کو ظاہر کرے", "محاورہ کو", "جملے کو"],
+    "answer": "عام چیز کو ظاہر کرے"
+  },
+  {
+    "question": "مذکر اسم کس کو کہتے ہیں؟",
+    "options": ["وہ اسم جو عورت کو ظاہر کرے", "وہ اسم جو مرد کو ظاہر کرے", "محاورہ کو", "جملے کو"],
+    "answer": "وہ اسم جو مرد کو ظاہر کرے"
+  },
+  {
+    "question": "مونث اسم کس کو کہتے ہیں؟",
+    "options": ["وہ اسم جو مرد کو ظاہر کرے", "وہ اسم جو عورت کو ظاہر کرے", "محاورہ کو", "جملے کو"],
+    "answer": "وہ اسم جو عورت کو ظاہر کرے"
+  },
+  {
+    "question": "زمانہ حال کس فعل کو کہتے ہیں؟",
+    "options": ["جو کام گزر چکا ہو", "جو کام جاری ہو یا اب ہو رہا ہو", "جو کام ہوگا", "محاورہ"],
+    "answer": "جو کام جاری ہو یا اب ہو رہا ہو"
+  },
+  {
+    "question": "زمانہ مستقبل کس فعل کو کہتے ہیں؟",
+    "options": ["جو کام گزر چکا ہو", "جو کام اب ہو رہا ہو", "جو کام ہوگا", "محاورہ"],
+    "answer": "جو کام ہوگا"
+  }
+    ],
+    "prose": [
+      {
+        "question": "What is prose in Urdu literature?",
+        "options": ["نثر", "نظم", "شاعری", "غزل"],
+        "answer": "نثر",
+        "correctExplanation": "نثر means prose.",
+        "wrongExplanation": "The others are poetry forms.",
+        "difficulty": "medium"
+      },
+      {
+    "question": "’ہزاروں خواہشیں ایسی‘ کس شاعر کا کلام ہے جو نثر میں بھی بیان ہوا؟",
+    "options": ["غالب", "اقبال", "میر", "سودا"],
+    "answer": "غالب"
+  },
+  {
+    "question": "’خط‘ نثر کی کون سی صنف ہے؟",
+    "options": ["داستان", "مکتوب", "افسانہ", "مقالہ"],
+    "answer": "مکتوب"
+  },
+  {
+    "question": "’سوانح عمری‘ میں کیا بیان کیا جاتا ہے؟",
+    "options": ["قصہ کہانی", "کسی شخص کی زندگی", "مضمون", "مکتوب"],
+    "answer": "کسی شخص کی زندگی"
+  },
+  {
+    "question": "مولانا الطاف حسین حالی کی مشہور نثر کی کتاب کون سی ہے؟",
+    "options": ["کلیات حالی", "مقدمہ شعر و شاعری", "شبلی نامہ", "آب حیات"],
+    "answer": "مقدمہ شعر و شاعری"
+  },
+  {
+    "question": "’آبِ حیات‘ کس ادیب کی تصنیف ہے؟",
+    "options": ["شبلی نعمانی", "سرسید احمد خان", "محمد حسین آزاد", "الطاف حسین حالی"],
+    "answer": "محمد حسین آزاد"
+  },
+  {
+    "question": "’خطوطِ غالب‘ کس صنفِ ادب سے تعلق رکھتے ہیں؟",
+    "options": ["نظم", "خطوط", "مقالہ", "افسانہ"],
+    "answer": "خطوط"
+  },
+  {
+    "question": "اردو نثر کی سب سے پہلی باقاعدہ کتاب کون سی ہے؟",
+    "options": ["سب رس", "کلیات غالب", "دیوان اقبال", "آب حیات"],
+    "answer": "سب رس"
+  },
+  {
+    "question": "’کردار نگاری‘ کس صنف میں زیادہ ملتی ہے؟",
+    "options": ["افسانہ", "مکتوب", "سوانح عمری", "مقالہ"],
+    "answer": "افسانہ"
+  },
+  {
+    "question": "اردو نثر میں سرسید احمد خان کا سب سے بڑا کارنامہ کیا ہے؟",
+    "options": ["افسانے لکھنا", "اصلاحی مضامین لکھنا", "غزل لکھنا", "ناول لکھنا"],
+    "answer": "اصلاحی مضامین لکھنا"
+  },
+  {
+    "question": "’فسانہ آزاد‘ کس ادیب کی تصنیف ہے؟",
+    "options": ["مولانا شبلی نعمانی", "پندت رتن ناتھ سرشار", "محمد حسین آزاد", "مولانا حالی"],
+    "answer": "پندت رتن ناتھ سرشار"
+  },
+  {
+    "question": "’سوانح عمری‘ اور ’تذکرہ‘ میں بنیادی فرق کیا ہے؟",
+    "options": ["تذکرہ مختصر ہوتا ہے، سوانح عمری تفصیلی", "سوانح عمری فرضی ہوتی ہے", "تذکرہ نظم میں ہوتا ہے", "کوئی فرق نہیں"],
+    "answer": "تذکرہ مختصر ہوتا ہے، سوانح عمری تفصیلی"
+  },
+  {
+    "question": "اردو نثر میں طنز و مزاح کا سب سے بڑا نام کون ہے؟",
+    "options": ["ابوالکلام آزاد", "پطرس بخاری", "شبلی نعمانی", "سودا"],
+    "answer": "پطرس بخاری"
+  },
+  {
+    "question": "’مکتوب‘ لکھنے کا مقصد کیا ہوتا ہے؟",
+    "options": ["طنز کرنا", "بات چیت یا پیغام دینا", "شاعری کرنا", "قصہ بیان کرنا"],
+    "answer": "بات چیت یا پیغام دینا"
+  },
+  {
+    "question": "اردو نثر میں سرسید تحریک کا مقصد کیا تھا؟",
+    "options": ["تعلیم و اصلاح", "شاعری کی ترویج", "قصہ کہانی سنانا", "صرف لغت لکھنا"],
+    "answer": "تعلیم و اصلاح"
+  }
+    ],
+    "poetry": [
+      {
+        "question": "What is 'nazm' in Urdu?",
+        "options": ["Poem", "Prose", "Story", "Letter"],
+        "answer": "Poem",
+        "correctExplanation": "Nazm is a form of Urdu poetry.",
+        "wrongExplanation": "The others are different.",
+        "difficulty": "easy"
+      },
+      {
+    "question": "’لب پہ آتی ہے دعا بن کے تمنا میری‘ کس شاعر کی نظم ہے؟",
+    "options": ["میرزا غالب", "مولانا الطاف حسین حالی", "علامہ اقبال", "فیض احمد فیض"],
+    "answer": "علامہ اقبال"
+  },
+  {
+    "question": "اقبال کی مشہور نظم ’لب پہ آتی ہے دعا‘ کس موقع پر لکھی گئی؟",
+    "options": ["بچوں کے لیے", "مسافروں کے لیے", "طلباء کے لیے", "شاعروں کے لیے"],
+    "answer": "بچوں کے لیے"
+  },
+  {
+    "question": "’مسدس حالی‘ کس شاعر کا کلام ہے؟",
+    "options": ["حالی", "غالب", "اقبال", "میر"],
+    "answer": "حالی"
+  },
+  {
+    "question": "’خودی کو کر بلند اتنا‘ کس شاعر کا مشہور شعر ہے؟",
+    "options": ["میر", "غالب", "اقبال", "حالی"],
+    "answer": "اقبال"
+  },
+  {
+    "question": "مولانا حالی کس تحریک سے وابستہ تھے؟",
+    "options": ["تحریک آزادی", "انجمن پنجاب", "سرسید تحریک", "تحریک خلافت"],
+    "answer": "سرسید تحریک"
+  },
+  {
+    "question": "’بلبل اور جگنو‘ نظم کے شاعر کون ہیں؟",
+    "options": ["اقبال", "فیض", "غالب", "حالی"],
+    "answer": "اقبال"
+  },
+  {
+    "question": "’ہمارا پیارا وطن‘ کس شاعر کی نظم ہے؟",
+    "options": ["فیض احمد فیض", "حالی", "اقبال", "حفیظ جالندھری"],
+    "answer": "حفیظ جالندھری"
+  },
+  {
+    "question": "’نالہ دل‘ کس شاعر کا کلام ہے؟",
+    "options": ["حالی", "غالب", "اقبال", "میر"],
+    "answer": "غالب"
+  },
+  {
+    "question": "غزل میں اشعار کی تعداد کم از کم کتنی ہوتی ہے؟",
+    "options": ["دو", "تین", "چار", "پانچ"],
+    "answer": "دو"
+  },
+  {
+    "question": "شاعری کی وہ صنف جس میں عشقیہ اور ذاتی جذبات بیان کیے جاتے ہیں؟",
+    "options": ["نظم", "غزل", "مرثیہ", "قصیدہ"],
+    "answer": "غزل"
+  },
+  {
+    "question": "’ترانہ ہندی‘ کس شاعر کی نظم ہے؟",
+    "options": ["مولانا حالی", "محمد حسین آزاد", "اقبال", "پطرس بخاری"],
+    "answer": "اقبال"
+  },
+  {
+    "question": "’یقین، عمل اور محبت‘ کا درس زیادہ تر کس شاعر نے دیا؟",
+    "options": ["غالب", "حالی", "میر", "اقبال"],
+    "answer": "اقبال"
+  },
+  {
+    "question": "حمد کس کے لیے لکھی جاتی ہے؟",
+    "options": ["اللہ کے لیے", "نبی ﷺ کے لیے", "محبوب کے لیے", "ملک کے لیے"],
+    "answer": "اللہ کے لیے"
+  },
+  {
+    "question": "نعت کس کے لیے لکھی جاتی ہے؟",
+    "options": ["محبوب کے لیے", "نبی کریم ﷺ کے لیے", "بچوں کے لیے", "قوم کے لیے"],
+    "answer": "نبی کریم ﷺ کے لیے"
+  },
+  {
+    "question": "’قومی ترانہ پاکستان‘ کس نے لکھا؟",
+    "options": ["اقبال", "حالی", "حفیظ جالندھری", "فیض احمد فیض"],
+    "answer": "حفیظ جالندھری"
+  }
+      
+    ],
+    "letters": [
+      {
+        "question": "What is 'khatoot' in Urdu?",
+        "options": ["Letters", "Books", "Poems", "Stories"],
+        "answer": "Letters",
+        "correctExplanation": "Khatoot means letters.",
+        "wrongExplanation": "The others are different writings.",
+        "difficulty": "easy"
+      },
+      {
+    "question": "خط لکھنے کے کتنے انداز ہوتے ہیں؟",
+    "options": ["دو", "تین", "چار", "پانچ"],
+    "answer": "دو"
+  },
+  {
+    "question": "سرکاری خط کو کیا کہا جاتا ہے؟",
+    "options": ["درخواست", "کاروباری خط", "ذاتی خط", "مکتوب"],
+    "answer": "درخواست"
+  },
+  {
+    "question": "دوست کو خط لکھتے وقت کس انداز کو اختیار کیا جاتا ہے؟",
+    "options": ["سرکاری", "کاروباری", "غیر رسمی", "عدالتی"],
+    "answer": "غیر رسمی"
+  },
+  {
+    "question": "کاروباری خط کس مقصد کے لیے لکھا جاتا ہے؟",
+    "options": ["محبت جتانے کے لیے", "کاروباری معاملات کے لیے", "دوستی کے اظہار کے لیے", "ادبی گفتگو کے لیے"],
+    "answer": "کاروباری معاملات کے لیے"
+  },
+  {
+    "question": "درخواست میں سب سے پہلے کیا لکھا جاتا ہے؟",
+    "options": ["درخواست گزار کا نام", "عنوان یا ہیڈنگ", "ادب کے الفاظ", "تاریخ"],
+    "answer": "عنوان یا ہیڈنگ"
+  },
+  {
+    "question": "درخواست کا آخری حصہ کیا کہلاتا ہے؟",
+    "options": ["دستخط", "مضمون", "ہیڈنگ", "سلام"],
+    "answer": "دستخط"
+  },
+  {
+    "question": "خط میں سب سے پہلے کیا لکھا جاتا ہے؟",
+    "options": ["سلام", "تاریخ اور پتہ", "عنوان", "دستخط"],
+    "answer": "تاریخ اور پتہ"
+  },
+  {
+    "question": "ذاتی خط کس کو لکھا جاتا ہے؟",
+    "options": ["دوست یا رشتہ دار کو", "سرکاری افسر کو", "عدالت کو", "استاد کو"],
+    "answer": "دوست یا رشتہ دار کو"
+  },
+  {
+    "question": "کاروباری خط کس انداز میں لکھا جاتا ہے؟",
+    "options": ["غیر رسمی انداز", "رسمی انداز", "شاعرانہ انداز", "دوستانہ انداز"],
+    "answer": "رسمی انداز"
+  },
+  {
+    "question": "سرکاری خط کو اور کس نام سے پکارا جاتا ہے؟",
+    "options": ["سوانح", "درخواست", "داستان", "انشاء"],
+    "answer": "درخواست"
+  },
+  {
+    "question": "درخواست کے آخر میں کیا لکھا جاتا ہے؟",
+    "options": ["پتہ", "عنوان", "شکریہ اور دستخط", "سلام"],
+    "answer": "شکریہ اور دستخط"
+  },
+  {
+    "question": "کاروباری خط کس زبان میں لکھا جانا چاہیے؟",
+    "options": ["سنجیدہ اور مختصر", "غیر رسمی", "طنزیہ", "مشکل الفاظ"],
+    "answer": "سنجیدہ اور مختصر"
+  },
+  {
+    "question": "خط کے مضمون کے آخر میں کیا شامل ہوتا ہے؟",
+    "options": ["سلام اور دستخط", "پتہ", "عنوان", "ہیڈنگ"],
+    "answer": "سلام اور دستخط"
+  },
+  {
+    "question": "ذاتی خط میں کس قسم کے الفاظ زیادہ ہوتے ہیں؟",
+    "options": ["رسمی", "دوستانہ", "مشکل", "قانونی"],
+    "answer": "دوستانہ"
+  },
+  {
+    "question": "خطوط نگاری کی سب سے مشہور صنف کون سی ہے؟",
+    "options": ["درخواست", "کاروباری خط", "ذاتی خط", "خطوط غالب"],
+    "answer": "خطوط غالب"
+  }
+    ],
+    "comprehension": [
+      {
+        "question": "What is 'samajh' in Urdu?",
+        "options": ["Understanding", "Reading", "Writing", "Speaking"],
+        "answer": "Understanding",
+        "correctExplanation": "Samajh means comprehension.",
+        "wrongExplanation": "The others are different skills.",
+        "difficulty": "easy"
+      },
+      {
+    "question": "محبت انسان کو کس چیز کے قریب لاتی ہے؟",
+    "options": ["پیسہ", "دوسروں", "محل", "دوست"],
+    "answer": "دوسروں"
+  },
+  {
+    "question": "محبت صرف الفاظ سے ثابت ہوتی ہے؟",
+    "options": ["ہاں", "نہیں", "کبھی کبھی", "صرف شاعری میں"],
+    "answer": "نہیں"
+  },
+  {
+    "question": "محبت کس سے ثابت ہوتی ہے؟",
+    "options": ["عمل اور سچائی", "پیسے سے", "دکھاوے سے", "صرف الفاظ سے"],
+    "answer": "عمل اور سچائی"
+  },
+  {
+    "question": "ایک مخلص شخص کس چیز کو جیتتا ہے؟",
+    "options": ["پیسہ", "محبت اور احترام", "دوستی", "عزت اور طاقت"],
+    "answer": "محبت اور احترام"
+  },
+  {
+    "question": "محبت کے لیے سب سے ضروری وصف کیا ہے؟",
+    "options": ["وفاداری", "دھوکہ", "ظاہر کی خوبصورتی", "تعلیم"],
+    "answer": "وفاداری"
+  },
+  {
+    "question": "کیا محبت صرف دکھاوے کی بات ہے؟",
+    "options": ["ہاں", "نہیں", "کبھی کبھی", "صرف شاعری میں"],
+    "answer": "نہیں"
+  },
+  {
+    "question": "محبت کے جذبے کو کیسے ثابت کیا جا سکتا ہے؟",
+    "options": ["عمل اور مخلصی سے", "محل کی سیر سے", "تحفے دے کر", "صرف باتیں کر کے"],
+    "answer": "عمل اور مخلصی سے"
+  },
+  {
+    "question": "محبت انسان کے کس رویے کو بہتر بناتی ہے؟",
+    "options": ["دھوکہ", "وفاداری اور مخلصی", "ظلم", "جھوٹ"],
+    "answer": "وفاداری اور مخلصی"
+  },
+  {
+    "question": "محبت کے بغیر انسان کیا کھو دیتا ہے؟",
+    "options": ["دوستی", "احترام اور قربت", "تعلیم", "طاقت"],
+    "answer": "احترام اور قربت"
+  },
+  {
+    "question": "کیا صرف الفاظ محبت ظاہر کر سکتے ہیں؟",
+    "options": ["ہاں", "نہیں", "کبھی کبھار", "صرف شاعر ہی ظاہر کر سکتا ہے"],
+    "answer": "نہیں"
+  },
+  {
+    "question": "محبت میں سچائی کا کیا کردار ہے؟",
+    "options": ["اہم", "غیر ضروری", "ظاہر کے لیے", "صرف بچپن میں"],
+    "answer": "اہم"
+  },
+  {
+    "question": "کون سا وصف محبت کو پائیدار بناتا ہے؟",
+    "options": ["جھوٹ","مخلصی",  "دھوکہ", "ظاہر کی باتیں"],
+    "answer": "مخلصی"
+  },
+  {
+    "question": "محبت کا حقیقی مقصد کیا ہے؟",
+    "options": ["قربت اور احترام حاصل کرنا", "پیسہ جمع کرنا", "سوشل میڈیا پر دکھانا", "شاعری لکھنا"],
+    "answer": "قربت اور احترام حاصل کرنا"
+  },
+  {
+    "question": "محبت کی بنیاد کس چیز پر ہونی چاہیے؟",
+    "options": ["دکھاوا", "سچائی اور عمل", "رنگ و روپ", "صرف لفظ"],
+    "answer": "سچائی اور عمل"
+  }
+    ]
+  },
+  "pakstudy": {
+    "physical_features": [
+      {
+        "question": "What is the capital of Pakistan?",
+        "options": ["Islamabad", "Karachi", "Lahore", "Peshawar"],
+        "answer": "Islamabad",
+        "correctExplanation": "Islamabad is the capital of Pakistan.",
+        "wrongExplanation": "The others are major cities but not capital.",
+        "difficulty": "easy"
+      },
+       {
+    "question": "زمین کی سب سے بلند سطح کون سی ہے؟",
+    "options": ["میدان", "پہاڑ", "صحرا", "وادی"],
+    "answer": "پہاڑ"
+  },
+  {
+    "question": "زمین کی سب سے نیچی سطح کہاں پائی جاتی ہے؟",
+    "options": ["صحرا", "وادی", "سمندر", "پہاڑ"],
+    "answer": "سمندر"
+  },
+  {
+    "question": "دریا کا وسیع اور کم دھار والا حصہ کیا کہلاتا ہے؟",
+    "options": ["نہر", "جھیل", "دریا", "دروازہ"],
+    "answer": "دریا"
+  },
+  {
+    "question": "صحراء کس قسم کا رقبہ ہوتا ہے؟",
+    "options": ["بارش والا", "خشک اور ریتلا", "پہاڑی", "درختوں والا"],
+    "answer": "خشک اور ریتلا"
+  },
+  {
+    "question": "زمین کی سطح میں اونچ نیچ کے فرق کو کیا کہتے ہیں؟",
+    "options": ["ارتفاع", "میدان", "پہاڑ", "درخت"],
+    "answer": "ارتفاع"
+  },
+  {
+    "question": "پہاڑ کی سب سے چوٹی والا حصہ کیا کہلاتا ہے؟",
+    "options": [ "وادی", "سہارا","چوٹیاں", "سطح"],
+    "answer": "چوٹیاں"
+  },
+  {
+    "question": "وادی کیا ہوتی ہے؟",
+    "options": ["پہاڑوں کے درمیان نیچی زمین", "صحرا", "دریا", "سطح"],
+    "answer": "پہاڑوں کے درمیان نیچی زمین"
+  },
+  {
+    "question": "جزیرہ کیا ہوتا ہے؟",
+    "options": ["پہاڑ","سمندر میں زمین کا ٹکڑا", "میدان",  "دریا"],
+    "answer": "سمندر میں زمین کا ٹکڑا"
+  },
+  {
+    "question": "جزیرہ نما کیا ہوتا ہے؟",
+    "options": ["زمین کا وہ حصہ جو تین طرف سے پانی میں گھرا ہو", "دریا", "وادی", "صحرا"],
+    "answer": "زمین کا وہ حصہ جو تین طرف سے پانی میں گھرا ہو"
+  },
+  {
+    "question": "پلیٹو کیا ہوتا ہے؟",
+    "options": [ "نیچی زمین", "پہاڑ کی چوٹی", "صحرا","اونچی سطح زمین"],
+    "answer": "اونچی سطح زمین"
+  },
+  {
+    "question": "میدان کی سب سے بڑی خصوصیت کیا ہے؟",
+    "options": ["پہاڑ","ہموار زمین",  "وادی", "جزیرہ"],
+    "answer": "ہموار زمین"
+  },
+  {
+    "question": "روداد یا دریا کی پہلی قسم کون سی ہے؟",
+    "options": ["میٹھا پانی", "نمکین پانی", "بارانی پانی", "درختوں والا پانی"],
+    "answer": "میٹھا پانی"
+  },
+  {
+    "question": "پہاڑ اور وادی کے درمیان زمین کا کم ترین حصہ کیا کہلاتا ہے؟",
+    "options": [ "چوٹیاں", "پلیٹو", "وادی","صحرا"],
+    "answer": "وادی"
+  },
+  {
+    "question": "سطحِ زمین کی خصوصیات کو کیا کہتے ہیں؟",
+    "options": ["Climate","Physical Features",  "Population", "Culture"],
+    "answer": "Physical Features"
+  }
+    ],
+    "history_movement": [
+      {
+        "question": "In which year did Pakistan become independent?",
+        "options": ["1947", "1945", "1950", "1952"],
+        "answer": "1947",
+        "correctExplanation": "Pakistan gained independence on August 14, 1947.",
+        "wrongExplanation": "The other years are not the independence year.",
+        "difficulty": "easy"
+      },
+       {
+    "question": "ہندو مسلم علیحدگی کی تحریک کا آغاز کب ہوا؟",
+    "options": ["1857", "1906", "1947", "1920"],
+    "answer": "1906"
+  },
+  {
+    "question": "مسلمانوں کی سیاسی جماعت کون سی تھی؟",
+    "options": ["انڈین نیشنل کانگریس", "مسلم لیگ", "سوشلسٹ پارٹی", "بابا جماعت"],
+    "answer": "مسلم لیگ"
+  },
+  {
+    "question": "مسلم لیگ کا قیام کب ہوا؟",
+    "options": ["1906", "1916", "1920", "1930"],
+    "answer": "1906"
+  },
+  {
+    "question": "مسلمانوں کی علیحدہ شناخت کے لیے کون سا نعرہ مشہور ہوا؟",
+    "options": ["ہندوستانی یکجہتی", "پاکستانی قومیت", "قومیت کی علیحدگی", "مسلمانوں کی علیحدگی"],
+    "answer": "مسلمانوں کی علیحدگی"
+  },
+  {
+    "question": "محمد علی جناح کو کس لقب سے یاد کیا جاتا ہے؟",
+    "options": ["بابائے قوم", "پدر ملت", "صدر اعظم", "لیڈر اعظم"],
+    "answer": "بابائے قوم"
+  },
+  {
+    "question": "قیام پاکستان کے لیے سب سے بڑی تحریک کون سی تھی؟",
+    "options": ["ہندو تحریک", "مسلم لیگ تحریک", "انقلاب تحریک", "سوشلسٹ تحریک"],
+    "answer": "مسلم لیگ تحریک"
+  },
+  {
+    "question": "مؤرخین کے مطابق قیام پاکستان کی سب سے بڑی وجہ کیا تھی؟",
+    "options": ["سیاستی، مذہبی اور اقتصادی مسائل", "صرف مذہبی اختلافات", "صرف اقتصادی اختلافات", "صرف جغرافیائی مسائل"],
+    "answer": "سیاستی، مذہبی اور اقتصادی مسائل"
+  },
+  {
+    "question": "پاکستان کے قیام کی تاریخ کیا ہے؟",
+    "options": ["14 اگست 1947", "23 مارچ 1940", "15 اگست 1947", "25 دسمبر 1940"],
+    "answer": "14 اگست 1947"
+  },
+  {
+    "question": "لاہور قرارداد 1940 کس نے منظور کی؟",
+    "options": ["کانگریس", "بابا جماعت", "مسلم لیگ", "انگریز"],
+    "answer": "مسلم لیگ"
+  },
+  {
+    "question": "لاہور قرارداد میں مسلموں کے لیے کیا مطالبہ کیا گیا؟",
+    "options": ["الگ وطن", "مشترکہ وطن", "اقتصادی ترقی", "تعلیمی اصلاحات"],
+    "answer": "الگ وطن"
+  },
+  {
+    "question": "مسلم لیگ کا مرکزی اجلاس کہاں ہوا تھا جس میں پاکستان کا تصور پیش کیا گیا؟",
+    "options": ["ممبئی","لاہور",  "کراچی", "لندن"],
+    "answer": "لاہور"
+  },
+  {
+    "question": "محمد علی جناح نے کب مسلم لیگ کی قیادت سنبھالی؟",
+    "options": ["1913", "1920", "1935", "1940"],
+    "answer": "1913"
+  },
+  {
+    "question": "قرارداد پاکستان میں مسلمانوں کے لیے کون سا حل تجویز کیا گیا تھا؟",
+    "options": ["مسلم اکائیوں میں الگ ریاست", "ملا جلا پاکستان", "صرف سیاسی حقوق", "تعلیمی اصلاحات"],
+    "answer": "مسلم اکائیوں میں الگ ریاست"
+  },
+  {
+    "question": "پاکستان کے قیام کے بعد پہلا گورنر جنرل کون بنا؟",
+    "options": [ "لعل بہادر شاستری", "نظیر اللہ", "ابوالکلام آزاد","محمد علی جناح"],
+    "answer": "محمد علی جناح"
+  },
+  {
+    "question": "پاکستان تحریک کے دوران مسلم لیگ نے کس نظریہ پر زور دیا؟",
+    "options": ["ایک قومی نظریہ","دو قومی نظریہ",  "معاشی نظریہ", "تعلیمی نظریہ"],
+    "answer": "دو قومی نظریہ"
+  }
+    ],
+    "ideology": [
+      {
+        "question": "What is the ideology of Pakistan?",
+        "options": ["Two Nation Theory", "One Nation Theory", "Secularism", "Communism"],
+        "answer": "Two Nation Theory",
+        "correctExplanation": "Pakistan was created on the basis of Two Nation Theory.",
+        "wrongExplanation": "The others are different ideologies.",
+        "difficulty": "medium"
+      },
+    {
+    "question": "پاکستان کی بنیاد کس نظریے پر رکھی گئی؟",
+    "options": ["دو قومی نظریہ", "یک قومی نظریہ", "سوشلسٹ نظریہ", "انقلاب نظریہ"],
+    "answer": "دو قومی نظریہ"
+  },
+  {
+    "question": "دو قومی نظریہ کس نے پیش کیا تھا؟",
+    "options": ["محمد علی جناح", "علامہ اقبال", "مولانا مودودی", "ابوالکلام آزاد"],
+    "answer": "علامہ اقبال"
+  },
+  {
+    "question": "پاکستان کا قیام کس مقصد کے لیے ہوا؟",
+    "options": [ "معاشی فوائد کے لیے", "سول سروس کے لیے", "تعلیمی اصلاحات کے لیے","مسلمانوں کی علیحدہ شناخت کے لیے"],
+    "answer": "مسلمانوں کی علیحدہ شناخت کے لیے"
+  },
+  {
+    "question": "مسلمانوں کے لیے علیحدہ ریاست کی ضرورت کیوں تھی؟",
+    "options": ["اقتصادی فوائد کے لیے","مذہبی، ثقافتی اور سیاسی فرق کی وجہ سے",  "صرف جغرافیائی وجوہات", "تعلیمی فوائد کے لیے"],
+    "answer": "مذہبی، ثقافتی اور سیاسی فرق کی وجہ سے"
+  },
+  {
+    "question": "پاکستان کا قومی مقصد کیا ہے؟",
+    "options": ["اسلامی اصولوں پر مبنی معاشرہ قائم کرنا", "صرف اقتصادی ترقی", "صرف فوجی طاقت بڑھانا", "صرف سیاسی آزادی حاصل کرنا"],
+    "answer": "اسلامی اصولوں پر مبنی معاشرہ قائم کرنا"
+  },
+  {
+    "question": "پاکستان کے قیام کے بعد اولین دستور کا مقصد کیا تھا؟",
+    "options": [ "صرف سیاسی حقوق دینا", "اسلامی جمہوریت قائم کرنا","صرف اقتصادی فوائد حاصل کرنا", "تعلیمی نصاب تیار کرنا"],
+    "answer": "اسلامی جمہوریت قائم کرنا"
+  },
+  {
+    "question": "پاکستان کے قومی شاعر کون ہیں جنہوں نے اسلامی نظریہ کی ترویج کی؟",
+    "options": ["علامہ اقبال", "حفیظ جالندھری", "پطرس بخاری", "مولانا حالی"],
+    "answer": "علامہ اقبال"
+  },
+  {
+    "question": "پاکستان کی نظریاتی بنیاد کس قرارداد میں واضح ہوئی؟",
+    "options": ["لاہور قرارداد 1940", "قرارداد پاکستان 1947", "قومی اسمبلی 1956", "مظفرپورٹ اجلاس 1935"],
+    "answer": "لاہور قرارداد 1940"
+  },
+  {
+    "question": "پاکستان کی جغرافیائی حدود کی بنیاد کس نظریے پر رکھی گئی؟",
+    "options": [ "اقتصادی فائدہ", "اسلامی اقدار","تعلیمی مفاد", "سماجی ترقی"],
+    "answer": "اسلامی اقدار"
+  },
+  {
+    "question": "دو قومی نظریے کا بنیادی مقصد کیا تھا؟",
+    "options": ["تعلیم کا فروغ","مسلمانوں کو علیحدہ شناخت دینا", "سماجی اصلاحات",  "اقتصادی ترقی"],
+    "answer": "مسلمانوں کو علیحدہ شناخت دینا"
+  },
+  {
+    "question": "پاکستان کی اسلامی شناخت کو کس نے سب سے زیادہ فروغ دیا؟",
+    "options": [ "لعل بہادر شاستری", "بابائے قوم", "علامہ اقبال","محمد علی جناح"],
+    "answer": "محمد علی جناح"
+  },
+  {
+    "question": "پاکستان میں اسلامی قوانین کو نافذ کرنے کا مقصد کیا ہے؟",
+    "options": ["صرف تعلیم دینا","معاشرتی انصاف اور اخلاقی نظام قائم کرنا",  "اقتصادی ترقی", "سول سروس بڑھانا"],
+    "answer": "معاشرتی انصاف اور اخلاقی نظام قائم کرنا"
+  },
+  {
+    "question": "پاکستان کا قومی اصول کس چیز پر مبنی ہے؟",
+    "options": [ "صرف اقتصادی ترقی", "صرف فوجی طاقت", "اسلامی اقدار","صرف تعلیمی نصاب"],
+    "answer": "اسلامی اقدار"
+  },
+  {
+    "question": "علامہ اقبال نے مسلمانوں کے لیے کون سا خواب پیش کیا؟",
+    "options": ["ایک الگ اسلامی وطن", "اقتصادی مساوات", "سول سروس", "تعلیمی نظام"],
+    "answer": "ایک الگ اسلامی وطن"
+  },
+  {
+    "question": "پاکستان کی نظریاتی شناخت کو مضبوط کرنے کے لیے سب سے اہم ذریعہ کیا ہے؟",
+    "options": ["تعلیم اور اسلامی قوانین", "اقتصادی ترقی", "صرف فوجی طاقت", "صرف سیاسی حقوق"],
+    "answer": "تعلیم اور اسلامی قوانین"
+  }
+    ],
+    "land_people": [
+      {
+        "question": "What is the population of Pakistan approximately?",
+        "options": ["220 million", "150 million", "300 million", "100 million"],
+        "answer": "220 million",
+        "correctExplanation": "Pakistan has about 220 million people.",
+        "wrongExplanation": "The others are not accurate.",
+        "difficulty": "hard"
+      },
+      {
+    "question": "پاکستان کی کل رقبہ تقریباً کتنا ہے؟",
+    "options": ["796,095 مربع کلومیٹر", "500,000 مربع کلومیٹر", "1,000,000 مربع کلومیٹر", "600,000 مربع کلومیٹر"],
+    "answer": "796,095 مربع کلومیٹر"
+  },
+  {
+    "question": "پاکستان میں سب سے زیادہ آبادی کس صوبے میں ہے؟",
+    "options": ["سندھ", "بلوچستان", "پنجاب", "خیبر پختونخوا"],
+    "answer": "پنجاب"
+  },
+  {
+    "question": "پاکستان کی سب سے بڑی وادی کون سی ہے؟",
+    "options": ["پنجاب کی وادی", "سندھ کی وادی", "اسکندرآباد وادی", "بلوچستان وادی"],
+    "answer": "پنجاب کی وادی"
+  },
+  {
+    "question": "پاکستان کی سب سے بڑی جھیل کون سی ہے؟",
+    "options": ["منچھر جھیل", "ہری جھیل", "جھیل سیالکوٹ", "ٹوبہ جیلانوالہ"],
+    "answer": "منچھر جھیل"
+  },
+  {
+    "question": "پاکستان کا سب سے بڑا صحرا کون سا ہے؟",
+    "options": ["چولستان", "تھر", "ریگستان", "بلوچستان صحرا"],
+    "answer": "تھر"
+  },
+  {
+    "question": "پاکستان کے سب سے بلند پہاڑ کا نام کیا ہے؟",
+    "options": ["نلٹر","کے ٹو",  "راکا پوشی", "موسا چوٹھی"],
+    "answer": "کے ٹو"
+  },
+  {
+    "question": "پاکستان کی سب سے بڑی بندرگاہ کون سی ہے؟",
+    "options": ["کراچی پورٹ", "گوادر پورٹ", "ریاض پورٹ", "چٹاگانگ پورٹ"],
+    "answer": "کراچی پورٹ"
+  },
+  {
+    "question": "پاکستان کی کل آبادی تقریباً کتنی ہے؟",
+    "options": ["2.4 کروڑ", "24 کروڑ", "50 کروڑ", "10 کروڑ"],
+    "answer": "24 کروڑ"
+  },
+  {
+    "question": "پاکستان کے سب سے بڑے ضلع کون سے ہیں؟",
+    "options": ["قصور", "راولپنڈی", "بھکر", "ملتان"],
+    "answer": "بھکر"
+  },
+  {
+    "question": "پاکستان میں زیادہ تر لوگ کس زبان بولتے ہیں؟",
+    "options": ["اردو", "پنجابی", "سندھی", "بلوچی"],
+    "answer": "پنجابی"
+  },
+  {
+    "question": "پاکستان میں سب سے زیادہ آباد شہر کون سا ہے؟",
+    "options": ["کراچی", "لاہور", "اسلام آباد", "راولپنڈی"],
+    "answer": "کراچی"
+  },
+  {
+    "question": "پاکستان میں سب سے بڑی مذہبی جماعت کون سی ہے؟",
+    "options": ["ہندو","مسلمان",  "سکھ", "عیسائی"],
+    "answer": "مسلمان"
+  },
+  {
+    "question": "پاکستان کے صوبوں کی تعداد کتنی ہے؟",
+    "options": [ "پانچ", "چھ", "تین","چار"],
+    "answer": "چار"
+  },
+  {
+    "question": "پاکستان کا قومی پھول کون سا ہے؟",
+    "options": ["چنبیلی", "گلاب", "چمبیلی", "جلنار"],
+    "answer": "چنبیلی"
+  },
+  {
+    "question": "پاکستان کا قومی جانور کون سا ہے؟",
+    "options": ["چیتا","مارخور",  "ہرن", "بھیڑ"],
+    "answer": "مارخور"
+  }
+    ],
+    "government_politics": [
+      {
+        "question": "What is the current Prime Minister of Pakistan?",
+        "options": ["Shehbaz Sharif", "Imran Khan", "Nawaz Sharif", "Asif Ali Zardari"],
+        "answer": "Shehbaz Sharif",
+        "correctExplanation": "Shehbaz Sharif is the current Prime Minister.",
+        "wrongExplanation": "The others served previously.",
+        "difficulty": "hard"
+      },
+    {
+    "question": "پاکستان میں حکومت کی کون سی شکل ہے؟",
+    "options": ["پارلیمانی جمہوریت", "آئینی بادشاہت", "فوجی آمریت", "مستبد حکومت"],
+    "answer": "پارلیمانی جمہوریت"
+  },
+  {
+    "question": "پاکستان کا صدر کس مدت کے لیے منتخب ہوتا ہے؟",
+    "options": [ "4 سال", "6 سال", "3 سال","5 سال"],
+    "answer": "5 سال"
+  },
+  {
+    "question": "پاکستان کی پارلیمنٹ میں کتنی اسمبلیاں ہیں؟",
+    "options": [ "ایک", "تین","دو", "چار"],
+    "answer": "دو"
+  },
+  {
+    "question": "نیچے دی گئی کون سی اسمبلی پاکستان کی ہے؟",
+    "options": ["قومی اسمبلی", "سینیٹ", "وزارت", "اعلی عدلیہ"],
+    "answer": "قومی اسمبلی"
+  },
+  {
+    "question": "پاکستان کی پارلیمنٹ کا اوپر والا ایوان کون سا ہے؟",
+    "options": [ "قومی اسمبلی", "صوبائی اسمبلی", "بلدیاتی کمیٹی","سینیٹ"],
+    "answer": "سینیٹ"
+  },
+  {
+    "question": "پاکستان کی پارلیمانی جمہوریت میں وزیر اعظم کس کے ذریعے منتخب ہوتا ہے؟",
+    "options": ["قومی اسمبلی کے ارکان", "صدر", "سپریم کورٹ", "صوبائی اسمبلی"],
+    "answer": "قومی اسمبلی کے ارکان"
+  },
+  {
+    "question": "پاکستان میں قانونی اختیارات کس کے پاس ہیں؟",
+    "options": ["صدر","پارلیمنٹ",  "وزیر اعظم", "فوج"],
+    "answer": "پارلیمنٹ"
+  },
+  {
+    "question": "پاکستان میں عدلیہ کس پر انحصار کرتی ہے؟",
+    "options": [ "صدر", "پارلیمنٹ","آئین", "وزیر اعظم"],
+    "answer": "آئین"
+  },
+  {
+    "question": "پاکستان کے مقامی حکومت کے ادارے کیا کہلاتے ہیں؟",
+    "options": ["بلدیاتی حکومت", "صوبائی حکومت", "وفاقی حکومت", "پارلیمنٹ"],
+    "answer": "بلدیاتی حکومت"
+  },
+  {
+    "question": "پاکستان میں ووٹ دینے کی کم از کم عمر کیا ہے؟",
+    "options": [ "16 سال", "21 سال", "25 سال","18 سال"],
+    "answer": "18 سال"
+  },
+  {
+    "question": "پاکستان میں آئین کس سال نافذ ہوا؟",
+    "options": [ "1956", "1962", "1973","1947"],
+    "answer": "1973"
+  },
+  {
+    "question": "پاکستان میں وفاقی حکومت اور صوبائی حکومت کے اختیارات کو کیا کہتے ہیں؟",
+    "options": [ "مرکزی اختیارات", "عدالتی اختیارات", "اختیارات کی تقسیم","پارلیمانی اختیارات"],
+    "answer": "اختیارات کی تقسیم"
+  },
+  {
+    "question": "پاکستان میں سیاسی جماعتوں کا مقصد کیا ہوتا ہے؟",
+    "options": ["حکومت بنانا اور عوام کی خدمت کرنا", "صرف فوجی تربیت دینا", "تعلیمی نصاب تیار کرنا", "عدالتی فیصلے کرنا"],
+    "answer": "حکومت بنانا اور عوام کی خدمت کرنا"
+  },
+  {
+    "question": "پاکستان میں انتخابی نظام کس پر مبنی ہے؟",
+    "options": ["جمہوری نظام", "بادشاہت", "فوجی آمریت", "سوشلسٹ نظام"],
+    "answer": "جمہوری نظام"
+  },
+  {
+    "question": "پاکستان میں وزراء کون مقرر کرتا ہے؟",
+    "options": [ "صدر", "پارلیمنٹ","وزیر اعظم", "عدلیہ"],
+    "answer": "وزیر اعظم"
+  }
+    ]
+  },
+  "islamyat": {
+    "tauheed": [
+      {
+        "question": "What is Tauheed?",
+        "options": ["Oneness of Allah", "Prophethood", "Prayer", "Fasting"],
+        "answer": "Oneness of Allah",
+        "correctExplanation": "Tauheed means believing in the oneness of Allah.",
+        "wrongExplanation": "The others are different pillars or concepts.",
+        "difficulty": "easy"
+      },
+      {
+    "question": "توحید کا اصل مطلب کیا ہے؟",
+    "options": ["اللہ کی واحدانیت", "نماز پڑھنا", "روزہ رکھنا", "صدقہ دینا"],
+    "answer": "اللہ کی واحدانیت"
+  },
+  {
+    "question": "توحید کے کتنے اقسام ہیں؟",
+    "options": ["توحید ربوبیت، توحید الٰہیت، توحید اسماء و صفات", "صرف توحید صفات", "صرف توحید الٰہیت", "توحید ربوبیت اور الٰہیت"],
+    "answer": "توحید ربوبیت، توحید الٰہیت، توحید اسماء و صفات"
+  },
+  {
+    "question": "توحید ربوبیت کا مطلب کیا ہے؟",
+    "options": ["اللہ ہی عبادت کے قابل ہے", "اللہ کی صفات لا محدود ہیں", "انبیاء کی پیروی کرنا","اللہ ہی سب کا رب ہے"],
+    "answer": "اللہ ہی سب کا رب ہے"
+  },
+  {
+    "question": "توحید الٰہیت کا مطلب کیا ہے؟",
+    "options": ["صرف اللہ کی عبادت کرنا", "نماز پڑھنا", "صدقہ دینا", "روزہ رکھنا"],
+    "answer": "صرف اللہ کی عبادت کرنا"
+  },
+  {
+    "question": "توحید اسماء و صفات کیا بیان کرتا ہے؟",
+    "options": ["اللہ کی صفات اور اسماء کی حقیقت" , "صدقہ و خیرات", "نماز کے طریقے", "روزہ کے احکام"],
+    "answer": "اللہ کی صفات اور اسماء کی حقیقت"
+  },
+  {
+    "question": "شرک کا مطلب کیا ہے؟",
+    "options": [ "صدقہ دینا" ,"اللہ کے ساتھ کسی کو شریک ٹھہرانا", "نماز پڑھنا", "روزہ رکھنا"],
+    "answer": "اللہ کے ساتھ کسی کو شریک ٹھہرانا"
+  },
+  {
+    "question": "توحید کی بنیاد کس قرآن پاک کی آیت میں ہے؟",
+    "options": ["’’اللہ لا الہ الا هو‘‘", "’’اقرأ باسم ربک‘‘", "’’و انذر‘‘", "’’انما الاعمال بالنيات‘‘"],
+    "answer": "’’اللہ لا الہ الا هو‘‘"
+  },
+  {
+    "question": "توحید کے بغیر کوئی شخص مسلمان نہیں کہلایا جا سکتا؟",
+    "options": [ "نہیں", "ہاں","کبھی کبھار", "صرف علماء کا کہنا"],
+    "answer": "ہاں"
+  },
+  {
+    "question": "توحید کے نفاذ سے کیا حاصل ہوتا ہے؟",
+    "options": ["اللہ کی رضا", "تعلیم","دنیاوی دولت", "محبوب کی محبت" ],
+    "answer": "اللہ کی رضا"
+  },
+  {
+    "question": "شرک کی سب سے بڑی مثال کیا ہے؟",
+    "options": ["اللہ کے ساتھ کسی کی عبادت کرنا", "نماز پڑھنا", "روزہ رکھنا", "صدقہ دینا"],
+    "answer": "اللہ کے ساتھ کسی کی عبادت کرنا"
+  },
+  {
+    "question": "توحید کی تعلیم دینے والے سب سے پہلے نبی کون تھے؟",
+    "options": [ "حضرت نوح علیہ السلام", "حضرت محمد ﷺ", "حضرت ابراہیم علیہ السلام","حضرت آدم علیہ السلام"],
+    "answer": "حضرت آدم علیہ السلام"
+  },
+  {
+    "question": "اللہ کی صفات کے بارے میں صحیح عقیدہ کس کو کہتے ہیں؟",
+    "options": ["توحید اسماء و صفات", "توحید الٰہیت", "توحید ربوبیت", "نماز و روزہ"],
+    "answer": "توحید اسماء و صفات"
+  },
+  {
+    "question": "’’لا شریک ہے‘‘ کا مفہوم کیا ہے؟",
+    "options": [ "نماز فرض ہے", "روزہ ضروری ہے", "اللہ کے ساتھ کوئی نہیں","صدقہ دینا واجب ہے"],
+    "answer": "اللہ کے ساتھ کوئی نہیں"
+  },
+  {
+    "question": "توحید کو مضبوط کرنے کے لیے کیا کرنا چاہیے؟",
+    "options": ["اللہ کی عبادت، دعا اور یاد", "صرف روزہ رکھنا", "صرف خیرات دینا", "دنیاوی کام کرنا"],
+    "answer": "اللہ کی عبادت، دعا اور یاد"
+  },
+  {
+    "question": "توحید پر عمل کرنے والا شخص کیا کہلاتا ہے؟",
+    "options": [ "نافرمان","مومن", "کافر", "فاسق"],
+    "answer": "مومن"
+  }
+    ],
+    "risalat": [
+      {
+        "question": "Who was the last Prophet of Islam?",
+        "options": ["Muhammad (PBUH)", "Isa (AS)", "Musa (AS)", "Ibrahim (AS)"],
+        "answer": "Muhammad (PBUH)",
+        "correctExplanation": "Muhammad is the last prophet.",
+        "wrongExplanation": "The others were earlier prophets.",
+        "difficulty": "easy"
+      },
+  {
+    "question": "رسالت کا مطلب کیا ہے؟",
+    "options": ["پیغام پہنچانا", "نماز پڑھنا", "روزہ رکھنا", "صدقہ دینا"],
+    "answer": "پیغام پہنچانا"
+  },
+  {
+    "question": "رسول کسے کہتے ہیں؟",
+    "options": [ "نماز پڑھنے والا", "صدقہ دینے والا", "اللہ کا پیغام پہنچانے والا","روزہ رکھنے والا"],
+    "answer": "اللہ کا پیغام پہنچانے والا"
+  },
+  {
+    "question": "سب سے پہلے رسول کون تھے؟",
+    "options": ["حضرت آدم علیہ السلام", "حضرت ابراہیم علیہ السلام", "حضرت نوح علیہ السلام", "حضرت محمد ﷺ"],
+    "answer": "حضرت نوح علیہ السلام"
+  },
+  {
+    "question": "آخری نبی اور رسول کون ہیں؟",
+    "options": ["حضرت موسیٰ علیہ السلام", "حضرت محمد ﷺ", "حضرت عیسیٰ علیہ السلام", "حضرت ابراہیم علیہ السلام"],
+    "answer": "حضرت محمد ﷺ"
+  },
+  {
+    "question": "رسول اور نبی میں کیا فرق ہے؟",
+    "options": [ "نبی کے پاس کتاب ہوتی ہے", "رسول کتاب لاتا ہے","رسول صرف عبادت کرتا ہے", "رسول عام انسان ہوتا ہے"],
+    "answer": "رسول کتاب لاتا ہے"
+  },
+  {
+    "question": "قرآن کے مطابق رسول کس کے تابع ہوتے ہیں؟",
+    "options": ["اللہ کے", "لوگوں کے", "بادشاہوں کے", "قبیلوں کے"],
+    "answer": "اللہ کے"
+  },
+  {
+    "question": "رسول کی سب سے بڑی ذمہ داری کیا ہے؟",
+    "options": ["اللہ کا پیغام پہنچانا", "زکوة جمع کرنا", "لوگوں کو تعلیم دینا", "حکومت چلانا"],
+    "answer": "اللہ کا پیغام پہنچانا"
+  },
+  {
+    "question": "رسالت پر ایمان لانا کس کے ایمان کا حصہ ہے؟",
+    "options": [ "ایمان باللہ", "ایمان بالملائکہ", "ایمان بالکتب","ایمانِ مفصل"],
+    "answer": "ایمانِ مفصل"
+  },
+  {
+    "question": "حضرت محمد ﷺ کو کس لقب سے پکارا جاتا تھا؟",
+    "options": ["الصادق و الامین", "الملک", "العالم", "المجاہد"],
+    "answer": "الصادق و الامین"
+  },
+  {
+    "question": "رسالت پر ایمان لانے سے انسان کو کیا فائدہ ہوتا ہے؟",
+    "options": ["سیدھی راہ ملتی ہے", "دنیاوی دولت ملتی ہے", "لوگ عزت کرتے ہیں", "دنیا کا حکمران بنتا ہے"],
+    "answer": "سیدھی راہ ملتی ہے"
+  },
+  {
+    "question": "رسول کس طرح کے گناہوں سے پاک ہوتے ہیں؟",
+    "options": [ "چھوٹے گناہ","بڑے گناہ", "دنیاوی غلطی", "عام عادتیں"],
+    "answer": "بڑے گناہ"
+  },
+  {
+    "question": "حضرت محمد ﷺ کو کتنی کتاب عطا ہوئی؟",
+    "options": [ "دو", "تین","ایک", "چار"],
+    "answer": "ایک"
+  },
+  {
+    "question": "تمام رسول کس دین کی دعوت دیتے تھے؟",
+    "options": [ "یہودیت", "عیسائیت", "اسلام","ہندومت"],
+    "answer": "اسلام"
+  },
+  {
+    "question": "حضرت محمد ﷺ کو رسول بنا کر کس قوم کی طرف بھیجا گیا؟",
+    "options": ["تمام انسانیت", "اہلِ عرب", "اہلِ مکہ", "اہلِ مدینہ"],
+    "answer": "تمام انسانیت"
+  },
+  {
+    "question": "رسالت کے انکار کرنے والا کیا کہلاتا ہے؟",
+    "options": [ "مومن", "فاسق", "صالح","کافر"],
+    "answer": "کافر"
+  }
+    ],
+    "akhlaq": [
+      {
+        "question": "What is Akhlaq?",
+        "options": ["Ethics and morality", "Prayer", "Fasting", "Pilgrimage"],
+        "answer": "Ethics and morality",
+        "correctExplanation": "Akhlaq means good character and morals.",
+        "wrongExplanation": "The others are acts of worship.",
+        "difficulty": "easy"
+      },
+      {
+    "question": "اخلاق کا مطلب کیا ہے؟",
+    "options": ["عادات و اطوار", "عبادت", "علم", "رزق"],
+    "answer": "عادات و اطوار"
+  },
+  {
+    "question": "اچھے اخلاق کی سب سے بڑی مثال کس کی زندگی ہے؟",
+    "options": [ "حضرت موسیٰ علیہ السلام", "حضرت محمد ﷺ","حضرت عیسیٰ علیہ السلام", "حضرت ابراہیم علیہ السلام"],
+    "answer": "حضرت محمد ﷺ"
+  },
+  {
+    "question": "قرآن میں نبی ﷺ کے اخلاق کو کس لفظ سے بیان کیا گیا؟",
+    "options": ["خلق عظیم", "علم", "حکمت", "تقویٰ"],
+    "answer": "خلق عظیم"
+  },
+  {
+    "question": "کون سا عمل اخلاق حسنہ میں شامل ہے؟",
+    "options": ["سچ بولنا", "چوری کرنا", "جھوٹ بولنا", "غیبت کرنا"],
+    "answer": "سچ بولنا"
+  },
+  {
+    "question": "برے اخلاق کی ایک مثال کیا ہے؟",
+    "options": [ "نماز پڑھنا", "صدقہ دینا", "دعوت دینا","جھوٹ بولنا"],
+    "answer": "جھوٹ بولنا"
+  },
+  {
+    "question": "اچھے اخلاق انسان کو کس چیز کے قریب کرتے ہیں؟",
+    "options": ["اللہ کے", "دنیاوی دولت کے", "حکومت کے", "شیطان کے"],
+    "answer": "اللہ کے"
+  },
+  {
+    "question": "رسول اللہ ﷺ نے فرمایا: تم میں سب سے بہتر کون ہے؟",
+    "options": ["زیادہ دولت والے", "زیادہ طاقت والے","اخلاق میں اچھے لوگ",  "زیادہ علم والے"],
+    "answer": "اخلاق میں اچھے لوگ"
+  },
+  {
+    "question": "اخلاق کی تعلیم ہمیں کہاں سے ملتی ہے؟",
+    "options": ["قرآن و سنت", "سائنس", "ریاضی", "تاریخ"],
+    "answer": "قرآن و سنت"
+  },
+  {
+    "question": "اخلاق حسنہ کا نتیجہ کیا ہے؟",
+    "options": [ "دنیاوی نقصان ہوتا ہے","لوگ عزت کرتے ہیں", "غصہ بڑھتا ہے", "دوست کم ہوتے ہیں"],
+    "answer": "لوگ عزت کرتے ہیں"
+  },
+  {
+    "question": "برے اخلاق سے کیا پیدا ہوتا ہے؟",
+    "options": ["نفرت اور دشمنی", "محبت", "ایمان میں اضافہ", "علم میں اضافہ"],
+    "answer": "نفرت اور دشمنی"
+  },
+  {
+    "question": "اچھے اخلاق کا ایک اہم جزو کیا ہے؟",
+    "options": ["بردباری", "غصہ", "غرور", "جھوٹ"],
+    "answer": "بردباری"
+  },
+  {
+    "question": "رسول ﷺ نے سب سے زیادہ کس چیز پر زور دیا؟",
+    "options": [ "زیادہ کھانے پر", "زیادہ کھیلنے پر", "زیادہ سفر پر","اچھے اخلاق پر"],
+    "answer": "اچھے اخلاق پر"
+  },
+  {
+    "question": "اخلاق کا تعلق زیادہ کس سے ہے؟",
+    "options": ["معاشرتی زندگی سے", "زراعت سے", "صنعت سے", "جغرافیہ سے"],
+    "answer": "معاشرتی زندگی سے"
+  },
+  {
+    "question": "کون سا عمل برا اخلاق ہے؟",
+    "options": ["نماز پڑھنا", "غیبت کرنا", "صدقہ دینا", "محبت کرنا"],
+    "answer": "غیبت کرنا"
+  },
+  {
+    "question": "اسلام میں اچھے اخلاق کو کس چیز کے برابر کہا گیا ہے؟",
+    "options": ["کھانا", "سفر","عبادت",  "کاروبار"],
+    "answer": "عبادت"
+  }
+    ],
+    "ibadat": [
+      {
+        "question": "What is the first pillar of Islam?",
+        "options": ["Shahada", "Salah", "Zakat", "Hajj"],
+        "answer": "Shahada",
+        "correctExplanation": "Shahada is the declaration of faith.",
+        "wrongExplanation": "The others are subsequent pillars.",
+        "difficulty": "easy"
+      },
+      {
+    "question": "عبادت کا مطلب کیا ہے؟",
+    "options": ["اللہ کی بندگی کرنا", "دنیاوی کام کرنا", "سفر کرنا", "کاروبار کرنا"],
+    "answer": "اللہ کی بندگی کرنا"
+  },
+  {
+    "question": "اسلام کی پہلی عبادت کون سی ہے؟",
+    "options": ["نماز", "روزہ", "زکوة", "حج"],
+    "answer": "نماز"
+  },
+  {
+    "question": "نماز دن میں کتنی بار فرض ہے؟",
+    "options": ["چار وقت", "دو وقت", "چھ وقت", "پانچ وقت" ],
+    "answer": "پانچ وقت"
+  },
+  {
+    "question": "رمضان کے مہینے میں کون سی عبادت فرض ہے؟",
+    "options": ["روزہ", "زکوة", "حج", "نماز"],
+    "answer": "روزہ"
+  },
+  {
+    "question": "زکوة کس پر فرض ہے؟",
+    "options": ["صاحب نصاب مسلمان پر", "ہر انسان پر", "بچوں پر", "غریب پر"],
+    "answer": "صاحب نصاب مسلمان پر"
+  },
+  {
+    "question": "حج کس پر فرض ہے؟",
+    "options": ["ہر انسان پر", "صاحب استطاعت مسلمان پر",  "بچوں پر", "غریب پر"],
+    "answer": "صاحب استطاعت مسلمان پر"
+  },
+  {
+    "question": "عبادات کی سب سے بڑی خصوصیت کیا ہے؟",
+    "options": ["اللہ کی رضا حاصل کرنا", "دنیاوی مال کمانا", "لوگوں کو خوش کرنا", "تفریح حاصل کرنا"],
+    "answer": "اللہ کی رضا حاصل کرنا"
+  },
+  {
+    "question": "نماز کو دین کا کیا کہا گیا ہے؟",
+    "options": ["ستون", "بنیاد", "روشنی", "مقصد"],
+    "answer": "ستون"
+  },
+  {
+    "question": "قرآن میں روزہ رکھنے کا مقصد کیا بیان کیا گیا؟",
+    "options": [ "صحت بہتر بنانا", "مال کمانا", "تفریح کرنا", "تقویٰ حاصل کرنا"],
+    "answer": "تقویٰ حاصل کرنا"
+  },
+  {
+    "question": "زکوة کا اصل مقصد کیا ہے؟",
+    "options": [ "دولت بڑھانا","غریبوں کی مدد کرنا", "کاروبار کرنا", "سفر کرنا"],
+    "answer": "غریبوں کی مدد کرنا"
+  },
+  {
+    "question": "حج کی ادائیگی کے دوران سب مسلمان کیا پہنتے ہیں؟",
+    "options": ["احرام", "ٹوپی", "شاہی لباس", "عام کپڑے"],
+    "answer": "احرام"
+  },
+  {
+    "question": "نماز کی سب سے پہلی شرط کیا ہے؟",
+    "options": [ "کپڑا", "روزہ", "صدقہ", "پاکی"],
+    "answer": "پاکی"
+  },
+  {
+    "question": "روزہ کس وقت سے کس وقت تک رکھا جاتا ہے؟",
+    "options": ["سحری سے افطار تک", "صبح سے شام تک", "دوپہر سے رات تک", "عشاء سے فجر تک"],
+    "answer": "سحری سے افطار تک"
+  },
+  {
+    "question": "زکوة کی سب سے عام شرح کتنی ہے؟",
+    "options": [ "دس فیصد", "ڈھائی فیصد","پانچ فیصد", "پچاس فیصد"],
+    "answer": "ڈھائی فیصد"
+  },
+  {
+    "question": "حج کا سب سے اہم رکن کیا ہے؟",
+    "options": ["وقوف عرفات", "طواف کعبہ", "صفا و مروہ", "قربانی"],
+    "answer": "وقوف عرفات"
+  }
+      
+    ],
+    "seerat": [
+      {
+        "question": "What is Seerat-e-Tayyaba?",
+        "options": ["Life of Prophet Muhammad", "Life of Abu Bakr", "Life of Umar", "Life of Ali"],
+        "answer": "Life of Prophet Muhammad",
+        "correctExplanation": "Seerat-e-Tayyaba is the biography of Prophet Muhammad.",
+        "wrongExplanation": "The others are companions.",
+        "difficulty": "easy"
+      },
+       {
+    "question": "حضرت محمد ﷺ کی ولادت کب ہوئی؟",
+    "options": ["571 عیسوی میں", "610 عیسوی میں", "630 عیسوی میں", "570 عیسوی میں"],
+    "answer": "571 عیسوی میں"
+  },
+  {
+    "question": "حضور ﷺ کے والد کا نام کیا تھا؟",
+    "options": ["عبداللہ", "ابو طالب", "عبدالمطلب", "ابو لہب"],
+    "answer": "عبداللہ"
+  },
+  {
+    "question": "حضور ﷺ کی والدہ کا نام کیا تھا؟",
+    "options": [ "خدیجہ"  ,"آمنہ", "حلیمہ", "صفیہ"],
+    "answer": "آمنہ"
+  },
+  {
+    "question": "حضور ﷺ کو سب سے پہلے کس نے دودھ پلایا؟",
+    "options": ["حضرت حلیمہ سعدیہ", "حضرت آمنہ", "حضرت صفیہ", "حضرت فاطمہ"],
+    "answer": "حضرت حلیمہ سعدیہ"
+  },
+  {
+    "question": "حضور ﷺ کو کون سا لقب ملا؟",
+    "options": ["الصادق و الامین", "المہدی", "المجاہد", "الصابر"],
+    "answer": "الصادق و الامین"
+  },
+  {
+    "question": "حضور ﷺ پر پہلی وحی کس غار میں نازل ہوئی؟",
+    "options": ["غار ثور", "غار احد" ,"غار حرا",  "غار بدر"],
+    "answer": "غار حرا"
+  },
+  {
+    "question": "پہلی وحی کے وقت فرشتہ کون تھے؟",
+    "options": ["حضرت جبرائیل علیہ السلام", "حضرت میکائیل علیہ السلام", "حضرت اسرافیل علیہ السلام", "حضرت عزرائیل علیہ السلام"],
+    "answer": "حضرت جبرائیل علیہ السلام"
+  },
+  {
+    "question": "نبی ﷺ کی پہلی زوجہ کون تھیں؟",
+    "options": ["حضرت خدیجہ رضی اللہ عنہا", "حضرت عائشہ رضی اللہ عنہا", "حضرت صفیہ رضی اللہ عنہا", "حضرت زینب رضی اللہ عنہا"],
+    "answer": "حضرت خدیجہ رضی اللہ عنہا"
+  },
+  {
+    "question": "ہجرت مدینہ کے وقت حضور ﷺ کے ساتھ کون تھے؟",
+    "options": ["حضرت ابو بکر رضی اللہ عنہ", "حضرت عمر رضی اللہ عنہ", "حضرت علی رضی اللہ عنہ", "حضرت عثمان رضی اللہ عنہ"],
+    "answer": "حضرت ابو بکر رضی اللہ عنہ"
+  },
+  {
+    "question": "نبی ﷺ کی ہجرت کے بعد سب سے پہلے کون سا معاہدہ ہوا؟",
+    "options": [ "صلح حدیبیہ", "معاہدہ بدر"  , "میثاق مدینہ", "معاہدہ خیبر"],
+    "answer": "میثاق مدینہ"
+  },
+  {
+    "question": "صلح حدیبیہ کس ہجری میں ہوئی؟",
+    "options": ["6 ہجری", "2 ہجری", "10 ہجری", "8 ہجری"],
+    "answer": "6 ہجری"
+  },
+  {
+    "question": "فتح مکہ کس ہجری میں ہوا؟",
+    "options": ["5 ہجری", "8 ہجری", "10 ہجری", "12 ہجری"],
+    "answer": "8 ہجری"
+  },
+  {
+    "question": "حجۃ الوداع کس سال ادا کیا گیا؟",
+    "options": [ "8 ہجری", "6 ہجری", "12 ہجری" ,"10 ہجری"],
+    "answer": "10 ہجری"
+  },
+  {
+    "question": "نبی ﷺ کی وفات کس سال ہوئی؟",
+    "options": [ "10 ہجری", "11 ہجری","12 ہجری", "9 ہجری"],
+    "answer": "11 ہجری"
+  }
+
+    ]
+  }
+}

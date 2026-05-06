@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="png" href="images/logo6.png">
+    <title>ZOO Education | Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        *{
+            font-family: "Fredoka", sans-serif;
+        }
+        .carousel-item img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .navbar {
+            background-color: black;
+
+        }
+        .logo{
+            height: 90px;
+            margin-right: 50px;
+        }
+        .navbar-brand, .nav-link{
+            color: white !important;
+         } 
+        .nav-item {
+            padding-left: 10px;
+            padding-right: 10px;
+            font-weight: bolder;
+            color: white;
+        
+        }
+        .nav-item a {
+            color: white;
+        }
+        .nav-item:hover {
+            border: 1px solid;
+            border-radius: 5px;
+            background-color: #1565c0;
+            color: #0b0c0b !important;
+        }
+        .navbar-brand{
+            margin-right: 150px;
+        }
+        .dropdown-menu {
+            background-color: #0e0d0d;
+        }
+        .dropdown-item {
+            color: white;
+        }
+        .dropdown-item:hover {
+            background-color: #555;
+            color: white;
+        }
+        .btn{
+            /* margin: 10px; */
+            padding-left: 20px;
+            padding-right: 20px;
+            background-color:black;
+            border: 2px solid black;
+            border-radius: 10px;
+            color: white;
+            margin-right: 150px;
+        }
+        /* media quries  */
+        @media (max-width: 991px) {
+            .navbar-nav {
+                text-align: center;
+            }
+            .nav-item {
+                padding: 5px;
+                margin: 5px 0;
+            }
+            .logo {
+                height: 70px;
+                margin-right: 20px;
+            }
+            .navbar-brand {
+                margin-right: 50px;
+            }
+            .dropdown-menu {
+                text-align: center;
+            }
+        }
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 300px;
+            }
+            .logo {
+                height: 60px;
+                margin-right: 10px;
+            }
+        }
+        @media (max-width: 576px) {
+            .carousel-item img {
+                height: 200px;
+            }
+            .logo {
+                height: 50px;
+                margin-right: 5px;
+            }
+            .nav-item {
+                padding: 3px;
+                margin: 3px 0;
+            }
+        }
+        h1{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .carousel-container {
+            position: relative;
+        }
+
+        .report-btn {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #dc3545;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+
+        .report-btn:hover {
+            background-color: white;
+            color: #dc3545;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
+        .report-btn i {
+            font-size: 16px;
+        }
+
+        /* Main content  */
+        .education-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .education-card:hover {
+            transform: translateY(-5px);
+        }
+        .timetable {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .timetable th {
+            background-color: #dc3545;
+            color: white;
+        }
+        .calculator {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        .calculator input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .calculator button {
+            width: 100%;
+            margin: 5px 0;
+        }
+
+        #merit-calculator{
+            margin-top: 20px;
+        }
+
+        /* educational game  */
+        .game-card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+            overflow: hidden;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+        .game-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #dc3545;
+        }
+        .game-content {
+            padding: 20px;
+        }
+        .memory-card {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            perspective: 1000px;
+            cursor: pointer;
+        }
+        .memory-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .memory-card.flipped .memory-card-inner {
+            transform: rotateY(180deg);
+        }
+        .memory-card-front, .memory-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            font-size: 2rem;
+        }
+        .memory-card-front {
+            background-color: #dc3545;
+            color: white;
+        }
+        .memory-card-back {
+            background-color: white;
+            color: #dc3545;
+            transform: rotateY(180deg);
+        }
+        .quiz-option {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .quiz-option:hover {
+            background-color: #f8f9fa;
+        }
+        .quiz-option.correct {
+            background-color: #28a745;
+            color: white;
+        }
+        .quiz-option.incorrect {
+            background-color: #dc3545;
+            color: white;
+        }
+        .score-display {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #dc3545;
+        }
+        .timer {
+            font-size: 1.2rem;
+            color: #dc3545;
+        }
+        .game-container {
+            display: none;
+        }
+        .game-container.active {
+            display: block;
+        }
+        
+        @media (max-width: 768px) {
+            .report-btn {
+                top: 10px;
+                left: 10px;
+                padding: 8px 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <img class="logo" src="images/logo6.png" alt="logo">
+            <!-- <a class="navbar-brand" href="#">Logo</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="B-A-A-R/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="B-A-A-R/assignments.html">  Assignments</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link active" href="B-A-A-R/admissions.html">Admissions</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link active" href="B-A-A-R/Test-Your Knowledge.html">Quick IQ Tests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="B-A-A-R/entry-test.html"> Entry Test</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Past Papers
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Past Papers/class9-past-papers.html">9th Class</a></li>
+                            <li><a class="dropdown-item" href="Past Papers/class10-past-papers.html">10th Class</a></li>
+                            <li><a class="dropdown-item" href="Past Papers/class11-past-papers.html">11th Class</a></li>
+                            <li><a class="dropdown-item" href="Past Papers/class12-past-papers.html">12th Class</a></li>
+                            <li><a class="dropdown-item" href="Past Papers/bsc-ba-past-papers.html">BSC/BA</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Test&Guid Books                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Books & Notes/class9-textbooks.html">9th Class</a></li>
+                            <li><a class="dropdown-item" href="Books & Notes/class10-textbooks.html">10th Class</a></li>
+                            <li><a class="dropdown-item" href="Books & Notes/class11-textbooks.html">11th Class</a></li>
+                            <li><a class="dropdown-item" href="Books & Notes/class12-textbooks.html">12th Class</a></li>
+                            <li><a class="dropdown-item" href="Books & Notes/bsc-ba-textbooks.html">BSC/BA</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Quick Mcqs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="Quick mcqs/class9-mcqs.html">9th Class</a></li>
+                            <li><a class="dropdown-item" href="Quick mcqs/class10-mcqs.html">10th Class</a></li>
+                            <li><a class="dropdown-item" href="Quick mcqs/class11-mcqs.html">11th Class</a></li>
+                            <li><a class="dropdown-item" href="Quick mcqs/class12-mcqs.html">12th Class</a></li>
+                            <li><a class="dropdown-item" href="Quick mcqs/entry-test.html">Entry Tests</a></li>
+                            <!-- <li><a class="dropdown-item" href="Quick mcqs/Test-Your Knowledge.html">Test-Your Knowledge</a></li> -->
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Modify your carousel section -->
+    <!-- <div class="carousel-container">
+        <a href="report.html" class="report-btn">
+            <i class="fas fa-exclamation-circle"></i>
+            Report Issue
+        </a> -->
+        
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/ban10.png" class="d-block w-100" alt="Slide 1">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/ban11.png" class="d-block w-100" alt="Slide 2">
+            </div>
+
+            <div class="carousel-item">
+                <img src="images/ban12.png" class="d-block w-100" alt="Slide 3">
+            </div>
+
+        </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        </div>
+    </div>
+
+     <!-- Main Content -->
+     <div class="container mt-5">
+        <!-- Educational Content -->
+        <div class="row mb-5">
+            <div class="col-md-6">
+                <div class="card education-card">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fas fa-graduation-cap"></i> Why Education Matters</h3>
+                        <p class="card-text">
+                            Education is the foundation of personal and societal growth. It empowers individuals with:
+                        </p>
+                        <ul>
+                            <li>Critical thinking and problem-solving skills</li>
+                            <li>Knowledge to make informed decisions</li>
+                            <li>Opportunities for better career prospects</li>
+                            <li>Understanding of diverse cultures and perspectives</li>
+                            <li>Ability to contribute meaningfully to society</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card education-card">
+                    <div class="card-body">
+                        <h3 class="card-title"><i class="fas fa-lightbulb"></i> Learning Tips</h3>
+                        <p class="card-text">
+                            Maximize your learning potential with these strategies:
+                        </p>
+                        <ul>
+                            <li>Create a consistent study schedule</li>
+                            <li>Take regular breaks to maintain focus</li>
+                            <li>Use active learning techniques</li>
+                            <li>Practice regularly to reinforce knowledge</li>
+                            <li>Seek help when needed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timetable -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card education-card">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4"><i class="fas fa-calendar-alt"></i> Weekly Study Timetable</h3>
+                        <div class="table-responsive">
+                            <table class="table table-bordered timetable">
+                                <thead>
+                                    <tr>
+                                        <th>Time</th>
+                                        <th>Monday</th>
+                                        <th>Tuesday</th>
+                                        <th>Wednesday</th>
+                                        <th>Thursday</th>
+                                        <th>Friday</th>
+                                        <th>Saturday</th>
+                                        <th>Sunday</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>8:00 - 9:00</td>
+                                        <td>Mathematics</td>
+                                        <td>English</td>
+                                        <td>Science</td>
+                                        <td>History</td>
+                                        <td>Mathematics</td>
+                                        <td>Revision</td>
+                                        <td>Free Time</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9:00 - 10:00</td>
+                                        <td>Science</td>
+                                        <td>Mathematics</td>
+                                        <td>English</td>
+                                        <td>Science</td>
+                                        <td>English</td>
+                                        <td>Practice Tests</td>
+                                        <td>Free Time</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10:00 - 11:00</td>
+                                        <td>Break</td>
+                                        <td>Break</td>
+                                        <td>Break</td>
+                                        <td>Break</td>
+                                        <td>Break</td>
+                                        <td>Break</td>
+                                        <td>Break</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11:00 - 12:00</td>
+                                        <td>History</td>
+                                        <td>Science</td>
+                                        <td>Mathematics</td>
+                                        <td>English</td>
+                                        <td>History</td>
+                                        <td>Group Study</td>
+                                        <td>Free Time</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12:00 - 1:00</td>
+                                        <td>English</td>
+                                        <td>History</td>
+                                        <td>Science</td>
+                                        <td>Mathematics</td>
+                                        <td>Science</td>
+                                        <td>Self-Study</td>
+                                        <td>Free Time</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Calculator -->
+        <div class="row mb-5">
+            <div class="col-md-12">
+                <div class="card education-card">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4"><i class="fas fa-calculator"></i> Educational Calculator</h3>
+                        <div class="calculator">
+                            <input type="text" id="display" class="form-control mb-3" readonly>
+                            <div class="row">
+                                <div class="col-3"><button class="btn btn-outline-danger" onclick="appendToDisplay('7')">7</button></div>
+                                <div class="col-3"><button class="btn btn-outline-danger" onclick="appendToDisplay('8')">8</button></div>
+                                <div class="col-3"><button class="btn btn-outline-danger" onclick="appendToDisplay('9')">9</button></div>
+                                <div class="col-3"><button class="btn btn-outline-danger" onclick="appendToDisplay('/')">/</button></div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-3"><button class="btn btn-outline-danger" onclick="appendToDisplay('4')">4</button></div>
+                                <div class="col-3"><button class="btn btn-outline-danger" onclick="appendToDisplay('5')">5</button></div>
+                                <div class="col-3"><button class="btn btn-outline-danger" onclick="appendToDisplay('6')">6</button></div>
+                                <div class="col-3"><button class="btn btn-outline-danger" onclick="appendToDisplay('*')">×</button></div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-3"><button class="btn btn-outline-danger" onclick="appendToDisplay('1')">1</button></div>
+                                <div class="col-3"><button class="btn btn-outline-danger" onclick="appendToDisplay('2')">2</button></div>
+                                <div class="col-3"><button class="btn btn-outline-danger" onclick="appendToDisplay('3')">3</button></div>
+                                <div class="col-3"><button class="btn btn-outline-danger" onclick="appendToDisplay('-')">-</button></div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-3"><button class="btn btn-outline-danger" onclick="appendToDisplay('0')">0</button></div>
+                                <div class="col-3"><button class="btn btn-outline-danger" onclick="appendToDisplay('.')">.</button></div>
+                                <div class="col-3"><button class="btn btn-outline-danger" onclick="calculate()">=</button></div>
+                                <div class="col-3"><button class="btn btn-outline-danger" onclick="appendToDisplay('+')">+</button></div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12">
+                                    <button class="btn btn-danger" onclick="clearDisplay()">Clear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Educational Games -->
+         <!-- Main Content -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Educational Games</h1>
+        
+        <!-- Game Selection Cards -->
+        <div class="row">
+            <!-- Math Challenge -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card game-card text-center" onclick="startGame('math')">
+                    <div class="game-content">
+                        <i class="fas fa-calculator game-icon"></i>
+                        <h3>Math Challenge</h3>
+                        <p>Test your math skills with fun challenges!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Word Master -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card game-card text-center" onclick="startGame('word')">
+                    <div class="game-content">
+                        <i class="fas fa-font game-icon"></i>
+                        <h3>Word Master</h3>
+                        <p>Expand your vocabulary with word puzzles!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Science Quiz -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card game-card text-center" onclick="startGame('science')">
+                    <div class="game-content">
+                        <i class="fas fa-flask game-icon"></i>
+                        <h3>Science Quiz</h3>
+                        <p>Test your knowledge of science!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Memory Match -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card game-card text-center" onclick="startGame('memory')">
+                    <div class="game-content">
+                        <i class="fas fa-brain game-icon"></i>
+                        <h3>Memory Match</h3>
+                        <p>Test your memory with matching pairs!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Game Containers -->
+        <div id="math-game" class="game-container">
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h3 class="text-center">Math Challenge</h3>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="score-display">Score: <span id="math-score">0</span></div>
+                        <div class="timer">Time: <span id="math-timer">60</span>s</div>
+                    </div>
+                    <div id="math-question" class="text-center mb-3"></div>
+                    <div id="math-options" class="text-center"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="word-game" class="game-container">
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h3 class="text-center">Word Master</h3>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="score-display">Score: <span id="word-score">0</span></div>
+                        <div class="timer">Time: <span id="word-timer">60</span>s</div>
+                    </div>
+                    <div id="word-question" class="text-center mb-3"></div>
+                    <div id="word-options" class="text-center"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="science-game" class="game-container">
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h3 class="text-center">Science Quiz</h3>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="score-display">Score: <span id="science-score">0</span></div>
+                        <div class="timer">Time: <span id="science-timer">60</span>s</div>
+                    </div>
+                    <div id="science-question" class="text-center mb-3"></div>
+                    <div id="science-options" class="text-center"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="memory-game" class="game-container">
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h3 class="text-center">Memory Match</h3>
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <div class="score-display">Moves: <span id="memory-moves">0</span></div>
+                        <div class="timer">Time: <span id="memory-timer">60</span>s</div>
+                    </div>
+                    <div id="memory-board" class="d-flex flex-wrap justify-content-center"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Merit Calculator -->
+        <div class="row mb-5" id="merit-calculator">
+            <div class="col-md-12">
+                <div class="card education-card">
+                    <div class="card-body">
+                        <h3 class="card-title text-center mb-4"><i class="fas fa-percentage"></i> Merit Calculator</h3>
+                        <div class="calculator">
+                            <div class="mb-3">
+                                <label class="form-label">Matriculation Marks (out of 1200)</label>
+                                <input type="number" id="matricMarks" class="form-control" min="0" max="1100">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Intermediate Marks (out of 1200)</label>
+                                <input type="number" id="interMarks" class="form-control" min="0" max="1100">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Entry Test Marks (out of 100)</label>
+                                <input type="number" id="entryTestMarks" class="form-control" min="0" max="100">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Matriculation Weightage (%)</label>
+                                <input type="number" id="matricWeight" class="form-control" value="10" min="0" max="100">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Intermediate Weightage (%)</label>
+                                <input type="number" id="interWeight" class="form-control" value="40" min="0" max="100">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Entry Test Weightage (%)</label>
+                                <input type="number" id="testWeight" class="form-control" value="50" min="0" max="100">
+                            </div>
+                            <div class="mb-3">
+                                <button class="btn btn-danger w-100" onclick="calculateMerit()">Calculate Merit</button>
+                            </div>
+                            <div class="alert alert-info" id="meritResult" style="display: none;">
+                                <h5 class="alert-heading">Your Merit Score</h5>
+                                <p id="meritScore" class="mb-0"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Information</h5>
+                    <p><i class="fas fa-envelope"></i> education@zooeducation.com</p>
+                    <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 ZOO Education. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+   
+    <script>
+        // Calculator functionality
+        function appendToDisplay(value) {
+            document.getElementById('display').value += value;
+        }
+
+        function clearDisplay() {
+            document.getElementById('display').value = '';
+        }
+
+        function calculate() {
+            try {
+                const result = eval(document.getElementById('display').value);
+                document.getElementById('display').value = result;
+            } catch (error) {
+                document.getElementById('display').value = 'Error';
+            }
+        }
+
+        // Game functionality
+        function startGame(gameType) {
+            alert(`Starting ${gameType} game! This would launch the actual game in a real implementation.`);
+            // Here you would implement the actual game logic
+        }
+
+        // Merit Calculator functionality
+        function calculateMerit() {
+            // Get input values
+            const matricMarks = parseFloat(document.getElementById('matricMarks').value) || 0;
+            const interMarks = parseFloat(document.getElementById('interMarks').value) || 0;
+            const entryTestMarks = parseFloat(document.getElementById('entryTestMarks').value) || 0;
+            const matricWeight = parseFloat(document.getElementById('matricWeight').value) || 0;
+            const interWeight = parseFloat(document.getElementById('interWeight').value) || 0;
+            const testWeight = parseFloat(document.getElementById('testWeight').value) || 0;
+
+            // Validate inputs
+            if (matricMarks > 1100 || interMarks > 1100 || entryTestMarks > 100) {
+                alert('Please enter valid marks!');
+                return;
+            }
+
+            if (matricWeight + interWeight + testWeight !== 100) {
+                alert('Total weightage must be 100%!');
+                return;
+            }
+
+            // Calculate merit
+            const matricPercentage = (matricMarks / 1200) * 100;
+            const interPercentage = (interMarks / 1200) * 100;
+            const entryTestPercentage = entryTestMarks;
+
+            const meritScore = (matricPercentage * matricWeight / 100) +
+                             (interPercentage * interWeight / 100) +
+                             (entryTestPercentage * testWeight / 100);
+
+            // Display result
+            const meritResult = document.getElementById('meritResult');
+            const meritScoreElement = document.getElementById('meritScore');
+            
+            meritScoreElement.textContent = `Your merit score is: ${meritScore.toFixed(2)}`;
+            meritResult.style.display = 'block';
+
+            // Add color based on merit score
+            if (meritScore >= 80) {
+                meritResult.className = 'alert alert-success';
+            } else if (meritScore >= 60) {
+                meritResult.className = 'alert alert-warning';
+            } else {
+                meritResult.className = 'alert alert-danger';
+            }
+        }
+
+        // educational game
+        // Game data
+        const mathQuestions = [
+            { question: "What is 15 + 27?", options: ["42", "32", "52", "62"], answer: "42" },
+            { question: "What is 8 × 7?", options: ["56", "48", "64", "72"], answer: "56" },
+            { question: "What is 144 ÷ 12?", options: ["12", "14", "16", "18"], answer: "12" },
+            { question: "What is 25% of 200?", options: ["50", "40", "60", "70"], answer: "50" }
+        ];
+
+        const wordQuestions = [
+            { question: "What is the synonym of 'Happy'?", options: ["Joyful", "Sad", "Angry", "Tired"], answer: "Joyful" },
+            { question: "What is the antonym of 'Light'?", options: ["Dark", "Bright", "Clear", "Sunny"], answer: "Dark" },
+            { question: "Complete the word: E_UC_TION", options: ["D", "A", "I", "O"], answer: "D" },
+            { question: "Which word is spelled correctly?", options: ["Education", "Edukation", "Edjucation", "Edjucashun"], answer: "Education" }
+        ];
+
+        const scienceQuestions = [
+            { question: "What is the chemical symbol for water?", options: ["H2O", "CO2", "O2", "H2"], answer: "H2O" },
+            { question: "Which planet is known as the Red Planet?", options: ["Mars", "Venus", "Jupiter", "Saturn"], answer: "Mars" },
+            { question: "What is the largest organ in the human body?", options: ["Skin", "Liver", "Heart", "Brain"], answer: "Skin" },
+            { question: "What force keeps us on the ground?", options: ["Gravity", "Magnetism", "Friction", "Inertia"], answer: "Gravity" }
+        ];
+
+        const memoryCards = ['A', 'B', 'C', 'D', 'E', 'F', 'A', 'B', 'C', 'D', 'E', 'F'];
+
+        // Game state
+        let currentGame = null;
+        let scores = { math: 0, word: 0, science: 0, memory: 0 };
+        let timers = { math: 60, word: 60, science: 60, memory: 60 };
+        let timerIntervals = {};
+
+        // Start game function
+        function startGame(gameType) {
+            // Hide all game containers
+            document.querySelectorAll('.game-container').forEach(container => {
+                container.classList.remove('active');
+            });
+
+            // Show selected game
+            document.getElementById(`${gameType}-game`).classList.add('active');
+            currentGame = gameType;
+
+            // Reset score and timer
+            scores[gameType] = 0;
+            timers[gameType] = 60;
+            updateScore(gameType);
+            updateTimer(gameType);
+
+            // Start timer
+            clearInterval(timerIntervals[gameType]);
+            timerIntervals[gameType] = setInterval(() => {
+                timers[gameType]--;
+                updateTimer(gameType);
+                if (timers[gameType] <= 0) {
+                    endGame(gameType);
+                }
+            }, 1000);
+
+            // Initialize game
+            switch(gameType) {
+                case 'math':
+                    loadMathQuestion();
+                    break;
+                case 'word':
+                    loadWordQuestion();
+                    break;
+                case 'science':
+                    loadScienceQuestion();
+                    break;
+                case 'memory':
+                    initializeMemoryGame();
+                    break;
+            }
+        }
+
+        // Update score display
+        function updateScore(gameType) {
+            document.getElementById(`${gameType}-score`).textContent = scores[gameType];
+        }
+
+        // Update timer display
+        function updateTimer(gameType) {
+            document.getElementById(`${gameType}-timer`).textContent = timers[gameType];
+        }
+
+        // End game
+        function endGame(gameType) {
+            clearInterval(timerIntervals[gameType]);
+            alert(`Game Over! Your score: ${scores[gameType]}`);
+        }
+
+        // Math Game Functions
+        function loadMathQuestion() {
+            const question = mathQuestions[Math.floor(Math.random() * mathQuestions.length)];
+            document.getElementById('math-question').textContent = question.question;
+            
+            const optionsDiv = document.getElementById('math-options');
+            optionsDiv.innerHTML = '';
+            
+            question.options.forEach(option => {
+                const button = document.createElement('button');
+                button.className = 'btn btn-outline-primary m-2';
+                button.textContent = option;
+                button.onclick = () => checkMathAnswer(option, question.answer);
+                optionsDiv.appendChild(button);
+            });
+        }
+
+        function checkMathAnswer(selected, correct) {
+            if (selected === correct) {
+                scores.math++;
+                updateScore('math');
+            }
+            loadMathQuestion();
+        }
+
+        // Word Game Functions
+        function loadWordQuestion() {
+            const question = wordQuestions[Math.floor(Math.random() * wordQuestions.length)];
+            document.getElementById('word-question').textContent = question.question;
+            
+            const optionsDiv = document.getElementById('word-options');
+            optionsDiv.innerHTML = '';
+            
+            question.options.forEach(option => {
+                const button = document.createElement('button');
+                button.className = 'btn btn-outline-primary m-2';
+                button.textContent = option;
+                button.onclick = () => checkWordAnswer(option, question.answer);
+                optionsDiv.appendChild(button);
+            });
+        }
+
+        function checkWordAnswer(selected, correct) {
+            if (selected === correct) {
+                scores.word++;
+                updateScore('word');
+            }
+            loadWordQuestion();
+        }
+
+        // Science Game Functions
+        function loadScienceQuestion() {
+            const question = scienceQuestions[Math.floor(Math.random() * scienceQuestions.length)];
+            document.getElementById('science-question').textContent = question.question;
+            
+            const optionsDiv = document.getElementById('science-options');
+            optionsDiv.innerHTML = '';
+            
+            question.options.forEach(option => {
+                const button = document.createElement('button');
+                button.className = 'btn btn-outline-primary m-2';
+                button.textContent = option;
+                button.onclick = () => checkScienceAnswer(option, question.answer);
+                optionsDiv.appendChild(button);
+            });
+        }
+
+        function checkScienceAnswer(selected, correct) {
+            if (selected === correct) {
+                scores.science++;
+                updateScore('science');
+            }
+            loadScienceQuestion();
+        }
+
+        // Memory Game Functions
+        function initializeMemoryGame() {
+            const board = document.getElementById('memory-board');
+            board.innerHTML = '';
+            
+            // Shuffle cards
+            const shuffledCards = [...memoryCards].sort(() => Math.random() - 0.5);
+            
+            shuffledCards.forEach((card, index) => {
+                const cardElement = document.createElement('div');
+                cardElement.className = 'memory-card';
+                cardElement.dataset.card = card;
+                cardElement.dataset.index = index;
+                
+                const cardInner = document.createElement('div');
+                cardInner.className = 'memory-card-inner';
+                
+                const cardFront = document.createElement('div');
+                cardFront.className = 'memory-card-front';
+                cardFront.textContent = '?';
+                
+                const cardBack = document.createElement('div');
+                cardBack.className = 'memory-card-back';
+                cardBack.textContent = card;
+                
+                cardInner.appendChild(cardFront);
+                cardInner.appendChild(cardBack);
+                cardElement.appendChild(cardInner);
+                
+                cardElement.addEventListener('click', flipCard);
+                board.appendChild(cardElement);
+            });
+        }
+
+        let hasFlippedCard = false;
+        let lockBoard = false;
+        let firstCard, secondCard;
+
+        function flipCard() {
+            if (lockBoard) return;
+            if (this === firstCard) return;
+
+            this.classList.add('flipped');
+
+            if (!hasFlippedCard) {
+                hasFlippedCard = true;
+                firstCard = this;
+                return;
+            }
+
+            secondCard = this;
+            checkForMatch();
+        }
+
+        function checkForMatch() {
+            let isMatch = firstCard.dataset.card === secondCard.dataset.card;
+            isMatch ? disableCards() : unflipCards();
+        }
+
+        function disableCards() {
+            firstCard.removeEventListener('click', flipCard);
+            secondCard.removeEventListener('click', flipCard);
+            scores.memory++;
+            updateScore('memory');
+            resetBoard();
+        }
+
+        function unflipCards() {
+            lockBoard = true;
+            setTimeout(() => {
+                firstCard.classList.remove('flipped');
+                secondCard.classList.remove('flipped');
+                resetBoard();
+            }, 1000);
+        }
+
+        function resetBoard() {
+            [hasFlippedCard, lockBoard] = [false, false];
+            [firstCard, secondCard] = [null, null];
+        }
+    </script>
+   
+   
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

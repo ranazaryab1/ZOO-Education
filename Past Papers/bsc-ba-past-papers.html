@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="png" href="/images/logo6.png">
+    <title>ZOO Education | BSC & BA Past Papers</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            font-family: "Fredoka", sans-serif;
+        }
+        .nav-tabs .nav-link {
+            color: #6c757d;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .nav-tabs .nav-link:hover {
+            background-color: #e9ecef;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: #dc3545;
+            color: white;
+        }
+        .subject-section {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+        .book-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+        .book-card:hover {
+            transform: translateY(-5px);
+        }
+        .download-btn {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .download-btn:hover {
+            background-color: #c82333;
+        }
+        .book-cover {
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        .social-icons a {
+            color: white;
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .social-icons a:hover {
+            color: #dc3545;
+        }
+        .search-box {
+            margin-bottom: 30px;
+        }
+        .search-box input {
+            border-radius: 20px;
+            padding: 10px 20px;
+        }
+        .subject-icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .book-info {
+            margin-left: 20px;
+        }
+        .book-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .book-author {
+            color: #6c757d;
+            font-size: 14px;
+        }
+        .book-board {
+            color: #dc3545;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        .program-section {
+            margin-bottom: 40px;
+        }
+        .program-title {
+            color: #dc3545;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #dc3545;
+        }
+        /* Upload Section Styling */
+        .upload-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 2px solid rgba(255,255,255,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .upload-section h3 {
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        .upload-section .form-label {
+            color: white;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .upload-section .form-control {
+            background-color: rgba(255,255,255,0.9);
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 10px;
+            padding: 12px 15px;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .upload-section .form-control:focus {
+            background-color: white;
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+            transform: translateY(-2px);
+        }
+        .upload-section .form-select {
+            background-color: rgba(255,255,255,0.9);
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 10px;
+            padding: 12px 15px;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .upload-section .form-select:focus {
+            background-color: white;
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+            transform: translateY(-2px);
+        }
+        .upload-btn {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .upload-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        .upload-btn:hover::before {
+            left: 100%;
+        }
+        .upload-btn:hover {
+            background: linear-gradient(45deg, #218838, #17a2b8);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+        }
+        .upload-btn:active {
+            transform: translateY(-1px);
+        }
+        .upload-btn i {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/images/logo6.png" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/report.html">Report Issues</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">BSC & BA Past Papers</h1>
+        
+        <!-- Search Box -->
+        <div class="search-box">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search past-papers">
+                <button class="btn btn-danger" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Upload Section -->
+        <div class="upload-section">
+            <h3 class="text-center mb-4"><i class="fas fa-upload program-icon"></i>Upload Past Paper</h3>
+            <form id="uploadFormBscBaPastPapers">
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label for="programBscBaPastPapers" class="form-label">Program</label>
+                        <select class="form-select" id="programBscBaPastPapers" onchange="updateSubjectOptions()" required>
+                            <option value="">Select Program</option>
+                            <option value="BSC">BSC</option>
+                            <option value="BA">BA</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="subjectBscBaPastPapers" class="form-label">Subject</label>
+                        <select class="form-select" id="subjectBscBaPastPapers" required disabled>
+                            <option value="">Select Subject</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label for="titleBscBaPastPapers" class="form-label">Past Paper Title</label>
+                        <input type="text" class="form-control" id="titleBscBaPastPapers" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="fileBscBaPastPapers" class="form-label">Past Paper File</label>
+                    <input type="file" class="form-control" id="fileBscBaPastPapers" accept=".pdf,.docx" required>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="upload-btn">
+                        <i class="fas fa-upload"></i> Upload Past Paper
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Program Tabs -->
+        <ul class="nav nav-tabs mb-4" id="programTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="bsc-tab" data-bs-toggle="tab" data-bs-target="#bsc" type="button">
+                    <i class="fas fa-graduation-cap subject-icon"></i> BSC Program
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ba-tab" data-bs-toggle="tab" data-bs-target="#ba" type="button">
+                    <i class="fas fa-book subject-icon"></i> BA Program
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="programTabsContent">
+            <!-- BSC Program Content -->
+            <div class="tab-pane fade show active" id="bsc" role="tabpanel">
+                <!-- BSC Subject Tabs -->
+                <ul class="nav nav-tabs mb-4" id="bscSubjectTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="cs-tab" data-bs-toggle="tab" data-bs-target="#bsc-cs" type="button">
+                            <i class="fas fa-laptop-code subject-icon"></i> Computer Science
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="zoology-tab" data-bs-toggle="tab" data-bs-target="#bsc-zoology" type="button">
+                            <i class="fas fa-dna subject-icon"></i> Zoology
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="botany-tab" data-bs-toggle="tab" data-bs-target="#bsc-botany" type="button">
+                            <i class="fas fa-leaf subject-icon"></i> Botany
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="cyber-tab" data-bs-toggle="tab" data-bs-target="#bsc-cyber" type="button">
+                            <i class="fas fa-shield-alt subject-icon"></i> Cyber Security
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="physics-tab" data-bs-toggle="tab" data-bs-target="#bsc-physics" type="button">
+                            <i class="fas fa-atom subject-icon"></i> Physics
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="chemistry-tab" data-bs-toggle="tab" data-bs-target="#bsc-chemistry" type="button">
+                            <i class="fas fa-flask subject-icon"></i> Chemistry
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="math-tab" data-bs-toggle="tab" data-bs-target="#bsc-math" type="button">
+                            <i class="fas fa-square-root-alt subject-icon"></i> Mathematics
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="bscSubjectTabsContent">
+                    <!-- Computer Science Section -->
+                    <div class="tab-pane fade show active" id="bsc-cs" role="tabpanel">
+                        <div class="subject-section">
+                            <h3 class="text-center mb-4"><i class="fas fa-laptop-code subject-icon"></i> Computer Science Past Papers</h3>
+                            <div class="row dynamic-cards">
+                                <!-- Dynamic cards will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Zoology Section -->
+                    <div class="tab-pane fade" id="bsc-zoology" role="tabpanel">
+                        <div class="subject-section">
+                            <h3 class="text-center mb-4"><i class="fas fa-dna subject-icon"></i> Zoology Past Papers</h3>
+                            <div class="row dynamic-cards">
+                                <!-- Dynamic cards will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botany Section -->
+                    <div class="tab-pane fade" id="bsc-botany" role="tabpanel">
+                        <div class="subject-section">
+                            <h3 class="text-center mb-4"><i class="fas fa-leaf subject-icon"></i> Botany Past Papers</h3>
+                            <div class="row dynamic-cards">
+                                <!-- Dynamic cards will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cyber Security Section -->
+                    <div class="tab-pane fade" id="bsc-cyber" role="tabpanel">
+                        <div class="subject-section">
+                            <h3 class="text-center mb-4"><i class="fas fa-shield-alt subject-icon"></i> Cyber Security Past Papers</h3>
+                            <div class="row dynamic-cards">
+                                <!-- Dynamic cards will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Physics Section -->
+                    <div class="tab-pane fade" id="bsc-physics" role="tabpanel">
+                        <div class="subject-section">
+                            <h3 class="text-center mb-4"><i class="fas fa-atom subject-icon"></i> Physics Past Papers</h3>
+                            <div class="row dynamic-cards">
+                                <!-- Dynamic cards will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chemistry Section -->
+                    <div class="tab-pane fade" id="bsc-chemistry" role="tabpanel">
+                        <div class="subject-section">
+                            <h3 class="text-center mb-4"><i class="fas fa-flask subject-icon"></i> Chemistry Past Papers</h3>
+                            <div class="row dynamic-cards">
+                                <!-- Dynamic cards will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mathematics Section -->
+                    <div class="tab-pane fade" id="bsc-math" role="tabpanel">
+                        <div class="subject-section">
+                            <h3 class="text-center mb-4"><i class="fas fa-square-root-alt subject-icon"></i> Mathematics Past Papers</h3>
+                            <div class="row dynamic-cards">
+                                <!-- Dynamic cards will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BA Program Content -->
+            <div class="tab-pane fade" id="ba" role="tabpanel">
+                <!-- BA Subject Tabs -->
+                <ul class="nav nav-tabs mb-4" id="baSubjectTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="english-tab" data-bs-toggle="tab" data-bs-target="#ba-english" type="button">
+                            <i class="fas fa-language subject-icon"></i> English
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="history-tab" data-bs-toggle="tab" data-bs-target="#ba-history" type="button">
+                            <i class="fas fa-landmark subject-icon"></i> History
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="polsci-tab" data-bs-toggle="tab" data-bs-target="#ba-polsci" type="button">
+                            <i class="fas fa-university subject-icon"></i> Political Science
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="psychology-tab" data-bs-toggle="tab" data-bs-target="#ba-psychology" type="button">
+                            <i class="fas fa-brain subject-icon"></i> Psychology
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="sociology-tab" data-bs-toggle="tab" data-bs-target="#ba-sociology" type="button">
+                            <i class="fas fa-users subject-icon"></i> Sociology
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="economics-tab" data-bs-toggle="tab" data-bs-target="#ba-economics" type="button">
+                            <i class="fas fa-chart-line subject-icon"></i> Economics
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="tab-content" id="baSubjectTabsContent">
+                    <!-- English Section -->
+                    <div class="tab-pane fade show active" id="ba-english" role="tabpanel">
+                        <div class="subject-section">
+                            <h3 class="text-center mb-4"><i class="fas fa-language subject-icon"></i> English Past Papers</h3>
+                            <div class="row dynamic-cards">
+                                <!-- Dynamic cards will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- History Section -->
+                    <div class="tab-pane fade" id="ba-history" role="tabpanel">
+                        <div class="subject-section">
+                            <h3 class="text-center mb-4"><i class="fas fa-landmark subject-icon"></i> History Past Papers</h3>
+                            <div class="row dynamic-cards">
+                                <!-- Dynamic cards will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Political Science Section -->
+                    <div class="tab-pane fade" id="ba-polsci" role="tabpanel">
+                        <div class="subject-section">
+                            <h3 class="text-center mb-4"><i class="fas fa-university subject-icon"></i> Political Science Past Papers</h3>
+                            <div class="row dynamic-cards">
+                                <!-- Dynamic cards will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Psychology Section -->
+                    <div class="tab-pane fade" id="ba-psychology" role="tabpanel">
+                        <div class="subject-section">
+                            <h3 class="text-center mb-4"><i class="fas fa-brain subject-icon"></i> Psychology Past Papers</h3>
+                            <div class="row dynamic-cards">
+                                <!-- Dynamic cards will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sociology Section -->
+                    <div class="tab-pane fade" id="ba-sociology" role="tabpanel">
+                        <div class="subject-section">
+                            <h3 class="text-center mb-4"><i class="fas fa-users subject-icon"></i> Sociology Past Papers</h3>
+                            <div class="row dynamic-cards">
+                                <!-- Dynamic cards will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Economics Section -->
+                    <div class="tab-pane fade" id="ba-economics" role="tabpanel">
+                        <div class="subject-section">
+                            <h3 class="text-center mb-4"><i class="fas fa-chart-line subject-icon"></i> Economics Past Papers</h3>
+                            <div class="row dynamic-cards">
+                                <!-- Dynamic cards will be loaded here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Information</h5>
+                    <p><i class="fas fa-envelope"></i> info@zooeducation.com</p>
+                    <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 ZOO Education. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+
+        function updateSubjectOptions() {
+            const programSelect = document.getElementById('programBscBaPastPapers');
+            const subjectSelect = document.getElementById('subjectBscBaPastPapers');
+            const selectedProgram = programSelect.value;
+
+            // Clear existing options
+            subjectSelect.innerHTML = '<option value="">Select Subject</option>';
+
+            if (selectedProgram === 'BSC') {
+                const bscSubjects = [
+                    'Computer Science',
+                    'Zoology',
+                    'Botany',
+                    'Cyber Security',
+                    'Physics',
+                    'Chemistry',
+                    'Mathematics'
+                ];
+                bscSubjects.forEach(subject => {
+                    const option = document.createElement('option');
+                    option.value = subject;
+                    option.textContent = subject;
+                    subjectSelect.appendChild(option);
+                });
+                subjectSelect.disabled = false;
+            } else if (selectedProgram === 'BA') {
+                const baSubjects = [
+                    'English',
+                    'History',
+                    'Political Science',
+                    'Psychology',
+                    'Sociology',
+                    'Economics'
+                ];
+                baSubjects.forEach(subject => {
+                    const option = document.createElement('option');
+                    option.value = subject;
+                    option.textContent = subject;
+                    subjectSelect.appendChild(option);
+                });
+                subjectSelect.disabled = false;
+            } else {
+                subjectSelect.disabled = true;
+            }
+        }
+
+        // Upload form handling
+        document.getElementById('uploadFormBscBaPastPapers').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Password check
+            const password = prompt("Enter password to upload:");
+            if (password !== "zoo0514") {
+                alert("Incorrect password. Upload cancelled.");
+                return;
+            }
+
+            const program = document.getElementById('programBscBaPastPapers').value;
+            const subject = document.getElementById('subjectBscBaPastPapers').value;
+            const title = document.getElementById('titleBscBaPastPapers').value;
+            const file = document.getElementById('fileBscBaPastPapers').files[0];
+
+            if (!program || !subject || !title || !file) {
+                alert('Please fill in all fields and select a file.');
+                return;
+            }
+
+            // Validate file type (PDF, DOC, DOCX)
+            const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+            if (!allowedTypes.includes(file.type)) {
+                alert('Please upload a PDF, DOC, or DOCX file.');
+                return;
+            }
+
+            // Validate file size (max 10MB)
+            const maxSize = 10 * 1024 * 1024; // 10MB in bytes
+            if (file.size > maxSize) {
+                alert('File size must be less than 10MB.');
+                return;
+            }
+
+            // Create FormData object for file upload
+            const formData = new FormData();
+            formData.append('program', program);
+            formData.append('subject', subject);
+            formData.append('title', title);
+            formData.append('file', file);
+
+            // Show loading state
+            const submitBtn = this.querySelector('.upload-btn');
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Uploading...';
+            submitBtn.disabled = true;
+
+            // Upload file
+            fetch('/upload/past-paper', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.filename) {
+                    // File uploaded successfully, now save metadata
+                    const metadata = {
+                        class: program,
+                        subject: subject,
+                        title: title,
+                        filename: data.filename
+                    };
+
+                    return fetch('/submit-past-paper-post', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(metadata)
+                    });
+                } else {
+                    throw new Error(data.error || 'Upload failed');
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.message) {
+                    alert(`Past Paper "${title}" for program "${program}" uploaded successfully!`);
+                    this.reset();
+                    loadPastPapers(); // Reload past papers after upload
+                } else {
+                    alert('Metadata save failed: ' + (data.error || 'Unknown error'));
+                }
+            })
+            .catch(error => {
+                alert('Upload failed: ' + error.message);
+            })
+            .finally(() => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            });
+        });
+
+        // Function to load past papers from API
+        function loadPastPapers() {
+            fetch('/api/past-paper-posts')
+                .then(response => response.json())
+                .then(data => {
+                    // Clear existing dynamic content
+                    document.querySelectorAll('.dynamic-cards').forEach(container => {
+                        container.innerHTML = '';
+                    });
+
+                    // Group past papers by program and subject
+                    const programs = {
+                        'BSC': {},
+                        'BA': {}
+                    };
+
+                    data.forEach(paper => {
+                        if (paper.class && programs[paper.class]) {
+                            if (!programs[paper.class][paper.subject]) {
+                                programs[paper.class][paper.subject] = [];
+                            }
+                            programs[paper.class][paper.subject].push(paper);
+                        }
+                    });
+
+                    // Update each program and subject section
+                    Object.keys(programs).forEach(program => {
+                        Object.keys(programs[program]).forEach(subject => {
+                            const subjectId = getSubjectId(program, subject);
+                            const container = document.querySelector(`#${subjectId} .dynamic-cards`);
+                            if (container) {
+                                programs[program][subject].forEach(paper => {
+                                    const card = createPastPaperCard(paper);
+                                    container.appendChild(card);
+                                });
+                            }
+                        });
+                    });
+                })
+                .catch(error => {
+                    console.error('Error loading past papers:', error);
+                });
+        }
+
+        // Helper function to map program and subject names to tab IDs
+        function getSubjectId(program, subject) {
+            const programMap = {
+                'BSC': 'bsc',
+                'BA': 'ba'
+            };
+            const subjectMap = {
+                'Computer Science': 'cs',
+                'Zoology': 'zoology',
+                'Botany': 'botany',
+                'Cyber Security': 'cyber',
+                'Physics': 'physics',
+                'Chemistry': 'chemistry',
+                'Mathematics': 'math',
+                'English': 'english',
+                'History': 'history',
+                'Political Science': 'polsci',
+                'Psychology': 'psychology',
+                'Sociology': 'sociology',
+                'Economics': 'economics'
+            };
+            return `${programMap[program]}-${subjectMap[subject]}` || 'bsc-cs'; // Default to bsc-cs if not found
+        }
+
+        // Function to create a past paper card
+        function createPastPaperCard(paper) {
+            const cardDiv = document.createElement('div');
+            cardDiv.className = 'col-md-6';
+            cardDiv.innerHTML = `
+                <div class="book-card d-flex">
+                    <img src="https://via.placeholder.com/100x150" alt="${paper.title}" class="book-cover">
+                    <div class="book-info">
+                        <h5 class="book-title">${paper.title}</h5>
+                        <p class="book-board">${paper.class} Program</p>
+                        <p class="book-author">Subject: ${paper.subject}</p>
+                        <button class="download-btn" onclick="downloadPastPaper('${paper.filename}')">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+            `;
+            return cardDiv;
+        }
+
+        // Function to download past paper
+        function downloadPastPaper(filename) {
+            const link = document.createElement('a');
+            link.href = `/download/past-paper/${filename}`;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // Load past papers on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadPastPapers();
+        });
+    </script>
+</body>
+</html>

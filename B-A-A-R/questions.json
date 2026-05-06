@@ -1,0 +1,1010 @@
+[
+    {
+        "question": "What is the first pillar of Islam?",
+        "options": ["Salah", "Shahada", "Zakat", "Hajj"],
+        "answer": "Shahada",
+        "correctExplanation": "Shahada is the declaration of faith, the first pillar of Islam.",
+        "wrongExplanation": "The other options are also pillars but not the first one.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the first pillar of Islam?",
+        "options": ["Salah", "Shahada", "Zakat", "Hajj"],
+        "answer": "Shahada",
+        "correctExplanation": "Shahada is the declaration of faith, the first pillar of Islam.",
+        "wrongExplanation": "The other options are also pillars but not the first one.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "options": ["Venus", "Mars", "Jupiter", "Mercury"],
+        "answer": "Mars",
+        "correctExplanation": "Mars is called the Red Planet due to its reddish surface.",
+        "wrongExplanation": "Other planets do not have a reddish color.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who was the first President of Pakistan?",
+        "options": ["Liaquat Ali Khan", "Iskander Mirza", "Muhammad Ali Jinnah", "Ayub Khan"],
+        "answer": "Iskander Mirza",
+        "correctExplanation": "Iskander Mirza became Pakistan's first President in 1956.",
+        "wrongExplanation": "The other leaders held different roles.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which gas do humans exhale in large amounts?",
+        "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+        "answer": "Carbon Dioxide",
+        "correctExplanation": "Humans exhale carbon dioxide as a byproduct of respiration.",
+        "wrongExplanation": "Oxygen is inhaled, not exhaled.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "The Battle of Panipat in 1526 was fought between?",
+        "options": ["Babur and Ibrahim Lodi", "Akbar and Hemu", "Shah Jahan and Dara Shikoh", "Aurangzeb and Marathas"],
+        "answer": "Babur and Ibrahim Lodi",
+        "correctExplanation": "Babur defeated Ibrahim Lodi in the first Battle of Panipat.",
+        "wrongExplanation": "The other battles happened at different times.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the value of π (Pi) up to two decimal places?",
+        "options": ["3.12", "3.14", "3.15", "3.13"],
+        "answer": "3.14",
+        "correctExplanation": "π is approximately 3.14159, rounded to 3.14.",
+        "wrongExplanation": "The other values are incorrect approximations.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which is the largest organ in the human body?",
+        "options": ["Liver", "Heart", "Skin", "Lungs"],
+        "answer": "Skin",
+        "correctExplanation": "The skin is the largest organ of the human body.",
+        "wrongExplanation": "Other organs are smaller.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which country hosted COP27 climate conference in 2022?",
+        "options": ["Egypt", "UK", "USA", "Germany"],
+        "answer": "Egypt",
+        "correctExplanation": "COP27 was hosted in Sharm El Sheikh, Egypt in 2022.",
+        "wrongExplanation": "Other countries hosted different COP conferences.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Who wrote 'Pakistan: A Personal History'?",
+        "options": ["Benazir Bhutto", "Nawaz Sharif", "Pervez Musharraf", "Jahangir Khan"],
+        "answer": "Benazir Bhutto",
+        "correctExplanation": "Benazir Bhutto authored 'Pakistan: A Personal History'.",
+        "wrongExplanation": "Other leaders did not write this book.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which of the following is a synonym of 'Eloquent'?",
+        "options": ["Fluent", "Silent", "Confused", "Angry"],
+        "answer": "Fluent",
+        "correctExplanation": "'Eloquent' means fluent or persuasive in speaking.",
+        "wrongExplanation": "Other words are not synonyms.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the chemical symbol for water?",
+        "options": ["CO2", "H2O", "O2", "NaCl"],
+        "answer": "H2O",
+        "correctExplanation": "Water's chemical formula is H2O.",
+        "wrongExplanation": "The other symbols represent different substances.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who discovered penicillin?",
+        "options": ["Louis Pasteur", "Alexander Fleming", "Marie Curie", "Isaac Newton"],
+        "answer": "Alexander Fleming",
+        "correctExplanation": "Alexander Fleming discovered penicillin in 1928.",
+        "wrongExplanation": "Other scientists discovered different things.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which river is the longest in the world?",
+        "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+        "answer": "Nile",
+        "correctExplanation": "The Nile is the longest river, about 6,650 km.",
+        "wrongExplanation": "Other rivers are long but not the longest.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which Muslim ruler built the Badshahi Mosque?",
+        "options": ["Akbar", "Aurangzeb", "Shah Jahan", "Humayun"],
+        "answer": "Aurangzeb",
+        "correctExplanation": "Aurangzeb commissioned the Badshahi Mosque in Lahore.",
+        "wrongExplanation": "Other rulers built different monuments.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which country shares the longest border with Pakistan?",
+        "options": ["India", "China", "Afghanistan", "Iran"],
+        "answer": "India",
+        "correctExplanation": "Pakistan shares the longest border with India, about 3,323 km.",
+        "wrongExplanation": "Other countries have shorter borders with Pakistan.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which element has the atomic number 1?",
+        "options": ["Helium", "Hydrogen", "Oxygen", "Carbon"],
+        "answer": "Hydrogen",
+        "correctExplanation": "Hydrogen has atomic number 1.",
+        "wrongExplanation": "Other elements have different atomic numbers.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who wrote 'A Brief History of Time'?",
+        "options": ["Stephen Hawking", "Albert Einstein", "Isaac Newton", "Carl Sagan"],
+        "answer": "Stephen Hawking",
+        "correctExplanation": "'A Brief History of Time' was authored by Stephen Hawking.",
+        "wrongExplanation": "Other scientists did not write this book.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which organ pumps blood throughout the human body?",
+        "options": ["Lungs", "Heart", "Liver", "Kidneys"],
+        "answer": "Heart",
+        "correctExplanation": "The heart pumps blood through the circulatory system.",
+        "wrongExplanation": "Other organs have different functions.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who was the founder of Pakistan Movement?",
+        "options": ["Liaquat Ali Khan", "Allama Iqbal", "Muhammad Ali Jinnah", "Fatima Jinnah"],
+        "answer": "Muhammad Ali Jinnah",
+        "correctExplanation": "Jinnah led the Pakistan Movement and became its founder.",
+        "wrongExplanation": "Others were important leaders but not founders.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the freezing point of water in Celsius?",
+        "options": ["0°C", "32°C", "-1°C", "100°C"],
+        "answer": "0°C",
+        "correctExplanation": "Water freezes at 0°C.",
+        "wrongExplanation": "Other temperatures represent boiling or incorrect values.",
+        "difficulty": "easy"
+    },
+     {
+        "question": "Which is the smallest planet in our solar system?",
+        "options": ["Mercury", "Mars", "Venus", "Pluto"],
+        "answer": "Mercury",
+        "correctExplanation": "Mercury is the smallest planet in the solar system.",
+        "wrongExplanation": "Other planets are larger in size.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which country is known as the Land of the Rising Sun?",
+        "options": ["China", "Japan", "India", "Thailand"],
+        "answer": "Japan",
+        "correctExplanation": "Japan is called the Land of the Rising Sun.",
+        "wrongExplanation": "Other countries are known by different nicknames.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who was the first Muslim Caliph after Prophet Muhammad (PBUH)?",
+        "options": ["Ali ibn Abi Talib", "Umar ibn al-Khattab", "Abu Bakr Siddiq", "Uthman ibn Affan"],
+        "answer": "Abu Bakr Siddiq",
+        "correctExplanation": "Abu Bakr became the first Caliph after Prophet Muhammad (PBUH).",
+        "wrongExplanation": "Other Caliphs served later.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which element is used in the filament of light bulbs?",
+        "options": ["Tungsten", "Iron", "Copper", "Aluminum"],
+        "answer": "Tungsten",
+        "correctExplanation": "Tungsten is used due to its high melting point.",
+        "wrongExplanation": "Other metals are not suitable for high temperatures.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "The Lahore Resolution was passed in which year?",
+        "options": ["1940", "1935", "1947", "1956"],
+        "answer": "1940",
+        "correctExplanation": "The Lahore Resolution was passed on 23rd March 1940.",
+        "wrongExplanation": "Other years are related to different events.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the square root of 144?",
+        "options": ["10", "12", "14", "16"],
+        "answer": "12",
+        "correctExplanation": "12 × 12 = 144.",
+        "wrongExplanation": "Other options do not satisfy this condition.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which organ is responsible for producing insulin?",
+        "options": ["Liver", "Pancreas", "Kidney", "Heart"],
+        "answer": "Pancreas",
+        "correctExplanation": "Pancreas produces insulin to regulate blood sugar.",
+        "wrongExplanation": "Other organs do not produce insulin.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Who is the author of 'The History of the Decline and Fall of the Roman Empire'?",
+        "options": ["Edward Gibbon", "William Shakespeare", "Thomas Carlyle", "Plato"],
+        "answer": "Edward Gibbon",
+        "correctExplanation": "Edward Gibbon wrote this famous historical book.",
+        "wrongExplanation": "Other authors wrote different works.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which country has the largest population in the world?",
+        "options": ["India", "USA", "China", "Russia"],
+        "answer": "China",
+        "correctExplanation": "China is the most populous country in the world.",
+        "wrongExplanation": "Other countries have smaller populations.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which is the process by which plants make food?",
+        "options": ["Photosynthesis", "Respiration", "Transpiration", "Digestion"],
+        "answer": "Photosynthesis",
+        "correctExplanation": "Photosynthesis is the process of converting sunlight into food.",
+        "wrongExplanation": "Other processes are different biological functions.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which country is Pakistan's western neighbor?",
+        "options": ["Afghanistan", "India", "China", "Iran"],
+        "answer": "Iran",
+        "correctExplanation": "Iran lies to the west of Pakistan.",
+        "wrongExplanation": "Afghanistan is northwest; India is east; China is north.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who discovered gravity?",
+        "options": ["Albert Einstein", "Galileo Galilei", "Isaac Newton", "Nikola Tesla"],
+        "answer": "Isaac Newton",
+        "correctExplanation": "Newton formulated the laws of gravity.",
+        "wrongExplanation": "Other scientists worked in different fields.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the currency of Japan?",
+        "options": ["Yen", "Dollar", "Euro", "Rupee"],
+        "answer": "Yen",
+        "correctExplanation": "The official currency of Japan is Yen.",
+        "wrongExplanation": "Other options belong to different countries.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which is the largest desert in the world?",
+        "options": ["Sahara", "Gobi", "Kalahari", "Arctic"],
+        "answer": "Sahara",
+        "correctExplanation": "Sahara is the largest hot desert in the world.",
+        "wrongExplanation": "Other deserts are smaller or cold deserts.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Who was the last Mughal Emperor?",
+        "options": ["Bahadur Shah Zafar", "Aurangzeb", "Shah Jahan", "Akbar"],
+        "answer": "Bahadur Shah Zafar",
+        "correctExplanation": "Bahadur Shah Zafar was the last Mughal Emperor.",
+        "wrongExplanation": "Other rulers ruled earlier periods.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the chemical formula of table salt?",
+        "options": ["NaCl", "KCl", "CaCl2", "MgCl2"],
+        "answer": "NaCl",
+        "correctExplanation": "Table salt is chemically sodium chloride (NaCl).",
+        "wrongExplanation": "Other formulas represent different compounds.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which country is called the 'Emerald Isle'?",
+        "options": ["Scotland", "Ireland", "Wales", "Norway"],
+        "answer": "Ireland",
+        "correctExplanation": "Ireland is famously called the Emerald Isle due to its greenery.",
+        "wrongExplanation": "Other countries have different nicknames.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who invented the telephone?",
+        "options": ["Alexander Graham Bell", "Thomas Edison", "Nikola Tesla", "Guglielmo Marconi"],
+        "answer": "Alexander Graham Bell",
+        "correctExplanation": "Bell patented the telephone in 1876.",
+        "wrongExplanation": "Other inventors contributed to different inventions.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which country launched the first satellite into space?",
+        "options": ["USA", "USSR", "China", "India"],
+        "answer": "USSR",
+        "correctExplanation": "USSR launched Sputnik in 1957, the first artificial satellite.",
+        "wrongExplanation": "Other countries launched satellites later.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which gas is essential for respiration in humans?",
+        "options": ["Carbon Dioxide", "Oxygen", "Nitrogen", "Helium"],
+        "answer": "Oxygen",
+        "correctExplanation": "Humans need oxygen to breathe.",
+        "wrongExplanation": "Other gases are not used for respiration.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which mathematical term represents the distance around a circle?",
+        "options": ["Area", "Circumference", "Radius", "Diameter"],
+        "answer": "Circumference",
+        "correctExplanation": "Circumference is the perimeter of a circle.",
+        "wrongExplanation": "Other terms describe different properties of a circle.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who is known as the 'Father of Pakistan'?",
+        "options": ["Allama Iqbal", "Liaquat Ali Khan", "Muhammad Ali Jinnah", "Fatima Jinnah"],
+        "answer": "Muhammad Ali Jinnah",
+        "correctExplanation": "Jinnah is called the Father of Pakistan.",
+        "wrongExplanation": "Other leaders contributed but are not given this title.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which is the fastest land animal?",
+        "options": ["Lion", "Tiger", "Cheetah", "Leopard"],
+        "answer": "Cheetah",
+        "correctExplanation": "Cheetah can reach speeds up to 75 mph.",
+        "wrongExplanation": "Other animals are slower.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the boiling point of water at sea level?",
+        "options": ["100°C", "0°C", "50°C", "212°C"],
+        "answer": "100°C",
+        "correctExplanation": "Water boils at 100°C at sea level.",
+        "wrongExplanation": "Other temperatures are incorrect.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who wrote 'Romeo and Juliet'?",
+        "options": ["William Shakespeare", "Charles Dickens", "Mark Twain", "Jane Austen"],
+        "answer": "William Shakespeare",
+        "correctExplanation": "Shakespeare authored 'Romeo and Juliet'.",
+        "wrongExplanation": "Other authors wrote different works.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which is the largest ocean on Earth?",
+        "options": ["Atlantic", "Pacific", "Indian", "Arctic"],
+        "answer": "Pacific",
+        "correctExplanation": "Pacific Ocean is the largest ocean.",
+        "wrongExplanation": "Other oceans are smaller in area.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which prophet is associated with the Ark?",
+        "options": ["Prophet Muhammad", "Prophet Moses", "Prophet Noah", "Prophet Abraham"],
+        "answer": "Prophet Noah",
+        "correctExplanation": "Prophet Noah is known for building the Ark.",
+        "wrongExplanation": "Other prophets are associated with different stories.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which country is famous for the Great Wall?",
+        "options": ["China", "India", "Japan", "Korea"],
+        "answer": "China",
+        "correctExplanation": "The Great Wall is located in China.",
+        "wrongExplanation": "Other countries have different landmarks.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who proposed the theory of relativity?",
+        "options": ["Isaac Newton", "Albert Einstein", "Galileo Galilei", "Niels Bohr"],
+        "answer": "Albert Einstein",
+        "correctExplanation": "Einstein proposed the theory of relativity in 1905.",
+        "wrongExplanation": "Other scientists worked in different areas.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which Pakistani city is known as the city of lights?",
+        "options": ["Karachi", "Lahore", "Islamabad", "Multan"],
+        "answer": "Karachi",
+        "correctExplanation": "Karachi is nicknamed the city of lights.",
+        "wrongExplanation": "Other cities have different nicknames.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which instrument measures atmospheric pressure?",
+        "options": ["Thermometer", "Barometer", "Hygrometer", "Anemometer"],
+        "answer": "Barometer",
+        "correctExplanation": "Barometer is used to measure atmospheric pressure.",
+        "wrongExplanation": "Other instruments measure different properties.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which gas is used in balloons to make them float?",
+        "options": ["Oxygen", "Hydrogen", "Helium", "Nitrogen"],
+        "answer": "Helium",
+        "correctExplanation": "Helium is lighter than air and used in balloons.",
+        "wrongExplanation": "Other gases are heavier or unsafe for balloons.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which is the national flower of Pakistan?",
+        "options": ["Rose", "Jasmine", "Lotus", "Tulip"],
+        "answer": "Jasmine",
+        "correctExplanation": "Jasmine is Pakistan's national flower.",
+        "wrongExplanation": "Other flowers are national symbols of different countries.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who was the first Caliph of Islam?",
+        "options": ["Abu Bakr", "Umar", "Ali", "Uthman"],
+        "answer": "Abu Bakr",
+        "correctExplanation": "Abu Bakr was the first Caliph after Prophet Muhammad.",
+        "wrongExplanation": "The others were subsequent Caliphs.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "In which year did Pakistan become independent?",
+        "options": ["1945", "1947", "1950", "1952"],
+        "answer": "1947",
+        "correctExplanation": "Pakistan gained independence from British rule on August 14, 1947.",
+        "wrongExplanation": "The other years are not the independence year.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who was the first Prime Minister of Pakistan?",
+        "options": ["Liaquat Ali Khan", "Muhammad Ali Jinnah", "Allama Iqbal", "Sir Syed Ahmed Khan"],
+        "answer": "Liaquat Ali Khan",
+        "correctExplanation": "Liaquat Ali Khan served as the first Prime Minister of Pakistan.",
+        "wrongExplanation": "Muhammad Ali Jinnah was the founder and first Governor-General.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the chemical symbol for water?",
+        "options": ["H2O", "CO2", "O2", "NaCl"],
+        "answer": "H2O",
+        "correctExplanation": "H2O represents two hydrogen atoms and one oxygen atom.",
+        "wrongExplanation": "The other symbols are for different compounds.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the powerhouse of the cell?",
+        "options": ["Nucleus", "Mitochondria", "Ribosome", "Endoplasmic Reticulum"],
+        "answer": "Mitochondria",
+        "correctExplanation": "Mitochondria generate energy for the cell.",
+        "wrongExplanation": "The other organelles have different functions.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the past tense of 'go'?",
+        "options": ["Went", "Gone", "Going", "Goes"],
+        "answer": "Went",
+        "correctExplanation": "Went is the simple past tense of go.",
+        "wrongExplanation": "The others are different forms.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who wrote 'Romeo and Juliet'?",
+        "options": ["William Shakespeare", "Charles Dickens", "Jane Austen", "Mark Twain"],
+        "answer": "William Shakespeare",
+        "correctExplanation": "Romeo and Juliet is a famous play by Shakespeare.",
+        "wrongExplanation": "The others are different authors.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the capital of France?",
+        "options": ["Paris", "London", "Berlin", "Madrid"],
+        "answer": "Paris",
+        "correctExplanation": "Paris is the capital and most populous city of France.",
+        "wrongExplanation": "The others are capitals of different countries.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who is the current Prime Minister of Pakistan?",
+        "options": ["Imran Khan", "Nawaz Sharif", "Asif Ali Zardari", "Shehbaz Sharif"],
+        "answer": "Shehbaz Sharif",
+        "correctExplanation": "Shehbaz Sharif is the current Prime Minister as of 2024.",
+        "wrongExplanation": "The others have served previously.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which Pakistani leader is known for the Green Revolution?",
+        "options": ["Zulfiqar Ali Bhutto", "Ayub Khan", "Pervez Musharraf", "Muhammad Ali Jinnah"],
+        "answer": "Ayub Khan",
+        "correctExplanation": "Ayub Khan launched the Green Revolution to improve agriculture.",
+        "wrongExplanation": "Other leaders did not implement this program.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which blood type is known as the universal donor?",
+        "options": ["A", "O", "B", "AB"],
+        "answer": "O",
+        "correctExplanation": "Type O negative can be given to any patient in transfusion.",
+        "wrongExplanation": "Other blood types are not universal donors.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Who is the author of 'Mein Kampf'?",
+        "options": ["Adolf Hitler", "Joseph Stalin", "Winston Churchill", "Benito Mussolini"],
+        "answer": "Adolf Hitler",
+        "correctExplanation": "'Mein Kampf' was written by Adolf Hitler.",
+        "wrongExplanation": "Other leaders did not author this book.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which part of the human brain controls balance?",
+        "options": ["Cerebrum", "Cerebellum", "Medulla", "Pons"],
+        "answer": "Cerebellum",
+        "correctExplanation": "Cerebellum coordinates balance and movement.",
+        "wrongExplanation": "Other parts control different functions.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which country is famous for the Eiffel Tower?",
+        "options": ["Italy", "France", "Spain", "Germany"],
+        "answer": "France",
+        "correctExplanation": "Eiffel Tower is located in Paris, France.",
+        "wrongExplanation": "Other countries have different landmarks.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who was the first female Prime Minister of Pakistan?",
+        "options": ["Benazir Bhutto", "Fatima Jinnah", "Hina Rabbani Khar", "Asma Jahangir"],
+        "answer": "Benazir Bhutto",
+        "correctExplanation": "Benazir Bhutto became Pakistan's first female PM in 1988.",
+        "wrongExplanation": "Other women served different roles.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which organ in humans stores bile?",
+        "options": ["Liver", "Gallbladder", "Stomach", "Pancreas"],
+        "answer": "Gallbladder",
+        "correctExplanation": "Gallbladder stores and releases bile.",
+        "wrongExplanation": "Liver produces bile but does not store it.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which language is the most spoken in the world?",
+        "options": ["English", "Spanish", "Mandarin", "Hindi"],
+        "answer": "Mandarin",
+        "correctExplanation": "Mandarin Chinese has the highest number of native speakers.",
+        "wrongExplanation": "Other languages are spoken by fewer people.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which prophet built the Kaaba?",
+        "options": ["Prophet Muhammad", "Prophet Ibrahim", "Prophet Noah", "Prophet Musa"],
+        "answer": "Prophet Ibrahim",
+        "correctExplanation": "Prophet Ibrahim and his son Ismail rebuilt the Kaaba.",
+        "wrongExplanation": "Other prophets are associated with different events.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "What is the square of 15?",
+        "options": ["225", "215", "235", "205"],
+        "answer": "225",
+        "correctExplanation": "15 × 15 = 225.",
+        "wrongExplanation": "Other options are incorrect.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which gas is most abundant in Earth's atmosphere?",
+        "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+        "answer": "Nitrogen",
+        "correctExplanation": "Nitrogen makes up about 78% of the atmosphere.",
+        "wrongExplanation": "Oxygen is second most abundant, others are less.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which battle marked the end of Mughal dominance in India?",
+        "options": ["Plassey", "Panipat", "Buxar", "Haldighati"],
+        "answer": "Plassey",
+        "correctExplanation": "The Battle of Plassey in 1757 led to British dominance in India.",
+        "wrongExplanation": "Other battles had different historical impacts.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which is the main component of natural gas?",
+        "options": ["Methane", "Ethane", "Propane", "Butane"],
+        "answer": "Methane",
+        "correctExplanation": "Natural gas mainly consists of methane.",
+        "wrongExplanation": "Other hydrocarbons are present in smaller amounts.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Who was the first woman astronaut in space?",
+        "options": ["Valentina Tereshkova", "Sally Ride", "Mae Jemison", "Kalpana Chawla"],
+        "answer": "Valentina Tereshkova",
+        "correctExplanation": "Tereshkova flew into space in 1963.",
+        "wrongExplanation": "Other women went later.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which city is known as the City of Sufis in Pakistan?",
+        "options": ["Multan", "Lahore", "Karachi", "Islamabad"],
+        "answer": "Multan",
+        "correctExplanation": "Multan is famous for Sufi shrines and saints.",
+        "wrongExplanation": "Other cities have different historical significance.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which planet has the most moons?",
+        "options": ["Earth", "Saturn", "Jupiter", "Mars"],
+        "answer": "Saturn",
+        "correctExplanation": "Saturn has 80+ known moons.",
+        "wrongExplanation": "Jupiter also has many moons but slightly less confirmed.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which chemical element has the symbol 'Fe'?",
+        "options": ["Fluorine", "Iron", "Fermium", "Francium"],
+        "answer": "Iron",
+        "correctExplanation": "Fe is the chemical symbol for Iron.",
+        "wrongExplanation": "Other elements have different symbols.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which year did Pakistan become a republic?",
+        "options": ["1947", "1956", "1962", "1971"],
+        "answer": "1956",
+        "correctExplanation": "Pakistan became a republic on 23rd March 1956.",
+        "wrongExplanation": "Other years are associated with independence or constitution changes.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which is the main language of Brazil?",
+        "options": ["Spanish", "Portuguese", "English", "French"],
+        "answer": "Portuguese",
+        "correctExplanation": "Portuguese is Brazil's official language.",
+        "wrongExplanation": "Spanish is spoken in most of Latin America, not Brazil.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which Islamic month is known for fasting?",
+        "options": ["Ramadan", "Shawwal", "Muharram", "Dhul-Hijjah"],
+        "answer": "Ramadan",
+        "correctExplanation": "Muslims fast during the month of Ramadan.",
+        "wrongExplanation": "Other months have different religious significance.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which part of the cell contains genetic material?",
+        "options": ["Cytoplasm", "Nucleus", "Ribosome", "Mitochondria"],
+        "answer": "Nucleus",
+        "correctExplanation": "Nucleus contains DNA and controls cell functions.",
+        "wrongExplanation": "Other organelles have different roles.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Who was the founder of the Mughal Empire?",
+        "options": ["Akbar", "Babur", "Humayun", "Shah Jahan"],
+        "answer": "Babur",
+        "correctExplanation": "Babur established the Mughal Empire in 1526.",
+        "wrongExplanation": "Other rulers came later.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which mathematical operation is the inverse of multiplication?",
+        "options": ["Addition", "Division", "Subtraction", "Exponentiation"],
+        "answer": "Division",
+        "correctExplanation": "Division reverses multiplication.",
+        "wrongExplanation": "Other operations are unrelated inverses.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which country is Pakistan's eastern neighbor?",
+        "options": ["India", "China", "Afghanistan", "Iran"],
+        "answer": "India",
+        "correctExplanation": "India lies to the east of Pakistan.",
+        "wrongExplanation": "Other countries are north, west, or northwest.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which city is the capital of Pakistan?",
+        "options": ["Karachi", "Lahore", "Islamabad", "Peshawar"],
+        "answer": "Islamabad",
+        "correctExplanation": "Islamabad is the federal capital of Pakistan.",
+        "wrongExplanation": "Other cities are provincial capitals.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which is the largest gland in the human body?",
+        "options": ["Pancreas", "Liver", "Thyroid", "Adrenal"],
+        "answer": "Liver",
+        "correctExplanation": "Liver is the largest gland, performing many metabolic functions.",
+        "wrongExplanation": "Other glands are smaller.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which is the process of water turning into vapor?",
+        "options": ["Condensation", "Evaporation", "Precipitation", "Transpiration"],
+        "answer": "Evaporation",
+        "correctExplanation": "Evaporation is the process of liquid water becoming vapor.",
+        "wrongExplanation": "Other processes describe different stages of water cycle.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which mountain is the highest in the world?",
+        "options": ["K2", "Kangchenjunga", "Everest", "Makalu"],
+        "answer": "Everest",
+        "correctExplanation": "Mount Everest is 8,848 m high, the tallest on Earth.",
+        "wrongExplanation": "Other peaks are slightly lower.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which continent is the Sahara Desert located in?",
+        "options": ["Asia", "Africa", "Australia", "South America"],
+        "answer": "Africa",
+        "correctExplanation": "Sahara Desert is in North Africa.",
+        "wrongExplanation": "Other continents do not have Sahara.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who was the first Muslim ruler of Delhi Sultanate?",
+        "options": ["Iltutmish", "Qutb-ud-din Aibak", "Balban", "Alauddin Khilji"],
+        "answer": "Qutb-ud-din Aibak",
+        "correctExplanation": "Qutb-ud-din Aibak established the Delhi Sultanate.",
+        "wrongExplanation": "Other rulers ruled later.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which is the main gas responsible for global warming?",
+        "options": ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+        "answer": "Carbon Dioxide",
+        "correctExplanation": "CO2 traps heat in the atmosphere, causing global warming.",
+        "wrongExplanation": "Other gases do not significantly contribute to warming.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which device is used to measure temperature?",
+        "options": ["Barometer", "Thermometer", "Hygrometer", "Anemometer"],
+        "answer": "Thermometer",
+        "correctExplanation": "Thermometers measure temperature.",
+        "wrongExplanation": "Other devices measure different properties.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which country won the first FIFA World Cup?",
+        "options": ["Brazil", "Italy", "Uruguay", "Germany"],
+        "answer": "Uruguay",
+        "correctExplanation": "Uruguay won the first World Cup in 1930.",
+        "wrongExplanation": "Other countries won later editions.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which is the national animal of Pakistan?",
+        "options": ["Markhor", "Lion", "Tiger", "Elephant"],
+        "answer": "Markhor",
+        "correctExplanation": "Markhor is Pakistan's national animal.",
+        "wrongExplanation": "Other animals are national symbols of different countries.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which type of celestial body is the Sun?",
+        "options": ["Planet", "Star", "Asteroid", "Comet"],
+        "answer": "Star",
+        "correctExplanation": "The Sun is a star, providing light and heat to Earth.",
+        "wrongExplanation": "Other options are not stars.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which blood vessels carry blood away from the heart?",
+        "options": ["Veins", "Arteries", "Capillaries", "Venules"],
+        "answer": "Arteries",
+        "correctExplanation": "Arteries carry oxygenated blood away from the heart.",
+        "wrongExplanation": "Veins carry blood towards the heart.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which is the largest planet in our solar system?",
+        "options": ["Saturn", "Jupiter", "Neptune", "Earth"],
+        "answer": "Jupiter",
+        "correctExplanation": "Jupiter is the largest planet by volume and mass.",
+        "wrongExplanation": "Other planets are smaller.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Which country is Pakistan's northern neighbor?",
+        "options": ["India", "China", "Afghanistan", "Iran"],
+        "answer": "China",
+        "correctExplanation": "China lies to the north of Pakistan.",
+        "wrongExplanation": "Other countries are in different directions.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "Who was the first Nobel Prize winner in Physics?",
+        "options": ["Albert Einstein", "Wilhelm Röntgen", "Marie Curie", "Max Planck"],
+        "answer": "Wilhelm Röntgen",
+        "correctExplanation": "Röntgen won the first Nobel Prize in Physics in 1901.",
+        "wrongExplanation": "Other scientists won later.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which mineral is hardest on Mohs scale?",
+        "options": ["Diamond", "Quartz", "Topaz", "Corundum"],
+        "answer": "Diamond",
+        "correctExplanation": "Diamond is the hardest natural mineral.",
+        "wrongExplanation": "Other minerals are softer.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which city is known as the Heart of Pakistan?",
+        "options": ["Lahore", "Multan", "Karachi", "Islamabad"],
+        "answer": "Lahore",
+        "correctExplanation": "Lahore is culturally called the Heart of Pakistan.",
+        "wrongExplanation": "Other cities have different nicknames.",
+        "difficulty": "medium"
+    },
+    {
+        "question": "Which branch of science studies matter and energy?",
+        "options": ["Biology", "Chemistry", "Physics", "Geology"],
+        "answer": "Physics",
+        "correctExplanation": "Physics studies matter, energy, and their interactions.",
+        "wrongExplanation": "Other branches focus on different sciences.",
+        "difficulty": "easy"
+    },
+    {
+        "question": "What is the largest planet in our solar system?",
+        "options": ["Jupiter", "Saturn", "Neptune", "Earth"],
+        "answer": "Jupiter",
+        "correctExplanation": "Jupiter is the largest planet by mass and volume.",
+        "wrongExplanation": "The others are smaller.",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the Holy Book of Muslims?",
+        "options": ["Quran", "Bible", "Torah", "Vedas"],
+        "answer": "Quran",
+        "correctExplanation": "The Quran is the central religious text of Islam.",
+        "wrongExplanation": "The others are holy books of different religions.",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Who discovered penicillin?",
+        "options": ["Alexander Fleming", "Louis Pasteur", "Robert Koch", "Edward Jenner"],
+        "answer": "Alexander Fleming",
+        "correctExplanation": "Alexander Fleming discovered penicillin in 1928.",
+        "wrongExplanation": "The others made different discoveries.",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the synonym of 'happy'?",
+        "options": ["Joyful", "Sad", "Angry", "Tired"],
+        "answer": "Joyful",
+        "correctExplanation": "Joyful means feeling or expressing great pleasure.",
+        "wrongExplanation": "The others have opposite meanings.",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the currency of Japan?",
+        "options": ["Yen", "Won", "Ringgit", "Baht"],
+        "answer": "Yen",
+        "correctExplanation": "Yen is the official currency of Japan.",
+        "wrongExplanation": "The others are currencies of different countries.",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the formula for force?",
+        "options": ["F = ma", "E = mc²", "PV = nRT", "F = kq1q2/r²"],
+        "answer": "F = ma",
+        "correctExplanation": "F = ma is Newton's second law of motion.",
+        "wrongExplanation": "The others are formulas for different physical quantities.",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Who was the last Prophet of Islam?",
+        "options": ["Muhammad", "Jesus", "Moses", "Abraham"],
+        "answer": "Muhammad",
+        "correctExplanation": "Prophet Muhammad is the last prophet in Islam.",
+        "wrongExplanation": "The others were earlier prophets.",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the boiling point of water?",
+        "options": ["100°C", "0°C", "50°C", "200°C"],
+        "answer": "100°C",
+        "correctExplanation": "Water boils at 100°C at standard atmospheric pressure.",
+        "wrongExplanation": "The others are not the boiling point.",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the plural of 'child'?",
+        "options": ["Children", "Childs", "Childes", "Childen"],
+        "answer": "Children",
+        "correctExplanation": "Children is the correct plural form.",
+        "wrongExplanation": "The others are incorrect spellings.",
+        "difficulty": "hard"
+    },
+    {
+        "question": "Who painted the Mona Lisa?",
+        "options": ["Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso", "Michelangelo"],
+        "answer": "Leonardo da Vinci",
+        "correctExplanation": "The Mona Lisa was painted by Leonardo da Vinci.",
+        "wrongExplanation": "The others are different artists.",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is the capital of Pakistan?",
+        "options": ["Islamabad", "Karachi", "Lahore", "Peshawar"],
+        "answer": "Islamabad",
+        "correctExplanation": "Islamabad is the capital city of Pakistan.",
+        "wrongExplanation": "The others are major cities but not the capital.",
+        "difficulty": "hard"
+    },
+    {
+        "question": "What is photosynthesis?",
+        "options": ["Process by which plants make food", "Respiration", "Transpiration", "Pollination"],
+        "answer": "Process by which plants make food",
+        "correctExplanation": "Photosynthesis is the process where plants convert light energy into chemical energy.",
+        "wrongExplanation": "The others are different plant processes.",
+        "difficulty": "very hard"
+    },
+    {
+        "question": "What is the meaning of 'altruistic'?",
+        "options": ["Selfless concern for others", "Self-centered", "Greedy", "Lazy"],
+        "answer": "Selfless concern for others",
+        "correctExplanation": "Altruistic means showing concern for the welfare of others.",
+        "wrongExplanation": "The others have opposite meanings.",
+        "difficulty": "very hard"
+    },
+    {
+        "question": "Who was the first woman to win a Nobel Prize?",
+        "options": ["Marie Curie", "Rosalind Franklin", "Ada Lovelace", "Jane Goodall"],
+        "answer": "Marie Curie",
+        "correctExplanation": "Marie Curie won the Nobel Prize in Physics in 1903 and Chemistry in 1911.",
+        "wrongExplanation": "The others made significant contributions but not the first Nobel winner.",
+        "difficulty": "very hard"
+    },
+    {
+        "question": "What is the largest ocean in the world?",
+        "options": ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean", "Arctic Ocean"],
+        "answer": "Pacific Ocean",
+        "correctExplanation": "The Pacific Ocean is the largest by area.",
+        "wrongExplanation": "The others are smaller.",
+        "difficulty": "very hard"
+    },
+    {
+        "question": "What is the Five Pillars of Islam?",
+        "options": ["Shahada, Salah, Zakat, Hajj, Sawm", "Prayer, Fasting, Charity, Pilgrimage, Faith", "Both A and B", "None of the above"],
+        "answer": "Both A and B",
+        "correctExplanation": "The Five Pillars are Shahada (faith), Salah (prayer), Zakat (charity), Sawm (fasting), Hajj (pilgrimage).",
+        "wrongExplanation": "They encompass both the Arabic terms and their English meanings.",
+        "difficulty": "very hard"
+    },
+    {
+        "question": "What is the speed of light?",
+        "options": ["3 x 10^8 m/s", "3 x 10^6 m/s", "3 x 10^10 m/s", "3 x 10^4 m/s"],
+        "answer": "3 x 10^8 m/s",
+        "correctExplanation": "The speed of light in vacuum is approximately 3 x 10^8 meters per second.",
+        "wrongExplanation": "The other values are incorrect.",
+        "difficulty": "very hard"
+    },
+    {
+        "question": "Who wrote 'The Great Gatsby'?",
+        "options": ["F. Scott Fitzgerald", "Ernest Hemingway", "John Steinbeck", "William Faulkner"],
+        "answer": "F. Scott Fitzgerald",
+        "correctExplanation": "The Great Gatsby is a novel by F. Scott Fitzgerald.",
+        "wrongExplanation": "The others are different authors.",
+        "difficulty": "very hard"
+    },
+    {
+        "question": "What is the main gas in Earth's atmosphere?",
+        "options": ["Nitrogen", "Oxygen", "Carbon Dioxide", "Argon"],
+        "answer": "Nitrogen",
+        "correctExplanation": "Nitrogen makes up about 78% of the atmosphere.",
+        "wrongExplanation": "Oxygen is about 21%, the others are minor.",
+        "difficulty": "very hard"
+    },
+    {
+        "question": "What is the antonym of 'brave'?",
+        "options": ["Cowardly", "Bold", "Fearless", "Valiant"],
+        "answer": "Cowardly",
+        "correctExplanation": "Cowardly means lacking courage.",
+        "wrongExplanation": "The others are synonyms.",
+        "difficulty": "very hard"
+    },
+    {
+        "question": "Who was the first President of the United States?",
+        "options": ["George Washington", "Thomas Jefferson", "Abraham Lincoln", "John Adams"],
+        "answer": "George Washington",
+        "correctExplanation": "George Washington was the first President of the USA.",
+        "wrongExplanation": "The others served later.",
+        "difficulty": "very hard"
+    }
+]

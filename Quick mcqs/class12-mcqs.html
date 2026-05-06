@@ -1,0 +1,1039 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="png" href="/images/logo6.png">
+    <title>ZOO Education | Class 12 MCQs</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            font-family: "Fredoka", sans-serif;
+        }
+        .test-section {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .test-section:hover {
+            transform: translateY(-5px);
+        }
+        .questions-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-between;
+        }
+        .question-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+            flex: 0 0 calc(25% - 15px);
+            box-sizing: border-box;
+        }
+        .option-btn {
+            width: 100%;
+            text-align: left;
+            padding: 8px 12px;
+            margin: 3px 0;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .option-btn:hover {
+            background-color: #e9ecef;
+        }
+        .option-btn.selected {
+            background-color: #dc3545;
+            color: white;
+            border-color: #dc3545;
+        }
+        .option-btn.correct {
+            background-color: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+        .option-btn.incorrect {
+            background-color: #dc3545;
+            color: white;
+            border-color: #dc3545;
+        }
+        .chapter-list {
+            display: none;
+            margin-top: 15px;
+        }
+        .chapter-item {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .chapter-item:hover {
+            background-color: #e9ecef;
+            transform: translateY(-2px);
+        }
+        .chapter-item.active {
+            background-color: #dc3545;
+            color: white;
+        }
+        .section-icon {
+            font-size: 2rem;
+            color: #dc3545;
+            margin-bottom: 15px;
+        }
+        .result-card {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .subject-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .subject-tab {
+            color: #6c757d;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background: none;
+        }
+        .subject-tab:hover {
+            background-color: #e9ecef;
+        }
+        .subject-tab.active {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/images/logo6.png" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/report.html">Report Issues</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-5">Class 12 MCQs</h1>
+        
+        <!-- Subject and Chapter Navigation will be here -->
+
+        <!-- Subject Selection -->
+        <ul class="subject-tabs mb-4" id="subjectTabs">
+            <li>
+                <button class="subject-tab active" id="physics-tab" onclick="showChapters('physics')" type="button">
+                    <i class="fas fa-atom"></i> Physics
+                </button>
+            </li>
+            <li>
+                <button class="subject-tab" id="biology-tab" onclick="showChapters('biology')" type="button">
+                    <i class="fas fa-dna"></i> Biology
+                </button>
+            </li>
+            <li>
+                <button class="subject-tab" id="chemistry-tab" onclick="showChapters('chemistry')" type="button">
+                    <i class="fas fa-flask"></i> Chemistry
+                </button>
+            </li>
+            <li>
+                <button class="subject-tab" id="english-tab" onclick="showChapters('english')" type="button">
+                    <i class="fas fa-language"></i> English
+                </button>
+            </li>
+            <li>
+                <button class="subject-tab" id="math-tab" onclick="showChapters('math')" type="button">
+                    <i class="fas fa-calculator"></i> Math
+                </button>
+            </li>
+            <li>
+                <button class="subject-tab" id="computer-science-tab" onclick="showChapters('computer-science')" type="button">
+                    <i class="fas fa-code"></i> Computer Science
+                </button>
+            </li>
+            <li>
+                <button class="subject-tab" id="urdu-tab" onclick="showChapters('urdu')" type="button">
+                    <i class="fas fa-language"></i> Urdu
+                </button>
+            </li>
+            <li>
+                <button class="subject-tab" id="islamic-studies-tab" onclick="showChapters('islamic-studies')" type="button">
+                    <i class="fas fa-moon"></i> Islamic Studies
+                </button>
+            </li>
+            <li>
+                <button class="subject-tab" id="pakistan-studies-tab" onclick="showChapters('pakistan-studies')" type="button">
+                    <i class="fas fa-flag"></i> Pakistan Studies
+                </button>
+            </li>
+        </ul>
+        
+        <!-- Chapter Selection -->
+        <div id="chapters-container">
+            <!-- Physics Chapters -->
+            <div id="physics-chapters" class="chapter-list">
+                <h4 class="mb-3">Physics Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'motion')">
+                            <i class="fas fa-bolt"></i> Electrodynamics
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'forces')">
+                            <i class="fas fa-wave-square"></i> Quantum Physics
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'energy')">
+                            <i class="fas fa-atom"></i> Nuclear Physics
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Biology Chapters -->
+            <div id="biology-chapters" class="chapter-list">
+                <h4 class="mb-3">Biology Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'cells')">
+                            <i class="fas fa-microscope"></i> Genetics
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'systems')">
+                            <i class="fas fa-heartbeat"></i> Evolution
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'ecology')">
+                            <i class="fas fa-leaf"></i> Biotechnology
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chemistry Chapters -->
+            <div id="chemistry-chapters" class="chapter-list">
+                <h4 class="mb-3">Chemistry Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'elements')">
+                            <i class="fas fa-atom"></i> Organic Chemistry
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'reactions')">
+                            <i class="fas fa-vial"></i> Electrochemistry
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'acids')">
+                            <i class="fas fa-flask"></i> Polymers
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- English Chapters -->
+            <div id="english-chapters" class="chapter-list">
+                <h4 class="mb-3">English Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('english', 'grammar')">
+                            <i class="fas fa-book"></i> Advanced Grammar
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('english', 'vocabulary')">
+                            <i class="fas fa-spell-check"></i> Literature
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('english', 'comprehension')">
+                            <i class="fas fa-paragraph"></i> Essay Writing
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Math Chapters -->
+            <div id="math-chapters" class="chapter-list">
+                <h4 class="mb-3">Math Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'algebra')">
+                            <i class="fas fa-superscript"></i> Trigonometry
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'geometry')">
+                            <i class="fas fa-shapes"></i> Calculus
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'statistics')">
+                            <i class="fas fa-chart-bar"></i> Probability
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Computer Science Chapters -->
+            <div id="computer-science-chapters" class="chapter-list">
+                <h4 class="mb-3">Computer Science Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computer-science', 'programming')">
+                            <i class="fas fa-code"></i> Programming Fundamentals
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computer-science', 'data-structures')">
+                            <i class="fas fa-database"></i> Data Structures
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computer-science', 'algorithms')">
+                            <i class="fas fa-cogs"></i> Algorithms
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Urdu Chapters -->
+            <div id="urdu-chapters" class="chapter-list">
+                <h4 class="mb-3">Urdu Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('urdu', 'urdu-grammar')">
+                            <i class="fas fa-book"></i> Grammar
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('urdu', 'urdu-literature')">
+                            <i class="fas fa-pen"></i> Literature
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('urdu', 'urdu-prose')">
+                            <i class="fas fa-scroll"></i> Prose
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Islamic Studies Chapters -->
+            <div id="islamic-studies-chapters" class="chapter-list">
+                <h4 class="mb-3">Islamic Studies Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('islamic-studies', 'quran')">
+                            <i class="fas fa-book-open"></i> Quran
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('islamic-studies', 'hadith')">
+                            <i class="fas fa-scroll"></i> Hadith
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('islamic-studies', 'islamic-history')">
+                            <i class="fas fa-history"></i> Islamic History
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pakistan Studies Chapters -->
+            <div id="pakistan-studies-chapters" class="chapter-list">
+                <h4 class="mb-3">Pakistan Studies Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('pakistan-studies', 'history')">
+                            <i class="fas fa-landmark"></i> History
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('pakistan-studies', 'geography')">
+                            <i class="fas fa-globe"></i> Geography
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('pakistan-studies', 'culture')">
+                            <i class="fas fa-users"></i> Culture
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MCQs Container -->
+        <div id="mcqs-container" style="display: none;">
+            <div class="test-section">
+                <div class="card-body">
+                    <h3 class="text-center mb-4" id="mcq-title"></h3>
+                    <div id="mcq-questions" class="questions-container">
+                        <!-- Questions will be loaded here -->
+                    </div>
+                    <div class="text-center mt-4">
+                        <button class="btn btn-secondary" onclick="backToChapters()">
+                            <i class="fas fa-arrow-left"></i> Back to Chapters
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center mt-4">
+            <button class="btn btn-danger btn-lg" onclick="submitTest()">
+                <i class="fas fa-paper-plane"></i> Submit Test
+            </button>
+        </div>
+
+        <!-- Results Section (Hidden by default) -->
+        <div id="results" class="result-card" style="display: none;">
+            <h3 class="text-center mb-4">Test Results</h3>
+            
+            <!-- Physics Score Section -->
+            <div id="physics-score-section" class="subject-score" style="display: none;">
+                <div class="text-center">
+                    <h4><i class="fas fa-atom section-icon"></i> Physics</h4>
+                    <h2 id="physics-score">0/10</h2>
+                </div>
+            </div>
+            
+            <!-- Biology Score Section -->
+            <div id="biology-score-section" class="subject-score" style="display: none;">
+                <div class="text-center">
+                    <h4><i class="fas fa-dna section-icon"></i> Biology</h4>
+                    <h2 id="biology-score">0/10</h2>
+                </div>
+            </div>
+            
+            <!-- Chemistry Score Section -->
+            <div id="chemistry-score-section" class="subject-score" style="display: none;">
+                <div class="text-center">
+                    <h4><i class="fas fa-flask section-icon"></i> Chemistry</h4>
+                    <h2 id="chemistry-score">0/10</h2>
+                </div>
+            </div>
+            
+            <!-- English Score Section -->
+            <div id="english-score-section" class="subject-score" style="display: none;">
+                <div class="text-center">
+                    <h4><i class="fas fa-language section-icon"></i> English</h4>
+                    <h2 id="english-score">0/10</h2>
+                </div>
+            </div>
+            
+            <!-- Math Score Section -->
+            <div id="math-score-section" class="subject-score" style="display: none;">
+                <div class="text-center">
+                    <h4><i class="fas fa-calculator section-icon"></i> Math</h4>
+                    <h2 id="math-score">0/10</h2>
+                </div>
+            </div>
+
+            <!-- Computer Science Score Section -->
+            <div id="computer-science-score-section" class="subject-score" style="display: none;">
+                <div class="text-center">
+                    <h4><i class="fas fa-code section-icon"></i> Computer Science</h4>
+                    <h2 id="computer-science-score">0/10</h2>
+                </div>
+            </div>
+
+            <!-- Urdu Score Section -->
+            <div id="urdu-score-section" class="subject-score" style="display: none;">
+                <div class="text-center">
+                    <h4><i class="fas fa-language section-icon"></i> Urdu</h4>
+                    <h2 id="urdu-score">0/10</h2>
+                </div>
+            </div>
+
+            <!-- Islamic Studies Score Section -->
+            <div id="islamic-studies-score-section" class="subject-score" style="display: none;">
+                <div class="text-center">
+                    <h4><i class="fas fa-moon section-icon"></i> Islamic Studies</h4>
+                    <h2 id="islamic-studies-score">0/10</h2>
+                </div>
+            </div>
+
+            <!-- Pakistan Studies Score Section -->
+            <div id="pakistan-studies-score-section" class="subject-score" style="display: none;">
+                <div class="text-center">
+                    <h4><i class="fas fa-flag section-icon"></i> Pakistan Studies</h4>
+                    <h2 id="pakistan-studies-score">0/10</h2>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <h3>Total Score: <span id="total-score">0/10</span></h3>
+                <p id="result-message" class="mt-3"></p>
+                <button class="btn btn-primary mt-3" onclick="backToSubjects()">
+                    <i class="fas fa-arrow-left"></i> Back to Subjects
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Information</h5>
+                    <p><i class="fas fa-envelope"></i> info@zooeducation.com</p>
+                    <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 ZOO Education. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Test data
+        const physicsQuestions = [
+            {
+                question: "What is the SI unit of electric current?",
+                options: ["Volt", "Ampere", "Ohm", "Coulomb"],
+                answer: "Ampere"
+            },
+            {
+                question: "Which quantum phenomenon describes the ability of particles to exist in multiple states simultaneously?",
+                options: ["Quantum entanglement", "Quantum superposition", "Quantum tunneling", "Quantum decoherence"],
+                answer: "Quantum superposition"
+            },
+            {
+                question: "What particle is exchanged in beta decay?",
+                options: ["Proton", "Neutron", "Electron", "Alpha particle"],
+                answer: "Electron"
+            },
+            {
+                question: "Which of these is used to detect radiation in a nuclear physics lab?",
+                options: ["Barometer", "Geiger counter", "Seismograph", "Anemometer"],
+                answer: "Geiger counter"
+            }
+        ];
+
+        const biologyQuestions = [
+            {
+                question: "What is the molecule that carries genetic information in humans?",
+                options: ["RNA", "DNA", "Protein", "Lipid"],
+                answer: "DNA"
+            },
+            {
+                question: "Which of these is NOT a type of RNA?",
+                options: ["mRNA", "tRNA", "rRNA", "dRNA"],
+                answer: "dRNA"
+            },
+            {
+                question: "The theory of natural selection was proposed by:",
+                options: ["Gregor Mendel", "Charles Darwin", "Louis Pasteur", "Alexander Fleming"],
+                answer: "Charles Darwin"
+            },
+            {
+                question: "Which technique is used to amplify DNA sequences?",
+                options: ["Gel electrophoresis", "PCR", "CRISPR", "Southern blotting"],
+                answer: "PCR"
+            }
+        ];
+
+        const chemistryQuestions = [
+            {
+                question: "Which of these is an organic compound?",
+                options: ["Sodium chloride", "Carbon dioxide", "Methane", "Calcium oxide"],
+                answer: "Methane"
+            },
+            {
+                question: "In electrochemistry, what happens at the anode during electrolysis?",
+                options: ["Electrons are gained", "Electrons are lost", "Protons are gained", "Neutrons are lost"],
+                answer: "Electrons are lost"
+            },
+            {
+                question: "What is the main polymer used in plastic bottles?",
+                options: ["Polyethylene", "Polyvinyl chloride", "Polyethylene terephthalate", "Polystyrene"],
+                answer: "Polyethylene terephthalate"
+            },
+            {
+                question: "What is the monomer of polyethylene?",
+                options: ["Ethane", "Ethene", "Ethyne", "Ethanol"],
+                answer: "Ethene"
+            }
+        ];
+
+        const englishQuestions = [
+            {
+                question: "Which of these is a complex sentence?",
+                options: ["I went to the store.", "I went to the store and bought milk.", "Although it was raining, I went to the store.", "I went to the store; it was closed."],
+                answer: "Although it was raining, I went to the store."
+            },
+            {
+                question: "Who wrote 'Hamlet'?",
+                options: ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
+                answer: "William Shakespeare"
+            },
+            {
+                question: "What is the primary purpose of a persuasive essay?",
+                options: ["To inform", "To entertain", "To convince", "To describe"],
+                answer: "To convince"
+            },
+            {
+                question: "Which literary device involves comparing two unlike things using 'like' or 'as'?",
+                options: ["Metaphor", "Simile", "Personification", "Alliteration"],
+                answer: "Simile"
+            }
+        ];
+
+        const mathQuestions = [
+            {
+                question: "What is the value of sin(30°)?",
+                options: ["0", "0.5", "1", "√3/2"],
+                answer: "0.5"
+            },
+            {
+                question: "What is the derivative of x² with respect to x?",
+                options: ["x", "2x", "x²", "2"],
+                answer: "2x"
+            },
+            {
+                question: "If you roll a fair six-sided die, what is the probability of getting an even number?",
+                options: ["1/6", "1/3", "1/2", "2/3"],
+                answer: "1/2"
+            },
+            {
+                question: "Which of these is NOT a measure of central tendency?",
+                options: ["Mean", "Median", "Mode", "Range"],
+                answer: "Range"
+            }
+        ];
+
+        const computerScienceQuestions = [
+            {
+                question: "What is the time complexity of binary search?",
+                options: ["O(n)", "O(log n)", "O(n²)", "O(1)"],
+                answer: "O(log n)"
+            },
+            {
+                question: "Which data structure uses LIFO (Last In, First Out) principle?",
+                options: ["Queue", "Stack", "Array", "Linked List"],
+                answer: "Stack"
+            },
+            {
+                question: "What does SQL stand for?",
+                options: ["Structured Query Language", "Simple Query Language", "Standard Query Language", "Sequential Query Language"],
+                answer: "Structured Query Language"
+            },
+            {
+                question: "Which programming paradigm emphasizes immutability and functions without side effects?",
+                options: ["Object-Oriented Programming", "Functional Programming", "Procedural Programming", "Logic Programming"],
+                answer: "Functional Programming"
+            }
+        ];
+
+        const urduQuestions = [
+            {
+                question: "What is the Urdu word for 'book'?",
+                options: ["Kitab", "Kalem", "Kursi", "Darwaza"],
+                answer: "Kitab"
+            },
+            {
+                question: "Which poet is known for 'Shahnama-e-Islam'?",
+                options: ["Allama Iqbal", "Mirza Ghalib", "Faiz Ahmed Faiz", "Ahmed Faraz"],
+                answer: "Allama Iqbal"
+            },
+            {
+                question: "What is the Urdu term for 'prose'?",
+                options: ["Nazm", "Ghazal", "Nisar", "Dastan"],
+                answer: "Nisar"
+            },
+            {
+                question: "Who wrote 'Godaan'?",
+                options: ["Premchand", "Raja Rao", "Bankim Chandra", "Tagore"],
+                answer: "Premchand"
+            }
+        ];
+
+        const islamicStudiesQuestions = [
+            {
+                question: "How many Surahs are in the Quran?",
+                options: ["114", "100", "120", "110"],
+                answer: "114"
+            },
+            {
+                question: "What is the first Hadith collection?",
+                options: ["Sahih Bukhari", "Sahih Muslim", "Jami' Tirmidhi", "Sunan Abu Dawood"],
+                answer: "Sahih Bukhari"
+            },
+            {
+                question: "Who was the first Caliph?",
+                options: ["Abu Bakr", "Umar", "Uthman", "Ali"],
+                answer: "Abu Bakr"
+            },
+            {
+                question: "What is the Islamic calendar called?",
+                options: ["Hijri", "Gregorian", "Julian", "Lunar"],
+                answer: "Hijri"
+            }
+        ];
+
+        const pakistanStudiesQuestions = [
+            {
+                question: "When was Pakistan founded?",
+                options: ["1947", "1948", "1950", "1952"],
+                answer: "1947"
+            },
+            {
+                question: "What is the capital of Pakistan?",
+                options: ["Islamabad", "Karachi", "Lahore", "Peshawar"],
+                answer: "Islamabad"
+            },
+            {
+                question: "Which river is the longest in Pakistan?",
+                options: ["Indus", "Jhelum", "Chenab", "Ravi"],
+                answer: "Indus"
+            },
+            {
+                question: "Who was the first Prime Minister of Pakistan?",
+                options: ["Liaquat Ali Khan", "Muhammad Ali Jinnah", "Allama Iqbal", "Sir Syed Ahmed Khan"],
+                answer: "Liaquat Ali Khan"
+            }
+        ];
+
+        // Test state
+        let currentSubject = null;
+        let currentChapter = null;
+        let answers = {
+            physics: {
+                motion: Array(physicsQuestions.length).fill(null),  // Electrodynamics
+                forces: Array(physicsQuestions.length).fill(null),  // Quantum Physics
+                energy: Array(physicsQuestions.length).fill(null)   // Nuclear Physics
+            },
+            biology: {
+                cells: Array(biologyQuestions.length).fill(null),   // Genetics
+                systems: Array(biologyQuestions.length).fill(null), // Evolution
+                ecology: Array(biologyQuestions.length).fill(null)  // Biotechnology
+            },
+            chemistry: {
+                elements: Array(chemistryQuestions.length).fill(null),  // Organic Chemistry
+                reactions: Array(chemistryQuestions.length).fill(null), // Electrochemistry
+                acids: Array(chemistryQuestions.length).fill(null)      // Polymers
+            },
+            english: {
+                grammar: Array(englishQuestions.length).fill(null),       // Advanced Grammar
+                vocabulary: Array(englishQuestions.length).fill(null),   // Literature
+                comprehension: Array(englishQuestions.length).fill(null) // Essay Writing
+            },
+            math: {
+                algebra: Array(mathQuestions.length).fill(null),     // Trigonometry
+                geometry: Array(mathQuestions.length).fill(null),    // Calculus
+                statistics: Array(mathQuestions.length).fill(null)   // Probability
+            },
+            'computer-science': {
+                programming: Array(computerScienceQuestions.length).fill(null),     // Programming Fundamentals
+                'data-structures': Array(computerScienceQuestions.length).fill(null),    // Data Structures
+                algorithms: Array(computerScienceQuestions.length).fill(null)   // Algorithms
+            },
+            urdu: {
+                'urdu-grammar': Array(urduQuestions.length).fill(null),
+                'urdu-literature': Array(urduQuestions.length).fill(null),
+                'urdu-prose': Array(urduQuestions.length).fill(null)
+            },
+            'islamic-studies': {
+                quran: Array(islamicStudiesQuestions.length).fill(null),
+                hadith: Array(islamicStudiesQuestions.length).fill(null),
+                'islamic-history': Array(islamicStudiesQuestions.length).fill(null)
+            },
+            'pakistan-studies': {
+                history: Array(pakistanStudiesQuestions.length).fill(null),
+                geography: Array(pakistanStudiesQuestions.length).fill(null),
+                culture: Array(pakistanStudiesQuestions.length).fill(null)
+            }
+        };
+
+        // Initialize the test
+        function initializeTest() {
+            // Show physics chapters by default
+            showChapters('physics');
+        }
+
+        // Show chapters for a subject
+        function showChapters(subject) {
+            // Update active tab
+            document.querySelectorAll('#subjectTabs .subject-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.getElementById(`${subject}-tab`).classList.add('active');
+            
+            // Hide all chapter lists
+            document.querySelectorAll('.chapter-list').forEach(list => {
+                list.style.display = 'none';
+            });
+            
+            // Show selected subject's chapters
+            document.getElementById(`${subject}-chapters`).style.display = 'block';
+            
+            // Hide MCQs container
+            document.getElementById('mcqs-container').style.display = 'none';
+            
+            // Update current subject
+            currentSubject = subject;
+            currentChapter = null;
+        }
+
+        // Show MCQs for a chapter
+        function showMCQs(subject, chapter) {
+            // Hide chapter lists
+            document.querySelectorAll('.chapter-list').forEach(list => {
+                list.style.display = 'none';
+            });
+
+            // Hide subject tabs
+            document.getElementById('subjectTabs').style.display = 'none';
+
+            // Show MCQs container
+            document.getElementById('mcqs-container').style.display = 'block';
+
+            // Set title
+            const icons = {
+                physics: 'fas fa-atom',
+                biology: 'fas fa-dna',
+                chemistry: 'fas fa-flask',
+                english: 'fas fa-language',
+                math: 'fas fa-calculator',
+                'computer-science': 'fas fa-code',
+                urdu: 'fas fa-language',
+                'islamic-studies': 'fas fa-moon',
+                'pakistan-studies': 'fas fa-flag'
+            };
+
+            const chapterNames = {
+                motion: 'Electrodynamics',
+                forces: 'Quantum Physics',
+                energy: 'Nuclear Physics',
+                cells: 'Genetics',
+                systems: 'Evolution',
+                ecology: 'Biotechnology',
+                elements: 'Organic Chemistry',
+                reactions: 'Electrochemistry',
+                acids: 'Polymers',
+                grammar: 'Advanced Grammar',
+                vocabulary: 'Literature',
+                comprehension: 'Essay Writing',
+                algebra: 'Trigonometry',
+                geometry: 'Calculus',
+                statistics: 'Probability',
+                programming: 'Programming Fundamentals',
+                'data-structures': 'Data Structures',
+                algorithms: 'Algorithms',
+                'urdu-grammar': 'Grammar',
+                'urdu-literature': 'Literature',
+                'urdu-prose': 'Prose',
+                quran: 'Quran',
+                hadith: 'Hadith',
+                'islamic-history': 'Islamic History',
+                history: 'History',
+                geography: 'Geography',
+                culture: 'Culture'
+            };
+
+            document.getElementById('mcq-title').innerHTML = `<i class="${icons[subject]} section-icon"></i> ${subject.charAt(0).toUpperCase() + subject.slice(1)} - ${chapterNames[chapter]}`;
+
+            // Update current subject and chapter
+            currentSubject = subject;
+            currentChapter = chapter;
+
+            // Load questions
+            loadQuestions(subject, chapter);
+        }
+
+        // Back to chapters
+        function backToChapters() {
+            // Show subject tabs
+            document.getElementById('subjectTabs').style.display = 'flex';
+            showChapters(currentSubject);
+        }
+        
+        // Back to subjects from results
+        function backToSubjects() {
+            // Hide results
+            document.getElementById('results').style.display = 'none';
+
+            // Show subject tabs
+            showChapters('physics');
+        }
+
+        // Load questions for a chapter
+        function loadQuestions(subject, chapter) {
+            const container = document.getElementById('mcq-questions');
+            container.innerHTML = '';
+
+            let questions;
+            switch(subject) {
+                case 'physics':
+                    questions = physicsQuestions;
+                    break;
+                case 'biology':
+                    questions = biologyQuestions;
+                    break;
+                case 'chemistry':
+                    questions = chemistryQuestions;
+                    break;
+                case 'english':
+                    questions = englishQuestions;
+                    break;
+                case 'math':
+                    questions = mathQuestions;
+                    break;
+                case 'computer-science':
+                    questions = computerScienceQuestions;
+                    break;
+                case 'urdu':
+                    questions = urduQuestions;
+                    break;
+                case 'islamic-studies':
+                    questions = islamicStudiesQuestions;
+                    break;
+                case 'pakistan-studies':
+                    questions = pakistanStudiesQuestions;
+                    break;
+            }
+
+            questions.forEach((q, index) => {
+                const card = document.createElement('div');
+                card.className = 'question-card';
+                card.innerHTML = `
+                    <h5>${index + 1}. ${q.question}</h5>
+                    ${q.options.map((opt, i) => `<button class="option-btn" onclick="selectOption('${subject}', '${chapter}', ${index}, '${opt}', this)">${opt}</button>`).join('')}
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        // Select an option
+        function selectOption(subject, chapter, qIndex, selected, button) {
+            answers[subject][chapter][qIndex] = selected;
+
+            // Update UI
+            const buttons = button.parentElement.querySelectorAll('.option-btn');
+            buttons.forEach(btn => btn.classList.remove('selected'));
+            button.classList.add('selected');
+        }
+
+        // Submit test
+        function submitTest() {
+            let totalScore = 0;
+            let totalQuestions = 0;
+
+            for (let subject in answers) {
+                let subjectScore = 0;
+                let subjectQuestions = 0;
+
+                for (let chapter in answers[subject]) {
+                    answers[subject][chapter].forEach((ans, i) => {
+                        let correct;
+                        switch(subject) {
+                            case 'physics':
+                                correct = physicsQuestions[i].answer;
+                                break;
+                            case 'biology':
+                                correct = biologyQuestions[i].answer;
+                                break;
+                            case 'chemistry':
+                                correct = chemistryQuestions[i].answer;
+                                break;
+                            case 'english':
+                                correct = englishQuestions[i].answer;
+                                break;
+                            case 'math':
+                                correct = mathQuestions[i].answer;
+                                break;
+                            case 'computer-science':
+                                correct = computerScienceQuestions[i].answer;
+                                break;
+                            case 'urdu':
+                                correct = urduQuestions[i].answer;
+                                break;
+                            case 'islamic-studies':
+                                correct = islamicStudiesQuestions[i].answer;
+                                break;
+                            case 'pakistan-studies':
+                                correct = pakistanStudiesQuestions[i].answer;
+                                break;
+                        }
+                        if (ans === correct) subjectScore++;
+                        subjectQuestions++;
+                    });
+                }
+
+                totalScore += subjectScore;
+                totalQuestions += subjectQuestions;
+
+                // Display subject score
+                document.getElementById(`${subject}-score-section`).style.display = 'block';
+                document.getElementById(`${subject}-score`).textContent = `${subjectScore}/${subjectQuestions}`;
+            }
+
+            document.getElementById('total-score').textContent = `${totalScore}/${totalQuestions}`;
+
+            // Show results
+            document.getElementById('mcqs-container').style.display = 'none';
+            document.getElementById('results').style.display = 'block';
+
+            // Result message
+            let percentage = (totalScore / totalQuestions) * 100;
+            let message = percentage >= 80 ? 'Excellent!' : percentage >= 60 ? 'Good job!' : 'Keep practicing!';
+            document.getElementById('result-message').textContent = message;
+        }
+
+        // Initialize on load
+        document.addEventListener('DOMContentLoaded', initializeTest);

@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="png" href="/images/logo6.png">
+    <title>ZOO Education | Entry Test MCQs</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            font-family: "Fredoka", sans-serif;
+        }
+        .test-section {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .test-section:hover {
+            transform: translateY(-5px);
+        }
+        .questions-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-between;
+        }
+        .question-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+            flex: 0 0 calc(33.333% - 15px);
+            box-sizing: border-box;
+        }
+        .option-btn {
+            width: 100%;
+            text-align: left;
+            padding: 8px 12px;
+            margin: 3px 0;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .option-btn:hover {
+            background-color: #e9ecef;
+        }
+        .option-btn.selected {
+            background-color: #dc3545;
+            color: white;
+            border-color: #dc3545;
+        }
+        .option-btn.correct {
+            background-color: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+        .option-btn.incorrect {
+            background-color: #dc3545;
+            color: white;
+            border-color: #dc3545;
+        }
+        .progress-bar {
+            height: 10px;
+            border-radius: 5px;
+        }
+        .timer {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #dc3545;
+        }
+        .section-icon {
+            font-size: 2rem;
+            color: #dc3545;
+            margin-bottom: 15px;
+        }
+        .result-card {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .nav-tabs .nav-link {
+            color: #6c757d;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .nav-tabs .nav-link:hover {
+            background-color: #e9ecef;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: #dc3545;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/images/logo6.png" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/report.html">Report Issues</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Entry Test MCQs</h1>
+        
+        <!-- Progress and Timer -->
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 0%"></div>
+                </div>
+            </div>
+            <div class="col-md-4 text-end">
+                <div class="timer">
+                    <i class="fas fa-clock"></i> Time: <span id="timer">60:00</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Test Sections -->
+        <ul class="nav nav-tabs mb-4" id="testTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="verbal-tab" data-bs-toggle="tab" data-bs-target="#verbal" type="button" role="tab">
+                    <i class="fas fa-comment-dots"></i> Verbal Reasoning
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="quantitative-tab" data-bs-toggle="tab" data-bs-target="#quantitative" type="button" role="tab">
+                    <i class="fas fa-calculator"></i> Quantitative Reasoning
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="subject-tab" data-bs-toggle="tab" data-bs-target="#subject" type="button" role="tab">
+                    <i class="fas fa-book"></i> Subject
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="analytical-tab" data-bs-toggle="tab" data-bs-target="#analytical" type="button" role="tab">
+                    <i class="fas fa-brain"></i> Analytical
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="testTabsContent">
+            <!-- Verbal Reasoning Section -->
+            <div class="tab-pane fade show active" id="verbal" role="tabpanel">
+                <div class="test-section">
+                    <div class="card-body">
+                        <h3 class="text-center mb-4"><i class="fas fa-comment-dots section-icon"></i> Verbal Reasoning</h3>
+                        <div id="verbal-questions" class="questions-container" style="display: none;">
+                            <!-- Questions will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quantitative Reasoning Section -->
+            <div class="tab-pane fade" id="quantitative" role="tabpanel">
+                <div class="test-section">
+                    <div class="card-body">
+                        <h3 class="text-center mb-4"><i class="fas fa-calculator section-icon"></i> Quantitative Reasoning</h3>
+                        <div id="quantitative-questions" class="questions-container" style="display: none;">
+                            <!-- Questions will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subject Section -->
+            <div class="tab-pane fade" id="subject" role="tabpanel">
+                <div class="test-section">
+                    <div class="card-body">
+                        <h3 class="text-center mb-4"><i class="fas fa-book section-icon"></i> Subject</h3>
+                        <div class="text-center mb-4">
+                            <select id="subject-selector" class="form-select" style="max-width: 300px; margin: 0 auto;">
+                                <option value="medical">Medical (Physics, Biology, Chemistry)</option>
+                                <option value="engineer">Engineer (Physics, Computer Science, Math)</option>
+                            </select>
+                        </div>
+                        <div id="subject-questions" class="questions-container" style="display: none;">
+                            <!-- Questions will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytical Section -->
+            <div class="tab-pane fade" id="analytical" role="tabpanel">
+                <div class="test-section">
+                    <div class="card-body">
+                        <h3 class="text-center mb-4"><i class="fas fa-brain section-icon"></i> Analytical</h3>
+                        <div id="analytical-questions" class="questions-container" style="display: none;">
+                            <!-- Questions will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center mt-4">
+            <button class="btn btn-danger btn-lg" onclick="submitTest()">
+                <i class="fas fa-paper-plane"></i> Submit Test
+            </button>
+        </div>
+
+        <!-- Results Section (Hidden by default) -->
+        <div id="results" class="result-card" style="display: none;">
+            <h3 class="text-center mb-4">Test Results</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <h4>Verbal Reasoning</h4>
+                        <h2 id="verbal-score">0/10</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <h4>Quantitative Reasoning</h4>
+                        <h2 id="quantitative-score">0/10</h2>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <h4>Subject</h4>
+                        <h2 id="subject-score">0/10</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <h4>Analytical</h4>
+                        <h2 id="analytical-score">0/10</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <h3>Total Score: <span id="total-score">0/30</span></h3>
+                <p id="result-message" class="mt-3"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Information</h5>
+                    <p><i class="fas fa-envelope"></i> info@zooeducation.com</p>
+                    <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 ZOO Education. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Test data
+       const verbalQuestions = [
+    {
+        question: "Choose the word that is most similar in meaning to 'BENEVOLENT':",
+        options: ["Kind", "Cruel", "Stubborn", "Careless"],
+        answer: "Kind"
+    },
+    {
+        question: "Which word is the antonym of 'TRANQUIL'?",
+        options: ["Peaceful", "Noisy", "Calm", "Serene"],
+        answer: "Noisy"
+    },
+    {
+        question: "Complete the analogy: Book is to Reading as Fork is to _____",
+        options: ["Eating", "Writing", "Sleeping", "Running"],
+        answer: "Eating"
+    },
+    {
+        question: "Select the word that best completes the sentence: The ___ of the novel was unexpected.",
+        options: ["Climax", "Beginning", "Middle", "End"],
+        answer: "Climax"
+    },
+    {
+        question: "Which word does NOT belong with the others?",
+        options: ["Apple", "Orange", "Carrot", "Banana"],
+        answer: "Carrot"
+    },
+    {
+        question: "Choose the correct spelling:",
+        options: ["Accommodate", "Acommodate", "Acomodate", "Accomodate"],
+        answer: "Accommodate"
+    },
+    {
+        question: "Choose the synonym of 'HASTY':",
+        options: ["Quick", "Slow", "Calm", "Steady"],
+        answer: "Quick"
+    },
+    {
+        question: "Which word is the antonym of 'GENEROSITY'?",
+        options: ["Kindness", "Stinginess", "Charity", "Benevolence"],
+        answer: "Stinginess"
+    },
+    {
+        question: "Complete the analogy: Hand is to Glove as Foot is to _____",
+        options: ["Shoe", "Hat", "Shirt", "Sock"],
+        answer: "Shoe"
+    },
+    {
+        question: "Select the word that best completes the sentence: She was very ___ about the results of the exam.",
+        options: ["Nervous", "Calm", "Quiet", "Silent"],
+        answer: "Nervous"
+    },
+    {
+        question: "Which word does NOT belong with the others?",
+        options: ["Dog", "Cat", "Elephant", "Rose"],
+        answer: "Rose"
+    },
+    {
+        question: "Choose the correct spelling:",
+        options: ["Separate", "Seperate", "Seperete", "Separite"],
+        answer: "Separate"
+    },
+    {
+        question: "Choose the synonym of 'FRAGILE':",
+        options: ["Weak", "Strong", "Hard", "Solid"],
+        answer: "Weak"
+    },
+    {
+        question: "Which word is the antonym of 'OPTIMISTIC'?",
+        options: ["Hopeful", "Cheerful", "Pessimistic", "Positive"],
+        answer: "Pessimistic"
+    },
+    {
+        question: "Complete the analogy: Bird is to Fly as Fish is to _____",
+        options: ["Swim", "Run", "Jump", "Walk"],
+        answer: "Swim"
+    },
+    {
+        question: "Select the word that best completes the sentence: The teacher asked for a ___ answer.",
+        options: ["Brief", "Long", "Complicated", "Endless"],
+        answer: "Brief"
+    },
+    {
+        question: "Which word does NOT belong with the others?",
+        options: ["Table", "Chair", "Desk", "Tiger"],
+        answer: "Tiger"
+    },
+    {
+        question: "Choose the correct spelling:",
+        options: ["Definitely", "Definately", "Definetly", "Defnately"],
+        answer: "Definitely"
+    },
+    {
+        question: "Choose the synonym of 'VAST':",
+        options: ["Huge", "Tiny", "Narrow", "Small"],
+        answer: "Huge"
+    },
+    {
+        question: "Which word is the antonym of 'COURAGE'?",
+        options: ["Fear", "Bravery", "Boldness", "Confidence"],
+        answer: "Fear"
+    }
+];
+
+
+const quantitativeQuestions = [
+    {
+        question: "If x + 5 = 12, what is the value of x?",
+        options: ["7", "17", "6", "8"],
+        answer: "7"
+    },
+    {
+        question: "What is 25% of 200?",
+        options: ["50", "40", "60", "70"],
+        answer: "50"
+    },
+    {
+        question: "If a triangle has angles of 45° and 45°, what is the measure of the third angle?",
+        options: ["90°", "45°", "60°", "30°"],
+        answer: "90°"
+    },
+    {
+        question: "Solve: 3² + 4² = ?",
+        options: ["25", "7", "12", "5"],
+        answer: "25"
+    },
+    {
+        question: "What is the next number in the sequence: 2, 4, 6, 8, ___",
+        options: ["10", "12", "14", "16"],
+        answer: "10"
+    },
+    {
+        question: "If 5x = 25, what is x?",
+        options: ["5", "10", "15", "20"],
+        answer: "5"
+    },
+    {
+        question: "Simplify: 15 ÷ 3 × 2",
+        options: ["10", "5", "15", "20"],
+        answer: "10"
+    },
+    {
+        question: "What is the perimeter of a square with side 6?",
+        options: ["24", "18", "12", "36"],
+        answer: "24"
+    },
+    {
+        question: "If 2x = 14, what is the value of x?",
+        options: ["7", "14", "12", "6"],
+        answer: "7"
+    },
+    {
+        question: "Solve: 100 - (25 × 2)",
+        options: ["50", "25", "75", "30"],
+        answer: "50"
+    },
+    {
+        question: "What is 12% of 150?",
+        options: ["18", "12", "15", "20"],
+        answer: "18"
+    },
+    {
+        question: "If the radius of a circle is 7, what is its diameter?",
+        options: ["14", "21", "7", "28"],
+        answer: "14"
+    },
+    {
+        question: "Find the average of 10, 20, and 30.",
+        options: ["20", "30", "15", "25"],
+        answer: "20"
+    },
+    {
+        question: "If 9 × 9 = 81, what is √81?",
+        options: ["9", "8", "7", "6"],
+        answer: "9"
+    },
+    {
+        question: "What is the value of 2³?",
+        options: ["8", "6", "4", "9"],
+        answer: "8"
+    },
+    {
+        question: "Solve: 45 ÷ 9 + 2",
+        options: ["7", "5", "6", "8"],
+        answer: "7"
+    },
+    {
+        question: "A shopkeeper sold an item for $120 with a profit of $20. What was the cost price?",
+        options: ["100", "140", "120", "80"],
+        answer: "100"
+    },
+    {
+        question: "The sum of angles in a triangle is always:",
+        options: ["180°", "90°", "360°", "270°"],
+        answer: "180°"
+    },
+    {
+        question: "If 6 pens cost $30, what is the cost of 1 pen?",
+        options: ["5", "4", "6", "3"],
+        answer: "5"
+    },
+    {
+        question: "What is the simple interest on $1000 at 5% per year for 2 years?",
+        options: ["100", "50", "200", "150"],
+        answer: "100"
+    }
+];
+
+const subjectQuestions = [
+    // 🔹 Biology (6 MCQs)
+    {
+        question: "What is the powerhouse of the cell?",
+        options: ["Mitochondria", "Nucleus", "Ribosome", "Chloroplast"],
+        answer: "Mitochondria",
+        subject: "biology"
+    },
+    {
+        question: "Which blood cells fight against diseases?",
+        options: ["Red Blood Cells", "White Blood Cells", "Platelets", "Plasma"],
+        answer: "White Blood Cells",
+        subject: "biology"
+    },
+    {
+        question: "Which organ is responsible for pumping blood?",
+        options: ["Heart", "Lungs", "Kidney", "Liver"],
+        answer: "Heart",
+        subject: "biology"
+    },
+    {
+        question: "What is the basic unit of life?",
+        options: ["Tissue", "Organ", "Cell", "DNA"],
+        answer: "Cell",
+        subject: "biology"
+    },
+    {
+        question: "Which vitamin is produced in the skin when exposed to sunlight?",
+        options: ["Vitamin A", "Vitamin B", "Vitamin C", "Vitamin D"],
+        answer: "Vitamin D",
+        subject: "biology"
+    },
+    {
+        question: "Which process do plants use to make food?",
+        options: ["Respiration", "Photosynthesis", "Digestion", "Fermentation"],
+        answer: "Photosynthesis",
+        subject: "biology"
+    },
+    {
+        question: "Which organ filters blood in the human body?",
+        options: ["Heart", "Kidney", "Lungs", "Liver"],
+        answer: "Kidney",
+        subject: "biology"
+    },
+    {
+        question: "Which blood group is known as the universal donor?",
+        options: ["O-", "O+", "AB+", "AB-"],
+        answer: "O-",
+        subject: "biology"
+    },
+    {
+        question: "What is the longest bone in the human body?",
+        options: ["Femur", "Tibia", "Fibula", "Humerus"],
+        answer: "Femur",
+        subject: "biology"
+    },
+    {
+        question: "Which gas do humans exhale?",
+        options: ["Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen"],
+        answer: "Carbon Dioxide",
+        subject: "biology"
+    },
+
+    // 🔹 Physics (10 MCQs)
+    {
+        question: "What is the unit of force?",
+        options: ["Newton", "Joule", "Watt", "Pascal"],
+        answer: "Newton",
+        subject: "physics"
+    },
+    {
+        question: "Speed of light in vacuum is approximately:",
+        options: ["3 × 10^8 m/s", "3 × 10^6 m/s", "1 × 10^8 m/s", "1 × 10^6 m/s"],
+        answer: "3 × 10^8 m/s",
+        subject: "physics"
+    },
+    {
+        question: "Which law explains action and reaction?",
+        options: ["Newton’s First Law", "Newton’s Second Law", "Newton’s Third Law", "Law of Gravitation"],
+        answer: "Newton’s Third Law",
+        subject: "physics"
+    },
+    {
+        question: "Which instrument measures electric current?",
+        options: ["Voltmeter", "Ammeter", "Barometer", "Speedometer"],
+        answer: "Ammeter",
+        subject: "physics"
+    },
+    {
+        question: "SI unit of power is:",
+        options: ["Watt", "Joule", "Newton", "Volt"],
+        answer: "Watt",
+        subject: "physics"
+    },
+    {
+        question: "What is the acceleration due to gravity on Earth?",
+        options: ["9.8 m/s²", "10 m/s²", "8.9 m/s²", "9.0 m/s²"],
+        answer: "9.8 m/s²",
+        subject: "physics"
+    },
+    {
+        question: "Which mirror is used in car headlights?",
+        options: ["Concave", "Convex", "Plane", "Spherical"],
+        answer: "Concave",
+        subject: "physics"
+    },
+    {
+        question: "What type of energy is stored in a stretched spring?",
+        options: ["Kinetic", "Potential", "Thermal", "Electrical"],
+        answer: "Potential",
+        subject: "physics"
+    },
+    {
+        question: "Who discovered the law of gravitation?",
+        options: ["Newton", "Einstein", "Galileo", "Faraday"],
+        answer: "Newton",
+        subject: "physics"
+    },
+    {
+        question: "What is the SI unit of work?",
+        options: ["Joule", "Watt", "Newton", "Volt"],
+        answer: "Joule",
+        subject: "physics"
+    },
+
+    // 🔹 Chemistry (10 MCQs)
+    {
+        question: "What is the chemical symbol for Gold?",
+        options: ["Au", "Ag", "Gd", "Go"],
+        answer: "Au",
+        subject: "chemistry"
+    },
+    {
+        question: "Water is a:",
+        options: ["Element", "Compound", "Mixture", "Atom"],
+        answer: "Compound",
+        subject: "chemistry"
+    },
+    {
+        question: "pH value of neutral substances is:",
+        options: ["7", "0", "14", "1"],
+        answer: "7",
+        subject: "chemistry"
+    },
+    {
+        question: "The atomic number of Oxygen is:",
+        options: ["8", "6", "10", "12"],
+        answer: "8",
+        subject: "chemistry"
+    },
+    {
+        question: "Which gas is known as laughing gas?",
+        options: ["Nitrous Oxide", "Carbon Dioxide", "Oxygen", "Nitrogen"],
+        answer: "Nitrous Oxide",
+        subject: "chemistry"
+    },
+    {
+        question: "HCl is the chemical formula of:",
+        options: ["Hydrochloric Acid", "Sulfuric Acid", "Nitric Acid", "Carbonic Acid"],
+        answer: "Hydrochloric Acid",
+        subject: "chemistry"
+    },
+    {
+        question: "Which element is used in pencils?",
+        options: ["Graphite", "Lead", "Carbon", "Iron"],
+        answer: "Graphite",
+        subject: "chemistry"
+    },
+    {
+        question: "Which metal is liquid at room temperature?",
+        options: ["Mercury", "Iron", "Gold", "Silver"],
+        answer: "Mercury",
+        subject: "chemistry"
+    },
+    {
+        question: "NaCl is commonly known as:",
+        options: ["Salt", "Sugar", "Soda", "Vinegar"],
+        answer: "Salt",
+        subject: "chemistry"
+    },
+    {
+        question: "Which gas is essential for respiration?",
+        options: ["Oxygen", "Carbon Dioxide", "Hydrogen", "Nitrogen"],
+        answer: "Oxygen",
+        subject: "chemistry"
+    },
+
+    // 🔹 Mathematics (10 MCQs)
+    {
+        question: "What is the value of π (pi) approximately?",
+        options: ["3.14", "2.71", "1.41", "1.61"],
+        answer: "3.14",
+        subject: "mathematics"
+    },
+    {
+        question: "What is the square root of 144?",
+        options: ["12", "14", "11", "10"],
+        answer: "12",
+        subject: "mathematics"
+    },
+    {
+        question: "Solve: 5 × 6 + 10",
+        options: ["40", "35", "30", "50"],
+        answer: "40",
+        subject: "mathematics"
+    },
+    {
+        question: "What is the area of a rectangle with length 8 and width 4?",
+        options: ["32", "16", "24", "12"],
+        answer: "32",
+        subject: "mathematics"
+    },
+    {
+        question: "What is the value of 2³?",
+        options: ["8", "6", "4", "9"],
+        answer: "8",
+        subject: "mathematics"
+    },
+    {
+        question: "Simplify: (25 ÷ 5) × 4",
+        options: ["20", "25", "15", "30"],
+        answer: "20",
+        subject: "mathematics"
+    },
+    {
+        question: "If x = 10, what is the value of 2x + 5?",
+        options: ["25", "20", "15", "30"],
+        answer: "25",
+        subject: "mathematics"
+    },
+    {
+        question: "What is the perimeter of a square with side 9?",
+        options: ["36", "27", "18", "45"],
+        answer: "36",
+        subject: "mathematics"
+    },
+    {
+        question: "What is 15% of 200?",
+        options: ["30", "25", "20", "35"],
+        answer: "30",
+        subject: "mathematics"
+    },
+    {
+        question: "The sum of angles of a triangle is:",
+        options: ["180°", "90°", "360°", "270°"],
+        answer: "180°",
+        subject: "mathematics"
+    },
+
+    // 🔹 Computer Science (10 MCQs)
+    {
+        question: "What does CPU stand for?",
+        options: ["Central Processing Unit", "Computer Personal Unit", "Central Programming Utility", "Central Power Unit"],
+        answer: "Central Processing Unit",
+        subject: "computer_science"
+    },
+    {
+        question: "Which one is an input device?",
+        options: ["Keyboard", "Monitor", "Printer", "Speaker"],
+        answer: "Keyboard",
+        subject: "computer_science"
+    },
+    {
+        question: "Binary system uses base:",
+        options: ["2", "8", "10", "16"],
+        answer: "2",
+        subject: "computer_science"
+    },
+    {
+        question: "Which of the following is not an operating system?",
+        options: ["Linux", "Windows", "Python", "MacOS"],
+        answer: "Python",
+        subject: "computer_science"
+    },
+    {
+        question: "RAM stands for:",
+        options: ["Random Access Memory", "Read Access Memory", "Run Access Memory", "Read And Modify"],
+        answer: "Random Access Memory",
+        subject: "computer_science"
+    },
+    {
+        question: "HTML is used for:",
+        options: ["Web Designing", "Database", "Operating System", "Hardware"],
+        answer: "Web Designing",
+        subject: "computer_science"
+    },
+    {
+        question: "Which language is known as the mother of all programming languages?",
+        options: ["C", "Java", "Python", "Assembly"],
+        answer: "C",
+        subject: "computer_science"
+    },
+    {
+        question: "Which storage is permanent?",
+        options: ["ROM", "RAM", "Cache", "Registers"],
+        answer: "ROM",
+        subject: "computer_science"
+    },
+    {
+        question: "What does URL stand for?",
+        options: ["Uniform Resource Locator", "Universal Record Locator", "Uniform Retrieval Language", "Universal Resource Link"],
+        answer: "Uniform Resource Locator",
+        subject: "computer_science"
+    },
+    {
+        question: "Which device connects a computer to the internet?",
+        options: ["Router", "Printer", "Keyboard", "Monitor"],
+        answer: "Router",
+        subject: "computer_science"
+    }
+];
+
+        const analyticalQuestions = [
+    {
+        question: "If all cats are mammals and all mammals are animals, then:",
+        options: [
+            "All cats are animals",
+            "Some cats are not animals",
+            "No cats are animals",
+            "Some animals are not mammals"
+        ],
+        answer: "All cats are animals"
+    },
+    {
+        question: "Which number comes next in the sequence: 2, 4, 8, 16, ___",
+        options: ["24", "32", "30", "28"],
+        answer: "32"
+    },
+    {
+        question: "If RED is to COLOR as APPLE is to:",
+        options: ["Fruit", "Tree", "Juice", "Seed"],
+        answer: "Fruit"
+    },
+    {
+        question: "Complete the pattern: O, T, T, F, F, S, S, ___",
+        options: ["E", "N", "T", "O"],
+        answer: "E"
+    },
+    {
+        question: "Which shape does NOT belong?",
+        options: ["Circle", "Square", "Triangle", "Cube"],
+        answer: "Cube"
+    },
+    {
+        question: "If Monday is the first day, what is the fourth day?",
+        options: ["Thursday", "Wednesday", "Friday", "Sunday"],
+        answer: "Thursday"
+    },
+    {
+        question: "Find the odd one out: 3, 5, 7, 9, 11",
+        options: ["9", "11", "7", "5"],
+        answer: "9"
+    },
+    {
+        question: "If A = 1, B = 2, then Z = ?",
+        options: ["26", "25", "24", "27"],
+        answer: "26"
+    },
+    {
+        question: "Which number completes the series: 5, 10, 20, 40, ___",
+        options: ["80", "70", "60", "100"],
+        answer: "80"
+    },
+    {
+        question: "If some pencils are pens and all pens are tools, then:",
+        options: [
+            "Some pencils are tools",
+            "All pencils are pens",
+            "No pencils are tools",
+            "All tools are pencils"
+        ],
+        answer: "Some pencils are tools"
+    },
+    {
+        question: "Which word does not belong?",
+        options: ["Book", "Pen", "Paper", "Chair"],
+        answer: "Chair"
+    },
+    {
+        question: "Find the missing number: 2, 6, 12, 20, ___",
+        options: ["30", "28", "32", "24"],
+        answer: "30"
+    },
+    {
+        question: "If TRAIN is coded as 81294, then RAIN is coded as:",
+        options: ["1294", "1824", "1249", "1892"],
+        answer: "1294"
+    },
+    {
+        question: "Which comes next in the series: J, F, M, A, M, J, ___",
+        options: ["J", "A", "S", "O"],
+        answer: "J"
+    },
+    {
+        question: "If all squares are rectangles and all rectangles are polygons, then:",
+        options: [
+            "All squares are polygons",
+            "No square is a polygon",
+            "Some polygons are not rectangles",
+            "All polygons are squares"
+        ],
+        answer: "All squares are polygons"
+    },
+    {
+        question: "What is the missing term: 3, 6, 12, 24, ___",
+        options: ["48", "42", "36", "30"],
+        answer: "48"
+    },
+    {
+        question: "Find the odd one out: Rose, Lotus, Lily, Mango",
+        options: ["Mango", "Lily", "Lotus", "Rose"],
+        answer: "Mango"
+    },
+    {
+        question: "If 1 = 5, 2 = 10, 3 = 15, then 5 = ?",
+        options: ["25", "20", "30", "15"],
+        answer: "25"
+    },
+    {
+        question: "Which day will it be after 100 days if today is Monday?",
+        options: ["Wednesday", "Thursday", "Friday", "Saturday"],
+        answer: "Wednesday"
+    },
+    {
+        question: "Which figure is different from the others?",
+        options: ["Square", "Triangle", "Circle", "Rectangle"],
+        answer: "Circle"
+    }
+];
+
+        // Test state
+        let currentSection = 'verbal';
+        let answers = {
+            verbal: Array(verbalQuestions.length).fill(null),
+            quantitative: Array(quantitativeQuestions.length).fill(null),
+            subject: Array(subjectQuestions.length).fill(null),
+            analytical: Array(analyticalQuestions.length).fill(null)
+        };
+        let timeLeft = 120 * 60; // 60 minutes in seconds
+        let timerInterval;
+
+        // Initialize the test
+        function initializeTest() {
+            loadQuestions('verbal');
+            loadQuestions('quantitative');
+            loadQuestions('subject');
+            loadQuestions('analytical');
+            startTimer();
+        }
+
+        // Load questions for a section
+        function loadQuestions(section) {
+            const questions = {
+                verbal: verbalQuestions,
+                quantitative: quantitativeQuestions,
+                subject: subjectQuestions,
+                analytical: analyticalQuestions
+            };
+
+            const container = document.getElementById(`${section}-questions`);
+            container.innerHTML = '';
+
+            questions[section].forEach((q, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.className = 'question-card';
+                questionCard.innerHTML = `
+                    <h5 class="mb-3">Question ${index + 1}: ${q.question}</h5>
+                    <div class="options">
+                        ${q.options.map((option, i) => `
+                            <button class="option-btn ${answers[section][index] === option ? 'selected' : ''}"
+                                    onclick="selectAnswer('${section}', ${index}, '${option}')">
+                                ${option}
+                            </button>
+                        `).join('')}
+                    </div>
+                `;
+                container.appendChild(questionCard);
+            });
+
+            // Make the questions visible
+            container.style.display = 'flex';
+        }
+
+        // Select an answer
+        function selectAnswer(section, questionIndex, option) {
+            answers[section][questionIndex] = option;
+            updateProgress();
+            loadQuestions(section);
+        }
+
+        // Update progress bar
+        function updateProgress() {
+            const totalQuestions = verbalQuestions.length + quantitativeQuestions.length + subjectQuestions.length + analyticalQuestions.length;
+            let answered = 0;
+
+            Object.values(answers).forEach(section => {
+                answered += section.filter(answer => answer !== null).length;
+            });
+
+            const progress = (answered / totalQuestions) * 100;
+            document.querySelector('.progress-bar').style.width = `${progress}%`;
+        }
+
+        // Start timer
+        function startTimer() {
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                document.getElementById('timer').textContent = 
+                    `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+
+                if (timeLeft <= 0) {
+                    submitTest();
+                }
+            }, 1000);
+        }
+
+        // Submit test
+        function submitTest() {
+            clearInterval(timerInterval);
+
+            // Calculate scores
+            const scores = {
+                verbal: calculateScore(verbalQuestions, answers.verbal),
+                quantitative: calculateScore(quantitativeQuestions, answers.quantitative),
+                subject: calculateScore(subjectQuestions, answers.subject),
+                analytical: calculateScore(analyticalQuestions, answers.analytical)
+            };
+
+            // Update results
+            document.getElementById('verbal-score').textContent = `${scores.verbal}/${verbalQuestions.length}`;
+            document.getElementById('quantitative-score').textContent = `${scores.quantitative}/${quantitativeQuestions.length}`;
+            document.getElementById('subject-score').textContent = `${scores.subject}/${subjectQuestions.length}`;
+            document.getElementById('analytical-score').textContent = `${scores.analytical}/${analyticalQuestions.length}`;
+
+            const totalScore = scores.verbal + scores.quantitative + scores.subject + scores.analytical;
+            const totalQuestions = verbalQuestions.length + quantitativeQuestions.length + subjectQuestions.length + analyticalQuestions.length;
+            document.getElementById('total-score').textContent = `${totalScore}/${totalQuestions}`;
+
+            // Show results
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('testTabs').style.display = 'none';
+            document.getElementById('testTabsContent').style.display = 'none';
+            document.querySelector('.btn-lg').style.display = 'none';
+
+            // Add result message
+            const percentage = (totalScore / totalQuestions) * 100;
+            let message = '';
+            if (percentage >= 80) {
+                message = "Excellent! You have a strong understanding of all sections.";
+            } else if (percentage >= 60) {
+                message = "Good job! You have a solid foundation, but there's room for improvement.";
+            } else {
+                message = "Keep practicing! Focus on your weaker areas to improve your score.";
+            }
+            document.getElementById('result-message').textContent = message;
+        }
+
+        // Calculate score for a section
+        function calculateScore(questions, answers) {
+            return questions.reduce((score, question, index) => {
+                return score + (answers[index] === question.answer ? 1 : 0);
+            }, 0);
+        }
+
+        // Initialize test when page loads
+        window.onload = initializeTest;
+
+        // Show the first tab questions by default
+        document.getElementById('verbal-questions').style.display = 'flex';
+
+        // Add event listeners to tabs to load questions on tab change
+        const tabs = document.querySelectorAll('#testTabs button.nav-link');
+        tabs.forEach(tab => {
+            tab.addEventListener('shown.bs.tab', (event) => {
+                const targetId = event.target.getAttribute('data-bs-target').substring(1);
+                loadQuestions(targetId);
+            });
+        });
+
+        // Add event listener for subject selector to filter subject questions
+        document.getElementById('subject-selector').addEventListener('change', (event) => {
+            const selected = event.target.value;
+            const filteredQuestions = subjectQuestions.filter(q => {
+                if (selected === 'medical') {
+                    return ['biology', 'physics', 'chemistry'].includes(q.subject);
+                } else if (selected === 'engineer') {
+                    return ['physics', 'computer_science', 'mathematics'].includes(q.subject);
+                }
+                return true;
+            });
+            // Temporarily override subjectQuestions for display
+            loadFilteredSubjectQuestions(filteredQuestions);
+        });
+
+        function loadFilteredSubjectQuestions(filteredQuestions) {
+            const container = document.getElementById('subject-questions');
+            container.innerHTML = '';
+            filteredQuestions.forEach((q, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.className = 'question-card';
+                questionCard.innerHTML = `
+                    <h5 class="mb-3">Question ${index + 1}: ${q.question}</h5>
+                    <div class="options">
+                        ${q.options.map((option, i) => `
+                            <button class="option-btn"
+                                    onclick="selectFilteredSubjectAnswer(${index}, '${option}')">
+                                ${option}
+                            </button>
+                        `).join('')}
+                    </div>
+                `;
+                container.appendChild(questionCard);
+            });
+            container.style.display = 'flex';
+        }
+
+        // Store answers for filtered subject questions separately
+        let filteredSubjectAnswers = [];
+
+        function selectFilteredSubjectAnswer(questionIndex, option) {
+            filteredSubjectAnswers[questionIndex] = option;
+            // Update UI to show selected option
+            const container = document.getElementById('subject-questions');
+            const buttons = container.querySelectorAll('.option-btn');
+            buttons.forEach(button => {
+                button.classList.remove('selected');
+            });
+            // Find buttons for this question and mark selected
+            const questionCards = container.querySelectorAll('.question-card');
+            const optionsButtons = questionCards[questionIndex].querySelectorAll('.option-btn');
+            optionsButtons.forEach(btn => {
+                if (btn.textContent === option) {
+                    btn.classList.add('selected');
+                }
+            });
+            updateProgress();
+        }
+
+        // Modify submitTest to include filteredSubjectAnswers scoring
+        const originalSubmitTest = submitTest;
+        submitTest = function() {
+            clearInterval(timerInterval);
+
+            // Calculate scores
+            const scores = {
+                verbal: calculateScore(verbalQuestions, answers.verbal),
+                quantitative: calculateScore(quantitativeQuestions, answers.quantitative),
+                subject: calculateScore(subjectQuestions, answers.subject),
+                analytical: calculateScore(analyticalQuestions, answers.analytical)
+            };
+
+            // If filteredSubjectAnswers has answers, calculate filtered subject score
+            let filteredQuestions = [];
+            const selected = document.getElementById('subject-selector').value;
+            if (selected === 'medical') {
+                filteredQuestions = subjectQuestions.filter(q => ['biology', 'physics', 'chemistry'].includes(q.subject));
+            } else if (selected === 'engineer') {
+                filteredQuestions = subjectQuestions.filter(q => ['physics', 'computer_science', 'mathematics'].includes(q.subject));
+            } else {
+                filteredQuestions = subjectQuestions;
+            }
+
+            if (filteredSubjectAnswers.length > 0) {
+                const filteredScore = calculateScore(filteredQuestions, filteredSubjectAnswers);
+                scores.subject = filteredScore;
+            }
+
+            // Update results
+            document.getElementById('verbal-score').textContent = `${scores.verbal}/${verbalQuestions.length}`;
+            document.getElementById('quantitative-score').textContent = `${scores.quantitative}/${quantitativeQuestions.length}`;
+            document.getElementById('subject-score').textContent = `${scores.subject}/${filteredQuestions.length}`;
+            document.getElementById('analytical-score').textContent = `${scores.analytical}/${analyticalQuestions.length}`;
+
+            const totalScore = scores.verbal + scores.quantitative + scores.subject + scores.analytical;
+            const totalQuestions = verbalQuestions.length + quantitativeQuestions.length + filteredQuestions.length + analyticalQuestions.length;
+            document.getElementById('total-score').textContent = `${totalScore}/${totalQuestions}`;
+
+            // Show results
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('testTabs').style.display = 'none';
+            document.getElementById('testTabsContent').style.display = 'none';
+            document.querySelector('.btn-lg').style.display = 'none';
+
+            // Add result message
+            const percentage = (totalScore / totalQuestions) * 100;
+            let message = '';
+            if (percentage >= 80) {
+                message = "Excellent! You have a strong understanding of all sections.";
+            } else if (percentage >= 60) {
+                message = "Good job! You have a solid foundation, but there's room for improvement.";
+            } else {
+                message = "Keep practicing! Focus on your weaker areas to improve your score.";
+            }
+            document.getElementById('result-message').textContent = message;
+        };
+    </script>
+</body>
+</html> 

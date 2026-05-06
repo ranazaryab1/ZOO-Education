@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="png" href="/images/logo6.png">
+    <title>ZOO Education | Class 10 Test&Guid-Books</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            font-family: "Fredoka", sans-serif;
+        }
+                .nav-tabs .nav-link {
+            color: #6c757d;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .nav-tabs .nav-link:hover {
+            background-color: #e9ecef;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: #dc3545;
+            color: white;
+        }
+        .subject-section {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+        .book-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            transition: transform 0.3s ease;
+        }
+        .book-card:hover {
+            transform: translateY(-5px);
+        }
+        .download-btn {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .download-btn:hover {
+            background-color: #c82333;
+        }
+        .nav-tabs .nav-link {
+            color: #495057;
+            font-weight: 500;
+        }
+        .nav-tabs .nav-link.active {
+            /* color: #dc3545; */
+            color: white;
+            font-weight: 600;
+        }
+        .book-cover {
+            width: 100px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+            margin-top: 50px;
+        }
+        .social-icons a {
+            color: white;
+            margin-right: 15px;
+            font-size: 20px;
+        }
+        .social-icons a:hover {
+            color: #dc3545;
+        }
+        .search-box {
+            margin-bottom: 30px;
+        }
+        .search-box input {
+            border-radius: 20px;
+            padding: 10px 20px;
+        }
+        .subject-icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .book-info {
+            margin-left: 20px;
+        }
+        .book-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        .book-author {
+            color: #6c757d;
+            font-size: 14px;
+        }
+        .book-board {
+            color: #dc3545;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        /* Upload Section Styling */
+        .upload-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 2px solid rgba(255,255,255,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .upload-section h3 {
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        .upload-section .form-label {
+            color: white;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .upload-section .form-control {
+            background-color: rgba(255,255,255,0.9);
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 10px;
+            padding: 12px 15px;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .upload-section .form-control:focus {
+            background-color: white;
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+            transform: translateY(-2px);
+        }
+        .upload-section .form-select {
+            background-color: rgba(255,255,255,0.9);
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 10px;
+            padding: 12px 15px;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .upload-section .form-select:focus {
+            background-color: white;
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+            transform: translateY(-2px);
+        }
+        .upload-btn {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .upload-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        .upload-btn:hover::before {
+            left: 100%;
+        }
+        .upload-btn:hover {
+            background: linear-gradient(45deg, #218838, #17a2b8);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+        }
+        .upload-btn:active {
+            transform: translateY(-1px);
+        }
+        .upload-btn i {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/images/logo6.png" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/report.html">Report Issues</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main content  -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Class 10 Textbooks & Guide Books</h1>
+
+        <!-- Upload Section -->
+        <div class="upload-section">
+            <h3 class="text-center mb-4"><i class="fas fa-upload program-icon"></i>Upload Book</h3>
+            <form id="uploadForm10">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="program10" class="form-label">Program</label>
+                        <select class="form-select" id="program10" onchange="updateSubjectOptions10()" required>
+                            <option value="">Select Program</option>
+                            <option value="Class 10">Class 10</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="subject10" class="form-label">Subject</label>
+                        <select class="form-select" id="subject10" required disabled>
+                            <option value="">Select Subject</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="title10" class="form-label">Book Title</label>
+                        <input type="text" class="form-control" id="title10" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="file10" class="form-label">Book File</label>
+                        <input type="file" class="form-control" id="file10" required>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="upload-btn">
+                        <i class="fas fa-upload"></i> Upload Book
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Search Box -->
+        <div class="search-box">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search books...">
+                <button class="btn btn-danger" type="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Subject Tabs -->
+        <ul class="nav nav-tabs mb-4" id="subjectTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="physics-tab" data-bs-toggle="tab" data-bs-target="#physics" type="button">
+                    <i class="fas fa-atom subject-icon"></i> Physics
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="biology-tab" data-bs-toggle="tab" data-bs-target="#biology" type="button">
+                    <i class="fas fa-dna subject-icon"></i> Biology
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="chemistry-tab" data-bs-toggle="tab" data-bs-target="#chemistry" type="button">
+                    <i class="fas fa-flask subject-icon"></i> Chemistry
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="english-tab" data-bs-toggle="tab" data-bs-target="#english" type="button">
+                    <i class="fas fa-language subject-icon"></i> English
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="math-tab" data-bs-toggle="tab" data-bs-target="#math" type="button">
+                    <i class="fas fa-calculator subject-icon"></i> Mathematics
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pakstudy-tab" data-bs-toggle="tab" data-bs-target="#pakstudy" type="button">
+                    <i class="fas fa-flag subject-icon"></i> Pakistan Studies
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="urdu-tab" data-bs-toggle="tab" data-bs-target="#urdu" type="button">
+                    <i class="fas fa-font subject-icon"></i> Urdu
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="islamiyat-tab" data-bs-toggle="tab" data-bs-target="#islamiyat" type="button">
+                    <i class="fas fa-mosque subject-icon"></i> Islamiyat
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="computer-tab" data-bs-toggle="tab" data-bs-target="#computer" type="button">
+                    <i class="fas fa-laptop-code subject-icon"></i> Computer Science
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="economics-tab" data-bs-toggle="tab" data-bs-target="#economics" type="button">
+                    <i class="fas fa-chart-line subject-icon"></i> Economics
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="subjectTabsContent">
+            <!-- Physics Section -->
+            <div class="tab-pane fade show active" id="physics" role="tabpanel">
+                <div class="subject-section">
+                    <h3 class="text-center mb-4"><i class="fas fa-atom subject-icon"></i> Physics Books</h3>
+                    <div class="row" id="physics-books"></div>
+                </div>
+            </div>
+
+            <!-- Other sections follow the same pattern -->
+            <!-- Biology Section -->
+            <div class="tab-pane fade" id="biology" role="tabpanel">
+                <div class="subject-section">
+                    <h3 class="text-center mb-4"><i class="fas fa-dna subject-icon"></i> Biology Books</h3>
+                    <div class="row" id="biology-books"></div>
+                </div>
+            </div>
+
+            <!-- Chemistry Section -->
+            <div class="tab-pane fade" id="chemistry" role="tabpanel">
+                <div class="subject-section">
+                    <h3 class="text-center mb-4"><i class="fas fa-flask subject-icon"></i> Chemistry Books</h3>
+                    <div class="row" id="chemistry-books"></div>
+                </div>
+            </div>
+
+            <!-- English Section -->
+            <div class="tab-pane fade" id="english" role="tabpanel">
+                <div class="subject-section">
+                    <h3 class="text-center mb-4"><i class="fas fa-language subject-icon"></i> English Books</h3>
+                    <div class="row" id="english-books"></div>
+                </div>
+            </div>
+
+            <!-- Mathematics Section -->
+            <div class="tab-pane fade" id="math" role="tabpanel">
+                <div class="subject-section">
+                    <h3 class="text-center mb-4"><i class="fas fa-calculator subject-icon"></i> Mathematics Books</h3>
+                    <div class="row" id="math-books"></div>
+                </div>
+            </div>
+
+            <!-- Pakistan Studies Section -->
+            <div class="tab-pane fade" id="pakstudy" role="tabpanel">
+                <div class="subject-section">
+                    <h3 class="text-center mb-4"><i class="fas fa-flag subject-icon"></i> Pakistan Studies Books</h3>
+                    <div class="row" id="pakstudy-books"></div>
+                </div>
+            </div>
+
+            <!-- Urdu Section -->
+            <div class="tab-pane fade" id="urdu" role="tabpanel">
+                <div class="subject-section">
+                    <h3 class="text-center mb-4"><i class="fas fa-font subject-icon"></i> Urdu Books</h3>
+                    <div class="row" id="urdu-books"></div>
+                </div>
+            </div>
+
+            <!-- Islamiyat Section -->
+            <div class="tab-pane fade" id="islamiyat" role="tabpanel">
+                <div class="subject-section">
+                    <h3 class="text-center mb-4"><i class="fas fa-mosque subject-icon"></i> Islamiyat Books</h3>
+                    <div class="row" id="islamiyat-books"></div>
+                </div>
+            </div>
+
+            <!-- Computer Science Section -->
+            <div class="tab-pane fade" id="computer" role="tabpanel">
+                <div class="subject-section">
+                    <h3 class="text-center mb-4"><i class="fas fa-laptop-code subject-icon"></i> Computer Science Books</h3>
+                    <div class="row" id="computer-books"></div>
+                </div>
+            </div>
+
+            <!-- Economics Section -->
+            <div class="tab-pane fade" id="economics" role="tabpanel">
+                <div class="subject-section">
+                    <h3 class="text-center mb-4"><i class="fas fa-chart-line subject-icon"></i> Economics Books</h3>
+                    <div class="row" id="economics-books"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Information</h5>
+                    <p><i class="fas fa-envelope"></i> info@zooeducation.com</p>
+                    <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 ZOO Education. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function downloadBook(subject, type) {
+            // Map subject and type to filename
+            const filename = `${subject}-${type}.pdf`;
+            // Trigger download from backend
+            window.location.href = `/download/book/${filename}`;
+        }
+
+        function updateSubjectOptions10() {
+            const programSelect = document.getElementById('program10');
+            const subjectSelect = document.getElementById('subject10');
+            const selectedProgram = programSelect.value;
+            // Clear existing options
+            subjectSelect.innerHTML = '<option value="">Select Subject</option>';
+            if (selectedProgram === 'Class 10') {
+                const subjects = [
+                    'Physics',
+                    'Biology',
+                    'Chemistry',
+                    'English',
+                    'Mathematics',
+                    'Pakistan Studies',
+                    'Urdu',
+                    'Islamiyat',
+                    'Computer Science',
+                    'Economics'
+                ];
+                subjects.forEach(subject => {
+                    const option = document.createElement('option');
+                    option.value = subject;
+                    option.textContent = subject;
+                    subjectSelect.appendChild(option);
+                });
+                subjectSelect.disabled = false;
+            } else {
+                subjectSelect.disabled = true;
+            }
+        }
+
+        // Call on load to set default
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('program10').value = 'Class 10';
+            updateSubjectOptions10();
+        });
+
+        // Handle upload form submission
+        document.getElementById('uploadForm10').addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            // Password check
+            const password = prompt("Enter password to upload:");
+            if (password !== "zoo0514") {
+                alert("Incorrect password. Upload failed.");
+                return;
+            }
+
+            const formData = new FormData();
+            formData.append('file', document.getElementById('file10').files[0]);
+            formData.append('subject', document.getElementById('subject10').value);
+            formData.append('title', document.getElementById('title10').value);
+            formData.append('program', document.getElementById('program10').value);
+            formData.append('class', '10');
+
+            try {
+                const response = await fetch('/upload/book', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+                if (response.ok) {
+                    alert('Book uploaded successfully!');
+                    // Submit book post data
+                    const bookPostData = {
+                        class: '10',
+                        subject: document.getElementById('subject10').value,
+                        title: document.getElementById('title10').value,
+                        program: document.getElementById('program10').value,
+                        filename: result.filename
+                    };
+                    await fetch('/submit-book-post', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(bookPostData)
+                    });
+                    alert('Book post submitted successfully!');
+                    // Reload the books after upload
+                    loadBooks();
+                } else {
+                    alert('Upload failed: ' + result.error);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred during upload.');
+            }
+        });
+
+        // Function to load and display books
+        async function loadBooks() {
+            try {
+                const response = await fetch('/api/book-posts');
+                const books = await response.json();
+
+                // Clear existing books
+                const subjectDivs = {
+                    'Physics': 'physics-books',
+                    'Biology': 'biology-books',
+                    'Chemistry': 'chemistry-books',
+                    'English': 'english-books',
+                    'Mathematics': 'math-books',
+                    'Pakistan Studies': 'pakstudy-books',
+                    'Urdu': 'urdu-books',
+                    'Islamiyat': 'islamiyat-books',
+                    'Computer Science': 'computer-books',
+                    'Economics': 'economics-books'
+                };
+
+                Object.values(subjectDivs).forEach(divId => {
+                    document.getElementById(divId).innerHTML = '';
+                });
+
+                // Filter for class 10 and display
+                books.filter(book => book.class === '10').forEach(book => {
+                    const divId = subjectDivs[book.subject];
+                    if (divId) {
+                        const bookCard = document.createElement('div');
+                        bookCard.className = 'col-md-6 mb-3';
+                        bookCard.innerHTML = `
+                            <div class="book-card">
+                                <div class="d-flex align-items-center">
+                                    <img src="/images/logo6.png" alt="Book Cover" class="book-cover">
+                                    <div class="book-info">
+                                        <div class="book-title">${book.title}</div>
+                                        <div class="book-author">Class 10 - ${book.subject}</div>
+                                        <button class="download-btn" onclick="window.location.href='/download/book/${book.filename}'">
+                                            <i class="fas fa-download"></i> Download
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        document.getElementById(divId).appendChild(bookCard);
+                    }
+                });
+            } catch (error) {
+                console.error('Error loading books:', error);
+            }
+        }
+
+        // Load books on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('program10').value = 'Class 10';
+            updateSubjectOptions10();
+            loadBooks();
+        });
+    </script>
+</body>
+</html> 

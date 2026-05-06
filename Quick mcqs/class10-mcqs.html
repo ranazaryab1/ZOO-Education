@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="png" href="/images/logo6.png">
+    <title>ZOO Education | Class 10 MCQs</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            font-family: "Fredoka", sans-serif;
+        }
+        .test-section {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .test-section:hover {
+            transform: translateY(-5px);
+        }
+        .questions-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-between;
+        }
+        .question-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+            flex: 0 0 calc(25% - 15px);
+            box-sizing: border-box;
+        }
+        .option-btn {
+            width: 100%;
+            text-align: left;
+            padding: 8px 12px;
+            margin: 3px 0;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .option-btn:hover {
+            background-color: #e9ecef;
+        }
+        .option-btn.selected {
+            background-color: #dc3545;
+            color: white;
+            border-color: #dc3545;
+        }
+        .option-btn.correct {
+            background-color: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+        .option-btn.incorrect {
+            background-color: #dc3545;
+            color: white;
+            border-color: #dc3545;
+        }
+        .chapter-list {
+            display: none;
+            margin-top: 15px;
+        }
+        .chapter-item {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .chapter-item:hover {
+            background-color: #e9ecef;
+            transform: translateY(-2px);
+        }
+        .chapter-item.active {
+            background-color: #dc3545;
+            color: white;
+        }
+        .section-icon {
+            font-size: 2rem;
+            color: #dc3545;
+            margin-bottom: 15px;
+        }
+        .result-card {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .nav-tabs .nav-link {
+            color: #6c757d;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .nav-tabs .nav-link:hover {
+            background-color: #e9ecef;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/images/logo6.png" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/report.html">Report Issues</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Class 10 MCQs</h1>
+        
+        <!-- Subject and Chapter Navigation will be here -->
+
+        <!-- Subject Selection -->
+        <ul class="nav nav-tabs mb-4" id="subjectTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="physics-tab" onclick="showChapters('physics')" type="button">
+                    <i class="fas fa-atom"></i> Physics
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="biology-tab" onclick="showChapters('biology')" type="button">
+                    <i class="fas fa-dna"></i> Biology
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="chemistry-tab" onclick="showChapters('chemistry')" type="button">
+                    <i class="fas fa-flask"></i> Chemistry
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="english-tab" onclick="showChapters('english')" type="button">
+                    <i class="fas fa-language"></i> English
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="math-tab" onclick="showChapters('math')" type="button">
+                    <i class="fas fa-calculator"></i> Math
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="urdu-tab" onclick="showChapters('urdu')" type="button">
+                    <i class="fas fa-language"></i> Urdu
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pakstudy-tab" onclick="showChapters('pakstudy')" type="button">
+                    <i class="fas fa-map"></i> Pak Study
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="islamyat-tab" onclick="showChapters('islamyat')" type="button">
+                    <i class="fas fa-moon"></i> Islamyat
+                </button>
+            </li>
+        </ul>
+        
+        <!-- Chapter Selection -->
+        <div id="chapters-container">
+            <!-- Physics Chapters -->
+            <div id="physics-chapters" class="chapter-list">
+                <h4 class="mb-3">Physics Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'electrostatics')">
+                            <i class="fas fa-plus-square"></i> Electrostatics
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'current_electricity')">
+                            <i class="fas fa-bolt"></i> Current Electricity
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'electromagnetism')">
+                            <i class="fas fa-magnet"></i> Electromagnetism
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'electromagnetic_induction')">
+                            <i class="fas fa-sync"></i> Electromagnetic Induction
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'physics_of_solids')">
+                            <i class="fas fa-cube"></i> Physics of Solids
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'electronics')">
+                            <i class="fas fa-microchip"></i> Electronics
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'dawn_of_modern_physics')">
+                            <i class="fas fa-star"></i> Dawn of Modern Physics
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'atomic_nucleus')">
+                            <i class="fas fa-atom"></i> Atomic Nucleus
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'nuclear_physics')">
+                            <i class="fas fa-radiation"></i> Nuclear Physics
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'medical_imaging')">
+                            <i class="fas fa-x-ray"></i> Medical Imaging
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Biology Chapters -->
+            <div id="biology-chapters" class="chapter-list">
+                <h4 class="mb-3">Biology Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'gaseous_exchange')">
+                            <i class="fas fa-lungs"></i> Gaseous Exchange
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'homeostasis')">
+                            <i class="fas fa-balance-scale"></i> Homeostasis
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'support_and_movements')">
+                            <i class="fas fa-bone"></i> Support and Movements
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'coordination_and_control')">
+                            <i class="fas fa-brain"></i> Coordination and Control
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'reproduction')">
+                            <i class="fas fa-seedling"></i> Reproduction
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'inheritance')">
+                            <i class="fas fa-dna"></i> Inheritance
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'man_and_his_environment')">
+                            <i class="fas fa-globe"></i> Man and His Environment
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chemistry Chapters -->
+            <div id="chemistry-chapters" class="chapter-list">
+                <h4 class="mb-3">Chemistry Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'periodicity')">
+                            <i class="fas fa-table"></i> Periodicity
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'group_ii')">
+                            <i class="fas fa-users"></i> Group II
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'group_iii_a_and_iv')">
+                            <i class="fas fa-chart-bar"></i> Group III A and IV
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'group_v')">
+                            <i class="fas fa-chart-line"></i> Group V
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'halogens_and_noble_gases')">
+                            <i class="fas fa-flask"></i> Halogens and Noble Gases
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'which_technique_is_best')">
+                            <i class="fas fa-search"></i> Which Technique is Best
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'introduction_to_organic_chemistry')">
+                            <i class="fas fa-leaf"></i> Introduction to Organic Chemistry
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'hydrocarbons')">
+                            <i class="fas fa-oil-can"></i> Hydrocarbons
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'alkyl_halides')">
+                            <i class="fas fa-vial"></i> Alkyl Halides
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'alcohols_phenols_and_ethers')">
+                            <i class="fas fa-wine-glass"></i> Alcohols Phenols and Ethers
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'aldehydes_and_ketones')">
+                            <i class="fas fa-burn"></i> Aldehydes and Ketones
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'carboxylic_acids')">
+                            <i class="fas fa-lemon"></i> Carboxylic Acids
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'macromolecules')">
+                            <i class="fas fa-dna"></i> Macromolecules
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'environmental_chemistry_i')">
+                            <i class="fas fa-recycle"></i> Environmental Chemistry I
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- English Chapters -->
+            <div id="english-chapters" class="chapter-list">
+                <h4 class="mb-3">English Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('english', 'grammar')">
+                            <i class="fas fa-book"></i> Grammar
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('english', 'short_stories')">
+                            <i class="fas fa-book-open"></i> Short Stories
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('english', 'poetry')">
+                            <i class="fas fa-feather-alt"></i> Poetry
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('english', 'one_act_plays')">
+                            <i class="fas fa-theater-masks"></i> One Act Plays
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('english', 'heroes')">
+                            <i class="fas fa-user-tie"></i> Heroes
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('english', 'essay_writing')">
+                            <i class="fas fa-pen"></i> Essay Writing
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Math Chapters -->
+            <div id="math-chapters" class="chapter-list">
+                <h4 class="mb-3">Math Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'quadratic_equations')">
+                            <i class="fas fa-equals"></i> Quadratic Equations
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'theory_of_quadratic_equations')">
+                            <i class="fas fa-calculator"></i> Theory of Quadratic Equations
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'variations')">
+                            <i class="fas fa-chart-line"></i> Variations
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'partial_fractions')">
+                            <i class="fas fa-divide"></i> Partial Fractions
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'sets_and_functions')">
+                            <i class="fas fa-sitemap"></i> Sets and Functions
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'matrices_and_determinants')">
+                            <i class="fas fa-th"></i> Matrices and Determinants
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'sequences_and_series')">
+                            <i class="fas fa-list-ol"></i> Sequences and Series
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'binomial_theorem')">
+                            <i class="fas fa-expand-arrows-alt"></i> Binomial Theorem
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'fundamentals_of_geometry')">
+                            <i class="fas fa-shapes"></i> Fundamentals of Geometry
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'trigonometric_identities')">
+                            <i class="fas fa-ruler"></i> Trigonometric Identities
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'solutions_of_trigonometric_equations')">
+                            <i class="fas fa-solve"></i> Solutions of Trigonometric Equations
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'graphs_of_trigonometric_functions')">
+                            <i class="fas fa-chart-area"></i> Graphs of Trigonometric Functions
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'inverse_trigonometric_functions')">
+                            <i class="fas fa-exchange-alt"></i> Inverse Trigonometric Functions
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'projections_of_a_segment_of_a_circle')">
+                            <i class="fas fa-project-diagram"></i> Projections of a Segment of a Circle
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'straight_lines_and_circles')">
+                            <i class="fas fa-circle"></i> Straight Lines and Circles
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'conic_sections')">
+                            <i class="fas fa-ellipsis-h"></i> Conic Sections
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'introduction_to_analytic_geometry')">
+                            <i class="fas fa-vector-square"></i> Introduction to Analytic Geometry
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Urdu Chapters -->
+            <div id="urdu-chapters" class="chapter-list">
+                <h4 class="mb-3">Urdu Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('urdu', 'grammar')">
+                            <i class="fas fa-book"></i> Grammar
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('urdu', 'prose')">
+                            <i class="fas fa-align-left"></i> Prose
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('urdu', 'poetry')">
+                            <i class="fas fa-feather-alt"></i> Poetry
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('urdu', 'ghazal')">
+                            <i class="fas fa-music"></i> Ghazal
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('urdu', 'novel')">
+                            <i class="fas fa-book-reader"></i> Novel
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('urdu', 'drama')">
+                            <i class="fas fa-theater-masks"></i> Drama
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('urdu', 'essay')">
+                            <i class="fas fa-pen"></i> Essay
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('urdu', 'comprehension')">
+                            <i class="fas fa-question-circle"></i> Comprehension
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('urdu', 'translation')">
+                            <i class="fas fa-language"></i> Translation
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('urdu', 'letter_writing')">
+                            <i class="fas fa-envelope"></i> Letter Writing
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pak Study Chapters -->
+            <div id="pakstudy-chapters" class="chapter-list">
+                <h4 class="mb-3">Pak Study Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('pakstudy', 'ideology_of_pakistan')">
+                            <i class="fas fa-flag"></i> Ideology of Pakistan
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('pakstudy', 'making_of_pakistan')">
+                            <i class="fas fa-history"></i> Making of Pakistan
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('pakstudy', 'land_and_environment')">
+                            <i class="fas fa-map"></i> Land and Environment
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('pakstudy', 'history_1947_78')">
+                            <i class="fas fa-clock"></i> History 1947-78
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('pakstudy', 'constitution_of_pakistan')">
+                            <i class="fas fa-file-contract"></i> Constitution of Pakistan
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('pakstudy', 'islamic_provisions')">
+                            <i class="fas fa-moon"></i> Islamic Provisions
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('pakstudy', 'economy_of_pakistan')">
+                            <i class="fas fa-chart-pie"></i> Economy of Pakistan
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('pakstudy', 'culture_of_pakistan')">
+                            <i class="fas fa-users"></i> Culture of Pakistan
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Islamyat Chapters -->
+            <div id="islamyat-chapters" class="chapter-list">
+                <h4 class="mb-3">Islamyat Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('islamyat', 'quran_majeed')">
+                            <i class="fas fa-book-open"></i> Quran Majeed
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('islamyat', 'ahadees_mubaraka')">
+                            <i class="fas fa-scroll"></i> Ahadees Mubaraka
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('islamyat', 'aqaid')">
+                            <i class="fas fa-dove"></i> Aqaid
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('islamyat', 'seerat_un_nabi')">
+                            <i class="fas fa-user"></i> Seerat un Nabi
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('islamyat', 'islamic_history')">
+                            <i class="fas fa-history"></i> Islamic History
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('islamyat', 'fiqh')">
+                            <i class="fas fa-gavel"></i> Fiqh
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('islamyat', 'akhlaqiyat')">
+                            <i class="fas fa-handshake"></i> Akhlaqiyat
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MCQs Container -->
+        <div id="mcqs-container" style="display: none;">
+            <div class="test-section">
+                <div class="card-body">
+                    <h3 class="text-center mb-4" id="mcq-title"></h3>
+                    <div id="mcq-questions" class="questions-container">
+                        <!-- Questions will be loaded here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-4">
+            <button class="btn btn-secondary" onclick="backToChapters()">
+                <i class="fas fa-arrow-left"></i> Back to Chapters
+            </button>
+        </div>
+
+        <!-- Results Section (Hidden by default) -->
+        
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Information</h5>
+                    <p><i class="fas fa-envelope"></i> info@zooeducation.com</p>
+                    <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 ZOO Education. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let questionsData = {};
+
+        async function loadData() {
+            try {
+                const response = await fetch('class10-questions.json');
+                questionsData = await response.json();
+                answers = {};
+                for (let subject in questionsData) {
+                    answers[subject] = {};
+                    for (let chapter in questionsData[subject]) {
+                        answers[subject][chapter] = Array(questionsData[subject][chapter].length).fill(null);
+                    }
+                }
+                initializeTest();
+            } catch (error) {
+                console.error('Error loading questions:', error);
+            }
+        }
+
+        // Test state
+        let currentSubject = null;
+        let currentChapter = null;
+        let answers = {};
+
+        // Initialize the test
+        function initializeTest() {
+            // Show physics chapters by default
+            showChapters('physics');
+        }
+
+        // Show chapters for a subject
+        function showChapters(subject) {
+            // Update active tab
+            document.querySelectorAll('#subjectTabs .nav-link').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.getElementById(`${subject}-tab`).classList.add('active');
+            
+            // Hide all chapter lists
+            document.querySelectorAll('.chapter-list').forEach(list => {
+                list.style.display = 'none';
+            });
+            
+            // Show selected subject's chapters
+            document.getElementById(`${subject}-chapters`).style.display = 'block';
+            
+            // Hide MCQs container
+            document.getElementById('mcqs-container').style.display = 'none';
+            
+            // Update current subject
+            currentSubject = subject;
+            currentChapter = null;
+        }
+
+        // Show MCQs for a chapter
+        function showMCQs(subject, chapter) {
+            // Hide chapter lists
+            document.querySelectorAll('.chapter-list').forEach(list => {
+                list.style.display = 'none';
+            });
+            
+            // Show MCQs container
+            document.getElementById('mcqs-container').style.display = 'block';
+            
+            // Set title
+            const icons = {
+                physics: 'fas fa-atom',
+                biology: 'fas fa-dna',
+                chemistry: 'fas fa-flask',
+                english: 'fas fa-language',
+                math: 'fas fa-calculator',
+                urdu: 'fas fa-language',
+                pakstudy: 'fas fa-map',
+                islamyat: 'fas fa-moon'
+            };
+            
+            const chapterNames = {
+                electrostatics: 'Electrostatics',
+                current_electricity: 'Current Electricity',
+                electromagnetism: 'Electromagnetism',
+                electromagnetic_induction: 'Electromagnetic Induction',
+                physics_of_solids: 'Physics of Solids',
+                electronics: 'Electronics',
+                dawn_of_modern_physics: 'Dawn of Modern Physics',
+                atomic_nucleus: 'Atomic Nucleus',
+                nuclear_physics: 'Nuclear Physics',
+                medical_imaging: 'Medical Imaging',
+                gaseous_exchange: 'Gaseous Exchange',
+                homeostasis: 'Homeostasis',
+                support_and_movements: 'Support and Movements',
+                coordination_and_control: 'Coordination and Control',
+                reproduction: 'Reproduction',
+                inheritance: 'Inheritance',
+                man_and_his_environment: 'Man and His Environment',
+                periodicity: 'Periodicity',
+                group_ii: 'Group II',
+                group_iii_a_and_iv: 'Group III A and IV',
+                group_v: 'Group V',
+                halogens_and_noble_gases: 'Halogens and Noble Gases',
+                which_technique_is_best: 'Which Technique is Best',
+                introduction_to_organic_chemistry: 'Introduction to Organic Chemistry',
+                hydrocarbons: 'Hydrocarbons',
+                alkyl_halides: 'Alkyl Halides',
+                alcohols_phenols_and_ethers: 'Alcohols Phenols and Ethers',
+                aldehydes_and_ketones: 'Aldehydes and Ketones',
+                carboxylic_acids: 'Carboxylic Acids',
+                macromolecules: 'Macromolecules',
+                environmental_chemistry_i: 'Environmental Chemistry I',
+                grammar: 'Grammar',
+                short_stories: 'Short Stories',
+                poetry: 'Poetry',
+                one_act_plays: 'One Act Plays',
+                heroes: 'Heroes',
+                essay_writing: 'Essay Writing',
+                quadratic_equations: 'Quadratic Equations',
+                theory_of_quadratic_equations: 'Theory of Quadratic Equations',
+                variations: 'Variations',
+                partial_fractions: 'Partial Fractions',
+                sets_and_functions: 'Sets and Functions',
+                matrices_and_determinants: 'Matrices and Determinants',
+                sequences_and_series: 'Sequences and Series',
+                binomial_theorem: 'Binomial Theorem',
+                fundamentals_of_geometry: 'Fundamentals of Geometry',
+                trigonometric_identities: 'Trigonometric Identities',
+                solutions_of_trigonometric_equations: 'Solutions of Trigonometric Equations',
+                graphs_of_trigonometric_functions: 'Graphs of Trigonometric Functions',
+                inverse_trigonometric_functions: 'Inverse Trigonometric Functions',
+                projections_of_a_segment_of_a_circle: 'Projections of a Segment of a Circle',
+                straight_lines_and_circles: 'Straight Lines and Circles',
+                conic_sections: 'Conic Sections',
+                introduction_to_analytic_geometry: 'Introduction to Analytic Geometry',
+                grammar: 'Grammar',
+                prose: 'Prose',
+                poetry: 'Poetry',
+                ghazal: 'Ghazal',
+                novel: 'Novel',
+                drama: 'Drama',
+                essay: 'Essay',
+                comprehension: 'Comprehension',
+                translation: 'Translation',
+                letter_writing: 'Letter Writing',
+                ideology_of_pakistan: 'Ideology of Pakistan',
+                making_of_pakistan: 'Making of Pakistan',
+                land_and_environment: 'Land and Environment',
+                history_1947_78: 'History 1947-78',
+                constitution_of_pakistan: 'Constitution of Pakistan',
+                islamic_provisions: 'Islamic Provisions',
+                economy_of_pakistan: 'Economy of Pakistan',
+                culture_of_pakistan: 'Culture of Pakistan',
+                quran_majeed: 'Quran Majeed',
+                ahadees_mubaraka: 'Ahadees Mubaraka',
+                aqaid: 'Aqaid',
+                seerat_un_nabi: 'Seerat un Nabi',
+                islamic_history: 'Islamic History',
+                fiqh: 'Fiqh',
+                akhlaqiyat: 'Akhlaqiyat'
+            };
+            
+            document.getElementById('mcq-title').innerHTML = `<i class="${icons[subject]} section-icon"></i> ${subject.charAt(0).toUpperCase() + subject.slice(1)} - ${chapterNames[chapter]}`;
+            
+            // Update current subject and chapter
+            currentSubject = subject;
+            currentChapter = chapter;
+            
+            // Load questions
+            loadQuestions(subject, chapter);
+        }
+
+        // Back to chapters
+        function backToChapters() {
+            showChapters(currentSubject);
+        }
+        
+        // Back to subjects from results
+        function backToSubjects() {
+            // Hide results
+            document.getElementById('results').style.display = 'none';
+            
+            // Show subject tabs
+            document.getElementById('subjectTabs').style.display = 'block';
+            
+            // Reset current chapter
+            currentChapter = null;
+            
+            // Show the chapters for the current subject
+            showChapters(currentSubject);
+        }
+
+        // Load questions for a chapter
+        function loadQuestions(subject, chapter) {
+            const container = document.getElementById('mcq-questions');
+            container.innerHTML = '';
+
+            const qArray = questionsData[subject][chapter];
+            qArray.forEach((q, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.className = 'question-card';
+
+                // Get the selected answer and correct answer
+                const selectedAnswer = answers[subject][chapter][index];
+                const correctAnswer = q.answer;
+
+                questionCard.innerHTML = `
+                    <h6 class="mb-2">Q${index + 1}: ${q.question}</h6>
+                    <div class="options">
+                        ${q.options.map((option, i) => {
+                            let classes = 'option-btn';
+                            if (selectedAnswer === option) {
+                                classes += ' selected';
+                                if (option === correctAnswer) {
+                                    classes += ' correct';
+                                } else {
+                                    classes += ' incorrect';
+                                }
+                            }
+                            return `
+                                <button class="${classes}"
+                                        onclick="selectAnswer('${subject}', '${chapter}', ${index}, '${option}')">
+                                    ${option}
+                                </button>
+                            `;
+                        }).join('')}
+                    </div>
+                `;
+                container.appendChild(questionCard);
+            });
+        }
+
+        // Select an answer
+        function selectAnswer(subject, chapter, questionIndex, option) {
+            // Store the selected answer
+            answers[subject][chapter][questionIndex] = option;
+
+            // Get the correct answer for this question
+            const correctAnswer = questionsData[subject][chapter][questionIndex].answer;
+
+            // Update the UI with the selected answer and show correct/incorrect status
+            const container = document.getElementById('mcq-questions');
+            const questionCards = container.querySelectorAll('.question-card');
+            const questionCard = questionCards[questionIndex];
+
+            // Remove previous selection classes
+            const optionButtons = questionCard.querySelectorAll('.option-btn');
+            optionButtons.forEach(btn => {
+                btn.classList.remove('selected', 'correct', 'incorrect');
+            });
+
+            // Find the selected button and add appropriate class
+            optionButtons.forEach(btn => {
+                if (btn.textContent.trim() === option) {
+                    btn.classList.add('selected');
+
+                    // Add correct or incorrect class based on answer
+                    if (option === correctAnswer) {
+                        btn.classList.add('correct');
+                    } else {
+                        btn.classList.add('incorrect');
+                    }
+                }
+            });
+        }
+
+        // Submit test
+        function submitTest() {
+            // Calculate score for the current subject only
+            if (!currentSubject) {
+                alert("Please select a subject first");
+                return;
+            }
+            
+            const score = calculateSubjectScore(currentSubject);
+            
+            // Hide all subject score sections first
+            document.querySelectorAll('.subject-score').forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            // Show only the current subject's score
+            document.getElementById(`${currentSubject}-score-section`).style.display = 'block';
+            document.getElementById(`${currentSubject}-score`).textContent = `${score.total}/${score.possible}`;
+            
+            // Update total score (which is just the current subject's score)
+            document.getElementById('total-score').textContent = `${score.total}/${score.possible}`;
+            
+            // Show results
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('subjectTabs').style.display = 'none';
+            document.getElementById('chapters-container').style.display = 'none';
+            document.getElementById('mcqs-container').style.display = 'none';
+            document.querySelector('.btn-lg').style.display = 'none';
+            
+            // Add result message
+            const percentage = (score.total / score.possible) * 100;
+            let message = '';
+            if (percentage >= 80) {
+                message = `Excellent! You have a strong understanding of ${currentSubject.charAt(0).toUpperCase() + currentSubject.slice(1)}.`;
+            } else if (percentage >= 60) {
+                message = `Good job! You have a solid foundation in ${currentSubject.charAt(0).toUpperCase() + currentSubject.slice(1)}, but there's room for improvement.`;
+            } else {
+                message = `Keep practicing! Focus on improving your ${currentSubject.charAt(0).toUpperCase() + currentSubject.slice(1)} knowledge.`;
+            }
+            document.getElementById('result-message').textContent = message;
+        }
+
+        // Calculate score for a subject (across all chapters)
+        function calculateSubjectScore(subject) {
+            const chapters = Object.keys(answers[subject]);
+            let totalCorrect = 0;
+            let totalAnswered = 0;
+
+            chapters.forEach(chapter => {
+                const qArray = questionsData[subject][chapter];
+                totalCorrect += calculateScore(qArray, answers[subject][chapter]);
+                totalAnswered += answers[subject][chapter].filter(answer => answer !== null).length;
+            });
+
+            return {
+                total: totalCorrect,
+                possible: chapters.reduce((sum, chapter) => sum + questionsData[subject][chapter].length, 0),
+                answered: totalAnswered
+            };
+        }
+
+        // Calculate score for a section
+        function calculateScore(questions, answers) {
+            return questions.reduce((score, question, index) => {
+                return score + (answers[index] === question.answer ? 1 : 0);
+            }, 0);
+        }
+
+        // Initialize test when page loads
+        window.onload = loadData;
+    </script>
+</body>
+</html>

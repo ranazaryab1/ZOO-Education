@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="png" href="/images/logo6.png">
+    <title>ZOO Education | Class 11 MCQs</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            font-family: "Fredoka", sans-serif;
+        }
+        .test-section {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .test-section:hover {
+            transform: translateY(-5px);
+        }
+        .questions-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-between;
+        }
+        .question-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+            flex: 0 0 calc(25% - 15px);
+            box-sizing: border-box;
+        }
+        .option-btn {
+            width: 100%;
+            text-align: left;
+            padding: 8px 12px;
+            margin: 3px 0;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 0.9rem;
+        }
+        .option-btn:hover {
+            background-color: #e9ecef;
+        }
+        .option-btn.selected {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        .option-btn.correct {
+            background-color: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+        .option-btn.incorrect {
+            background-color: #dc3545;
+            color: white;
+            border-color: #dc3545;
+        }
+        .chapter-list {
+            display: none;
+            margin-top: 15px;
+        }
+        .chapter-item {
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            padding: 10px 15px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .chapter-item:hover {
+            background-color: #e9ecef;
+            transform: translateY(-2px);
+        }
+        .chapter-item.active {
+            background-color: #dc3545;
+            color: white;
+        }
+        .section-icon {
+            font-size: 2rem;
+            color: #dc3545;
+            margin-bottom: 15px;
+        }
+        .result-card {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .nav-tabs .nav-link {
+            color: #6c757d;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .nav-tabs .nav-link:hover {
+            background-color: #e9ecef;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: #dc3545;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/images/logo6.png" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/report.html">Report Issues</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Class 11 MCQs</h1>
+        
+        <!-- Subject and Chapter Navigation will be here -->
+
+        <!-- Subject Selection -->
+        <ul class="nav nav-tabs mb-4" id="subjectTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="physics-tab" onclick="showChapters('physics')" type="button">
+                    <i class="fas fa-atom"></i> Physics
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="biology-tab" onclick="showChapters('biology')" type="button">
+                    <i class="fas fa-dna"></i> Biology
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="chemistry-tab" onclick="showChapters('chemistry')" type="button">
+                    <i class="fas fa-flask"></i> Chemistry
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="english-tab" onclick="showChapters('english')" type="button">
+                    <i class="fas fa-language"></i> English
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="math-tab" onclick="showChapters('math')" type="button">
+                    <i class="fas fa-calculator"></i> Math
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="history-tab" onclick="showChapters('history')" type="button">
+                    <i class="fas fa-history"></i> History
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="geography-tab" onclick="showChapters('geography')" type="button">
+                    <i class="fas fa-globe"></i> Geography
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="politicalscience-tab" onclick="showChapters('politicalscience')" type="button">
+                    <i class="fas fa-gavel"></i> Political Science
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="accountancy-tab" onclick="showChapters('accountancy')" type="button">
+                    <i class="fas fa-calculator"></i> Accountancy
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="urdu-tab" onclick="showChapters('urdu')" type="button">
+                    <i class="fas fa-language"></i> Urdu
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="computerscience-tab" onclick="showChapters('computerscience')" type="button">
+                    <i class="fas fa-laptop-code"></i> Computer Science
+                </button>
+            </li>
+        </ul>
+        
+        <!-- Chapter Selection -->
+        <div id="chapters-container">
+            <!-- Physics Chapters -->
+            <div id="physics-chapters" class="chapter-list">
+                <h4 class="mb-3">Physics Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'measurements')">
+                            <i class="fas fa-ruler"></i> Measurements
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'vectors-and-equilibrium')">
+                            <i class="fas fa-arrows-alt"></i> Vectors and Equilibrium
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'motion-and-force')">
+                            <i class="fas fa-running"></i> Motion and Force
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'work-and-energy')">
+                            <i class="fas fa-bolt"></i> Work and Energy
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'circular-motion')">
+                            <i class="fas fa-circle"></i> Circular Motion
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'fluid-dynamics')">
+                            <i class="fas fa-water"></i> Fluid Dynamics
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'oscillations')">
+                            <i class="fas fa-wave-square"></i> Oscillations
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'waves')">
+                            <i class="fas fa-wave-square"></i> Waves
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'physical-optics')">
+                            <i class="fas fa-lightbulb"></i> Physical Optics
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'optical-instruments')">
+                            <i class="fas fa-eye"></i> Optical Instruments
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('physics', 'heat-and-thermodynamics')">
+                            <i class="fas fa-thermometer-half"></i> Heat and Thermodynamics
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Biology Chapters -->
+            <div id="biology-chapters" class="chapter-list">
+                <h4 class="mb-3">Biology Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'introduction-to-biology')">
+                            <i class="fas fa-book"></i> Introduction to Biology
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'biological-molecules')">
+                            <i class="fas fa-atom"></i> Biological Molecules
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'enzymes')">
+                            <i class="fas fa-cogs"></i> Enzymes
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'cells')">
+                            <i class="fas fa-microscope"></i> The Cell
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'variety-of-life')">
+                            <i class="fas fa-tree"></i> Variety of Life
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'kingdom-prokaryotae')">
+                            <i class="fas fa-bacteria"></i> Kingdom Prokaryotae (Monera)
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'kingdom-protista')">
+                            <i class="fas fa-water"></i> The Kingdom Protista
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'fungi')">
+                            <i class="fas fa-mushroom"></i> Fungi
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'kingdom-plantae')">
+                            <i class="fas fa-seedling"></i> Kingdom Plantae
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'kingdom-animalia')">
+                            <i class="fas fa-paw"></i> Kingdom Animalia
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'bioenergetics')">
+                            <i class="fas fa-sun"></i> Bioenergetics
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'acquisition-and-utilization-of-nutrients')">
+                            <i class="fas fa-utensils"></i> Acquisition and Utilization of Nutrients
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'transport')">
+                            <i class="fas fa-truck"></i> Transport
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'homeostasis')">
+                            <i class="fas fa-balance-scale"></i> Homeostasis
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'support-and-movement')">
+                            <i class="fas fa-running"></i> Support and Movement
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'coordination-and-control')">
+                            <i class="fas fa-brain"></i> Coordination and Control
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'reproduction')">
+                            <i class="fas fa-heart"></i> Reproduction
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'gaseous-exchange')">
+                            <i class="fas fa-wind"></i> Gaseous Exchange
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'inheritance')">
+                            <i class="fas fa-dna"></i> Inheritance
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'evolution')">
+                            <i class="fas fa-tree"></i> Evolution
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('biology', 'ecology')">
+                            <i class="fas fa-leaf"></i> Ecology
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Chemistry Chapters -->
+            <div id="chemistry-chapters" class="chapter-list">
+                <h4 class="mb-3">Chemistry Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'basic-concepts')">
+                            <i class="fas fa-book"></i> Basic Concepts
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'experimental-techniques-in-chemistry')">
+                            <i class="fas fa-flask"></i> Experimental Techniques in Chemistry
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'gases')">
+                            <i class="fas fa-wind"></i> Gases
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'liquids-and-solids')">
+                            <i class="fas fa-water"></i> Liquids and Solids
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'atomic-structure')">
+                            <i class="fas fa-atom"></i> Atomic Structure
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'chemical-bonding')">
+                            <i class="fas fa-link"></i> Chemical Bonding
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'thermochemistry')">
+                            <i class="fas fa-thermometer-half"></i> Thermochemistry
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'chemical-equilibrium')">
+                            <i class="fas fa-balance-scale"></i> Chemical Equilibrium
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'solutions')">
+                            <i class="fas fa-vial"></i> Solutions
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'electrochemistry')">
+                            <i class="fas fa-battery-half"></i> Electrochemistry
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('chemistry', 'reaction-kinetics')">
+                            <i class="fas fa-clock"></i> Reaction Kinetics
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- English Chapters -->
+            <div id="english-chapters" class="chapter-list">
+                <h4 class="mb-3">English Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('english', 'literary-criticism')">
+                            <i class="fas fa-book"></i> Literary Criticism
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('english', 'poetry-analysis')">
+                            <i class="fas fa-spell-check"></i> Poetry Analysis
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('english', 'prose-fiction')">
+                            <i class="fas fa-paragraph"></i> Prose Fiction
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Math Chapters -->
+            <div id="math-chapters" class="chapter-list">
+                <h4 class="mb-3">Math Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'complex-numbers')">
+                            <i class="fas fa-superscript"></i> Complex Numbers
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'coordinate-geometry')">
+                            <i class="fas fa-shapes"></i> Coordinate Geometry
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('math', 'limits-and-derivatives')">
+                            <i class="fas fa-chart-bar"></i> Limits and Derivatives
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- History Chapters -->
+            <div id="history-chapters" class="chapter-list">
+                <h4 class="mb-3">History Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('history', 'ancient-history')">
+                            <i class="fas fa-pyramid"></i> Ancient History
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('history', 'medieval-history')">
+                            <i class="fas fa-castle"></i> Medieval History
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('history', 'modern-history')">
+                            <i class="fas fa-building"></i> Modern History
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Geography Chapters -->
+            <div id="geography-chapters" class="chapter-list">
+                <h4 class="mb-3">Geography Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('geography', 'physical')">
+                            <i class="fas fa-mountain"></i> Physical Geography
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('geography', 'human')">
+                            <i class="fas fa-users"></i> Human Geography
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('geography', 'world')">
+                            <i class="fas fa-globe-americas"></i> World Geography
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Political Science Chapters -->
+            <div id="politicalscience-chapters" class="chapter-list">
+                <h4 class="mb-3">Political Science Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('politicalscience', 'theory')">
+                            <i class="fas fa-book-open"></i> Political Theory
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('politicalscience', 'government')">
+                            <i class="fas fa-landmark"></i> Government
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('politicalscience', 'relations')">
+                            <i class="fas fa-handshake"></i> International Relations
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Accountancy Chapters -->
+            <div id="accountancy-chapters" class="chapter-list">
+                <h4 class="mb-3">Accountancy Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('accountancy', 'financial')">
+                            <i class="fas fa-money-bill-wave"></i> Financial Accounting
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('accountancy', 'cost')">
+                            <i class="fas fa-calculator"></i> Cost Accounting
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('accountancy', 'management')">
+                            <i class="fas fa-chart-line"></i> Management Accounting
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Urdu Chapters -->
+            <div id="urdu-chapters" class="chapter-list">
+                <h4 class="mb-3">Urdu Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('urdu', 'grammar')">
+                            <i class="fas fa-spell-check"></i> Grammar
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('urdu', 'literature')">
+                            <i class="fas fa-book"></i> Literature
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('urdu', 'prose')">
+                            <i class="fas fa-paragraph"></i> Prose
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Computer Science Chapters -->
+            <div id="computerscience-chapters" class="chapter-list">
+                <h4 class="mb-3">Computer Science Chapters</h4>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computerscience', 'fundamentals')">
+                            <i class="fas fa-code"></i> Programming Fundamentals
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computerscience', 'structures')">
+                            <i class="fas fa-sitemap"></i> Data Structures
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computerscience', 'algorithms')">
+                            <i class="fas fa-cogs"></i> Algorithms
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computerscience', 'problem-solving')">
+                            <i class="fas fa-brain"></i> Problem Solving
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computerscience', 'overview-of-computer-system')">
+                            <i class="fas fa-desktop"></i> Overview of Computer System
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computerscience', 'computer-memory')">
+                            <i class="fas fa-server"></i> Computer Memory
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computerscience', 'central-processing-unit-cpu')">
+                            <i class="fas fa-microchip"></i> Central Processing Unit (CPU)
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computerscience', 'basic-logic-gates')">
+                            <i class="fas fa-toggle-on"></i> Basic Logic Gates
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computerscience', 'computer-software')">
+                            <i class="fas fa-cube"></i> Computer Software
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computerscience', 'data-communications')">
+                            <i class="fas fa-exchange-alt"></i> Data Communications
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computerscience', 'computer-networks')">
+                            <i class="fas fa-network-wired"></i> Computer Networks
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computerscience', 'introduction-to-windows')">
+                            <i class="fab fa-windows"></i> Introduction to Windows
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computerscience', 'word-processing')">
+                            <i class="fas fa-file-word"></i> Word Processing
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computerscience', 'spreadsheets')">
+                            <i class="fas fa-file-excel"></i> Spreadsheets
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="chapter-item" onclick="showMCQs('computerscience', 'introduction-to-programming')">
+                            <i class="fas fa-code-branch"></i> Introduction to Programming
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- MCQs Container -->
+        <div id="mcqs-container" style="display: none;">
+            <h2 id="mcq-title" class="text-center mb-4"></h2>
+            <div id="mcq-questions" class="questions-container"></div>
+            <!-- <div class="text-center mt-4">
+                <button class="btn btn-primary" onclick="submitTest()">
+                    <i class="fas fa-check"></i> Submit Test
+                </button>
+            </div> -->
+        </div>
+
+        <!-- Results -->
+        <div id="results" style="display: none;">
+            <div class="result-card">
+                <h3 class="text-center mb-4">Test Results</h3>
+
+                <!-- Physics Score Section -->
+                <div id="physics-score-section" class="subject-score" style="display: none;">
+                    <h4>Physics Score</h4>
+                    <p>You scored <span id="physics-score"></span> out of <span id="physics-total"></span> in Physics.</p>
+                </div>
+
+                <!-- Biology Score Section -->
+                <div id="biology-score-section" class="subject-score" style="display: none;">
+                    <h4>Biology Score</h4>
+                    <p>You scored <span id="biology-score"></span> out of <span id="biology-total"></span> in Biology.</p>
+                </div>
+
+                <!-- Chemistry Score Section -->
+                <div id="chemistry-score-section" class="subject-score" style="display: none;">
+                    <h4>Chemistry Score</h4>
+                    <p>You scored <span id="chemistry-score"></span> out of <span id="chemistry-total"></span> in Chemistry.</p>
+                </div>
+
+                <!-- English Score Section -->
+                <div id="english-score-section" class="subject-score" style="display: none;">
+                    <h4>English Score</h4>
+                    <p>You scored <span id="english-score"></span> out of <span id="english-total"></span> in English.</p>
+                </div>
+
+                <!-- Math Score Section -->
+                <div id="math-score-section" class="subject-score" style="display: none;">
+                    <h4>Math Score</h4>
+                    <p>You scored <span id="math-score"></span> out of <span id="math-total"></span> in Math.</p>
+                </div>
+
+                <!-- History Score Section -->
+                <div id="history-score-section" class="subject-score" style="display: none;">
+                    <h4>History Score</h4>
+                    <p>You scored <span id="history-score"></span> out of <span id="history-total"></span> in History.</p>
+                </div>
+
+                <!-- Geography Score Section -->
+                <div id="geography-score-section" class="subject-score" style="display: none;">
+                    <h4>Geography Score</h4>
+                    <p>You scored <span id="geography-score"></span> out of <span id="geography-total"></span> in Geography.</p>
+                </div>
+
+                <!-- Political Science Score Section -->
+                <div id="politicalscience-score-section" class="subject-score" style="display: none;">
+                    <h4>Political Science Score</h4>
+                    <p>You scored <span id="politicalscience-score"></span> out of <span id="politicalscience-total"></span> in Political Science.</p>
+                </div>
+
+                <!-- Accountancy Score Section -->
+                <div id="accountancy-score-section" class="subject-score" style="display: none;">
+                    <h4>Accountancy Score</h4>
+                    <p>You scored <span id="accountancy-score"></span> out of <span id="accountancy-total"></span> in Accountancy.</p>
+                </div>
+
+                <!-- Urdu Score Section -->
+                <div id="urdu-score-section" class="subject-score" style="display: none;">
+                    <h4>Urdu Score</h4>
+                    <p>You scored <span id="urdu-score"></span> out of <span id="urdu-total"></span> in Urdu.</p>
+                </div>
+
+                <!-- Computer Science Score Section -->
+                <div id="computerscience-score-section" class="subject-score" style="display: none;">
+                    <h4>Computer Science Score</h4>
+                    <p>You scored <span id="computerscience-score"></span> out of <span id="computerscience-total"></span> in Computer Science.</p>
+                </div>
+
+                <h4>Total Score: <span id="total-score"></span></h4>
+                <p id="result-message"></p>
+                <!-- <div class="text-center mt-4">
+                    <button class="btn btn-secondary" onclick="backToSubjects()">
+                        <i class="fas fa-arrow-left"></i> Back to Subjects
+                    </button>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="text-center mt-4">
+            <button class="btn btn-secondary" onclick="backToChapters()">
+                            <i class="fas fa-arrow-left"></i> Back to Chapters
+                        </button>
+        </div>
+            
+            
+           
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Information</h5>
+                    <p><i class="fas fa-envelope"></i> info@zooeducation.com</p>
+                    <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 ZOO Education. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    let mcqData = {};
+    fetch('class11-mcqs.json')
+    .then(response => response.json())
+    .then(data => {
+        mcqData = data;
+        answers = {};
+        for (let subject in mcqData) {
+            answers[subject] = {};
+            for (let chapter in mcqData[subject]) {
+                answers[subject][chapter] = new Array(mcqData[subject][chapter].length).fill(null);
+            }
+        }
+        initializeTest();
+    })
+    .catch(error => console.error('Error loading MCQs:', error));
+
+    // Test state
+        let currentSubject = null;
+        let currentChapter = null;
+
+        // Initialize the test
+        function initializeTest() {
+            // Show physics chapters by default
+            showChapters('physics');
+        }
+
+        // Show chapters for a subject
+        function showChapters(subject) {
+            // Update active tab
+            document.querySelectorAll('#subjectTabs .nav-link').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            document.getElementById(`${subject}-tab`).classList.add('active');
+            
+            // Hide all chapter lists
+            document.querySelectorAll('.chapter-list').forEach(list => {
+                list.style.display = 'none';
+            });
+            
+            // Show selected subject's chapters
+            document.getElementById(`${subject}-chapters`).style.display = 'block';
+            
+            // Hide MCQs container
+            document.getElementById('mcqs-container').style.display = 'none';
+            
+            // Update current subject
+            currentSubject = subject;
+            currentChapter = null;
+        }
+
+        // Show MCQs for a chapter
+        function showMCQs(subject, chapter) {
+            // Hide chapter lists
+            document.querySelectorAll('.chapter-list').forEach(list => {
+                list.style.display = 'none';
+            });
+            
+            // Show MCQs container
+            document.getElementById('mcqs-container').style.display = 'block';
+            
+            // Set title
+            const icons = {
+                physics: 'fas fa-atom',
+                biology: 'fas fa-dna',
+                chemistry: 'fas fa-flask',
+                english: 'fas fa-language',
+                math: 'fas fa-calculator',
+                history: 'fas fa-history',
+                geography: 'fas fa-globe',
+                politicalscience: 'fas fa-gavel',
+                accountancy: 'fas fa-calculator',
+                urdu: 'fas fa-language',
+                computerscience: 'fas fa-laptop-code'
+            };
+            
+            const chapterNames = {
+                'physics-measurements': 'Measurements',
+                'physics-vectors-and-equilibrium': 'Vectors and Equilibrium',
+                'physics-motion-and-force': 'Motion and Force',
+                'physics-work-and-energy': 'Work and Energy',
+                'physics-circular-motion': 'Circular Motion',
+                'physics-fluid-dynamics': 'Fluid Dynamics',
+                'physics-oscillations': 'Oscillations',
+                'physics-waves': 'Waves',
+                'physics-physical-optics': 'Physical Optics',
+                'physics-optical-instruments': 'Optical Instruments',
+                'physics-heat-and-thermodynamics': 'Heat and Thermodynamics',
+                'biology-introduction-to-biology': 'Introduction to Biology',
+                'biology-biological-molecules': 'Biological Molecules',
+                'biology-enzymes': 'Enzymes',
+                'biology-cells': 'The Cell',
+                'biology-variety-of-life': 'Variety of Life',
+                'biology-kingdom-prokaryotae': 'Kingdom Prokaryotae (Monera)',
+                'biology-kingdom-protista': 'The Kingdom Protista',
+                'biology-fungi': 'Fungi',
+                'biology-kingdom-plantae': 'Kingdom Plantae',
+                'biology-kingdom-animalia': 'Kingdom Animalia',
+                'biology-bioenergetics': 'Bioenergetics',
+                'biology-acquisition-and-utilization-of-nutrients': 'Acquisition and Utilization of Nutrients',
+                'biology-homeostasis': 'Homeostasis',
+                'biology-support-and-movement': 'Support and Movement',
+                'biology-coordination-and-control': 'Coordination and Control',
+                'biology-reproduction': 'Reproduction',
+                'biology-inheritance': 'Inheritance',
+                'biology-gaseous-exchange': 'Gaseous Exchange',
+                'biology-transport': 'Transport',
+                'chemistry-basic-concepts': 'Basic Concepts',
+                'chemistry-experimental-techniques-in-chemistry': 'Experimental Techniques in Chemistry',
+                'chemistry-gases': 'Gases',
+                'chemistry-liquids-and-solids': 'Liquids and Solids',
+                'chemistry-atomic-structure': 'Atomic Structure',
+                'chemistry-chemical-bonding': 'Chemical Bonding',
+                'chemistry-thermochemistry': 'Thermochemistry',
+                'chemistry-chemical-equilibrium': 'Chemical Equilibrium',
+                'chemistry-solutions': 'Solutions',
+                'chemistry-electrochemistry': 'Electrochemistry',
+                'chemistry-reaction-kinetics': 'Reaction Kinetics',
+                'english-literary-criticism': 'Literary Criticism',
+                'english-poetry-analysis': 'Poetry Analysis',
+                'english-prose-fiction': 'Prose Fiction',
+                'math-complex-numbers': 'Complex Numbers',
+                'math-coordinate-geometry': 'Coordinate Geometry',
+                'math-limits-and-derivatives': 'Limits and Derivatives',
+                'history-ancient': 'Ancient History',
+                'history-medieval': 'Medieval History',
+                'history-modern': 'Modern History',
+                'geography-physical': 'Physical Geography',
+                'geography-human': 'Human Geography',
+                'geography-world': 'World Geography',
+                'politicalscience-theory': 'Political Theory',
+                'politicalscience-government': 'Government',
+                'politicalscience-relations': 'International Relations',
+                'accountancy-financial': 'Financial Accounting',
+                'accountancy-cost': 'Cost Accounting',
+                'accountancy-management': 'Management Accounting',
+                'urdu-grammar': 'Grammar',
+                'urdu-literature': 'Literature',
+                'urdu-prose': 'Prose',
+                'computerscience-fundamentals': 'Programming Fundamentals',
+                'computerscience-structures': 'Data Structures',
+                'computerscience-algorithms': 'Algorithms',
+                'computerscience-problem-solving': 'Problem Solving',
+                'computerscience-overview-of-computer-system': 'Overview of Computer System',
+                'computerscience-computer-memory': 'Computer Memory',
+                'computerscience-central-processing-unit-cpu': 'Central Processing Unit (CPU)',
+                'computerscience-basic-logic-gates': 'Basic Logic Gates',
+                'computerscience-computer-software': 'Computer Software',
+                'computerscience-data-communications': 'Data Communications',
+                'computerscience-computer-networks': 'Computer Networks',
+                'computerscience-introduction-to-windows': 'Introduction to Windows',
+                'computerscience-word-processing': 'Word Processing',
+                'computerscience-spreadsheets': 'Spreadsheets',
+                'computerscience-introduction-to-programming': 'Introduction to Programming'
+            };
+            
+            document.getElementById('mcq-title').innerHTML = `<i class="${icons[subject]} section-icon"></i> ${subject.charAt(0).toUpperCase() + subject.slice(1)} - ${chapterNames[subject + '-' + chapter]}`;
+            
+            // Update current subject and chapter
+            currentSubject = subject;
+            currentChapter = chapter;
+            
+            // Load questions
+            loadQuestions(subject, chapter);
+        }
+
+        // Back to chapters
+        function backToChapters() {
+            showChapters(currentSubject);
+        }
+        
+        // Back to subjects from results
+        function backToSubjects() {
+            // Hide results
+            document.getElementById('results').style.display = 'none';
+            
+            // Show subject tabs
+            document.getElementById('subjectTabs').style.display = 'block';
+            
+            // Reset current chapter
+            currentChapter = null;
+            
+            // Show the chapters for the current subject
+            showChapters(currentSubject);
+        }
+
+        // Load questions for a chapter
+        function loadQuestions(subject, chapter) {
+            const questions = mcqData[subject][chapter];
+
+            const container = document.getElementById('mcq-questions');
+            container.innerHTML = '';
+
+            questions.forEach((q, index) => {
+                const questionCard = document.createElement('div');
+                questionCard.className = 'question-card';
+
+                // Get the selected answer and correct answer
+                const selectedAnswer = answers[subject][chapter][index];
+                const correctAnswer = q.answer;
+
+                questionCard.innerHTML = `
+                    <h6 class="mb-2">Q${index + 1}: ${q.question}</h6>
+                    <div class="options">
+                        ${q.options.map((option, i) => {
+                            let classes = 'option-btn';
+                            if (selectedAnswer === option) {
+                                classes += ' selected';
+                                if (option === correctAnswer) {
+                                    classes += ' correct';
+                                } else {
+                                    classes += ' incorrect';
+                                }
+                            }
+                            return `
+                                <button class="${classes}"
+                                        onclick="selectAnswer('${subject}', '${chapter}', ${index}, '${option}')">
+                                    ${option}
+                                </button>
+                            `;
+                        }).join('')}
+                    </div>
+                `;
+                container.appendChild(questionCard);
+            });
+        }
+
+        // Select an answer
+        function selectAnswer(subject, chapter, questionIndex, option) {
+            // Store the selected answer
+            answers[subject][chapter][questionIndex] = option;
+
+            // Get the correct answer for this question
+            const correctAnswer = mcqData[subject][chapter][questionIndex].answer;
+
+            // Update the UI with the selected answer and show correct/incorrect status
+            const container = document.getElementById('mcq-questions');
+            const questionCards = container.querySelectorAll('.question-card');
+            const questionCard = questionCards[questionIndex];
+
+            // Remove previous selection classes
+            const optionButtons = questionCard.querySelectorAll('.option-btn');
+            optionButtons.forEach(btn => {
+                btn.classList.remove('selected', 'correct', 'incorrect');
+            });
+
+            // Find the selected button and add appropriate class
+            optionButtons.forEach(btn => {
+                if (btn.textContent.trim() === option) {
+                    btn.classList.add('selected');
+
+                    // Add correct or incorrect class based on answer
+                    if (option === correctAnswer) {
+                        btn.classList.add('correct');
+                    } else {
+                        btn.classList.add('incorrect');
+                    }
+                }
+            });
+        }
+
+        // Submit test
+        function submitTest() {
+            // Calculate score for the current subject only
+            if (!currentSubject) {
+                alert("Please select a subject first");
+                return;
+            }
+            
+            const score = calculateSubjectScore(currentSubject);
+            
+            // Hide all subject score sections first
+            document.querySelectorAll('.subject-score').forEach(section => {
+                section.style.display = 'none';
+            });
+            
+            // Show only the current subject's score
+            document.getElementById(`${currentSubject}-score-section`).style.display = 'block';
+            document.getElementById(`${currentSubject}-score`).textContent = score.total;
+            document.getElementById(`${currentSubject}-total`).textContent = score.possible;
+
+            // Update total score (which is just the current subject's score)
+            document.getElementById('total-score').textContent = `${score.total}/${score.possible}`;
+            
+            // Show results
+            document.getElementById('results').style.display = 'block';
+            document.getElementById('subjectTabs').style.display = 'none';
+            document.getElementById('chapters-container').style.display = 'none';
+            document.getElementById('mcqs-container').style.display = 'none';
+            document.querySelector('.btn-lg').style.display = 'none';
+            
+            // Add result message
+            const percentage = (score.total / score.possible) * 100;
+            let message = '';
+            if (percentage >= 80) {
+                message = `Excellent! You have a strong understanding of ${currentSubject.charAt(0).toUpperCase() + currentSubject.slice(1)}.`;
+            } else if (percentage >= 60) {
+                message = `Good job! You have a solid foundation in ${currentSubject.charAt(0).toUpperCase() + currentSubject.slice(1)}, but there's room for improvement.`;
+            } else {
+                message = `Keep practicing! Focus on improving your ${currentSubject.charAt(0).toUpperCase() + currentSubject.slice(1)} knowledge.`;
+            }
+            document.getElementById('result-message').textContent = message;
+        }
+
+        // Calculate score for a subject (across all chapters)
+        function calculateSubjectScore(subject) {
+            const chapters = Object.keys(answers[subject]);
+            let totalCorrect = 0;
+            let totalAnswered = 0;
+
+            chapters.forEach(chapter => {
+                const chapterQuestions = mcqData[subject][chapter];
+                totalCorrect += calculateScore(chapterQuestions, answers[subject][chapter]);
+                totalAnswered += answers[subject][chapter].filter(answer => answer !== null).length;
+            });
+
+            return {
+                total: totalCorrect,
+                possible: chapters.reduce((sum, chapter) => sum + mcqData[subject][chapter].length, 0),
+                answered: totalAnswered
+            };
+        }
+
+        // Calculate score for a section
+        function calculateScore(questions, answers) {
+            return questions.reduce((score, question, index) => {
+                return score + (answers[index] === question.answer ? 1 : 0);
+            }, 0);
+        }
+
+        // Initialize test when page loads
+        window.onload = initializeTest;
+    </script>
+</body>
+</html>

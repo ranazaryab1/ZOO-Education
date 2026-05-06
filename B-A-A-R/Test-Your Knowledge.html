@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="png" href="/images/logo6.png">
+    <title>ZOO Education | Test-Your Knowledge</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * {
+            font-family: "Fredoka", sans-serif;
+        }
+        .question-card {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+        .question-card:hover {
+            transform: translateY(-5px);
+        }
+        .option-btn {
+            width: 100%;
+            text-align: left;
+            padding: 12px 15px;
+            margin: 5px 0;
+            border: 2px solid #dee2e6;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 1rem;
+            background-color: white;
+        }
+        .option-btn:hover {
+            background-color: #e9ecef;
+            border-color: #adb5bd;
+        }
+        .option-btn.selected {
+            background-color: #007bff;
+            color: white;
+            border-color: #007bff;
+        }
+        .option-btn.correct {
+            background-color: #28a745;
+            color: white;
+            border-color: #28a745;
+        }
+        .option-btn.incorrect {
+            background-color: #dc3545;
+            color: white;
+            border-color: #dc3545;
+        }
+        .timer {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #dc3545;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .feedback-card {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            display: none;
+        }
+        .emoji {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+        .explanation {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        .btn-custom {
+            padding: 12px 30px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/images/logo6.png" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/report.html">Report Issues</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4"> Test-Your Knowledge</h1>
+        
+        <!-- Timer -->
+        <div class="timer">
+            <i class="fas fa-clock"></i> Time Left: <span id="timer">60</span> seconds
+        </div>
+
+        <!-- Question Card -->
+        <div id="question-card" class="question-card">
+            <h3 id="question-text" class="mb-4"></h3>
+            <div id="options" class="mb-4">
+                <!-- Options will be loaded here -->
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary btn-custom" onclick="submitAnswer()">
+                    <i class="fas fa-paper-plane"></i> Submit Answer
+                </button>
+            </div>
+        </div>
+
+        <!-- Feedback Card -->
+        <div id="feedback-card" class="feedback-card">
+            <div id="emoji" class="emoji"></div>
+            <h4 id="feedback-title"></h4>
+            <p id="feedback-message"></p>
+            <div class="explanation">
+                <p id="correct-explanation"></p>
+                <p id="wrong-explanation"></p>
+            </div>
+            <button class="btn btn-success btn-custom mt-4" onclick="nextQuestion()">
+                <i class="fas fa-arrow-right"></i> Next Question
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Information</h5>
+                    <p><i class="fas fa-envelope"></i> info@zooeducation.com</p>
+                    <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2024 ZOO Education. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Fallback questions in case JSON fails to load
+        const fallbackQuestions = [
+            {
+                question: "What is the formula for the force between two parallel current-carrying wires?",
+                options: ["F = μ₀I₁I₂L/2πd", "F = kq₁q₂/r²", "F = ma", "F = qE"],
+                answer: "F = μ₀I₁I₂L/2πd",
+                correctExplanation: "This is Ampere's law for the magnetic force between two parallel wires carrying currents I₁ and I₂, separated by distance d, with length L.",
+                wrongExplanation: "The other options are formulas for electrostatic force, Newton's second law, and electric force respectively, not applicable here."
+            },
+            {
+                question: "What is the function of the endoplasmic reticulum?",
+                options: ["Protein synthesis and transport", "Energy production", "Waste removal", "Cell division"],
+                answer: "Protein synthesis and transport",
+                correctExplanation: "The endoplasmic reticulum is involved in protein and lipid synthesis, folding, and transport within the cell.",
+                wrongExplanation: "Energy production occurs in mitochondria, waste removal in lysosomes, and cell division is managed by the nucleus and other organelles."
+            },
+            {
+                question: "What is the pH of a buffer solution?",
+                options: ["Always 7", "Depends on the components", "Always greater than 7", "Always less than 7"],
+                answer: "Depends on the components",
+                correctExplanation: "Buffer solutions resist pH changes and their pH depends on the weak acid and its conjugate base concentrations.",
+                wrongExplanation: "Buffers can have pH values other than 7; they maintain pH stability around a specific value based on their components."
+            },
+            {
+                question: "Which of these is a complex sentence with a relative clause?",
+                options: ["I went to the store.", "The book that I read was interesting.", "The cat and the dog played.", "She ran quickly."],
+                answer: "The book that I read was interesting.",
+                correctExplanation: "This sentence contains a relative clause 'that I read' modifying the noun 'book', making it complex.",
+                wrongExplanation: "The other sentences are simple or compound, lacking a dependent relative clause."
+            },
+            {
+                question: "What is the derivative of ln(x)?",
+                options: ["1/x", "-1/x", "x", "-x"],
+                answer: "1/x",
+                correctExplanation: "Using the chain rule or power rule, d/dx[ln(x)] = 1/x.",
+                wrongExplanation: "The derivative of ln(x) is positive 1/x; the other options are incorrect derivatives."
+            }
+        ];
+
+        let questions = [];
+
+        // Function to shuffle array
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+
+        // Function to load questions from JSON
+        async function loadQuestions() {
+            try {
+                const response = await fetch('questions.json');
+                const data = await response.json();
+                return shuffleArray(data);
+            } catch (error) {
+                console.error('Error loading questions:', error);
+                return shuffleArray(fallbackQuestions);
+            }
+        }
+
+        let currentQuestionIndex = 0;
+        let selectedAnswer = null;
+        let timeLeft = 60;
+        let timerInterval;
+
+        // Initialize the practice session
+        async function initializePractice() {
+            questions = await loadQuestions();
+            loadQuestion();
+            startTimer();
+        }
+
+        // Load the current question
+        function loadQuestion() {
+            const question = questions[currentQuestionIndex];
+            document.getElementById('question-text').textContent = `Q${currentQuestionIndex + 1}: ${question.question}`;
+            
+            const optionsContainer = document.getElementById('options');
+            optionsContainer.innerHTML = '';
+            
+            question.options.forEach((option, index) => {
+                const button = document.createElement('button');
+                button.className = 'option-btn';
+                button.textContent = option;
+                button.onclick = () => selectOption(button, option);
+                optionsContainer.appendChild(button);
+            });
+            
+            selectedAnswer = null;
+            document.getElementById('question-card').style.display = 'block';
+            document.getElementById('feedback-card').style.display = 'none';
+        }
+
+        // Select an option
+        function selectOption(button, option) {
+            // Remove selected class from all buttons
+            document.querySelectorAll('.option-btn').forEach(btn => btn.classList.remove('selected'));
+            // Add selected class to clicked button
+            button.classList.add('selected');
+            selectedAnswer = option;
+        }
+
+        // Submit answer
+        function submitAnswer() {
+            if (selectedAnswer === null) {
+                alert('Please select an answer!');
+                return;
+            }
+            
+            clearInterval(timerInterval);
+            showFeedback();
+        }
+
+        // Show feedback
+        function showFeedback() {
+            const question = questions[currentQuestionIndex];
+            const isCorrect = selectedAnswer === question.answer;
+            
+            document.getElementById('question-card').style.display = 'none';
+            document.getElementById('feedback-card').style.display = 'block';
+            
+            if (isCorrect) {
+                document.getElementById('emoji').textContent = '😊';
+                document.getElementById('feedback-title').textContent = 'Correct!';
+                document.getElementById('feedback-message').textContent = 'Great job! You got it right.';
+                document.getElementById('correct-explanation').innerHTML = '<strong>Why it\'s correct:</strong> ' + question.correctExplanation;
+                document.getElementById('wrong-explanation').textContent = '';
+            } else {
+                document.getElementById('emoji').textContent = '😢';
+                document.getElementById('feedback-title').textContent = 'Incorrect';
+                document.getElementById('feedback-message').textContent = 'Don\'t worry, keep practicing!';
+                document.getElementById('correct-explanation').innerHTML = '<strong>Why the correct answer is:</strong> ' + question.correctExplanation;
+                document.getElementById('wrong-explanation').innerHTML = '<strong>Why your choice is wrong:</strong> ' + question.wrongExplanation;
+            }
+        }
+
+        // Next question
+        function nextQuestion() {
+            currentQuestionIndex++;
+            if (currentQuestionIndex >= questions.length) {
+                currentQuestionIndex = 0; // Loop back to start
+            }
+            timeLeft = 60;
+            loadQuestion();
+            startTimer();
+        }
+
+        // Start timer
+        function startTimer() {
+            timerInterval = setInterval(() => {
+                timeLeft--;
+                document.getElementById('timer').textContent = timeLeft;
+                
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    selectedAnswer = null; // Treat as wrong
+                    showFeedback();
+                }
+            }, 1000);
+        }
+
+        // Initialize when page loads
+        window.onload = initializePractice;
+    </script>
+</body>
+</html>

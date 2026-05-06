@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="website icon" type="png" href="/images/logo6.png">
+    <title>ZOO Education | Entry-Test </title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: "Fredoka", sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        .nav-tabs .nav-link {
+            color: #6c757d;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .nav-tabs .nav-link:hover {
+            background-color: #e9ecef;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: #dc3545;
+            color: white;
+        }
+        .search-box {
+            max-width: 500px;
+            margin: 0 auto;
+            background: transparent;
+        }
+                .header {
+            background-color: #dc3545;
+            color: white;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+        .test-section {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .material-card {
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+        .material-card:hover {
+            transform: translateY(-5px);
+        }
+        .material-card .card-body {
+            padding: 20px;
+        }
+        .material-card .card-title {
+            color: #dc3545;
+            font-weight: bold;
+        }
+        .download-btn {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .download-btn:hover {
+            background-color: #c82333;
+            color: white;
+        }
+        .nav-tabs .nav-link {
+            color: #6c757d;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 5px;
+            border-radius: 5px;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: #dc3545;
+            color: white;
+        }
+        .nav-tabs .nav-link:hover:not(.active) {
+            background-color: #f8f9fa;
+        }
+        .test-info {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        /* Upload Section Styling */
+        .upload-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom:30px;
+            margin-top:30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            border: 2px solid rgba(255,255,255,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .upload-section h3 {
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        .upload-section .form-label {
+            color: white;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+        .upload-section .form-control {
+            background-color: rgba(255,255,255,0.9);
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 10px;
+            padding: 12px 15px;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .upload-section .form-control:focus {
+            background-color: white;
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+            transform: translateY(-2px);
+        }
+        .upload-section .form-select {
+            background-color: rgba(255,255,255,0.9);
+            border: 2px solid rgba(255,255,255,0.3);
+            border-radius: 10px;
+            padding: 12px 15px;
+            color: #333;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .upload-section .form-select:focus {
+            background-color: white;
+            border-color: #667eea;
+            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+            transform: translateY(-2px);
+        }
+        .upload-btn {
+            background: linear-gradient(45deg, #28a745, #20c997);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 16px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+            position: relative;
+            overflow: hidden;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .upload-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+        .upload-btn:hover::before {
+            left: 100%;
+        }
+        .upload-btn:hover {
+            background: linear-gradient(45deg, #218838, #17a2b8);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
+        }
+        .upload-btn:active {
+            transform: translateY(-1px);
+        }
+        .upload-btn i {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/images/logo6.png" alt="Logo" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/B-A-A-R/report.html">Report Issues</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="search-box">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search materials...">
+                <button class="btn btn-outline-danger" type="button"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <!-- Upload Section -->
+        <div class="upload-section">
+            <h3 class="text-center mb-4"><i class="fas fa-upload program-icon"></i>Upload Entry Test Material</h3>
+            <form id="uploadFormEntryTest">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="subjectEntryTest" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="subjectEntryTest" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="titleEntryTest" class="form-label">Material Title</label>
+                        <input type="text" class="form-control" id="titleEntryTest" required>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="sectionEntryTest" class="form-label">Section</label>
+                    <select class="form-select" id="sectionEntryTest" required>
+                        <option value="">Select Section</option>
+                        <option value="MDCAT">MDCAT</option>
+                        <option value="ECAT">ECAT</option>
+                        <option value="NATS">NATS</option>
+                        <option value="LAT">LAT</option>
+                        <option value="PU-Test">PU-Test</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="fileEntryTest" class="form-label">Material File</label>
+                    <input type="file" class="form-control" id="fileEntryTest" required>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="upload-btn">
+                        <i class="fas fa-upload"></i> Upload Material
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <ul class="nav nav-tabs mb-4" id="testTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="mdcat-tab" data-bs-toggle="tab" data-bs-target="#mdcat" type="button" role="tab">
+                    <i class="fas fa-heartbeat me-2"></i>MDCAT
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ecat-tab" data-bs-toggle="tab" data-bs-target="#ecat" type="button" role="tab">
+                    <i class="fas fa-cogs me-2"></i>ECAT
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="nats-tab" data-bs-toggle="tab" data-bs-target="#nats" type="button" role="tab">
+                    <i class="fas fa-flask me-2"></i>NATS
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="lat-tab" data-bs-toggle="tab" data-bs-target="#lat" type="button" role="tab">
+                    <i class="fas fa-gavel me-2"></i>LAT
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pu-tab" data-bs-toggle="tab" data-bs-target="#pu" type="button" role="tab">
+                    <i class="fas fa-university me-2"></i>PU-Test
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content" id="testTabsContent">
+            <!-- MDCAT Section -->
+            <div class="tab-pane fade show active" id="mdcat" role="tabpanel">
+                <div class="test-info">
+                    <h4><i class="fas fa-info-circle me-2"></i>About MDCAT</h4>
+                    <p>The Medical and Dental College Admission Test (MDCAT) is a standardized test for admission to medical and dental colleges in Pakistan.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card material-card">
+                            <div class="card-body">
+                                <h5 class="card-title">MDCAT Past Paper 2023</h5>
+                                <p class="card-text">Complete past paper with solutions and explanations.</p>
+                                <button class="download-btn" onclick="downloadMaterial('mdcat', '2023')">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card material-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Biology Notes</h5>
+                                <p class="card-text">Comprehensive notes covering all MDCAT biology topics.</p>
+                                <button class="download-btn" onclick="downloadMaterial('mdcat', 'biology')">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card material-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Chemistry Practice Questions</h5>
+                                <p class="card-text">Important practice questions with detailed solutions.</p>
+                                <button class="download-btn" onclick="downloadMaterial('mdcat', 'chemistry')">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ECAT Section -->
+            <div class="tab-pane fade" id="ecat" role="tabpanel">
+                <div class="test-info">
+                    <h4><i class="fas fa-info-circle me-2"></i>About ECAT</h4>
+                    <p>The Engineering College Admission Test (ECAT) is required for admission to engineering universities in Pakistan.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card material-card">
+                            <div class="card-body">
+                                <h5 class="card-title">ECAT Past Paper 2023</h5>
+                                <p class="card-text">Complete past paper with solutions and explanations.</p>
+                                <button class="download-btn" onclick="downloadMaterial('ecat', '2023')">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card material-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Mathematics Notes</h5>
+                                <p class="card-text">Comprehensive notes covering all ECAT mathematics topics.</p>
+                                <button class="download-btn" onclick="downloadMaterial('ecat', 'math')">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card material-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Physics Practice Questions</h5>
+                                <p class="card-text">Important practice questions with detailed solutions.</p>
+                                <button class="download-btn" onclick="downloadMaterial('ecat', 'physics')">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NATS Section -->
+            <div class="tab-pane fade" id="nats" role="tabpanel">
+                <div class="test-info">
+                    <h4><i class="fas fa-info-circle me-2"></i>About NATS</h4>
+                    <p>The National Aptitude Test (NATS) is conducted for admission to various science programs.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card material-card">
+                            <div class="card-body">
+                                <h5 class="card-title">NATS Past Paper 2023</h5>
+                                <p class="card-text">Complete past paper with solutions and explanations.</p>
+                                <button class="download-btn" onclick="downloadMaterial('nats', '2023')">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card material-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Science Notes</h5>
+                                <p class="card-text">Comprehensive notes covering all NATS science topics.</p>
+                                <button class="download-btn" onclick="downloadMaterial('nats', 'science')">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- LAT Section -->
+            <div class="tab-pane fade" id="lat" role="tabpanel">
+                <div class="test-info">
+                    <h4><i class="fas fa-info-circle me-2"></i>About LAT</h4>
+                    <p>The Law Admission Test (LAT) is required for admission to law schools in Pakistan.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card material-card">
+                            <div class="card-body">
+                                <h5 class="card-title">LAT Past Paper 2023</h5>
+                                <p class="card-text">Complete past paper with solutions and explanations.</p>
+                                <button class="download-btn" onclick="downloadMaterial('lat', '2023')">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card material-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Legal Studies Notes</h5>
+                                <p class="card-text">Comprehensive notes covering all LAT topics.</p>
+                                <button class="download-btn" onclick="downloadMaterial('lat', 'legal')">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PU-Test Section -->
+            <div class="tab-pane fade" id="pu" role="tabpanel">
+                <div class="test-info">
+                    <h4><i class="fas fa-info-circle me-2"></i>About PU-Test</h4>
+                    <p>The Punjab University Entry Test is conducted for admission to various undergraduate programs.</p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card material-card">
+                            <div class="card-body">
+                                <h5 class="card-title">PU-Test Past Paper 2023</h5>
+                                <p class="card-text">Complete past paper with solutions and explanations.</p>
+                                <button class="download-btn" onclick="downloadMaterial('pu', '2023')">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card material-card">
+                            <div class="card-body">
+                                <h5 class="card-title">General Knowledge Notes</h5>
+                                <p class="card-text">Comprehensive notes covering all PU-Test topics.</p>
+                                <button class="download-btn" onclick="downloadMaterial('pu', 'gk')">
+                                    <i class="fas fa-download me-2"></i>Download
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- Footer -->
+   <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h5>Contact Information</h5>
+                <p><i class="fas fa-envelope"></i> info@zooeducation.com</p>
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+            </div>
+            <div class="col-md-6 text-end">
+                <h5>Follow Us</h5>
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <p>&copy; 2024 ZOO Education. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function downloadMaterial(test, filename) {
+            // Create a temporary link to trigger download
+            const link = document.createElement('a');
+            link.href = `/download/entry-test/${filename}`;
+            link.download = filename;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // Handle upload form submission
+        document.getElementById('uploadFormEntryTest').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const password = prompt("Enter password to upload:");
+            if (password !== "zoo0514") {
+                alert("Incorrect password");
+                return;
+            }
+            const formData = new FormData();
+            formData.append('file', document.getElementById('fileEntryTest').files[0]);
+            formData.append('subject', document.getElementById('subjectEntryTest').value);
+            formData.append('title', document.getElementById('titleEntryTest').value);
+            formData.append('class', 'entry-test');
+
+            try {
+                const response = await fetch('/upload/material', {
+                    method: 'POST',
+                    body: formData
+                });
+                const result = await response.json();
+                if (response.ok) {
+                    alert('Material uploaded successfully!');
+                    // Submit material post data
+                    const materialPostData = {
+                        class: 'entry-test',
+                        subject: document.getElementById('subjectEntryTest').value,
+                        title: document.getElementById('titleEntryTest').value,
+                        section: document.getElementById('sectionEntryTest').value,
+                        filename: result.filename
+                    };
+                    await fetch('/submit-material-post', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(materialPostData)
+                    });
+                    alert('Material post submitted successfully!');
+                    // Dynamically add card to the appropriate section
+                    addMaterialCard(materialPostData);
+                    // Reset form
+                    document.getElementById('uploadFormEntryTest').reset();
+                } else {
+                    alert('Upload failed: ' + result.error);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('An error occurred during upload.');
+            }
+        });
+
+        // Function to dynamically add material card
+        function addMaterialCard(materialData) {
+            const sectionId = materialData.section.toLowerCase().split('-')[0];
+            const sectionElement = document.getElementById(sectionId);
+            if (sectionElement) {
+                const rowElement = sectionElement.querySelector('.row');
+                if (rowElement) {
+                    const cardHtml = `
+                        <div class="col-md-4">
+                            <div class="card material-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">${materialData.title}</h5>
+                                    <p class="card-text">${materialData.subject}</p>
+                                    <button class="download-btn" onclick="downloadMaterial('${sectionId}', '${materialData.filename}')">
+                                        <i class="fas fa-download me-2"></i>Download
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    rowElement.insertAdjacentHTML('afterbegin', cardHtml);
+                }
+            }
+        }
+
+        // Function to load existing materials on page load
+        async function loadExistingMaterials() {
+            try {
+                const response = await fetch('/api/entry-test-posts');
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const materials = await response.json();
+                materials.forEach(material => {
+                    addMaterialCard(material);
+                });
+            } catch (error) {
+                console.error('Error loading existing materials:', error);
+            }
+        }
+
+        // Load existing materials when the page loads
+        document.addEventListener('DOMContentLoaded', loadExistingMaterials);
+    </script>
+</body>
+</html> 
