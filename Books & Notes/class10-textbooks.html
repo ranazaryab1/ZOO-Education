@@ -116,94 +116,7 @@
             font-size: 14px;
             font-weight: 500;
         }
-        /* Upload Section Styling */
-        .upload-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            border: 2px solid rgba(255,255,255,0.1);
-            position: relative;
-            overflow: hidden;
-        }
-        .upload-section h3 {
-            color: white;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-            margin-bottom: 25px;
-            font-weight: 600;
-        }
-        .upload-section .form-label {
-            color: white;
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
-        .upload-section .form-control {
-            background-color: rgba(255,255,255,0.9);
-            border: 2px solid rgba(255,255,255,0.3);
-            border-radius: 10px;
-            padding: 12px 15px;
-            color: #333;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        .upload-section .form-control:focus {
-            background-color: white;
-            border-color: #667eea;
-            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
-            transform: translateY(-2px);
-        }
-        .upload-section .form-select {
-            background-color: rgba(255,255,255,0.9);
-            border: 2px solid rgba(255,255,255,0.3);
-            border-radius: 10px;
-            padding: 12px 15px;
-            color: #333;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        .upload-section .form-select:focus {
-            background-color: white;
-            border-color: #667eea;
-            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
-            transform: translateY(-2px);
-        }
-        .upload-btn {
-            background: linear-gradient(45deg, #28a745, #20c997);
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 50px;
-            font-size: 16px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
-            position: relative;
-            overflow: hidden;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .upload-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.5s;
-        }
-        .upload-btn:hover::before {
-            left: 100%;
-        }
-        .upload-btn:hover {
-            background: linear-gradient(45deg, #218838, #17a2b8);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
-        }
-        .upload-btn:active {
-            transform: translateY(-1px);
-        }
+
         .upload-btn i {
             margin-right: 8px;
             font-size: 18px;
@@ -240,42 +153,7 @@
     <div class="container mt-5">
         <h1 class="text-center mb-4">Class 10 Textbooks & Guide Books</h1>
 
-        <!-- Upload Section -->
-        <div class="upload-section">
-            <h3 class="text-center mb-4"><i class="fas fa-upload program-icon"></i>Upload Book</h3>
-            <form id="uploadForm10">
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="program10" class="form-label">Program</label>
-                        <select class="form-select" id="program10" onchange="updateSubjectOptions10()" required>
-                            <option value="">Select Program</option>
-                            <option value="Class 10">Class 10</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="subject10" class="form-label">Subject</label>
-                        <select class="form-select" id="subject10" required disabled>
-                            <option value="">Select Subject</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="title10" class="form-label">Book Title</label>
-                        <input type="text" class="form-control" id="title10" required>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="file10" class="form-label">Book File</label>
-                        <input type="file" class="form-control" id="file10" required>
-                    </div>
-                </div>
-                <div class="text-center">
-                    <button type="submit" class="upload-btn">
-                        <i class="fas fa-upload"></i> Upload Book
-                    </button>
-                </div>
-            </form>
-        </div>
+
 
         <!-- Search Box -->
         <div class="search-box">
@@ -494,58 +372,7 @@
             updateSubjectOptions10();
         });
 
-        // Handle upload form submission
-        document.getElementById('uploadForm10').addEventListener('submit', async (e) => {
-            e.preventDefault();
 
-            // Password check
-            const password = prompt("Enter password to upload:");
-            if (password !== "zoo0514") {
-                alert("Incorrect password. Upload failed.");
-                return;
-            }
-
-            const formData = new FormData();
-            formData.append('file', document.getElementById('file10').files[0]);
-            formData.append('subject', document.getElementById('subject10').value);
-            formData.append('title', document.getElementById('title10').value);
-            formData.append('program', document.getElementById('program10').value);
-            formData.append('class', '10');
-
-            try {
-                const response = await fetch('/upload/book', {
-                    method: 'POST',
-                    body: formData
-                });
-                const result = await response.json();
-                if (response.ok) {
-                    alert('Book uploaded successfully!');
-                    // Submit book post data
-                    const bookPostData = {
-                        class: '10',
-                        subject: document.getElementById('subject10').value,
-                        title: document.getElementById('title10').value,
-                        program: document.getElementById('program10').value,
-                        filename: result.filename
-                    };
-                    await fetch('/submit-book-post', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(bookPostData)
-                    });
-                    alert('Book post submitted successfully!');
-                    // Reload the books after upload
-                    loadBooks();
-                } else {
-                    alert('Upload failed: ' + result.error);
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                alert('An error occurred during upload.');
-            }
-        });
 
         // Function to load and display books
         async function loadBooks() {

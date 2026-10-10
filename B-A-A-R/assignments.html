@@ -58,23 +58,7 @@
         .download-btn:hover {
             background-color: #c82333;
         }
-        .upload-section {
-            background-color: #f8f9fa;
-            border-radius: 15px;
-            padding: 20px;
-            margin-bottom: 30px;
-        }
-        .upload-btn {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 8px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        .upload-btn:hover {
-            background-color: #218838;
-        }
+
         .program-icon {
             font-size: 24px;
             margin-right: 10px;
@@ -126,7 +110,7 @@
 
     <div class="container mt-5">
         <h1 class="text-center mb-4">Assignments Hub</h1>
-        
+
         <!-- Search Bar -->
         <div class="row justify-content-center mb-4">
             <div class="col-md-6">
@@ -138,49 +122,8 @@
                 </div>
             </div>
         </div>
-        
-        <!-- Upload Section -->
-        <div class="upload-section">
-            <h3 class="text-center mb-4"><i class="fas fa-upload program-icon"></i>Upload Assignment</h3>
-            <form id="uploadForm">
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="program" class="form-label">Program</label>
-                        <select class="form-select" id="program" required>
-                            <option value="">Select Program</option>
-                            <option value="bsc">BSC</option>
-                            <option value="ba">BA</option>
-                            <option value="mphil">MPhil</option>
-                            <option value="phd">PhD</option>
-                            <option value="open">Open University</option>
-                        </select>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="subject" class="form-label">Subject</label>
-                        <input type="text" class="form-control" id="subject" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 mb-3">
-                        <label for="title" class="form-label">Assignment Title</label>
-                        <input type="text" class="form-control" id="title" required>
-                    </div>
-                    <div class="col-md-6 mb-3">
-                        <label for="uploadDate" class="form-label">Upload Date</label>
-                        <input type="date" class="form-control" id="uploadDate" required>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="file" class="form-label">Assignment File</label>
-                    <input type="file" class="form-control" id="file" required>
-                </div>
-                <div class="text-center">
-                    <button id="uploadBtn" class="upload-btn">
-                        <i class="fas fa-upload"></i> Upload Assignment
-                    </button>
-                </div>
-            </form>
-        </div>
+
+
 
         <!-- Program Tabs -->
         <ul class="nav nav-tabs mb-4" id="programTabs" role="tablist">
@@ -369,7 +312,7 @@
             });
 
             assignments.forEach(assignment => {
-                const program = assignment.program.toLowerCase();
+                const program = String(assignment.program || '').trim().toLowerCase();
                 if (programSections[program]) {
                     const assignmentCard = document.createElement('div');
                     assignmentCard.className = 'col-md-6';
@@ -392,7 +335,7 @@
 
         function downloadAssignment(filename) {
             const link = document.createElement('a');
-            link.href = `/B-A-A-R/assignment-uploads/${filename}`;
+            link.href = `/download/assignment/${encodeURIComponent(filename)}`;
             link.download = filename;
             document.body.appendChild(link);
             link.click();
@@ -403,11 +346,11 @@
         document.getElementById('searchButton').addEventListener('click', function() {
             const searchTerm = document.getElementById('searchInput').value.toLowerCase();
             const assignmentCards = document.querySelectorAll('.assignment-card');
-            
+
             assignmentCards.forEach(card => {
                 const title = card.querySelector('.assignment-title').textContent.toLowerCase();
                 const details = card.querySelector('.assignment-details').textContent.toLowerCase();
-                
+
                 if (title.includes(searchTerm) || details.includes(searchTerm)) {
                     card.style.display = 'flex';
                 } else {
@@ -423,75 +366,7 @@
             }
         });
 
-        document.getElementById('uploadBtn').addEventListener('click', async function() {
-            const password = prompt("Enter password:");
-            if (password !== "zoo0514") {
-                alert("Incorrect password");
-                return;
-            }
 
-            const program = document.getElementById('program').value;
-            const subject = document.getElementById('subject').value;
-            const title = document.getElementById('title').value;
-            const uploadDate = document.getElementById('uploadDate').value;
-            const fileInput = document.getElementById('file');
-            const file = fileInput.files[0];
-
-            if (!file) {
-                alert('Please select a file to upload.');
-                return;
-            }
-
-            try {
-                // Upload the file first
-                const formData = new FormData();
-                formData.append('file', file);
-
-                const uploadResponse = await fetch('/upload/assignment', {
-                    method: 'POST',
-                    body: formData
-                });
-
-                if (!uploadResponse.ok) {
-                    throw new Error('File upload failed');
-                }
-
-                const uploadResult = await uploadResponse.json();
-                const filename = uploadResult.filename;
-
-                // Now submit the assignment metadata with the filename
-                const assignmentData = {
-                    program,
-                    subject,
-                    title,
-                    uploadDate,
-                    filename
-                };
-
-                const submitResponse = await fetch('/submit-assignment-post', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(assignmentData)
-                });
-
-                if (!submitResponse.ok) {
-                    throw new Error('Failed to save assignment data');
-                }
-
-                const submitResult = await submitResponse.json();
-                alert(submitResult.message);
-
-                // Refresh assignments after upload
-                fetchAssignments();
-
-                // Optionally reset the form
-                document.getElementById('uploadForm').reset();
-            } catch (error) {
-                alert('Error: ' + error.message);
-            }
-        });
 
         // Load assignments on page load
         document.addEventListener('DOMContentLoaded', fetchAssignments);

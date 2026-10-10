@@ -1,0 +1,19 @@
+node_modules/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+mango.env
+.env.example
+
+# Runtime-generated uploads and logs
+storage/*
+*.log
+npm-debug.log*
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/settings.json

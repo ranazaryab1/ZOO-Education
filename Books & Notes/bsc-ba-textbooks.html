@@ -115,94 +115,7 @@
             font-size: 14px;
             font-weight: 500;
         }
-        /* Upload Section Styling */
-        .upload-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            border: 2px solid rgba(255,255,255,0.1);
-            position: relative;
-            overflow: hidden;
-        }
-        .upload-section h3 {
-            color: white;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-            margin-bottom: 25px;
-            font-weight: 600;
-        }
-        .upload-section .form-label {
-            color: white;
-            font-weight: 500;
-            margin-bottom: 8px;
-        }
-        .upload-section .form-control {
-            background-color: rgba(255,255,255,0.9);
-            border: 2px solid rgba(255,255,255,0.3);
-            border-radius: 10px;
-            padding: 12px 15px;
-            color: #333;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        .upload-section .form-control:focus {
-            background-color: white;
-            border-color: #667eea;
-            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
-            transform: translateY(-2px);
-        }
-        .upload-section .form-select {
-            background-color: rgba(255,255,255,0.9);
-            border: 2px solid rgba(255,255,255,0.3);
-            border-radius: 10px;
-            padding: 12px 15px;
-            color: #333;
-            font-weight: 500;
-            transition: all 0.3s ease;
-        }
-        .upload-section .form-select:focus {
-            background-color: white;
-            border-color: #667eea;
-            box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
-            transform: translateY(-2px);
-        }
-        .upload-btn {
-            background: linear-gradient(45deg, #28a745, #20c997);
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 50px;
-            font-size: 16px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
-            position: relative;
-            overflow: hidden;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-        .upload-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-            transition: left 0.5s;
-        }
-        .upload-btn:hover::before {
-            left: 100%;
-        }
-        .upload-btn:hover {
-            background: linear-gradient(45deg, #218838, #17a2b8);
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(40, 167, 69, 0.4);
-        }
-        .upload-btn:active {
-            transform: translateY(-1px);
-        }
+
         .upload-btn i {
             margin-right: 8px;
             font-size: 18px;
@@ -250,41 +163,7 @@
             </div>
         </div>
 
-        <!-- Upload Section -->
-        <div class="upload-section">
-            <h3 class="text-center mb-4"><i class="fas fa-upload program-icon"></i>Upload Textbook</h3>
-            <form id="uploadFormBscBaTextbooks">
-                <div class="row">
-                    <div class="col-md-4 mb-3">
-                        <label for="programBscBaTextbooks" class="form-label">Program</label>
-                        <select class="form-select" id="programBscBaTextbooks" onchange="updateSubjectOptions()" required>
-                            <option value="">Select Program</option>
-                            <option value="BSC">BSC</option>
-                            <option value="BA">BA</option>
-                        </select>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <label for="subjectBscBaTextbooks" class="form-label">Subject</label>
-                        <select class="form-select" id="subjectBscBaTextbooks" required disabled>
-                            <option value="">Select Subject</option>
-                        </select>
-                    </div>
-                    <div class="col-md-4 mb-3">
-                        <label for="titleBscBaTextbooks" class="form-label">Textbook Title</label>
-                        <input type="text" class="form-control" id="titleBscBaTextbooks" required>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label for="fileBscBaTextbooks" class="form-label">Textbook File</label>
-                    <input type="file" class="form-control" id="fileBscBaTextbooks" required>
-                </div>
-                <div class="text-center">
-                    <button type="submit" class="upload-btn">
-                        <i class="fas fa-upload"></i> Upload Textbook
-                    </button>
-                </div>
-            </form>
-        </div>
+
 
         <!-- Program Tabs -->
         <ul class="nav nav-tabs mb-4" id="programTabs" role="tablist">
@@ -561,98 +440,7 @@
             }
         }
 
-        // Upload form handling
-        document.getElementById('uploadFormBscBaTextbooks').addEventListener('submit', function(e) {
-            e.preventDefault();
 
-            const password = prompt("Enter password to upload:");
-            if (password !== "zoo0514") {
-                alert("Incorrect password. Upload failed.");
-                return;
-            }
-
-            const program = document.getElementById('programBscBaTextbooks').value;
-            const subject = document.getElementById('subjectBscBaTextbooks').value;
-            const title = document.getElementById('titleBscBaTextbooks').value;
-            const file = document.getElementById('fileBscBaTextbooks').files[0];
-
-            if (!program || !subject || !title || !file) {
-                alert('Please fill in all fields and select a file.');
-                return;
-            }
-
-            // Validate file type (PDF, DOC, DOCX)
-            const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
-            if (!allowedTypes.includes(file.type)) {
-                alert('Please upload a PDF, DOC, or DOCX file.');
-                return;
-            }
-
-            // Validate file size (max 10MB)
-            const maxSize = 10 * 1024 * 1024; // 10MB in bytes
-            if (file.size > maxSize) {
-                alert('File size must be less than 10MB.');
-                return;
-            }
-
-            // Create FormData object for file upload
-            const formData = new FormData();
-            formData.append('program', program);
-            formData.append('subject', subject);
-            formData.append('title', title);
-            formData.append('file', file);
-
-            // Show loading state
-            const submitBtn = this.querySelector('.upload-btn');
-            const originalText = submitBtn.innerHTML;
-            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Uploading...';
-            submitBtn.disabled = true;
-
-            // Upload file
-            fetch('/upload/book', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.filename) {
-                    // File uploaded successfully, now save metadata
-                    const metadata = {
-                        class: program,
-                        subject: subject,
-                        title: title,
-                        filename: data.filename
-                    };
-
-                    return fetch('/submit-book-post', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(metadata)
-                    });
-                } else {
-                    throw new Error(data.error || 'Upload failed');
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.message) {
-                    alert(`Textbook "${title}" for program "${program}" uploaded successfully!`);
-                    this.reset();
-                    loadTextbooks(); // Reload textbooks after upload
-                } else {
-                    alert('Metadata save failed: ' + (data.error || 'Unknown error'));
-                }
-            })
-            .catch(error => {
-                alert('Upload failed: ' + error.message);
-            })
-            .finally(() => {
-                submitBtn.innerHTML = originalText;
-                submitBtn.disabled = false;
-            });
-        });
 
         // Function to load textbooks from API
         function loadTextbooks() {
@@ -671,11 +459,12 @@
                     };
 
                     data.forEach(textbook => {
-                        if (textbook.class && programs[textbook.class]) {
-                            if (!programs[textbook.class][textbook.subject]) {
-                                programs[textbook.class][textbook.subject] = [];
+                        const program = String(textbook.program || textbook.class || '').trim().toUpperCase();
+                        if (program && programs[program]) {
+                            if (!programs[program][textbook.subject]) {
+                                programs[program][textbook.subject] = [];
                             }
-                            programs[textbook.class][textbook.subject].push(textbook);
+                            programs[program][textbook.subject].push(textbook);
                         }
                     });
 

@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet"/>
   <link rel="website icon" type="png" href="/images/logo6.png"/>
-  <title>ZOO Education | Blog</title>
+  <title>ZUFI Education | Blog</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
   <style>
@@ -86,25 +86,6 @@
 
   <!-- Main Content -->
   <div class="container mt-5">
-    <!-- Blog Post Form -->
-    <div class="card blog-card mb-5" id="uploadFormCard" style="display: none;">
-      <div class="card-body">
-        <h3 class="card-title mb-4">Create New Blog Post</h3>
-        <form id="blogForm">
-          <div class="mb-3">
-            <label for="blogTitle" class="form-label">Title</label>
-            <input type="text" class="form-control" id="blogTitle" required />
-          </div>
-
-          <div class="mb-3">
-            <label for="blogContent" class="form-label">Content</label>
-            <textarea class="form-control" id="blogContent" rows="5" required></textarea>
-          </div>
-          <button id="postBlogBtn" class="btn btn-primary">Post Blog</button>
-        </form>
-      </div>
-    </div>
-
     <!-- Blog Posts Section -->
     <div id="blogPosts">
       <!-- Existing posts go here -->
@@ -112,35 +93,29 @@
   </div>
 
   <!-- Footer -->
-  <footer class="bg-dark text-white py-4 mt-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h5>Contact Information</h5>
-          <p><i class="fas fa-envelope"></i> info@zooeducation.com</p>
-          <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contact Information</h5>
+                    <p><i class="fas fa-envelope"></i> ranazufi96@gmail.com</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.youtube.com/@ranazufi" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2026 ZOO Education. All rights reserved.</p>
+            </div>
         </div>
-        <div class="col-md-6 text-end">
-          <h5>Follow Us</h5>
-          <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
-          <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
-          <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-        </div>
-      </div>
-      <div class="text-center mt-3">
-        <p>&copy; 2024 ZOO Education. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+    </footer>
+  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    const isOwner = true; // Change to true to show the upload form for owners only
-
-    if (isOwner) {
-      document.getElementById("uploadFormCard").style.display = "block";
-    }
-
     async function loadBlogPosts() {
       try {
         const response = await fetch('/api/blog-posts');
@@ -163,8 +138,11 @@
           const blogPost = document.createElement('div');
           blogPost.className = 'card blog-card';
 
-          const imgHTML = post.imageFilename
-            ? `<img src="/B-A-A-R/blog-uploads/${post.imageFilename}" class="blog-image" alt="Blog Image">`
+          const safeImageName = typeof post.imageFilename === 'string' && /^[a-zA-Z0-9._-]+$/.test(post.imageFilename)
+            ? post.imageFilename
+            : '';
+          const imgHTML = safeImageName
+            ? `<img src="/media/blog/${encodeURIComponent(safeImageName)}" class="blog-image" alt="Blog Image">`
             : '';
 
           // Check if post is new (within 24 hours)
@@ -180,16 +158,10 @@
             <span class="likes-count">${likesCount}</span>
           `;
 
-          blogPost.innerHTML = `
-            ${imgHTML}
-            ${newBadgeHTML}
-            <div class="card-body">
-              <h3 class="card-title">${post.title}</h3>
-              <p class="card-text text-muted">Posted by Admin on ${new Date(post.postTime).toLocaleDateString()}</p>
-              <p class="card-text">${post.content}</p>
-              <div>${likeButtonHTML}</div>
-            </div>
-          `;
+          blogPost.innerHTML = `${imgHTML}${newBadgeHTML}<div class="card-body"><h3 class="card-title"></h3><p class="card-text text-muted"></p><p class="card-text content"></p><div>${likeButtonHTML}</div></div>`;
+          blogPost.querySelector('h3').textContent = post.title || '';
+          blogPost.querySelector('.text-muted').textContent = `Posted by Admin on ${new Date(post.postTime).toLocaleDateString()}`;
+          blogPost.querySelector('.content').textContent = post.content || '';
 
           blogPostsContainer.appendChild(blogPost);
         });
@@ -222,44 +194,6 @@
         console.error('Error loading blog posts:', error);
       }
     }
-
-    document.getElementById('postBlogBtn').addEventListener('click', async function () {
-      const password = prompt("Enter password:");
-      if (password !== "zufi0514") {
-        alert("Incorrect password");
-        return;
-      }
-
-      const title = document.getElementById('blogTitle').value;
-      const content = document.getElementById('blogContent').value;
-      const postTime = Date.now();
-
-      // Send blog post data to backend
-      try {
-        const postResponse = await fetch('/submit-blog-post', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({
-            title,
-            content,
-            imageFilename: '',
-            postTime
-          })
-        });
-        const postResult = await postResponse.json();
-        if (postResponse.ok) {
-          // Reload blog posts to include the new one
-          await loadBlogPosts();
-          document.getElementById('blogForm').reset();
-        } else {
-          alert('Failed to submit blog post: ' + postResult.message);
-        }
-      } catch (error) {
-        alert('Error submitting blog post: ' + error.message);
-      }
-    });
 
     // Load blog posts on page load
     window.addEventListener('DOMContentLoaded', loadBlogPosts);

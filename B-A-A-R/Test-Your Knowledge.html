@@ -110,6 +110,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/B-A-A-R/report.html">Report Issues</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/student.html">Student Hub</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -243,6 +246,7 @@
         let selectedAnswer = null;
         let timeLeft = 60;
         let timerInterval;
+        let correctAnswers = 0;
 
         // Initialize the practice session
         async function initializePractice() {
@@ -296,6 +300,7 @@
         function showFeedback() {
             const question = questions[currentQuestionIndex];
             const isCorrect = selectedAnswer === question.answer;
+            if (isCorrect) correctAnswers++;
             
             document.getElementById('question-card').style.display = 'none';
             document.getElementById('feedback-card').style.display = 'block';
@@ -319,7 +324,13 @@
         function nextQuestion() {
             currentQuestionIndex++;
             if (currentQuestionIndex >= questions.length) {
+                fetch('/api/student/scores', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json', Origin: location.origin },
+                    body: JSON.stringify({ score: correctAnswers, maxScore: questions.length, quizTitle: 'Test Your Knowledge' })
+                }).catch(() => {});
                 currentQuestionIndex = 0; // Loop back to start
+                correctAnswers = 0;
             }
             timeLeft = 60;
             loadQuestion();

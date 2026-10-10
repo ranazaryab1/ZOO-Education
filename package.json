@@ -4,9 +4,9 @@
   "description": "this for studing purpose only ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --test",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "node --watch index.js"
   },
   "author": "zaryab",
   "license": "ISC",
